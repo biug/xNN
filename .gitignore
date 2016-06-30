@@ -1,5 +1,6 @@
-xNN\x64\
-x64\
+/xNN/x64/
+/x64/
 *.pdb
 *.exe
 *.obj
+!/x64/Release/libopenblas.dll
