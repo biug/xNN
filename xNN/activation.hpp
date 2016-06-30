@@ -50,7 +50,7 @@ public:
 	inline void operator()(DType * output, const DType * input, int len) {
 		for (int i = 0; i < len; ++i) {
 			// f(x) = 3 * x^2
-			output[i] = (float)3.0 * input[i] * input[i];
+			output[i] = static_cast<float>(3.0) * input[i] * input[i];
 		}
 	}
 };

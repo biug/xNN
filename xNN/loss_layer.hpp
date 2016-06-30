@@ -14,7 +14,7 @@
 
 using std::vector;
 
-template<typename DType, template <typename> class Loss, template <typename> class PartialLoss>
+template<typename DType, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
 class LossLayer {
 	Loss<DType> m_foLoss;
 	PartialLoss<DType> m_foPartialLoss;
@@ -22,12 +22,12 @@ public:
 	LossLayer();
 	~LossLayer();
 
-	inline void foreward(HiddenNeuron<DType> * down) {
+	inline void foreward(HiddenNeuron<DType, Generator, Distribution> * down) {
 		// down.active = Loss(down.output)
 		m_foLoss(down->getMutableActive(), down->getOutput(), down->getVecLen());
 	}
 	
-	inline void backward(HiddenNeuron<DType> * down, int correctLabel) {
+	inline void backward(HiddenNeuron<DType, Generator, Distribution> * down, int correctLabel) {
 		// down.output_diff = partialLoss(down.active, up.correct)
 		m_foPartialLoss(down->getMutableOutputDiff(), down->getActive(), correctLabel, down->getVecLen());
 	}
@@ -35,13 +35,13 @@ public:
 
 // definitions
 
-template<typename DType, template <typename> class Loss, template <typename> class PartialLoss>
-LossLayer<DType, Loss, PartialLoss>::LossLayer() {
+template<typename DType, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+LossLayer<DType, Loss, PartialLoss, Generator, Distribution>::LossLayer() {
 
 }
 
-template<typename DType, template <typename> class Loss, template <typename> class PartialLoss>
-LossLayer<DType, Loss, PartialLoss>::~LossLayer() {
+template<typename DType, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+LossLayer<DType, Loss, PartialLoss, Generator, Distribution>::~LossLayer() {
 
 }
 #endif /* LOSS_LAYER_HPP_ */

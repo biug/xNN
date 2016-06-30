@@ -24,17 +24,17 @@ using std::ifstream;
 using std::stringstream;
 using std::unordered_map;
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
 class ParserNet {
 	const DType g_dMomentum = DType(0.95);
 	const DType g_dLearningRate = DType(0.001);
 
 	vector<InputNeuron<DType> *> m_vecInputNeurons;
-	vector<vector<HiddenNeuron<DType> *>> m_vecsHiddenNeurons;
+	vector<vector<HiddenNeuron<DType, Generator, Distribution> *>> m_vecsHiddenNeurons;
 
-	InputLayer<DType> m_lyrInputLayer;
-	HiddenLayer<DType, Activation, PartialActivation> m_lyrHiddenLayers;
-	LossLayer<DType, Loss, PartialLoss> m_lyrLossLayer;
+	InputLayer<DType, Generator, Distribution> m_lyrInputLayer;
+	HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution> m_lyrHiddenLayers;
+	LossLayer<DType, Loss, PartialLoss, Generator, Distribution> m_lyrLossLayer;
 
 	int m_nEmbeddingLen, m_nWordNum, m_nPOSNum, m_nLabelNum;
 	DType **m_pWordMatrix, **m_pPOSMatrix, **m_pLabelMatrix;
@@ -49,17 +49,17 @@ public:
 
 // definitions
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::ParserNet(int embeddingNum, const vector<vector<int>> & neuronLens, const string & embedding_file) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::ParserNet(int embeddingNum, const vector<vector<int>> & neuronLens, const string & embedding_file) {
 	// init input neurons
 	for (int i = 0; i < neuronLens.front().size(); ++i) {
 		m_vecInputNeurons.push_back(new InputNeuron<DType>(embeddingNum, neuronLens[0][i]));
 	}
 	// init hidden neurons
 	for (int i = 1; i < neuronLens.size(); ++i) {
-		vector<HiddenNeuron<DType> *> vecHiddenNeurons;
+		vector<HiddenNeuron<DType, Generator, Distribution> *> vecHiddenNeurons;
 		for (int j = 0; j < neuronLens[i].size(); ++j) {
-			vecHiddenNeurons.push_back(new HiddenNeuron<DType>(neuronLens[i][j], neuronLens[i - 1]));
+			vecHiddenNeurons.push_back(new HiddenNeuron<DType, Generator, Distribution>(neuronLens[i][j], neuronLens[i - 1]));
 		}
 		m_vecsHiddenNeurons.push_back(vecHiddenNeurons);
 	}
@@ -109,8 +109,8 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::ParserNet(in
 	}
 }
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::~ParserNet() {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::~ParserNet() {
 	// free input neurons
 	for (int i = 0; i < m_vecInputNeurons.size(); ++i) {
 		delete m_vecInputNeurons[i];
@@ -142,10 +142,10 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::~ParserNet()
 	m_mapLabelOrder.clear();
 }
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::train(const vector<string> & batchFiles, int max_iter, DType threshold) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::train(const vector<string> & batchFiles, int max_iter, DType threshold) {
 	// read one batch
-	int hiddenSize = (int)m_vecsHiddenNeurons.size();
+	size_t hiddenSize = m_vecsHiddenNeurons.size();
 	for (const auto & batchFile : batchFiles) {
 		for (int iter = 0; iter < max_iter; ++iter) {
 			ifstream ifs(batchFile);
@@ -184,13 +184,13 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::train(c
 				m_vecInputNeurons[2]->loadEmbedding((const DType**)m_pLabelMatrix, labels);
 				// foreward
 				m_lyrInputLayer.foreward(m_vecsHiddenNeurons[0], m_vecInputNeurons);
-				for (int i = 1; i < hiddenSize; ++i) {
+				for (size_t i = 1; i < hiddenSize; ++i) {
 					m_lyrHiddenLayers.foreward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 				}
 				m_lyrLossLayer.foreward(m_vecsHiddenNeurons.back().back());
 				// backward
 				m_lyrLossLayer.backward(m_vecsHiddenNeurons.back().back(), correctLabel);
-				for (int i = hiddenSize - 1; i > 0; --i) {
+				for (size_t i = hiddenSize - 1; i > 0; --i) {
 					m_lyrHiddenLayers.backward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 				}
 				m_lyrInputLayer.backward(m_vecsHiddenNeurons[0], m_vecInputNeurons);
@@ -199,10 +199,10 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::train(c
 				m_vecInputNeurons[2]->updateEmbedding(m_pLabelMatrixDiff, labels);
 			}
 			// update batch
-			for (int i = hiddenSize - 1; i > 0; --i) {
-				m_lyrHiddenLayers.update(m_vecsHiddenNeurons[i], (int)m_vecsHiddenNeurons[i - 1].size(), g_dMomentum, g_dLearningRate);
+			for (size_t i = hiddenSize - 1; i > 0; --i) {
+				m_lyrHiddenLayers.update(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1].size(), g_dMomentum, g_dLearningRate);
 			}
-			m_lyrInputLayer.update(m_vecsHiddenNeurons.front(), (int)m_vecInputNeurons.size(), g_dMomentum, g_dLearningRate);
+			m_lyrInputLayer.update(m_vecsHiddenNeurons.front(), m_vecInputNeurons.size(), g_dMomentum, g_dLearningRate);
 			DType norm = 0;
 			for (int i = 0; i < m_nWordNum; ++i) {
 				// word[i] = (-learning_rate) * word_diff[i] + momentum * word[i]
@@ -226,11 +226,11 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::train(c
 				}
 			}
 			for (const auto & neuron : m_vecsHiddenNeurons[0]) {
-				norm += neuron->norm2((int)m_vecInputNeurons.size());
+				norm += neuron->norm2(m_vecInputNeurons.size());
 			}
 			for (int i = 1; i < m_vecsHiddenNeurons.size(); ++i) {
 				for (const auto & neuron : m_vecsHiddenNeurons[i]) {
-					norm += neuron->norm2((int)m_vecsHiddenNeurons[i - 1].size());
+					norm += neuron->norm2(m_vecsHiddenNeurons[i - 1].size());
 				}
 			}
 			if (norm < threshold) {
