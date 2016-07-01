@@ -10,10 +10,14 @@
 #include "loss.hpp"
 #include "activation.hpp"
 #include "parser_net.hpp"
+#include "normal_generator.hpp"
+
+#include "data_generator.h"
 
 #pragma comment(lib, "lib\\libopenblas.lib")
 
 int main(int argc, char * argv[]) {
-	ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, std::default_random_engine, std::normal_distribution> parser(50, { {18 * 50, 18 * 50, 12 * 50}, {50 * 200}, {200 * 5} }, "embeddings");
-	parser.train({ "batches" }, 20, static_cast<float>(1e-5));
+	RandomGenerator<float> *generator = new NormalGenerator<float>(0.0, 0.1);
+	ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax> parser(50, { {18 * 50, 18 * 50, 12 * 50}, {200}, {5} }, "..\\x64\\Release\\embeddings", generator);
+	parser.train({ "..\\x64\\Release\\batch1" }, 1000, static_cast<float>(1e-10));
 }

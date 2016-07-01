@@ -4,3 +4,4 @@
 *.exe
 *.obj
 !/x64/Release/libopenblas.dll
+!/x64/Debug/libopenblas.dll

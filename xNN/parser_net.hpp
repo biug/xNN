@@ -12,11 +12,14 @@
 #include <string>
 #include <fstream>
 #include <sstream>
+#include <iostream>
 #include <unordered_map>
 
 #include "input_layer.hpp"
 #include "hidden_layer.hpp"
 #include "loss_layer.hpp"
+
+#include "random_generator.hpp"
 
 using std::vector;
 using std::string;
@@ -24,24 +27,24 @@ using std::ifstream;
 using std::stringstream;
 using std::unordered_map;
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
 class ParserNet {
-	const DType g_dMomentum = DType(0.95);
-	const DType g_dLearningRate = DType(0.001);
+	const DType g_dMomentum = static_cast<DType>(0.99 - 1e-8);
+	const DType g_dLearningRate = static_cast<DType>(0.001);
 
-	vector<InputNeuron<DType> *> m_vecInputNeurons;
-	vector<vector<HiddenNeuron<DType, Generator, Distribution> *>> m_vecsHiddenNeurons;
+	vector<InputNeuron<DType> *>	m_vecInputNeurons;
+	vector<vector<HiddenNeuron<DType> *>> m_vecsHiddenNeurons;
 
-	InputLayer<DType, Generator, Distribution> m_lyrInputLayer;
-	HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution> m_lyrHiddenLayers;
-	LossLayer<DType, Loss, PartialLoss, Generator, Distribution> m_lyrLossLayer;
+	InputLayer<DType> m_lyrInputLayer;
+	HiddenLayer<DType, Activation, PartialActivation> m_lyrHiddenLayers;
+	LossLayer<DType, Loss, PartialLoss> m_lyrLossLayer;
 
 	int m_nEmbeddingLen, m_nWordNum, m_nPOSNum, m_nLabelNum;
-	DType **m_pWordMatrix, **m_pPOSMatrix, **m_pLabelMatrix;
-	DType **m_pWordMatrixDiff, **m_pPOSMatrixDiff, **m_pLabelMatrixDiff;
+	DType *m_pWordMatrix, *m_pPOSMatrix, *m_pLabelMatrix;
+	DType *m_pWordMatrixDiff, *m_pPOSMatrixDiff, *m_pLabelMatrixDiff;
 	unordered_map<string, int> m_mapWordOrder, m_mapPOSOrder, m_mapLabelOrder;
 public:
-	ParserNet(int embeddingNum, const vector<vector<int>> & neuronLens, const string & embedding_file);
+	ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator);
 	~ParserNet();
 
 	void train(const vector<string> & batchFiles, int max_iter, DType threshold);
@@ -49,17 +52,17 @@ public:
 
 // definitions
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::ParserNet(int embeddingNum, const vector<vector<int>> & neuronLens, const string & embedding_file) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator) {
 	// init input neurons
-	for (int i = 0; i < neuronLens.front().size(); ++i) {
-		m_vecInputNeurons.push_back(new InputNeuron<DType>(embeddingNum, neuronLens[0][i]));
+	for (int i = 0; i < neuron_lens.front().size(); ++i) {
+		m_vecInputNeurons.push_back(new InputNeuron<DType>(embedding_num, neuron_lens[0][i]));
 	}
 	// init hidden neurons
-	for (int i = 1; i < neuronLens.size(); ++i) {
-		vector<HiddenNeuron<DType, Generator, Distribution> *> vecHiddenNeurons;
-		for (int j = 0; j < neuronLens[i].size(); ++j) {
-			vecHiddenNeurons.push_back(new HiddenNeuron<DType, Generator, Distribution>(neuronLens[i][j], neuronLens[i - 1]));
+	for (int i = 1; i < neuron_lens.size(); ++i) {
+		vector<HiddenNeuron<DType> *> vecHiddenNeurons;
+		for (int j = 0; j < neuron_lens[i].size(); ++j) {
+			vecHiddenNeurons.push_back(new HiddenNeuron<DType>(neuron_lens[i][j], neuron_lens[i - 1], generator));
 		}
 		m_vecsHiddenNeurons.push_back(vecHiddenNeurons);
 	}
@@ -70,47 +73,45 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Di
 	ifs >> m_nEmbeddingLen;
 	// init words
 	ifs >> m_nWordNum;
-	m_pWordMatrix = new DType*[m_nWordNum];
-	m_pWordMatrixDiff = new DType*[m_nWordNum];
-	for (int i = 0; i < m_nWordNum; ++i) {
+	m_pWordMatrix = new DType[m_nWordNum * m_nEmbeddingLen];
+	m_pWordMatrixDiff = new DType[m_nWordNum * m_nEmbeddingLen];
+	for (int i = 0, offset = 0; i < m_nWordNum; ++i) {
 		string word;
 		ifs >> word;
-		m_pWordMatrix[m_mapWordOrder[word] = i] = new DType[m_nEmbeddingLen];
-		m_pWordMatrixDiff[m_mapWordOrder[word] = i] = new DType[m_nEmbeddingLen];
+		m_mapWordOrder[word] = i;
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ifs >> m_pWordMatrix[i][j];
+			ifs >> m_pWordMatrix[offset++];
 		}
 	}
 	// init postags
 	ifs >> m_nPOSNum;
-	m_pPOSMatrix = new DType*[m_nPOSNum];
-	m_pPOSMatrixDiff = new DType*[m_nPOSNum];
-	for (int i = 0; i < m_nPOSNum; ++i) {
-		string POS;
-		ifs >> POS;
-		m_pPOSMatrix[m_mapPOSOrder[POS] = i] = new DType[m_nEmbeddingLen];
-		m_pPOSMatrixDiff[m_mapPOSOrder[POS] = i] = new DType[m_nEmbeddingLen];
+	m_pPOSMatrix = new DType[m_nPOSNum * m_nEmbeddingLen];
+	m_pPOSMatrixDiff = new DType[m_nPOSNum * m_nEmbeddingLen];
+	for (int i = 0, offset = 0; i < m_nPOSNum; ++i) {
+		string pos;
+		ifs >> pos;
+		m_mapPOSOrder[pos] = i;
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ifs >> m_pPOSMatrix[i][j];
+			ifs >> m_pPOSMatrix[offset++];
 		}
 	}
 	// init Labeltags
 	ifs >> m_nLabelNum;
-	m_pLabelMatrix = new DType*[m_nLabelNum];
-	m_pLabelMatrixDiff = new DType*[m_nLabelNum];
-	for (int i = 0; i < m_nLabelNum; ++i) {
+	m_pLabelMatrix = new DType[m_nLabelNum * m_nEmbeddingLen];
+	m_pLabelMatrixDiff = new DType[m_nLabelNum * m_nEmbeddingLen];
+	for (int i = 0, offset = 0; i < m_nLabelNum; ++i) {
 		string label;
 		ifs >> label;
-		m_pLabelMatrix[m_mapLabelOrder[label] = i] = new DType[m_nEmbeddingLen];
-		m_pLabelMatrixDiff[m_mapLabelOrder[label] = i] = new DType[m_nEmbeddingLen];
+		m_mapLabelOrder[label] = i;
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ifs >> m_pLabelMatrix[i][j];
+			ifs >> m_pLabelMatrix[offset++];
 		}
 	}
+	std::cout << "net init complete" << std::endl;
 }
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::~ParserNet() {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::~ParserNet() {
 	// free input neurons
 	for (int i = 0; i < m_vecInputNeurons.size(); ++i) {
 		delete m_vecInputNeurons[i];
@@ -122,19 +123,10 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Di
 		}
 	}
 	// free words
-	for (int i = 0; i < m_nWordNum; ++i) {
-		delete[] m_pWordMatrix[i];
-	}
 	delete[] m_pWordMatrix;
 	// free POSs
-	for (int i = 0; i < m_nPOSNum; ++i) {
-		delete[] m_pPOSMatrix[i];
-	}
 	delete[] m_pPOSMatrix;
 	// free labels
-	for (int i = 0; i < m_nLabelNum; ++i) {
-		delete[] m_pLabelMatrix[i];
-	}
 	delete[] m_pLabelMatrix;
 	// free maps
 	m_mapWordOrder.clear();
@@ -142,20 +134,29 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Di
 	m_mapLabelOrder.clear();
 }
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, typename Generator, template <typename> class Distribution>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generator, Distribution>::train(const vector<string> & batchFiles, int max_iter, DType threshold) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss>::train(const vector<string> & batch_files, int max_iter, DType threshold) {
 	// read one batch
 	size_t hiddenSize = m_vecsHiddenNeurons.size();
-	for (const auto & batchFile : batchFiles) {
+	for (const auto & batchFile : batch_files) {
 		for (int iter = 0; iter < max_iter; ++iter) {
 			ifstream ifs(batchFile);
 			string line;
 			stringstream ss;
-			int id;
+			int id, size;
+			// zero neuron diffs
+			for (const auto & neuron : m_vecsHiddenNeurons[0]) {
+				neuron->initDiff(m_vecInputNeurons.size());
+			}
+			for (int i = 1; i < m_vecsHiddenNeurons.size(); ++i) {
+				for (const auto & neuron : m_vecsHiddenNeurons[i]) {
+					neuron->initDiff(m_vecsHiddenNeurons[i - 1].size());
+				}
+			}
 			// zero embedding diffs
 			memset(m_pWordMatrixDiff, 0, m_nWordNum * m_nEmbeddingLen * sizeof(DType));
-			memset(m_pPOSMatrixDiff, 0, m_nWordNum * m_nEmbeddingLen * sizeof(DType));
-			memset(m_pLabelMatrixDiff, 0, m_nWordNum * m_nEmbeddingLen * sizeof(DType));
+			memset(m_pPOSMatrixDiff, 0, m_nPOSNum * m_nEmbeddingLen * sizeof(DType));
+			memset(m_pLabelMatrixDiff, 0, m_nLabelNum * m_nEmbeddingLen * sizeof(DType));
 			while (true) {
 				int correctLabel;
 				vector<int> words, poses, labels;
@@ -165,31 +166,44 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generato
 				while (ss >> id) {
 					words.push_back(id);
 				}
+				ss.clear();
 				getline(ifs, line);
 				ss << line;
 				while (ss >> id) {
 					poses.push_back(id);
 				}
+				ss.clear();
 				getline(ifs, line);
 				ss << line;
 				while (ss >> id) {
 					labels.push_back(id);
 				}
+				ss.clear();
 				getline(ifs, line);
 				ss << line;
 				ss >> correctLabel;
 				// load embeddings
-				m_vecInputNeurons[0]->loadEmbedding((const DType**)m_pWordMatrix, words);
-				m_vecInputNeurons[1]->loadEmbedding((const DType**)m_pPOSMatrix, poses);
-				m_vecInputNeurons[2]->loadEmbedding((const DType**)m_pLabelMatrix, labels);
+				m_vecInputNeurons[0]->loadEmbedding((const DType*)m_pWordMatrix, words);
+				m_vecInputNeurons[1]->loadEmbedding((const DType*)m_pPOSMatrix, poses);
+				m_vecInputNeurons[2]->loadEmbedding((const DType*)m_pLabelMatrix, labels);
 				// foreward
 				m_lyrInputLayer.foreward(m_vecsHiddenNeurons[0], m_vecInputNeurons);
 				for (size_t i = 1; i < hiddenSize; ++i) {
 					m_lyrHiddenLayers.foreward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 				}
 				m_lyrLossLayer.foreward(m_vecsHiddenNeurons.back().back());
+				std::cout << "loss vector len is " << m_vecsHiddenNeurons.back().back()->getVecLen() << std::endl;
+				for (size_t i = 0; i < m_vecsHiddenNeurons.back().back()->getVecLen(); ++i) {
+					std::cout << m_vecsHiddenNeurons.back().back()->getActive()[i] << ' ';
+				}
+				std::cout << std::endl;
 				// backward
 				m_lyrLossLayer.backward(m_vecsHiddenNeurons.back().back(), correctLabel);
+				std::cout << "partial loss vector len is " << m_vecsHiddenNeurons.back().back()->getVecLen() << std::endl;
+				for (size_t i = 0; i < m_vecsHiddenNeurons.back().back()->getVecLen(); ++i) {
+					std::cout << m_vecsHiddenNeurons.back().back()->getOutputDiff()[i] << ' ';
+				}
+				std::cout << std::endl;
 				for (size_t i = hiddenSize - 1; i > 0; --i) {
 					m_lyrHiddenLayers.backward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 				}
@@ -204,35 +218,33 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Generato
 			}
 			m_lyrInputLayer.update(m_vecsHiddenNeurons.front(), m_vecInputNeurons.size(), g_dMomentum, g_dLearningRate);
 			DType norm = 0;
-			for (int i = 0; i < m_nWordNum; ++i) {
-				// word[i] = (-learning_rate) * word_diff[i] + momentum * word[i]
-				alpha_vector_add_beta_vector(m_pWordMatrix[i], m_pWordMatrixDiff[i], -g_dLearningRate, g_dMomentum, m_nEmbeddingLen);
-				for (int j = 0; j < m_nEmbeddingLen; ++j) {
-					norm += m_pWordMatrixDiff[i][j] * m_pWordMatrixDiff[i][j];
-				}
+			size = m_nWordNum * m_nEmbeddingLen;
+			// word = (-learning_rate) * word_diff + momentum * word
+			alpha_vector_add_beta_vector(m_pWordMatrix, m_pWordMatrixDiff, -g_dLearningRate, g_dMomentum, size);
+			for (int i = 0; i < size; ++i) {
+				norm += std::abs(m_pWordMatrixDiff[i]);
 			}
-			for (int i = 0; i < m_nPOSNum; ++i) {
-				// pos[i] = (-learning_rate) * pos_diff[i] + momentum * pos[i]
-				alpha_vector_add_beta_vector(m_pPOSMatrix[i], m_pPOSMatrixDiff[i], -g_dLearningRate, g_dMomentum, m_nEmbeddingLen);
-				for (int j = 0; j < m_nEmbeddingLen; ++j) {
-					norm += m_pPOSMatrix[i][j] * m_pPOSMatrix[i][j];
-				}
+			size = m_nPOSNum * m_nEmbeddingLen;
+			// pos = (-learning_rate) * pos_diff + momentum * pos
+			alpha_vector_add_beta_vector(m_pPOSMatrix, m_pPOSMatrixDiff, -g_dLearningRate, g_dMomentum, size);
+			for (int i = 0; i < size; ++i) {
+				norm += std::abs(m_pPOSMatrixDiff[i]);
 			}
-			for (int i = 0; i < m_nWordNum; ++i) {
-				// label[i] = (-learning_rate) * label_diff[i] + momentum * label[i]
-				alpha_vector_add_beta_vector(m_pLabelMatrix[i], m_pLabelMatrixDiff[i], -g_dLearningRate, g_dMomentum, m_nEmbeddingLen);
-				for (int j = 0; j < m_nEmbeddingLen; ++j) {
-					norm += m_pLabelMatrix[i][j] * m_pLabelMatrix[i][j];
-				}
+			size = m_nLabelNum * m_nEmbeddingLen;
+			// label = (-learning_rate) * label_diff + momentum * label
+			alpha_vector_add_beta_vector(m_pLabelMatrix, m_pLabelMatrixDiff, -g_dLearningRate, g_dMomentum, size);
+			for (int i = 0; i < size; ++i) {
+				norm += std::abs(m_pLabelMatrixDiff[i]);
 			}
 			for (const auto & neuron : m_vecsHiddenNeurons[0]) {
-				norm += neuron->norm2(m_vecInputNeurons.size());
+				norm += neuron->norm1(m_vecInputNeurons.size());
 			}
 			for (int i = 1; i < m_vecsHiddenNeurons.size(); ++i) {
 				for (const auto & neuron : m_vecsHiddenNeurons[i]) {
-					norm += neuron->norm2(m_vecsHiddenNeurons[i - 1].size());
+					norm += neuron->norm1(m_vecsHiddenNeurons[i - 1].size());
 				}
 			}
+			std::cout << "iterator is " << iter << " norm is " << norm << std::endl;
 			if (norm < threshold) {
 				break;
 			}

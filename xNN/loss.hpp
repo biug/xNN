@@ -18,14 +18,9 @@ public:
 		for (int i = 0; i < len; ++i) {
 			sum += exp(input[i]);
 		}
-		if ((sum - 0) < 1e-6) {
-			memset(output, 0, sizeof(DType) * len);
-		}
-		else {
-			for (int i = 0; i < len; ++i) {
-				// f(x) = exp(x) / sum
-				output[i] = exp(input[i]) / sum;
-			}
+		for (int i = 0; i < len; ++i) {
+			// f(x) = exp(x) / sum
+			output[i] = exp(input[i]) / sum;
 		}
 	}
 };
@@ -38,14 +33,9 @@ public:
 		for (int i = 0; i < len; ++i) {
 			sum += exp(input[i]);
 		}
-		if ((sum - 0) < 1e-6) {
-			memset(output, 0, sizeof(DType) * len);
-		}
-		else {
-			for (int i = 0; i < len; ++i) {
-				// f(x) = exp(x) / sum
-				output[i] = exp(input[i]) / sum;
-			}
+		for (int i = 0; i < len; ++i) {
+			// f(x) = exp(x) / sum
+			output[i] = exp(input[i]) / sum;
 		}
 		output[correctLabel] -= 1;
 	}

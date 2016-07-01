@@ -27,8 +27,8 @@ public:
 	InputNeuron(int embeddingLen, int vecLen);
 	~InputNeuron();
 
-	void loadEmbedding(const DType ** embeddingMatrix, const std::vector<int> & ids);
-	void updateEmbedding(DType ** embeddingMatrixDiff, const std::vector<int> & ids);
+	void loadEmbedding(const DType * embeddingMatrix, const std::vector<int> & ids);
+	void updateEmbedding(DType * embeddingMatrixDiff, const std::vector<int> & ids);
 
 	inline int getVecLen() const {
 		return m_nVecLen;
@@ -69,19 +69,19 @@ InputNeuron<DType>::~InputNeuron() {
 }
 
 template<typename DType>
-void InputNeuron<DType>::loadEmbedding(const DType ** embeddingMatrix, const std::vector<int> & ids) {
+void InputNeuron<DType>::loadEmbedding(const DType * embeddingMatrix, const std::vector<int> & ids) {
 	int offset = 0;
 	for (const auto & id : ids) {
-		vector_copy_vector(m_pInput + offset, embeddingMatrix[id], m_nEmbeddingLen);
+		vector_copy_vector(&m_pInput[offset], &embeddingMatrix[id * m_nEmbeddingLen], m_nEmbeddingLen);
 		offset += m_nEmbeddingLen;
 	}
 }
 
 template<typename DType>
-void InputNeuron<DType>::updateEmbedding(DType ** embeddingMatrixDiff, const std::vector<int> & ids) {
+void InputNeuron<DType>::updateEmbedding(DType * embeddingMatrixDiff, const std::vector<int> & ids) {
 	int offset = 0;
 	for (const auto & id : ids) {
-		vector_add_vector(embeddingMatrixDiff[id], m_pInput + offset, m_nEmbeddingLen);
+		vector_add_vector(&embeddingMatrixDiff[id * m_nEmbeddingLen], &m_pInputDiff[offset], m_nEmbeddingLen);
 		offset += m_nEmbeddingLen;
 	}
 }

@@ -17,28 +17,28 @@
 using std::vector;
 using std::size_t;
 
-template<typename DType, typename Generator, template <typename> class Distribution>
+template<typename DType>
 class InputLayer {
 public:
 	InputLayer();
 	~InputLayer();
 
-	void foreward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<InputNeuron<DType> *> & downs);
+	void foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
 	
-	void backward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<InputNeuron<DType> *> & downs);
+	void backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
 	
-	void update(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, size_t downNum, DType momentum, DType learning_rate);
+	void update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate);
 };
 
 // definitions
 
-template<typename DType, typename Generator, template <typename> class Distribution>
-InputLayer<DType, Generator, Distribution>::InputLayer() {
+template<typename DType>
+InputLayer<DType>::InputLayer() {
 
 }
 
-template<typename DType, typename Generator, template <typename> class Distribution>
-InputLayer<DType, Generator, Distribution>::~InputLayer() {
+template<typename DType>
+InputLayer<DType>::~InputLayer() {
 
 }
 
@@ -46,10 +46,10 @@ InputLayer<DType, Generator, Distribution>::~InputLayer() {
  *	calculate :
  *		ups
 */
-template<typename DType, typename Generator, template <typename> class Distribution>
-void InputLayer<DType, Generator, Distribution>::foreward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<InputNeuron<DType> *> & downs) {
+template<typename DType>
+void InputLayer<DType>::foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
 	size_t downNum = downs.size();
-	for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+	for (HiddenNeuron<DType> * up : ups) {
 		int upLen = up->getVecLen();
 		// ups[j].output = ups[j].bias
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
@@ -66,19 +66,19 @@ void InputLayer<DType, Generator, Distribution>::foreward(const vector<HiddenNeu
  *		dLoss / dZ		of	downs
  *		dLoss / dWeight	of	ups		( for downs )
 */
-template<typename DType, typename Generator, template <typename> class Distribution>
-void InputLayer<DType, Generator, Distribution>::backward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<InputNeuron<DType> *> & downs) {
+template<typename DType>
+void InputLayer<DType>::backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
 	size_t downNum = downs.size();
 	for (size_t downId = 0; downId < downNum; ++downId) {
 		InputNeuron<DType> * down = downs[downId];
 		int downLen = down->getVecLen();
 		// downs[i].input_diff = 0
 		memset(down->getMutableInputDiff(), 0, sizeof(DType) * downLen);
-		for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+		for (HiddenNeuron<DType> * up : ups) {
 			// downs[i].input_diff += transpose(ups[j].output_diff) * ups[j].weight[i];
 			transpose_vector_mul_matrix_add_output(down->getMutableInputDiff(), up->getOutputDiff(), up->getWeight(downId), downLen, up->getVecLen());
 		}
-		for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+		for (HiddenNeuron<DType> * up : ups) {
 			// ups[j].weight_diff[i] += trans(downs[i].input) * ups[j].output_diff
 			vector_mul_vector_add_matrix(up->getMutableWeightDiff(downId), down->getInput(), up->getOutputDiff(), downLen, up->getVecLen());
 		}
@@ -90,9 +90,9 @@ void InputLayer<DType, Generator, Distribution>::backward(const vector<HiddenNeu
  *		Bias	of	ups
  *		Weight	of	ups ( for downs )
 */
-template<typename DType, typename Generator, template <typename> class Distribution>
-void InputLayer<DType, Generator, Distribution>::update(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, size_t downNum, DType momentum, DType learning_rate) {
-	for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+template<typename DType>
+void InputLayer<DType>::update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate) {
+	for (HiddenNeuron<DType> * up : ups) {
 		// ups[j].bias = (-learning_rate) * ups[j].bias_diff + momentum * ups[i].bias
 		alpha_vector_add_beta_vector(up->getMutableBias(), up->getBiasDiff(), -learning_rate, momentum, up->getVecLen());
 		for (int downId = 0; downId < downNum; ++downId) {

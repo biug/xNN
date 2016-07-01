@@ -15,7 +15,7 @@
 
 using std::vector;
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
 class HiddenLayer {
 	Activation<DType> m_foActivation;
 	PartialActivation<DType> m_foPartialActivation;
@@ -23,22 +23,22 @@ public:
 	HiddenLayer();
 	~HiddenLayer();
 
-	void foreward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<HiddenNeuron<DType, Generator, Distribution> *> & downs);
+	void foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<HiddenNeuron<DType> *> & downs);
 	
-	void backward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<HiddenNeuron<DType, Generator, Distribution> *> & downs);
+	void backward(const vector<HiddenNeuron<DType> *> & ups, const vector<HiddenNeuron<DType> *> & downs);
 	
-	void update(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, size_t downNum, DType momentum, DType learning_rate);
+	void update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate);
 };
 
 // definitions
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
-HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::HiddenLayer() {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
+HiddenLayer<DType, Activation, PartialActivation>::HiddenLayer() {
 
 }
 
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
-HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::~HiddenLayer() {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
+HiddenLayer<DType, Activation, PartialActivation>::~HiddenLayer() {
 
 }
 
@@ -48,19 +48,19 @@ HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::~Hid
  *	calculate :
  *		ups
 */
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
-void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::foreward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<HiddenNeuron<DType, Generator, Distribution> *> & downs) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
+void HiddenLayer<DType, Activation, PartialActivation>::foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<HiddenNeuron<DType> *> & downs) {
 	size_t downNum = downs.size();
-	for (HiddenNeuron<DType, Generator, Distribution> * down : downs) {
+	for (HiddenNeuron<DType> * down : downs) {
 		// downs[i].active = sigma(downs[i].output)
 		m_foActivation(down->getMutableActive(), down->getOutput(), down->getVecLen());
 	}
-	for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+	for (HiddenNeuron<DType> * up : ups) {
 		int upLen = up->getVecLen();
 		// ups[j].output = ups[j].bias
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
 		for (size_t downId = 0; downId < downNum; ++downId) {
-			HiddenNeuron<DType, Generator, Distribution> * down = downs[downId];
+			HiddenNeuron<DType> * down = downs[downId];
 			// ups[j].output += downs[i].active * ups[j].weight[i]
 			vector_mul_matrix_add_output(up->getMutableOutput(), down->getActive(), up->getWeight(downId), down->getVecLen(), upLen);
 		}
@@ -73,17 +73,17 @@ void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>:
  *		dLoss / dBias	of	downs
  *		dLoss / dWeight	of	ups		( for downs )
 */
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
-void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::backward(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, const vector<HiddenNeuron<DType, Generator, Distribution> *> & downs) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
+void HiddenLayer<DType, Activation, PartialActivation>::backward(const vector<HiddenNeuron<DType> *> & ups, const vector<HiddenNeuron<DType> *> & downs) {
 	size_t downNum = downs.size();
 	for (size_t downId = 0; downId < downNum; ++downId) {
-		HiddenNeuron<DType, Generator, Distribution> * down = downs[downId];
+		HiddenNeuron<DType> * down = downs[downId];
 		int downLen = down->getVecLen();
 		// downs[i].output_diff = 0
 		memset(down->getMutableOutputDiff(), 0, sizeof(DType) * downLen);
 		// downs[i].active_partial = sigma'(downs[i].output)
 		m_foPartialActivation(down->getMutableActivePartial(), down->getOutput(), downLen);
-		for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+		for (HiddenNeuron<DType> * up : ups) {
 			// downs[i].output_diff += transpose(ups[j].output_diff) * ups[j].weight[i];
 			transpose_vector_mul_matrix_add_output(down->getMutableOutputDiff(), up->getOutputDiff(), up->getWeight(downId), downLen, up->getVecLen());
 		}
@@ -91,7 +91,7 @@ void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>:
 		vector_hadamard_product(down->getMutableOutputDiff(), down->getActivePartial(), downLen);
 		// downs[i].bias_diff += downs[i].output_diff
 		vector_add_vector(down->getMutableBiasDiff(), down->getOutputDiff(), downLen);
-		for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+		for (HiddenNeuron<DType> * up : ups) {
 			// ups[j].weight_diff[i] += trans(downs[i].active) * ups[j].output_diff
 			vector_mul_vector_add_matrix(up->getMutableWeightDiff(downId), down->getActive(), up->getOutputDiff(), downLen, up->getVecLen());
 		}
@@ -103,9 +103,9 @@ void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>:
 *		Bias	of	ups
 *		Weight	of	ups ( for downs )
 */
-template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, typename Generator, template <typename> class Distribution>
-void HiddenLayer<DType, Activation, PartialActivation, Generator, Distribution>::update(const vector<HiddenNeuron<DType, Generator, Distribution> *> & ups, size_t downNum, DType momentum, DType learning_rate) {
-	for (HiddenNeuron<DType, Generator, Distribution> * up : ups) {
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
+void HiddenLayer<DType, Activation, PartialActivation>::update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate) {
+	for (HiddenNeuron<DType> * up : ups) {
 		// ups[j].bias = (-learning_rate) * ups[j].bias_diff + momentum * ups[i].bias
 		alpha_vector_add_beta_vector(up->getMutableBias(), up->getBiasDiff(), -learning_rate, momentum, up->getVecLen());
 		for (size_t downId = 0; downId < downNum; ++downId) {

@@ -8,12 +8,15 @@
 #ifndef HIDDEN_NEURON_HPP_
 #define HIDDEN_NEURON_HPP_
 
+#include <cmath>
 #include <vector>
+
+#include "random_generator.hpp"
 
 using std::vector;
 using std::size_t;
 
-template<typename DType, typename Generator, template <typename> class Distribution>
+template<typename DType>
 class HiddenNeuron {
 	// vector length
 	int m_nVecLen;
@@ -39,12 +42,11 @@ class HiddenNeuron {
 	// dLoss / dw
 	DType * m_pWeightDiffs;
 
-	Generator m_Generator;
-	Distribution<DType> m_Distribution;
-
 public:
-	HiddenNeuron(int vecLen, const vector<int> & downLens);
+	HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator);
 	~HiddenNeuron();
+
+	void initDiff(size_t downNum);
 
 	inline int getVecLen() const {
 		return m_nVecLen;
@@ -104,6 +106,7 @@ public:
 		return &m_pWeightDiffs[m_pWeightOffsets[down_id]];
 	}
 
+	DType norm1(size_t downNum) const;
 	DType norm2(size_t downNum) const;
 };
 
@@ -114,8 +117,8 @@ public:
 *	we call up-layers' size ni, and vector size m
 *	so weight wi is matrix which size is m * ni
 */
-template<typename DType, typename Generator, template <typename> class Distribution>
-HiddenNeuron<DType, Generator, Distribution>::HiddenNeuron(int vecLen, const vector<int> & downLens) : m_nVecLen(vecLen) {
+template<typename DType>
+HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen) {
 	size_t downNum = downLens.size();
 	m_pOutput = new DType[m_nVecLen];
 	m_pOutputDiff = new DType[m_nVecLen];
@@ -125,14 +128,14 @@ HiddenNeuron<DType, Generator, Distribution>::HiddenNeuron(int vecLen, const vec
 	m_pBiasDiff = new DType[m_nVecLen];
 
 	for (int i = 0; i < m_nVecLen; ++i) {
-		m_pBias[i] = m_Distribution(m_Generator);
+		m_pBias[i] = generator->generate();
 	}
 
 	m_pWeightOffsets = new int[downNum + 1];
 	m_pWeightSizes = new int[downNum];
 	m_pWeightOffsets[0] = 0;
 	for (size_t i = 1; i <= downNum; ++i) {
-		m_pWeightOffsets[i] = m_pWeightOffsets[i - 1] + downLens[i] * m_nVecLen;
+		m_pWeightOffsets[i] = m_pWeightOffsets[i - 1] + downLens[i - 1] * m_nVecLen;
 		m_pWeightSizes[i - 1] = m_pWeightOffsets[i] - m_pWeightOffsets[i - 1];
 	}
 
@@ -140,12 +143,12 @@ HiddenNeuron<DType, Generator, Distribution>::HiddenNeuron(int vecLen, const vec
 	m_pWeightDiffs = new DType[m_pWeightOffsets[downNum]];
 
 	for (int i = 0, n = m_pWeightOffsets[downNum]; i < n; ++i) {
-		m_pWeights[i] = m_Distribution(m_Generator);
+		m_pWeights[i] = generator->generate();
 	}
 }
 
-template<typename DType, typename Generator, template <typename> class Distribution>
-HiddenNeuron<DType, Generator, Distribution>::~HiddenNeuron() {
+template<typename DType>
+HiddenNeuron<DType>::~HiddenNeuron() {
 	delete[] m_pOutput;
 	delete[] m_pOutputDiff;
 	delete[] m_pActive;
@@ -160,15 +163,32 @@ HiddenNeuron<DType, Generator, Distribution>::~HiddenNeuron() {
 	delete[] m_pWeightDiffs;
 }
 
-template<typename DType, typename Generator, template <typename> class Distribution>
-DType HiddenNeuron<DType, Generator, Distribution>::norm2(size_t downNum) const {
+template<typename DType>
+void HiddenNeuron<DType>::initDiff(size_t downNum) {
+	memset(m_pBiasDiff, 0, sizeof(DType) * m_nVecLen);
+	memset(m_pWeightDiffs, 0, sizeof(DType) * m_pWeightOffsets[downNum]);
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::norm1(size_t downNum) const {
+	DType norm = 0;
+	for (int i = 0; i < m_nVecLen; ++i) {
+		norm += std::abs(m_pBiasDiff[i]);
+	}
+	for (size_t i = 0, n = m_pWeightOffsets[downNum]; i < n; ++i) {
+		norm += std::abs(m_pWeightDiffs[i]);
+	}
+	return norm;
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::norm2(size_t downNum) const {
 	DType norm = 0;
 	for (int i = 0; i < m_nVecLen; ++i) {
 		norm += m_pBiasDiff[i] * m_pBiasDiff[i];
 	}
-	for (size_t i = 0; i < downNum; ++i) {
-		for (int j = m_pWeightOffsets[i]; j < m_pWeightSizes[i]; ++j)
-			norm += m_pWeightDiffs[j] * m_pWeightDiffs[j];
+	for (size_t i = 0, n = m_pWeightOffsets[downNum]; i < n; ++i) {
+		norm += m_pWeightDiffs[i] * m_pWeightDiffs[i];
 	}
 	return norm;
 }
