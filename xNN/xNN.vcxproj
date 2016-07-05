@@ -143,6 +143,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="adagrad_updator.hpp" />
     <ClInclude Include="data_generator.h" />
     <ClInclude Include="hidden_layer.hpp" />
     <ClInclude Include="hidden_neuron.hpp" />
@@ -152,12 +153,14 @@
     <ClInclude Include="input_neuron.hpp" />
     <ClInclude Include="loss.hpp" />
     <ClInclude Include="loss_layer.hpp" />
+    <ClInclude Include="macros.h" />
     <ClInclude Include="myblas.hpp" />
     <ClInclude Include="normal_generator.hpp" />
     <ClInclude Include="parser_net.hpp" />
     <ClInclude Include="random_generator.hpp" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="activation.hpp" />
+    <ClInclude Include="sgd_updator.hpp" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="data_generator.cpp" />

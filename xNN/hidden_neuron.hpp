@@ -56,6 +56,10 @@ public:
 		return m_pWeightSizes[down_id];
 	}
 
+	inline int getDownWeightOffset(size_t down_id) const {
+		return m_pWeightOffsets[down_id];
+	}
+
 	inline DType * getMutableOutput() {
 		return m_pOutput;
 	}
@@ -106,8 +110,14 @@ public:
 		return &m_pWeightDiffs[m_pWeightOffsets[down_id]];
 	}
 
-	DType norm1(size_t downNum) const;
-	DType norm2(size_t downNum) const;
+	DType norm1(size_t down_num) const;
+	DType norm2(size_t down_num) const;
+
+	DType getWeightNorm1(size_t down_id) const;
+	DType getBiasNorm1() const;
+
+	DType getWeightNorm2(size_t down_id) const;
+	DType getBiasNorm2() const;
 };
 
 // definitions
@@ -164,31 +174,67 @@ HiddenNeuron<DType>::~HiddenNeuron() {
 }
 
 template<typename DType>
-void HiddenNeuron<DType>::initDiff(size_t downNum) {
+void HiddenNeuron<DType>::initDiff(size_t down_num) {
 	memset(m_pBiasDiff, 0, sizeof(DType) * m_nVecLen);
-	memset(m_pWeightDiffs, 0, sizeof(DType) * m_pWeightOffsets[downNum]);
+	memset(m_pWeightDiffs, 0, sizeof(DType) * m_pWeightOffsets[down_num]);
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::norm1(size_t downNum) const {
+DType HiddenNeuron<DType>::norm1(size_t down_num) const {
 	DType norm = 0;
 	for (int i = 0; i < m_nVecLen; ++i) {
 		norm += std::abs(m_pBiasDiff[i]);
 	}
-	for (size_t i = 0, n = m_pWeightOffsets[downNum]; i < n; ++i) {
+	for (size_t i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
 		norm += std::abs(m_pWeightDiffs[i]);
 	}
 	return norm;
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::norm2(size_t downNum) const {
+DType HiddenNeuron<DType>::norm2(size_t down_num) const {
 	DType norm = 0;
 	for (int i = 0; i < m_nVecLen; ++i) {
 		norm += m_pBiasDiff[i] * m_pBiasDiff[i];
 	}
-	for (size_t i = 0, n = m_pWeightOffsets[downNum]; i < n; ++i) {
+	for (size_t i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
 		norm += m_pWeightDiffs[i] * m_pWeightDiffs[i];
+	}
+	return norm;
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::getWeightNorm1(size_t down_id) const {
+	DType norm = 0;
+	for (size_t i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
+		norm += std::abs(m_pWeightDiffs[i]);
+	}
+	return norm;
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::getBiasNorm1() const {
+	DType norm = 0;
+	for (int i = 0; i < m_nVecLen; ++i) {
+		norm += std::abs(m_pBiasDiff[i]);
+	}
+	return norm;
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::getWeightNorm2(size_t down_id) const {
+	DType norm = 0;
+	for (size_t i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
+		norm += m_pWeightDiffs[i] * m_pWeightDiffs[i];
+	}
+	return norm;
+}
+
+template<typename DType>
+DType HiddenNeuron<DType>::getBiasNorm2() const {
+	DType norm = 0;
+	for (int i = 0; i < m_nVecLen; ++i) {
+		norm += m_pBiasDiff[i] * m_pBiasDiff[i];
 	}
 	return norm;
 }

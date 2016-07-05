@@ -20,7 +20,7 @@ public:
 		}
 		for (int i = 0; i < len; ++i) {
 			// f(x) = exp(x) / sum
-			output[i] = exp(input[i]) / sum;
+			output[i] =  -log(exp(input[i]) / sum);
 		}
 	}
 };

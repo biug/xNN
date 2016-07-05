@@ -26,8 +26,6 @@ public:
 	void foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
 	
 	void backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
-	
-	void update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate);
 };
 
 // definitions
@@ -84,24 +82,5 @@ void InputLayer<DType>::backward(const vector<HiddenNeuron<DType> *> & ups, cons
 		}
 	}
 }
-
-/*
- *	update :
- *		Bias	of	ups
- *		Weight	of	ups ( for downs )
-*/
-template<typename DType>
-void InputLayer<DType>::update(const vector<HiddenNeuron<DType> *> & ups, size_t downNum, DType momentum, DType learning_rate) {
-	for (HiddenNeuron<DType> * up : ups) {
-		// ups[j].bias = (-learning_rate) * ups[j].bias_diff + momentum * ups[i].bias
-		alpha_vector_add_beta_vector(up->getMutableBias(), up->getBiasDiff(), -learning_rate, momentum, up->getVecLen());
-		for (int downId = 0; downId < downNum; ++downId) {
-			// ups[j].weight[i] = (-learning_rate) * ups[j].weight_diff[i] + momentum * ups[j].weight[i]
-			alpha_vector_add_beta_vector(up->getMutableWeight(downId), up->getWeightDiff(downId), -learning_rate, momentum, up->getDownWeightSize(downId));
-		}
-	}
-}
-
-
 
 #endif /* INPUT_LAYER_HPP_ */

@@ -16,7 +16,7 @@ class RandomGenerator {
 protected:
 	RandomEngine m_Engine;
 public:
-	RandomGenerator() : m_Engine(std::time(nullptr)) {}
+	RandomGenerator() : m_Engine((unsigned int)std::time(nullptr)) {}
 	~RandomGenerator() {}
 
 	virtual DType generate() = 0;
