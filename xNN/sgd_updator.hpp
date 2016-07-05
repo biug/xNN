@@ -66,19 +66,19 @@ DType SGDUpdator<DType, Neuron>::update(int batch) {
 		DType * vec = &m_pWeightVec[m_pNeuron->getDownWeightOffset(i)];
 		int vecSize = m_pNeuron->getDownWeightSize(i);
 		alpha_vector_add_beta_vector(vec, m_pNeuron->getWeightDiff(i), -(DType)SGD_ALPHA / (DType)batch, (DType)SGD_MOMENTUM, vecSize);
-		vector_add_vector(m_pNeuron->getMutableWeight(i), vec, vecSize);
+		alpha_vector_add_beta_vector(m_pNeuron->getMutableWeight(i), vec, (DType)1, (DType)(1 - REGULA_LAMDA), vecSize);
 	}
 	DType biasNorm = m_pNeuron->getBiasNorm1();
 
 	norm += biasNorm;
 	alpha_vector_add_beta_vector(m_pBiasVec, m_pNeuron->getBiasDiff(), -(DType)SGD_ALPHA / (DType)batch, (DType)SGD_MOMENTUM, m_pNeuron->getVecLen());
-	vector_add_vector(m_pNeuron->getMutableBias(), m_pBiasVec, m_pNeuron->getVecLen());
+	alpha_vector_add_beta_vector(m_pNeuron->getMutableBias(), m_pBiasVec, (DType)1, (DType)(1 - REGULA_LAMDA), m_pNeuron->getVecLen());
 	return norm;
 }
 template<typename DType, template<typename> class Neuron>
 void SGDUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, DType norm, int size, int batch) {
 	alpha_vector_add_beta_vector(m_pBiasVec, args_diff, -(DType)SGD_ALPHA / (DType)batch, (DType)SGD_MOMENTUM, size);
-	vector_add_vector(args, m_pBiasVec, size);
+	alpha_vector_add_beta_vector(args, m_pBiasVec, (DType)1, (DType)(1 - REGULA_LAMDA), size);
 }
 
 #endif

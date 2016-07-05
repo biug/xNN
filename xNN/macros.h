@@ -1,7 +1,8 @@
 #ifndef MACROS_H
 #define MACROS_H
 
-#define	GD_THRESHOLD	1e-8
+#define	SGD_THRESHOLD		1e-4
+#define ADAGRAD_THRESHOLD	1e-8
 
 #define	REGULA_LAMDA	1e-8
 

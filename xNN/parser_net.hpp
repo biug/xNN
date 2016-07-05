@@ -31,7 +31,7 @@ using std::unordered_map;
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
 class ParserNet {
 	int m_nBatchSize;
-	DType m_dLastNorm;
+	DType m_dLastValue;
 	size_t m_nHiddenSize;
 
 	vector<InputNeuron<DType> *> m_vecInputNeurons;
@@ -58,7 +58,7 @@ class ParserNet {
 	void initBatch();
 	void foreward();
 	void backward();
-	bool update(DType threshold);
+	void update();
 public:
 	ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator);
 	~ParserNet();
@@ -256,13 +256,13 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::update(DType threshold) {
-	if (m_nBatchSize == 0) return false;
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::update() {
+	if (m_nBatchSize == 0) return;
 	int size;
-	DType norm = 0;
+	DType norm = DType();
 	// word embedding norm
 	size = m_nWordNum * m_nEmbeddingLen;
-	DType word_norm = 0;
+	DType word_norm = DType();
 	for (int i = 0; i < size; ++i) {
 		word_norm += std::abs(m_pWordMatrixDiff[i]);
 	}
@@ -270,7 +270,7 @@ bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	m_WordUpdator->update(m_pWordMatrix, m_pWordMatrixDiff, word_norm, size, m_nBatchSize);
 	// pos embedding norm
 	size = m_nPOSNum * m_nEmbeddingLen;
-	DType pos_norm = 0;
+	DType pos_norm = DType();
 	for (int i = 0; i < size; ++i) {
 		pos_norm += std::abs(m_pPOSMatrixDiff[i]);
 	}
@@ -278,7 +278,7 @@ bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	m_POSUpdator->update(m_pPOSMatrix, m_pPOSMatrixDiff, pos_norm, size, m_nBatchSize);
 	// label embedding norm
 	size = m_nLabelNum * m_nEmbeddingLen;
-	DType label_norm = 0;
+	DType label_norm = DType();
 	for (int i = 0; i < size; ++i) {
 		label_norm += std::abs(m_pLabelMatrixDiff[i]);
 	}
@@ -290,10 +290,6 @@ bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 			norm += updator->update(m_nBatchSize);
 		}
 	}
-	DType diff = std::abs(m_dLastNorm - norm);
-	m_dLastNorm = norm;
-	std::cout << "diff is " << diff << std::endl;
-	return diff < threshold;
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
@@ -301,21 +297,29 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	// read one batch
 	for (const auto & batchFile : batch_files) {
 		// zero norm
-		m_dLastNorm = 0;
+		m_dLastValue = DType();
 		for (int iter = 0; iter < max_iter; ++iter) {
 			initBatch();
 			ifstream ifs(batchFile);
+			DType value = DType();
 			while (readOneAction(ifs)) {
 				foreward();
 				backward();
+				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
+			}
+			update();
+			if (std::abs(m_dLastValue - value) < threshold) {
+				break;
+			}
+			m_dLastValue = value;
+			if (iter % 10 == 0) {
+				std::cout << "value = " << m_dLastValue << std::endl;
 				std::cout << "loss vector len is " << m_vecsHiddenNeurons.back().back()->getVecLen() << std::endl;
 				for (size_t i = 0; i < m_vecsHiddenNeurons.back().back()->getVecLen(); ++i) {
 					std::cout << m_vecsHiddenNeurons.back().back()->getActive()[i] << ' ';
 				}
 				std::cout << std::endl;
 			}
-			if (iter % 100 == 0) std::cout << "iter " << iter << std::endl;
-			if (update(threshold)) break;
 		}
 	}
 }
