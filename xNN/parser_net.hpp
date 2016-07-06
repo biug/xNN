@@ -8,6 +8,7 @@
 #ifndef PARSER_NET_HPP_
 #define PARSER_NET_HPP_
 
+#include <ctime>
 #include <vector>
 #include <string>
 #include <fstream>
@@ -47,6 +48,7 @@ class ParserNet {
 	int m_nEmbeddingLen, m_nWordNum, m_nPOSNum, m_nLabelNum;
 	DType *m_pWordMatrix, *m_pPOSMatrix, *m_pLabelMatrix;
 	DType *m_pWordMatrixDiff, *m_pPOSMatrixDiff, *m_pLabelMatrixDiff;
+	vector<string> m_vecWords, m_vecPOSes, m_vecLabels;
 	unordered_map<string, int> m_mapWordOrder, m_mapPOSOrder, m_mapLabelOrder;
 
 	int m_nCorrectLabel;
@@ -64,6 +66,9 @@ public:
 	~ParserNet();
 
 	void train(const vector<string> & batchFiles, int max_iter, DType threshold);
+
+	void writeModel(const std::string & output);
+	void writeEmbeddings(const std::string & output);
 };
 
 // definitions
@@ -103,6 +108,7 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::Par
 		string word;
 		ifs >> word;
 		m_mapWordOrder[word] = i;
+		m_vecWords.push_back(word);
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
 			ifs >> m_pWordMatrix[offset++];
 		}
@@ -116,6 +122,7 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::Par
 		string pos;
 		ifs >> pos;
 		m_mapPOSOrder[pos] = i;
+		m_vecPOSes.push_back(pos);
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
 			ifs >> m_pPOSMatrix[offset++];
 		}
@@ -129,6 +136,7 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::Par
 		string label;
 		ifs >> label;
 		m_mapLabelOrder[label] = i;
+		m_vecLabels.push_back(label);
 		for (int j = 0; j < m_nEmbeddingLen; ++j) {
 			ifs >> m_pLabelMatrix[offset++];
 		}
@@ -204,6 +212,7 @@ bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	// read tags
 	ss << line;
 	ss >> m_nCorrectLabel;
+	return true;
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
@@ -258,36 +267,16 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
 void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::update() {
 	if (m_nBatchSize == 0) return;
-	int size;
-	DType norm = DType();
-	// word embedding norm
-	size = m_nWordNum * m_nEmbeddingLen;
-	DType word_norm = DType();
-	for (int i = 0; i < size; ++i) {
-		word_norm += std::abs(m_pWordMatrixDiff[i]);
-	}
-	norm += word_norm;
-	m_WordUpdator->update(m_pWordMatrix, m_pWordMatrixDiff, word_norm, size, m_nBatchSize);
-	// pos embedding norm
-	size = m_nPOSNum * m_nEmbeddingLen;
-	DType pos_norm = DType();
-	for (int i = 0; i < size; ++i) {
-		pos_norm += std::abs(m_pPOSMatrixDiff[i]);
-	}
-	norm += pos_norm;
-	m_POSUpdator->update(m_pPOSMatrix, m_pPOSMatrixDiff, pos_norm, size, m_nBatchSize);
-	// label embedding norm
-	size = m_nLabelNum * m_nEmbeddingLen;
-	DType label_norm = DType();
-	for (int i = 0; i < size; ++i) {
-		label_norm += std::abs(m_pLabelMatrixDiff[i]);
-	}
-	norm += label_norm;
-	m_LabelUpdator->update(m_pLabelMatrix, m_pLabelMatrixDiff, label_norm, size, m_nBatchSize);
+	// word embedding
+	m_WordUpdator->update(m_pWordMatrix, m_pWordMatrixDiff, m_nWordNum * m_nEmbeddingLen, m_nBatchSize);
+	// pos embedding
+	m_POSUpdator->update(m_pPOSMatrix, m_pPOSMatrixDiff, m_nPOSNum * m_nEmbeddingLen, m_nBatchSize);
+	// label embedding
+	m_LabelUpdator->update(m_pLabelMatrix, m_pLabelMatrixDiff, m_nLabelNum * m_nEmbeddingLen, m_nBatchSize);
 	// hidden neurons norm
 	for (auto && vecUpdators : m_vecsHiddenUpdators) {
 		for (auto && updator : vecUpdators) {
-			norm += updator->update(m_nBatchSize);
+			updator->update(m_nBatchSize);
 		}
 	}
 }
@@ -299,28 +288,72 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 		// zero norm
 		m_dLastValue = DType();
 		for (int iter = 0; iter < max_iter; ++iter) {
+			double timeFore = 0, timeBack = 0;
 			initBatch();
 			ifstream ifs(batchFile);
 			DType value = DType();
 			while (readOneAction(ifs)) {
+				clock_t s = clock();
 				foreward();
+				timeFore += clock() - s;
+				s = clock();
 				backward();
+				timeBack += clock() - s;
 				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
 			}
 			update();
-			if (std::abs(m_dLastValue - value) < threshold) {
+			if (iter % 1 == 0) {
+				std::cout << "value = " << value << std::endl;
+				std::cout << "foreward use time : " << timeFore / (double)CLOCKS_PER_SEC << std::endl;
+				std::cout << "backward use time : " << timeBack / (double)CLOCKS_PER_SEC << std::endl;
+			}
+			if (isnan(value) || std::abs(m_dLastValue - value) < threshold) {
 				break;
 			}
 			m_dLastValue = value;
-			if (iter % 10 == 0) {
-				std::cout << "value = " << m_dLastValue << std::endl;
-				std::cout << "loss vector len is " << m_vecsHiddenNeurons.back().back()->getVecLen() << std::endl;
-				for (size_t i = 0; i < m_vecsHiddenNeurons.back().back()->getVecLen(); ++i) {
-					std::cout << m_vecsHiddenNeurons.back().back()->getActive()[i] << ' ';
-				}
-				std::cout << std::endl;
-			}
 		}
+	}
+	writeModel("E:\\models");
+	writeEmbeddings("E:\\newEmbeddings");
+}
+
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::writeModel(const std::string & output) {
+	std::ofstream ofs(output);
+	for (size_t i = 0, n = m_vecsHiddenNeurons.size(); i < n; ++i) {
+		for (size_t j = 0, m = m_vecsHiddenNeurons[i].size(); j < m; ++j) {
+			ofs << *m_vecsHiddenNeurons[i][j] << std::endl;
+		}
+	}
+}
+
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::writeEmbeddings(const std::string & output) {
+	std::ofstream ofs(output);
+	ofs << m_nEmbeddingLen << std::endl;
+	ofs << m_nWordNum << std::endl;
+	for (int i = 0, offset = 0; i < m_nWordNum; ++i) {
+		ofs << m_vecWords[i] << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) {
+			ofs << m_pWordMatrix[offset++] << ' ';
+		}
+		ofs << std::endl;
+	}
+	ofs << m_nPOSNum << std::endl;
+	for (int i = 0, offset = 0; i < m_nPOSNum; ++i) {
+		ofs << m_vecPOSes[i] << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) {
+			ofs << m_pPOSMatrix[offset++] << ' ';
+		}
+		ofs << std::endl;
+	}
+	ofs << m_nLabelNum << std::endl;
+	for (int i = 0, offset = 0; i < m_nLabelNum; ++i) {
+		ofs << m_vecLabels[i] << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) {
+			ofs << m_pLabelMatrix[offset++] << ' ';
+		}
+		ofs << std::endl;
 	}
 }
 

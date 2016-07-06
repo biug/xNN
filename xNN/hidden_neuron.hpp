@@ -10,6 +10,7 @@
 
 #include <cmath>
 #include <vector>
+#include <iostream>
 
 #include "random_generator.hpp"
 
@@ -20,6 +21,8 @@ template<typename DType>
 class HiddenNeuron {
 	// vector length
 	int m_nVecLen;
+	// down num
+	size_t m_nDownNum;
 
 	// vector z
 	DType * m_pOutput;
@@ -50,6 +53,18 @@ public:
 
 	inline int getVecLen() const {
 		return m_nVecLen;
+	}
+
+	inline size_t getDownNum() const {
+		return m_nDownNum;
+	}
+
+	inline int & getMutableVecLen() {
+		return m_nVecLen;
+	}
+
+	inline size_t & getMutableDownNum() const {
+		return m_nDownNum;
 	}
 
 	inline int getDownWeightSize(size_t down_id) const {
@@ -118,6 +133,32 @@ public:
 
 	DType getWeightNorm2(size_t down_id) const;
 	DType getBiasNorm2() const;
+
+	friend std::istream & operator >> (std::istream & is, HiddenNeuron<DType> & neuron) {
+		is >> neuron.getMutableVecLen();
+		for (int i = 0, n = neuron.getVecLen(); i < n; ++i) {
+			is >> neuron.getMutableBias()[i];
+		}
+		is >> neuron.getMutableDownNum();
+		for (int i = 0, n = neuron.getDownWeightOffset(neuron.getDownNum()); i < n; ++i) {
+			is >> neuron.getMutableWeight(0)[i];
+		}
+		return is;
+	}
+
+	friend std::ostream & operator << (std::ostream & os, HiddenNeuron<DType> & neuron) {
+		os << neuron.getVecLen() << std::endl;
+		for (int i = 0; i < neuron.getVecLen(); ++i) {
+			os << neuron.getBias()[i] << ' ';
+		}
+		os << std::endl;
+		os << neuron.getDownWeightOffset(neuron.getDownNum()) << std::endl;
+		for (size_t i = 0, n = neuron.getDownWeightOffset(neuron.getDownNum()); i < n; ++i) {
+			os << neuron.getWeight(0)[i] << ' ';
+		}
+		os << std::endl;
+		return os;
+	}
 };
 
 // definitions
@@ -128,7 +169,7 @@ public:
 *	so weight wi is matrix which size is m * ni
 */
 template<typename DType>
-HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen) {
+HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen), m_nDownNum(downLens.size()) {
 	size_t downNum = downLens.size();
 	m_pOutput = new DType[m_nVecLen];
 	m_pOutputDiff = new DType[m_nVecLen];

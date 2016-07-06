@@ -14,7 +14,7 @@ template<typename DType>
 class Softmax {
 public:
 	inline void operator()(DType * output, const DType * input, int len) {
-		DType sum = 0;
+		DType sum = (DType)1e-10;
 		for (int i = 0; i < len; ++i) {
 			sum += exp(input[i]);
 		}
@@ -29,7 +29,7 @@ template<typename DType>
 class PartialSoftmax {
 public:
 	inline void operator()(DType * output, const DType * input, int correctLabel, int len) {
-		DType sum = 0;
+		DType sum = (DType)1e-10;
 		for (int i = 0; i < len; ++i) {
 			sum += exp(input[i]);
 		}

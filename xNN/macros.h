@@ -9,7 +9,7 @@
 #define	SGD_ALPHA		1e-2
 #define	SGD_MOMENTUM	0.95
 
-#define	ADAGRAD_ALPHA	1e-2
+#define	ADAGRAD_ALPHA	1e-3
 #define ADAGRAD_EPSILON	1e-8
 
 #define	MOMENTUM		0.95

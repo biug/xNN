@@ -19,48 +19,74 @@ using std::vector;
 template<typename DType, template<typename> class Neuron>
 class AdaGradUpdator {
 protected:
-	vector<DType> m_vecWeightSums;
-	DType m_dBiasSum;
+	size_t m_nDownNum;
+	DType * m_pBiasVec;
+	DType * m_pWeightVec;
 	Neuron<DType> * m_pNeuron;
 public:
 	AdaGradUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr);
 	AdaGradUpdator(const AdaGradUpdator<DType, Neuron> & updator);
 	~AdaGradUpdator() {}
 
-	DType update(int batch);
-	void update(DType * args, const DType * args_diff, DType norm, int size, int batch);
+	void update(int batch);
+	void update(DType * args, const DType * args_diff, int size, int batch);
 };
 
 template<typename DType, template<typename> class Neuron>
-AdaGradUpdator<DType, Neuron>::AdaGradUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr) :
-	m_vecWeightSums(downNum, (DType)ADAGRAD_EPSILON), m_dBiasSum((DType)ADAGRAD_EPSILON), m_pNeuron(neuron) {}
+AdaGradUpdator<DType, Neuron>::AdaGradUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
+	const DType epsilon = 1e-10;
+
+	if (neuron != nullptr) {
+		m_pBiasVec = new DType[neuron->getVecLen()];
+		m_pWeightVec = new DType[neuron->getDownWeightOffset(downNum)];
+		for (int i = 0, n = neuron->getVecLen(); i < n; ++i) {
+			m_pBiasVec[i] = epsilon;
+		}
+		for (int i = 0, n = neuron->getDownWeightOffset(m_nDownNum); i < n; ++i) {
+			m_pWeightVec[i] = epsilon;
+		}
+	}
+	else {
+		m_pBiasVec = new DType[downNum];
+		for (int i = 0; i < downNum; ++i) {
+			m_pBiasVec[i] = epsilon;
+		}
+	}
+}
 
 template<typename DType, template<typename> class Neuron>
 AdaGradUpdator<DType, Neuron>::AdaGradUpdator(const AdaGradUpdator<DType, Neuron> & updator) :
 	m_vecWeightSums(updator.m_vecWeightSums), m_dBiasSum(updator.m_dBiasSum), m_pNeuron(updator.m_pNeuron) {}
 
 template<typename DType, template<typename> class Neuron>
-DType AdaGradUpdator<DType, Neuron>::update(int batch) {
-	DType norm = 0;
-	for (size_t i = 0, n = m_vecWeightSums.size(); i < n; ++i) {
-		DType weightNorm = m_pNeuron->getWeightNorm1(i);
+void AdaGradUpdator<DType, Neuron>::update(int batch) {
+	const DType yita = (DType)ADAGRAD_ALPHA;
+	const DType alpha = (DType)(1 - REGULA_LAMDA);
 
-		norm += weightNorm;
-		m_vecWeightSums[i] += weightNorm;
-		alpha_vector_add_beta_vector(m_pNeuron->getMutableWeight(i), m_pNeuron->getWeightDiff(i), -(DType)ADAGRAD_ALPHA / sqrt(m_vecWeightSums[i]) / (DType)batch, (DType)(1 - REGULA_LAMDA), m_pNeuron->getDownWeightSize(i));
+	const DType * biasDiff = m_pNeuron->getBiasDiff();
+	const DType * weightDiff = m_pNeuron->getWeightDiff(0);
+	DType * bias = m_pNeuron->getMutableBias();
+	DType * weight = m_pNeuron->getMutableWeight(0);
+
+	for (int i = 0, n = m_pNeuron->getVecLen(); i < n; ++i) {
+		m_pBiasVec[i] += biasDiff[i] * biasDiff[i];
+		bias[i] = alpha * bias[i] - yita / sqrt(m_pBiasVec[i]) * biasDiff[i];
 	}
-	DType biasNorm = m_pNeuron->getBiasNorm1();
 
-	norm += biasNorm;
-	m_dBiasSum += biasNorm;
-	alpha_vector_add_beta_vector(m_pNeuron->getMutableBias(), m_pNeuron->getBiasDiff(), -(DType)ADAGRAD_ALPHA / sqrt(m_dBiasSum) / (DType)batch, (DType)(1 - REGULA_LAMDA), m_pNeuron->getVecLen());
-
-	return norm;
+	for (int i = 0, n = m_pNeuron->getDownWeightOffset(m_nDownNum); i < n; ++i) {
+		m_pWeightVec[i] += weightDiff[i] * weightDiff[i];
+		weight[i] = alpha * weight[i] - yita / sqrt(m_pWeightVec[i]) * weightDiff[i];
+	}
 }
 template<typename DType, template<typename> class Neuron>
-void AdaGradUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, DType norm, int size, int batch) {
-	m_dBiasSum += norm;
-	alpha_vector_add_beta_vector(args, args_diff, -(DType)ADAGRAD_ALPHA / sqrt(m_dBiasSum) / (DType)batch, (DType)(1 - REGULA_LAMDA), size);
+void AdaGradUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, int size, int batch) {
+	const DType yita = (DType)ADAGRAD_ALPHA;
+	const DType alpha = (DType)(1 - REGULA_LAMDA);
+
+	for (int i = 0; i < size; ++i) {
+		m_pBiasVec[i] += args_diff[i] * args_diff[i];
+		args[i] = alpha * args[i] - yita / sqrt(m_pBiasVec[i]) * args_diff[i];
+	}
 }
 
 #endif

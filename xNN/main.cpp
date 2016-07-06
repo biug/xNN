@@ -22,8 +22,9 @@
 int main(int argc, char * argv[]) {
 	std::ios_base::sync_with_stdio(false);
 	std::cin.tie(nullptr);
+	//generateEmbeddings("E:\\token", "E:\\embeddings", 50);
 	RandomGenerator<float> *generator = new NormalGenerator<float>((float)0.0, (float)0.1);
-	//ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, AdaGradUpdator> parser(50, { {18 * 50, 18 * 50, 12 * 50}, {200}, {5} }, "..\\x64\\Release\\embeddings", generator);
-	ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, SGDUpdator> parser(50, { { 18 * 50, 18 * 50, 12 * 50 },{ 200 },{ 5 } }, "..\\x64\\Release\\embeddings", generator);
-	parser.train({ "..\\x64\\Release\\batch1" }, 5000, static_cast<float>(SGD_THRESHOLD));
+	ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, AdaGradUpdator> parser(50, { {18 * 50, 18 * 50, 12 * 50}, {200}, {69} }, "E:\\embeddings", generator);
+	//ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, SGDUpdator> parser(50, { { 18 * 50, 18 * 50, 12 * 50 },{ 200 },{ 69 } }, "E:\\embeddings", generator);
+	parser.train({ "E:\\batch1" }, 30, static_cast<float>(ADAGRAD_THRESHOLD));
 }

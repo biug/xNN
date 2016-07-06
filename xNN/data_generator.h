@@ -3,6 +3,6 @@
 
 #include <vector>
 
-void generateEmbeddings(const std::string & embeddings_file, int vec_len, int word_num, int pos_num, int label_num);
+void generateEmbeddings(const std::string & token_file, const std::string & embeddings_file, int vec_len);
 
 #endif
