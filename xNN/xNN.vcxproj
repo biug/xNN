@@ -144,7 +144,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="adagrad_updator.hpp" />
+    <ClInclude Include="base_action.h" />
+    <ClInclude Include="base_state.h" />
     <ClInclude Include="data_generator.h" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="graph.h" />
     <ClInclude Include="hidden_layer.hpp" />
     <ClInclude Include="hidden_neuron.hpp" />
     <ClInclude Include="include\openblas\cblas.h" />
@@ -161,10 +165,18 @@
     <ClInclude Include="resource.h" />
     <ClInclude Include="activation.hpp" />
     <ClInclude Include="sgd_updator.hpp" />
+    <ClInclude Include="token.h" />
+    <ClInclude Include="twostack_action.h" />
+    <ClInclude Include="twostack_state.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="base_action.cpp" />
+    <ClCompile Include="base_state.cpp" />
     <ClCompile Include="data_generator.cpp" />
+    <ClCompile Include="graph.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="twostack_action.cpp" />
+    <ClCompile Include="twostack_state.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="xNN.rc" />

@@ -19,12 +19,12 @@ using std::vector;
 template<typename DType, template<typename> class Neuron>
 class AdaGradUpdator {
 protected:
-	size_t m_nDownNum;
+	int m_nDownNum;
 	DType * m_pBiasVec;
 	DType * m_pWeightVec;
 	Neuron<DType> * m_pNeuron;
 public:
-	AdaGradUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr);
+	AdaGradUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr);
 	AdaGradUpdator(const AdaGradUpdator<DType, Neuron> & updator);
 	~AdaGradUpdator() {}
 
@@ -33,8 +33,8 @@ public:
 };
 
 template<typename DType, template<typename> class Neuron>
-AdaGradUpdator<DType, Neuron>::AdaGradUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
-	const DType epsilon = 1e-10;
+AdaGradUpdator<DType, Neuron>::AdaGradUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
+	const DType epsilon = static_cast<DType>(GLOBAL_EPSILON);
 
 	if (neuron != nullptr) {
 		m_pBiasVec = new DType[neuron->getVecLen()];
@@ -60,8 +60,8 @@ AdaGradUpdator<DType, Neuron>::AdaGradUpdator(const AdaGradUpdator<DType, Neuron
 
 template<typename DType, template<typename> class Neuron>
 void AdaGradUpdator<DType, Neuron>::update(int batch) {
-	const DType yita = (DType)ADAGRAD_ALPHA;
-	const DType alpha = (DType)(1 - REGULA_LAMDA);
+	const DType yita = static_cast<DType>(ADAGRAD_ALPHA);
+	const DType alpha = static_cast<DType>(1 - REGULAR_LAMDA);
 
 	const DType * biasDiff = m_pNeuron->getBiasDiff();
 	const DType * weightDiff = m_pNeuron->getWeightDiff(0);
@@ -80,8 +80,8 @@ void AdaGradUpdator<DType, Neuron>::update(int batch) {
 }
 template<typename DType, template<typename> class Neuron>
 void AdaGradUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, int size, int batch) {
-	const DType yita = (DType)ADAGRAD_ALPHA;
-	const DType alpha = (DType)(1 - REGULA_LAMDA);
+	const DType yita = static_cast<DType>(ADAGRAD_ALPHA);
+	const DType alpha = static_cast<DType>(1 - REGULAR_LAMDA);
 
 	for (int i = 0; i < size; ++i) {
 		m_pBiasVec[i] += args_diff[i] * args_diff[i];

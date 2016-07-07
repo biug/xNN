@@ -19,12 +19,12 @@ using std::vector;
 template<typename DType, template<typename> class Neuron>
 class SGDUpdator {
 protected:
-	size_t m_nDownNum;
+	int m_nDownNum;
 	DType * m_pBiasVec;
 	DType * m_pWeightVec;
 	Neuron<DType> * m_pNeuron;
 public:
-	SGDUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr);
+	SGDUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr);
 	SGDUpdator(const SGDUpdator<DType, Neuron> & updator);
 	~SGDUpdator();
 
@@ -33,7 +33,7 @@ public:
 };
 
 template<typename DType, template<typename> class Neuron>
-SGDUpdator<DType, Neuron>::SGDUpdator(size_t downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
+SGDUpdator<DType, Neuron>::SGDUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
 	if (neuron != nullptr) {
 		m_pBiasVec = new DType[neuron->getVecLen()];
 		m_pWeightVec = new DType[neuron->getDownWeightOffset(downNum)];
@@ -58,10 +58,10 @@ SGDUpdator<DType, Neuron>::~SGDUpdator() {
 
 template<typename DType, template<typename> class Neuron>
 void SGDUpdator<DType, Neuron>::update(int batch) {
-	const DType miu = -(DType)SGD_ALPHA / (DType)batch;
-	const DType momentum = (DType)SGD_MOMENTUM;
-	const DType alpha = (DType)1;
-	const DType beta = (DType)(1 - REGULA_LAMDA);
+	const DType miu = -static_cast<DType>(SGD_ALPHA) / static_cast<DType>(batch);
+	const DType momentum = static_cast<DType>(SGD_MOMENTUM);
+	const DType alpha = static_cast<DType>(1);
+	const DType beta = static_cast<DType>(1 - REGULAR_LAMDA);
 
 	// bias
 	alpha_vector_add_beta_vector(m_pBiasVec, m_pNeuron->getBiasDiff(), miu, momentum, m_pNeuron->getVecLen());
@@ -72,8 +72,8 @@ void SGDUpdator<DType, Neuron>::update(int batch) {
 }
 template<typename DType, template<typename> class Neuron>
 void SGDUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, int size, int batch) {
-	alpha_vector_add_beta_vector(m_pBiasVec, args_diff, -(DType)SGD_ALPHA / (DType)batch, (DType)SGD_MOMENTUM, size);
-	alpha_vector_add_beta_vector(args, m_pBiasVec, (DType)1, (DType)(1 - REGULA_LAMDA), size);
+	alpha_vector_add_beta_vector(m_pBiasVec, args_diff, -static_cast<DType>(SGD_ALPHA) / static_cast<DType>(batch), static_cast<DType>(SGD_MOMENTUM), size);
+	alpha_vector_add_beta_vector(args, m_pBiasVec, static_cast<DType>(1), static_cast<DType>(1 - REGULAR_LAMDA), size);
 }
 
 #endif

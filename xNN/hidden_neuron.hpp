@@ -16,13 +16,14 @@
 
 using std::vector;
 using std::size_t;
+using std::iostream;
 
 template<typename DType>
 class HiddenNeuron {
 	// vector length
 	int m_nVecLen;
 	// down num
-	size_t m_nDownNum;
+	int m_nDownNum;
 
 	// vector z
 	DType * m_pOutput;
@@ -49,13 +50,13 @@ public:
 	HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator);
 	~HiddenNeuron();
 
-	void initDiff(size_t downNum);
+	void initDiff(int downNum);
 
 	inline int getVecLen() const {
 		return m_nVecLen;
 	}
 
-	inline size_t getDownNum() const {
+	inline int getDownNum() const {
 		return m_nDownNum;
 	}
 
@@ -63,15 +64,15 @@ public:
 		return m_nVecLen;
 	}
 
-	inline size_t & getMutableDownNum() const {
+	inline int & getMutableDownNum() {
 		return m_nDownNum;
 	}
 
-	inline int getDownWeightSize(size_t down_id) const {
+	inline int getDownWeightSize(int down_id) const {
 		return m_pWeightSizes[down_id];
 	}
 
-	inline int getDownWeightOffset(size_t down_id) const {
+	inline int getDownWeightOffset(int down_id) const {
 		return m_pWeightOffsets[down_id];
 	}
 
@@ -93,10 +94,10 @@ public:
 	inline DType * getMutableBiasDiff() {
 		return m_pBiasDiff;
 	}
-	inline DType * getMutableWeight(size_t down_id) {
+	inline DType * getMutableWeight(int down_id) {
 		return &m_pWeights[m_pWeightOffsets[down_id]];
 	}
-	inline DType * getMutableWeightDiff(size_t down_id) {
+	inline DType * getMutableWeightDiff(int down_id) {
 		return &m_pWeightDiffs[m_pWeightOffsets[down_id]];
 	}
 
@@ -118,28 +119,29 @@ public:
 	inline const DType * const getBiasDiff() const {
 		return m_pBiasDiff;
 	}
-	inline const DType * const getWeight(size_t down_id) const {
+	inline const DType * const getWeight(int down_id) const {
 		return &m_pWeights[m_pWeightOffsets[down_id]];
 	}
-	inline const DType * const getWeightDiff(size_t down_id) const {
+	inline const DType * const getWeightDiff(int down_id) const {
 		return &m_pWeightDiffs[m_pWeightOffsets[down_id]];
 	}
 
-	DType norm1(size_t down_num) const;
-	DType norm2(size_t down_num) const;
+	DType norm1(int down_num) const;
+	DType norm2(int down_num) const;
 
-	DType getWeightNorm1(size_t down_id) const;
+	DType getWeightNorm1(int down_id) const;
 	DType getBiasNorm1() const;
 
-	DType getWeightNorm2(size_t down_id) const;
+	DType getWeightNorm2(int down_id) const;
 	DType getBiasNorm2() const;
 
 	friend std::istream & operator >> (std::istream & is, HiddenNeuron<DType> & neuron) {
-		is >> neuron.getMutableVecLen();
+		int num;
+		is >> num;
 		for (int i = 0, n = neuron.getVecLen(); i < n; ++i) {
 			is >> neuron.getMutableBias()[i];
 		}
-		is >> neuron.getMutableDownNum();
+		is >> num;
 		for (int i = 0, n = neuron.getDownWeightOffset(neuron.getDownNum()); i < n; ++i) {
 			is >> neuron.getMutableWeight(0)[i];
 		}
@@ -153,7 +155,7 @@ public:
 		}
 		os << std::endl;
 		os << neuron.getDownWeightOffset(neuron.getDownNum()) << std::endl;
-		for (size_t i = 0, n = neuron.getDownWeightOffset(neuron.getDownNum()); i < n; ++i) {
+		for (int i = 0, n = neuron.getDownWeightOffset(neuron.getDownNum()); i < n; ++i) {
 			os << neuron.getWeight(0)[i] << ' ';
 		}
 		os << std::endl;
@@ -170,7 +172,7 @@ public:
 */
 template<typename DType>
 HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen), m_nDownNum(downLens.size()) {
-	size_t downNum = downLens.size();
+	int downNum = downLens.size();
 	m_pOutput = new DType[m_nVecLen];
 	m_pOutputDiff = new DType[m_nVecLen];
 	m_pActive = new DType[m_nVecLen];
@@ -185,7 +187,7 @@ HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, Rand
 	m_pWeightOffsets = new int[downNum + 1];
 	m_pWeightSizes = new int[downNum];
 	m_pWeightOffsets[0] = 0;
-	for (size_t i = 1; i <= downNum; ++i) {
+	for (int i = 1; i <= downNum; ++i) {
 		m_pWeightOffsets[i] = m_pWeightOffsets[i - 1] + downLens[i - 1] * m_nVecLen;
 		m_pWeightSizes[i - 1] = m_pWeightOffsets[i] - m_pWeightOffsets[i - 1];
 	}
@@ -215,39 +217,39 @@ HiddenNeuron<DType>::~HiddenNeuron() {
 }
 
 template<typename DType>
-void HiddenNeuron<DType>::initDiff(size_t down_num) {
+void HiddenNeuron<DType>::initDiff(int down_num) {
 	memset(m_pBiasDiff, 0, sizeof(DType) * m_nVecLen);
 	memset(m_pWeightDiffs, 0, sizeof(DType) * m_pWeightOffsets[down_num]);
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::norm1(size_t down_num) const {
+DType HiddenNeuron<DType>::norm1(int down_num) const {
 	DType norm = 0;
 	for (int i = 0; i < m_nVecLen; ++i) {
 		norm += std::abs(m_pBiasDiff[i]);
 	}
-	for (size_t i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
+	for (int i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
 		norm += std::abs(m_pWeightDiffs[i]);
 	}
 	return norm;
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::norm2(size_t down_num) const {
+DType HiddenNeuron<DType>::norm2(int down_num) const {
 	DType norm = 0;
 	for (int i = 0; i < m_nVecLen; ++i) {
 		norm += m_pBiasDiff[i] * m_pBiasDiff[i];
 	}
-	for (size_t i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
+	for (int i = 0, n = m_pWeightOffsets[down_num]; i < n; ++i) {
 		norm += m_pWeightDiffs[i] * m_pWeightDiffs[i];
 	}
 	return norm;
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::getWeightNorm1(size_t down_id) const {
+DType HiddenNeuron<DType>::getWeightNorm1(int down_id) const {
 	DType norm = 0;
-	for (size_t i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
+	for (int i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
 		norm += std::abs(m_pWeightDiffs[i]);
 	}
 	return norm;
@@ -263,9 +265,9 @@ DType HiddenNeuron<DType>::getBiasNorm1() const {
 }
 
 template<typename DType>
-DType HiddenNeuron<DType>::getWeightNorm2(size_t down_id) const {
+DType HiddenNeuron<DType>::getWeightNorm2(int down_id) const {
 	DType norm = 0;
-	for (size_t i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
+	for (int i = m_pWeightOffsets[down_id], n = m_pWeightOffsets[down_id + 1]; i < n; ++i) {
 		norm += m_pWeightDiffs[i] * m_pWeightDiffs[i];
 	}
 	return norm;

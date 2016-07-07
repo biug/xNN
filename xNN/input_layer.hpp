@@ -46,12 +46,12 @@ InputLayer<DType>::~InputLayer() {
 */
 template<typename DType>
 void InputLayer<DType>::foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
-	size_t downNum = downs.size();
+	int downNum = downs.size();
 	for (HiddenNeuron<DType> * up : ups) {
 		int upLen = up->getVecLen();
 		// ups[j].output = ups[j].bias
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
-		for (size_t downId = 0; downId < downNum; ++downId) {
+		for (int downId = 0; downId < downNum; ++downId) {
 			InputNeuron<DType> * down = downs.at(downId);
 			// ups[j].output += downs[i].input * ups[j].weight[i]
 			vector_mul_matrix_add_output(up->getMutableOutput(), down->getInput(), up->getWeight(downId), down->getVecLen(), upLen);
@@ -66,8 +66,8 @@ void InputLayer<DType>::foreward(const vector<HiddenNeuron<DType> *> & ups, cons
 */
 template<typename DType>
 void InputLayer<DType>::backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
-	size_t downNum = downs.size();
-	for (size_t downId = 0; downId < downNum; ++downId) {
+	int downNum = downs.size();
+	for (int downId = 0; downId < downNum; ++downId) {
 		InputNeuron<DType> * down = downs[downId];
 		int downLen = down->getVecLen();
 		// downs[i].input_diff = 0
