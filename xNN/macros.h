@@ -27,6 +27,8 @@
 #define DECODE_TWOWAY_LEFT_LABEL(L)		(L.substr(strlen("twoway"), L.find("||") - strlen("twoway")))
 #define DECODE_TWOWAY_RIGHT_LABEL(L)	(L.substr(L.find("||") + strlen("||")))
 
+#define	EMBEDDING_LEN		50
+
 #define	GLOBAL_EPSILON		1e-10
 
 #define	SGD_THRESHOLD		1e-4
@@ -39,5 +41,7 @@
 
 #define	ADAGRAD_ALPHA		1e-3
 #define ADAGRAD_EPSILON		1e-8
+
+#define	DROP_OUT_RATE		0.2
 
 #endif

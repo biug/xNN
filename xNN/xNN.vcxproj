@@ -147,6 +147,7 @@
     <ClInclude Include="base_action.h" />
     <ClInclude Include="base_state.h" />
     <ClInclude Include="data_generator.h" />
+    <ClInclude Include="drop_layer.hpp" />
     <ClInclude Include="global.h" />
     <ClInclude Include="graph.h" />
     <ClInclude Include="hidden_layer.hpp" />

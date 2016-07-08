@@ -3,6 +3,10 @@
 
 #include "base_state.h"
 
+#include <vector>
+
+using std::vector;
+
 class TwoStackState : public BaseState {
 	bool m_bCanMem;
 	int m_nSecondStackBack;
@@ -32,7 +36,7 @@ public:
 
 	void clear();
 	void clearNext();
-	void print(const BaseAction * action, const DepGraph & graph) const override;
+	vector<vector<int>> features(const BaseAction * action, const DepGraph & graph) const;
 
 	bool operator==(const TwoStackState & item) const;
 	bool operator==(const DepGraph & graph) const;

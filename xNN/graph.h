@@ -18,7 +18,7 @@ using std::ostream;
 using std::ifstream;
 
 struct CoNLL08DepNode {
-	typedef	pair<int, string>				RightArc;
+	typedef	pair<int, string>			RightArc;
 	typedef pair<int, pair<int, int>>	RightLabel;
 	
 	string m_sWord;
@@ -44,17 +44,17 @@ public:
 	~CoNLL08DepGraph();
 	CoNLL08DepGraph(const CoNLL08DepGraph & graph);
 
-	void clear()												{ m_vecNodes.clear(); }
+	void clear()											{ m_vecNodes.clear(); }
 	const int size() const									{ return m_vecNodes.size(); }
-	void add(const CoNLL08DepNode & node)						{ m_vecNodes.push_back(node); }
-	CoNLL08DepNode & back()										{ return m_vecNodes.back(); }
+	void add(const CoNLL08DepNode & node)					{ m_vecNodes.push_back(node); }
+	CoNLL08DepNode & back()									{ return m_vecNodes.back(); }
 	CoNLL08DepNode & operator[](const int & i)				{ return m_vecNodes[i]; }
 	const CoNLL08DepNode & operator[](const int & i) const	{ return m_vecNodes[i]; }
 
-	iterator begin()											{ return m_vecNodes.begin(); }
-	iterator end()												{ return m_vecNodes.end(); }
-	const_iterator begin() const								{ return m_vecNodes.cbegin(); }
-	const_iterator end() const									{ return m_vecNodes.cend(); }
+	iterator begin()										{ return m_vecNodes.begin(); }
+	iterator end()											{ return m_vecNodes.end(); }
+	const_iterator begin() const							{ return m_vecNodes.cbegin(); }
+	const_iterator end() const								{ return m_vecNodes.cend(); }
 
 	CoNLL08DepGraph & operator=(const CoNLL08DepGraph & g);
 	void setLabels(const Token & labels, const vector<int> & vecLabels);

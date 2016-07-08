@@ -14,13 +14,15 @@
 #include <fstream>
 #include <sstream>
 #include <iostream>
+#include <algorithm>
 #include <unordered_map>
 
-#include "token.h"
-#include "macros.h"
+#include "graph.h"
+#include "twostack_action.h"
 #include "input_layer.hpp"
 #include "hidden_layer.hpp"
 #include "loss_layer.hpp"
+#include "drop_layer.hpp"
 
 #include "random_generator.hpp"
 
@@ -46,6 +48,7 @@ class ParserNet {
 	InputLayer<DType> m_lyrInputLayer;
 	HiddenLayer<DType, Activation, PartialActivation> m_lyrHiddenLayers;
 	LossLayer<DType, Loss, PartialLoss> m_lyrLossLayer;
+	DropLayer<DType, HiddenNeuron> m_lyrDropLayer;
 
 	int m_nEmbeddingLen, m_nWordNum, m_nPOSNum, m_nLabelNum;
 	DType *m_pWordMatrix, *m_pPOSMatrix, *m_pLabelMatrix;
@@ -69,14 +72,17 @@ public:
 	ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator);
 	~ParserNet();
 
-	void train(const vector<string> & batchFiles, int max_iter, DType threshold);
-	void test(const string & file);
+	void train(const vector<string> & batchFiles, const string & model_file, const string & embedding_file, int max_iter, DType threshold);
+	void parse(const string & input, const string & output, const string & model_file);
+	void test(const string & file, const string & model_file);
 };
 
 // definitions
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator) {
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator) :
+m_lyrDropLayer(DROP_OUT_RATE)
+{
 	m_nHiddenSize = neuron_lens.size() - 1;
 	// init input neurons
 	for (int i = 0; i < neuron_lens.front().size(); ++i) {
@@ -241,6 +247,8 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	// foreward
 	m_lyrInputLayer.foreward(m_vecsHiddenNeurons[0], m_vecInputNeurons);
 	for (int i = 1; i < m_nHiddenSize; ++i) {
+		m_lyrHiddenLayers.active(m_vecsHiddenNeurons[i - 1]);
+		//m_lyrDropLayer.drop(m_vecsHiddenNeurons[i - 1]);
 		m_lyrHiddenLayers.foreward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 	}
 	m_lyrLossLayer.foreward(m_vecsHiddenNeurons.back().back());
@@ -327,7 +335,7 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::train(const vector<string> & batch_files, int max_iter, DType threshold) {
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::train(const vector<string> & batch_files, const string & model_file, const string & embedding_file, int max_iter, DType threshold) {
 	// read one batch
 	for (const auto & batchFile : batch_files) {
 		// zero norm
@@ -347,7 +355,7 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
 			}
 			update();
-			if (iter % 1 == 0) {
+			if (iter % 10 == 0) {
 				std::cout << "value = " << value << std::endl;
 				std::cout << "foreward use time : " << timeFore / (double)CLOCKS_PER_SEC << std::endl;
 				std::cout << "backward use time : " << timeBack / (double)CLOCKS_PER_SEC << std::endl;
@@ -358,12 +366,55 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 			m_dLastValue = value;
 		}
 	}
-	saveModel("E:\\models", "E:\\newEmbeddings");
+	saveModel(model_file, embedding_file);
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::test(const string & file) {
-	loadModel("E:\\models");
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::parse(const string & input, const string & output, const string & model_file) {
+	loadModel(model_file);
+	TwoStackAction action;
+	TwoStackState state;
+	action.loadActions(input);
+	ifstream ifs(input);
+	ofstream ofs(output);
+	DepGraph graph;
+	DepGraph out;
+	while (ifs >> graph) {
+		state.clear();
+		graph.setLabels(action.Labels, action.VecLabelMap);
+		while (!state.stackEmpty() || state.size() < graph.size()) {
+			auto features = state.features(&action, graph);
+			m_vecBatchWords = features[0];
+			m_vecBatchPOSes = features[1];
+			m_vecBatchLabels = features[2];
+			// load embeddings
+			m_vecInputNeurons[0]->loadEmbedding((const DType*)m_pWordMatrix, m_vecBatchWords);
+			m_vecInputNeurons[1]->loadEmbedding((const DType*)m_pPOSMatrix, m_vecBatchPOSes);
+			m_vecInputNeurons[2]->loadEmbedding((const DType*)m_pLabelMatrix, m_vecBatchLabels);
+			foreward();
+			vector<pair<DType, int>> scores;
+			for (int i = 0, n = m_vecsHiddenNeurons.back().back()->getVecLen(); i < n; ++i) {
+				scores.push_back({ m_vecsHiddenNeurons.back().back()->getActive()[i], i });
+			}
+			std::sort(scores.begin(), scores.end(), [](const pair<DType, int> & p1, const pair<DType, int> & p2) {
+				if (p1.first != p2.first) return p1.first > p2.first;
+				return p1.second < p2.second;
+			});
+			for (const auto & score : scores) {
+				if (action.testAction(state, graph, score.second)) {
+					action.doAction(state, score.second);
+				}
+			}
+		}
+		out.clear();
+		state.generateGraph(graph, out, action.Labels);
+		ofs << out;
+	}
+}
+
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::test(const string & file, const string & model_file) {
+	loadModel(model_file);
 	ifstream ifs(file);
 	int total = 0, correct = 0;
 	std::cout << "load complete" << std::endl;

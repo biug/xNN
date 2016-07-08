@@ -78,8 +78,6 @@ public:
 	void arcLeft(const int & label);
 	void arcRight(const int & label);
 	void generateGraph(const DepGraph & sent, DepGraph & graph, const Token & labels) const;
-
-	virtual void print(const BaseAction * action, const DepGraph & graph) const = 0;
 };
 
 #endif

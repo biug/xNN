@@ -96,6 +96,9 @@
     <ClInclude Include="base_action.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="drop_layer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">

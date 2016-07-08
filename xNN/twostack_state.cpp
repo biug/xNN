@@ -60,7 +60,7 @@ void TwoStackState::arcRecall(const int & label, const int & leftLabel, const in
 	m_lActionList[m_nActionBack] = action;
 }
 
-void TwoStackState::print(const BaseAction * action, const DepGraph & graph) const {
+vector<vector<int>> TwoStackState::features(const BaseAction * action, const DepGraph & graph) const {
 	int st[3] = { -2, -2, -2 }, bf[3] = { -1, -1, -1 };
 	if (m_nStackBack >= 0) {
 		if (m_nStackBack >= 1) {
@@ -189,9 +189,7 @@ void TwoStackState::print(const BaseAction * action, const DepGraph & graph) con
 		else {
 			word += 2;
 		}
-		std::cout << word << ' ';
 	}
-	std::cout << std::endl;
 	for (auto && pos : poses) {
 		if (pos >= 0) {
 			pos = action->POSes.code(graph[pos].m_sPOSTag);
@@ -199,13 +197,13 @@ void TwoStackState::print(const BaseAction * action, const DepGraph & graph) con
 		else {
 			pos += 2;
 		}
-		std::cout << pos << ' ';
 	}
-	std::cout << std::endl;
 	for (auto && label : deps) {
-		std::cout << (label >= 0 ? label : label + 2) << ' ';
+		if (label < 0) {
+			label += 2;
+		}
 	}
-	std::cout << std::endl;
+	return{ words, poses, deps };
 }
 
 void TwoStackState::clear() {
@@ -237,6 +235,7 @@ void TwoStackState::clearNext() {
 	m_lPredLabelR[m_nNextWord] = 0;
 	m_lSubPredLabelR[m_nNextWord] = 0;
 	m_lPredRNum[m_nNextWord] = 0;
+	m_vecRightNodes[m_nNextWord].clear();
 }
 
 bool TwoStackState::operator==(const TwoStackState & item) const {
@@ -253,18 +252,15 @@ bool TwoStackState::operator==(const TwoStackState & item) const {
 
 bool TwoStackState::operator==(const DepGraph & graph) const {
 	if (m_nNextWord != graph.size()) {
-		std::cout << "size not equal" << std::endl;
 		return false;
 	}
 	for (int i = 0; i < m_nNextWord; ++i) {
 		if (m_vecRightNodes[i].size() != graph[i].m_vecRightArcs.size()) {
-			std::cout << "right node not equal at " << i << std::endl;
 			return false;
 		}
 		for (int j = 0; j < m_vecRightNodes[i].size(); ++j) {
 			if (m_vecRightNodes[i][j].head != graph[i].m_vecRightArcs[j].first ||
 				m_vecRightNodes[i][j].label != graph[i].m_vecRightLabels[j].first) {
-				std::cout << "right arc not equal at " << i << " " << j << std::endl;
 				return false;
 			}
 		}

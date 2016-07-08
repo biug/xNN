@@ -20,7 +20,13 @@ bool TwoStackAction::extractOracle(TwoStackState & item, const DepGraph & graph)
 	int rightNodeSeeks[MAX_SENTENCE_SIZE];
 	memset(rightNodeSeeks, 0, sizeof(rightNodeSeeks));
 	while (followOneAction(item, rightNodeSeeks, graph)) {
-		item.print(this, graph);
+		auto features = item.features(this, graph);
+		for (const auto & feature : features) {
+			for (const auto & f : feature) {
+				std::cout << f << ' ';
+			}
+			std::cout << ' ';
+		}
 		std::cout << item.lastAction() << std::endl;
 	}
 		;
@@ -146,5 +152,37 @@ void TwoStackAction::doAction(TwoStackState & item, const int & action) const {
 		int label = action - A_RC_FIRST + 1;
 		int labelId = VecLabelMap[label];
 		item.arcRecall(label, LEFT_LABEL_ID(labelId), RIGHT_LABEL_ID(labelId), action);
+	}
+}
+
+bool TwoStackAction::testAction(const TwoStackState & item, const DepGraph & graph, const int & action) const {
+	if (action < ACTION_END) {
+		switch (action) {
+		case SHIFT:
+			return item.size() < graph.size() && item.canShift();
+		case REDUCE:
+			return !item.stackEmpty();
+		case MEM:
+			return item.canMem();
+		case RECALL:
+			return item.canRecall();
+		default:
+			return false;
+		}
+	}
+	else if (action < A_SH_END) {
+		return item.canArc() && item.size() < graph.size() && item.canShift();
+	}
+	else if (action < A_RE_END) {
+		return item.canArc() && !item.stackEmpty();
+	}
+	else if (action < A_MM_END) {
+		return item.canArc() && item.canMem();
+	}
+	else if (action < A_RC_END) {
+		return item.canArc() && item.canRecall();
+	}
+	else {
+		return false;
 	}
 }

@@ -33,6 +33,7 @@ struct TwoStackAction : public BaseAction {
 	bool extractOracle(TwoStackState & item, const DepGraph & graph) const;
 	bool followOneAction(TwoStackState & item, int(&seeks)[MAX_SENTENCE_SIZE], const DepGraph & graph,
 		const pair<int, pair<int, int>> & labels = { 0,{ 0, 0 } }) const;
+	bool testAction(const TwoStackState & item, const DepGraph & graph, const int & action) const;
 };
 
 #endif
