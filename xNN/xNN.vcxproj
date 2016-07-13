@@ -150,6 +150,7 @@
     <ClInclude Include="drop_layer.hpp" />
     <ClInclude Include="global.h" />
     <ClInclude Include="graph.h" />
+    <ClInclude Include="helper.h" />
     <ClInclude Include="hidden_layer.hpp" />
     <ClInclude Include="hidden_neuron.hpp" />
     <ClInclude Include="include\openblas\cblas.h" />

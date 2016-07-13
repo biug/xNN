@@ -82,55 +82,59 @@ vector<vector<int>> TwoStackState::features(const BaseAction * action, const Dep
 	}
 	int lh[2] = { -2, -2 }, rh[2] = { -1, -1 };
 	int lhl[2] = { -2, -2 }, rhl[2] = { -1, -1 };
-	if (st[0] >= 0 && m_lHeadL[st[0]] >= 0) {
-		lh[0] = m_lHeadL[st[0]];
-		lhl[0] = m_lHeadLabelL[st[0]];
-	}
-	if (st[1] >= 0 && m_lHeadL[st[1]] >= 0) {
-		lh[1] = m_lHeadL[st[1]];
-		lhl[1] = m_lHeadLabelL[st[1]];
-	}
-	if (st[0] >= 0 && m_lHeadR[st[0]] >= 0) {
-		rh[0] = m_lHeadR[st[0]];
-		rhl[0] = m_lHeadLabelR[st[0]];
-	}
-	if (st[1] >= 0 && m_lHeadR[st[1]] >= 0) {
-		rh[1] = m_lHeadR[st[1]];
-		rhl[1] = m_lHeadLabelR[st[1]];
-	}
 	int lc1[2] = { -2, -2 }, rc1[2] = { -1, -1 }, lc2[2] = { -2, -2 }, rc2[2] = { -1, -1 };
 	int lcl1[2] = { -2, -2 }, rcl1[2] = { -1, -1 }, lcl2[2] = { -2, -2 }, rcl2[2] = { -1, -1 };
-	if (st[0] >= 0 && m_lPredL[st[0]] >= 0) {
-		lc1[0] = m_lPredL[st[0]];
-		lcl1[0] = m_lPredLabelL[st[0]];
+	if (st[0] >= 0) {
+		if (m_lHeadL[st[0]] >= 0) {
+			lh[0] = m_lHeadL[st[0]];
+			lhl[0] = m_lHeadLabelL[st[0]];
+		}
+		if (m_lHeadR[st[0]] >= 0) {
+			rh[0] = m_lHeadR[st[0]];
+			rhl[0] = m_lHeadLabelR[st[0]];
+		}
+		if (m_lPredL[st[0]] >= 0) {
+			lc1[0] = m_lPredL[st[0]];
+			lcl1[0] = m_lPredLabelL[st[0]];
+		}
+		if (m_lPredR[st[0]] >= 0) {
+			rc1[0] = m_lPredR[st[0]];
+			rcl1[0] = m_lPredLabelR[st[0]];
+		}
+		if (m_lSubPredL[st[0]] >= 0) {
+			lc2[0] = m_lSubPredL[st[0]];
+			lcl2[0] = m_lSubPredLabelL[st[0]];
+		}
+		if (m_lSubPredR[st[0]] >= 0) {
+			rc2[0] = m_lSubPredR[st[0]];
+			rcl2[0] = m_lSubPredLabelR[st[0]];
+		}
 	}
-	if (st[1] >= 0 && m_lPredL[st[1]] >= 0) {
-		lc1[1] = m_lPredL[st[1]];
-		lcl1[1] = m_lPredLabelL[st[1]];
-	}
-	if (st[0] >= 0 && m_lPredR[st[0]] >= 0) {
-		rc1[0] = m_lPredR[st[0]];
-		rcl1[0] = m_lPredLabelR[st[0]];
-	}
-	if (st[1] >= 0 && m_lPredR[st[1]] >= 0) {
-		rc1[1] = m_lPredR[st[1]];
-		rcl1[1] = m_lPredLabelR[st[1]];
-	}
-	if (lc1[0] >= 0 && m_lSubPredL[st[0]] >= 0) {
-		lc2[0] = m_lSubPredL[st[0]];
-		lcl2[0] = m_lSubPredLabelL[st[0]];
-	}
-	if (lc1[1] >= 0 && m_lSubPredL[st[1]] >= 0) {
-		lc2[1] = m_lSubPredL[st[1]];
-		lcl2[1] = m_lSubPredLabelL[st[1]];
-	}
-	if (rc1[0] >= 0 && m_lSubPredR[st[0]] >= 0) {
-		rc2[0] = m_lSubPredR[st[0]];
-		rcl2[0] = m_lSubPredLabelR[st[0]];
-	}
-	if (rc1[1] >= 0 && m_lSubPredR[st[1]] >= 0) {
-		rc2[1] = m_lSubPredR[st[1]];
-		rcl2[1] = m_lSubPredLabelR[st[1]];
+	if (st[0] >= 0) {
+		if (m_lHeadL[st[1]] >= 0) {
+			lh[1] = m_lHeadL[st[1]];
+			lhl[1] = m_lHeadLabelL[st[1]];
+		}
+		if (m_lHeadR[st[1]] >= 0) {
+			rh[1] = m_lHeadR[st[1]];
+			rhl[1] = m_lHeadLabelR[st[1]];
+		}
+		if (m_lPredL[st[1]] >= 0) {
+			lc1[1] = m_lPredL[st[1]];
+			lcl1[1] = m_lPredLabelL[st[1]];
+		}
+		if (m_lPredR[st[1]] >= 0) {
+			rc1[1] = m_lPredR[st[1]];
+			rcl1[1] = m_lPredLabelR[st[1]];
+		}
+		if (m_lSubPredL[st[1]] >= 0) {
+			lc2[1] = m_lSubPredL[st[1]];
+			lcl2[1] = m_lSubPredLabelL[st[1]];
+		}
+		if (m_lSubPredR[st[1]] >= 0) {
+			rc2[1] = m_lSubPredR[st[1]];
+			rcl2[1] = m_lSubPredLabelR[st[1]];
+		}
 	}
 	int llh[2] = { -2, -2 }, rrh[2] = { -1, -1 };
 	int llhl[2] = { -2, -2 }, rrhl[2] = { -1, -1 };
@@ -142,11 +146,11 @@ vector<vector<int>> TwoStackState::features(const BaseAction * action, const Dep
 		llh[1] = m_lPredL[lh[1]];
 		llhl[1] = m_lPredLabelL[lh[1]];
 	}
-	if (rh[0] >= 0 && m_lPredR[rh[0]] >= 0) {
+	if (rh[0] < m_nNextWord && rh[0] >= 0 && m_lPredR[rh[0]] >= 0) {
 		rrh[0] = m_lPredR[rh[0]];
 		rrhl[0] = m_lPredLabelR[rh[0]];
 	}
-	if (rh[1] >= 0 && m_lPredR[rh[1]] >= 0) {
+	if (rh[1] < m_nNextWord && rh[1] >= 0 && m_lPredR[rh[1]] >= 0) {
 		rrh[1] = m_lPredR[rh[1]];
 		rrhl[1] = m_lPredLabelR[rh[1]];
 	}
@@ -160,11 +164,11 @@ vector<vector<int>> TwoStackState::features(const BaseAction * action, const Dep
 		llc[1] = m_lPredL[lc1[1]];
 		llcl[1] = m_lPredLabelL[lc1[1]];
 	}
-	if (rc1[0] >= 0 && m_lPredR[rc1[0]] >= 0) {
+	if (rc1[0] < m_nNextWord && rc1[0] >= 0 && m_lPredR[rc1[0]] >= 0) {
 		rrc[0] = m_lPredR[rc1[0]];
 		rrcl[0] = m_lPredLabelR[rc1[0]];
 	}
-	if (rc1[1] >= 0 && m_lPredR[rc1[1]] >= 0) {
+	if (rc1[1] < m_nNextWord && rc1[1] >= 0 && m_lPredR[rc1[1]] >= 0) {
 		rrc[1] = m_lPredR[rc1[1]];
 		rrcl[1] = m_lPredLabelR[rc1[1]];
 	}
@@ -182,6 +186,7 @@ vector<vector<int>> TwoStackState::features(const BaseAction * action, const Dep
 	deps.push_back(lcl2[0]);	deps.push_back(lcl2[1]);	deps.push_back(rcl2[0]);	deps.push_back(rcl2[1]);
 	deps.push_back(llhl[0]);	deps.push_back(llhl[1]);	deps.push_back(rrhl[0]);	deps.push_back(rrhl[1]);
 	deps.push_back(llcl[0]);	deps.push_back(llcl[1]);	deps.push_back(rrcl[0]);	deps.push_back(rrcl[1]);
+	int ii = 0;
 	for (auto && word : words) {
 		if (word >= 0) {
 			word = action->Words.code(graph[word].m_sWord);

@@ -1,0 +1,4832 @@
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Pierre Pierre NNP NNP _ _ s 2 _ _
+3 Vinken Vinken NNP NNP _ _ s 9 _ _
+4 , , , , _ _ s 2 _ _
+5 61 61 CD CD _ _ s 5 _ _
+6 years years NNS NNS _ _ s 6 _ _
+7 old old JJ JJ _ _ s 2 _ _
+8 , , , , _ _ s 9 _ _
+9 will will MD MD _ _ s 9 _ _
+10 join join VB VB _ _ s 0 _ _
+11 the the DT DT _ _ s 11 _ _
+12 board board NN NN _ _ s 9 _ _
+13 as as IN IN _ _ s 9 _ _
+14 a a DT DT _ _ s 15 _ _
+15 nonexecutive nonexecutive JJ JJ _ _ s 15 _ _
+16 director director NN NN _ _ s 16 _ _
+17 Nov. Nov. NNP NNP _ _ s 12 _ _
+18 29 29 CD CD _ _ s 16 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _
+3 Vinken Vinken NNP NNP _ _ s 3 _ _
+4 is is VBZ VBZ _ _ s 0 _ _
+5 chairman chairman NN NN _ _ s 3 _ _
+6 of of IN IN _ _ s 4 _ _
+7 Elsevier Elsevier NNP NNP _ _ s 7 _ _
+8 N.V. N.V. NNP NNP _ _ s 5 _ _
+9 , , , , _ _ s 7 _ _
+10 the the DT DT _ _ s 12 _ _
+11 Dutch Dutch NNP NNP _ _ s 12 _ _
+12 publishing publishing VBG VBG _ _ s 12 _ _
+13 group group NN NN _ _ s 8 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 A A DT DT _ _ s 2 _ _
+3 form form NN NN _ _ s 12 _ _
+4 of of IN IN _ _ s 2 _ _
+5 asbestos asbestos NN NN _ _ s 3 _ _
+6 once once RB RB _ _ s 6 _ _
+7 used used VBN VBN _ _ s 4 _ _
+8 to to TO TO _ _ s 8 _ _
+9 make make VB VB _ _ s 6 _ _
+10 Kent Kent NNP NNP _ _ s 11 _ _
+11 cigarette cigarette NN NN _ _ s 11 _ _
+12 filters filters NNS NNS _ _ s 8 _ _
+13 has has VBZ VBZ _ _ s 13 _ _
+14 caused caused VBN VBN _ _ s 35 _ _
+15 a a DT DT _ _ s 16 _ _
+16 high high JJ JJ _ _ s 16 _ _
+17 percentage percentage NN NN _ _ s 13 _ _
+18 of of IN IN _ _ s 16 _ _
+19 cancer cancer NN NN _ _ s 19 _ _
+20 deaths deaths NNS NNS _ _ s 17 _ _
+21 among among IN IN _ _ s 19 _ _
+22 a a DT DT _ _ s 22 _ _
+23 group group NN NN _ _ s 20 _ _
+24 of of IN IN _ _ s 22 _ _
+25 workers workers NNS NNS _ _ s 23 _ _
+26 exposed exposed VBN VBN _ _ s 24 _ _
+27 to to TO TO _ _ s 25 _ _
+28 it it PRP PRP _ _ s 26 _ _
+29 more more RBR RBR _ _ s 31 _ _
+30 than than IN IN _ _ s 28 _ _
+31 30 30 CD CD _ _ s 29 _ _
+32 years years NNS NNS _ _ s 32 _ _
+33 ago ago IN IN _ _ s 25 _ _
+34 , , , , _ _ s 35 _ _
+35 researchers researchers NNS NNS _ _ s 35 _ _
+36 reported reported VBD VBD _ _ s 0 _ _
+37 . . . . _ _ s 35 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 3 _ _ _
+3 asbestos asbestos NN NN _ _ s 3 _ _ _
+4 fiber fiber NN NN _ _ s 7 _ _ _
+5 , , , , _ _ s 3 _ _ _
+6 crocidolite crocidolite NN NN _ _ s 4 _ _ _
+7 , , , , _ _ s 7 _ _ _
+8 is is VBZ VBZ _ _ s 0 _ _ _
+9 unusually unusually RB RB _ _ s 9 _ _ _
+10 resilient resilient JJ JJ _ _ s 7 _ _ _
+11 once once IN IN _ _ s 7 _ _ _
+12 it it PRP PRP _ _ s 12 _ _ _
+13 enters enters VBZ VBZ _ _ s 10 _ _ _
+14 the the DT DT _ _ s 14 _ _ _
+15 lungs lungs NNS NNS _ _ s 12 _ _ _
+16 , , , , _ _ s 12 _ _ _
+17 with with IN IN _ _ s 12 _ _ _
+18 even even RB RB _ _ s 19 _ _ _
+19 brief brief JJ JJ _ _ s 19 _ _ _
+20 exposures exposures NNS NNS _ _ s 16 _ _ _
+21 to to TO TO _ _ s 19 _ _ _
+22 it it PRP PRP _ _ s 22 _ _ _
+23 causing causing VBG VBG _ _ s 23 _ _ _
+24 symptoms symptoms NNS NNS _ _ s 20 _ _ _
+25 that that WDT WDT _ _ s 23 _ _ aux_ARG1
+26 show show VBP VBP _ _ s 23 _ show _
+27 up up RP RP _ _ s 25 _ _ _
+28 decades decades NNS NNS _ _ s 28 _ _ _
+29 later later JJ JJ _ _ s 25 _ _ _
+30 , , , , _ _ s 31 _ _ _
+31 researchers researchers NNS NNS _ _ s 31 _ _ _
+32 said said VBD VBD _ _ s 0 _ _ _
+33 . . . . _ _ s 31 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Lorillard Lorillard NNP NNP _ _ s 2 _ _
+3 Inc. Inc. NNP NNP _ _ s 16 _ _
+4 , , , , _ _ s 2 _ _
+5 the the DT DT _ _ s 5 _ _
+6 unit unit NN NN _ _ s 3 _ _
+7 of of IN IN _ _ s 5 _ _
+8 New New JJ JJ _ _ s 10 _ _
+9 York-based York-based JJ JJ _ _ s 10 _ _
+10 Loews Loews NNP NNP _ _ s 10 _ _
+11 Corp. Corp. NNP NNP _ _ s 6 _ _
+12 that that WDT WDT _ _ s 5 _ _
+13 makes makes VBZ VBZ _ _ s 5 _ _
+14 Kent Kent NNP NNP _ _ s 14 _ _
+15 cigarettes cigarettes NNS NNS _ _ s 12 _ _
+16 , , , , _ _ s 16 _ _
+17 stopped stopped VBD VBD _ _ s 0 _ _
+18 using using VBG VBG _ _ s 16 _ _
+19 crocidolite crocidolite NN NN _ _ s 17 _ _
+20 in in IN IN _ _ s 16 _ _
+21 its its PRP$ PRP$ _ _ s 23 _ _
+22 Micronite Micronite NN NN _ _ s 23 _ _
+23 cigarette cigarette NN NN _ _ s 23 _ _
+24 filters filters NNS NNS _ _ s 19 _ _
+25 in in IN IN _ _ s 16 _ _
+26 1956 1956 CD CD _ _ s 24 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 A A DT DT _ _ s 3 _ _
+3 Lorillard Lorillard NNP NNP _ _ s 3 _ _
+4 spokewoman spokewoman NN NN _ _ s 4 _ _
+5 said said VBD VBD _ _ s 0 _ _
+6 , , , , _ _ s 4 _ _
+7 “ “ `` `` _ _ s 8 _ _
+8 This This DT DT _ _ s 8 _ _
+9 is is VBZ VBZ _ _ s 4 _ _
+10 an an DT DT _ _ s 11 _ _
+11 old old JJ JJ _ _ s 11 _ _
+12 story story NN NN _ _ s 8 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 There There EX EX _ _ s 2 _ _
+3 is is VBZ VBZ _ _ s 0 _ _
+4 no no DT DT _ _ s 4 _ _
+5 asbestos asbestos NN NN _ _ s 2 _ _
+6 in in IN IN _ _ s 4 _ _
+7 our our PRP$ PRP$ _ _ s 7 _ _
+8 products products NNS NNS _ _ s 5 _ _
+9 now now RB RB _ _ s 2 _ _
+10 . . . . _ _ s 10 _ _
+11 ” ” '' '' _ _ s 2 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _
+2 Neither Neither DT DT _ _ s 2 _ _ _ _
+3 Lorillard Lorillard NNP NNP _ _ s 3 _ _ _ _
+4 nor nor CC CC _ _ s 10 _ _ _ _
+5 the the DT DT _ _ s 5 _ _ verb_ARG1 _
+6 researchers researchers NNS NNS _ _ s 3 _ researchers _ _
+7 who who WP WP _ _ s 5 _ _ _ _
+8 studied studied VBD VBD _ _ s 5 _ _ _ _
+9 the the DT DT _ _ s 9 _ _ _ verb_ARG1
+10 workers workers NNS NNS _ _ s 7 _ workers _ _
+11 were were VBD VBD _ _ s 0 _ _ _ _
+12 aware aware JJ JJ _ _ s 10 _ _ _ _
+13 of of IN IN _ _ s 11 _ _ _ _
+14 any any DT DT _ _ s 14 _ _ _ _
+15 research research NN NN _ _ s 12 _ _ _ _
+16 on on IN IN _ _ s 14 _ _ _ _
+17 smokers smokers NNS NNS _ _ s 15 _ _ _ _
+18 of of IN IN _ _ s 16 _ _ _ _
+19 the the DT DT _ _ s 20 _ _ _ _
+20 Kent Kent NNP NNP _ _ s 20 _ _ _ _
+21 cigarettes cigarettes NNS NNS _ _ s 17 _ _ _ _
+22 . . . . _ _ s 20 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 15 _ _
+3 We We PRP PRP _ _ s 3 _ _
+4 have have VBP VBP _ _ s 15 _ _
+5 no no DT DT _ _ s 6 _ _
+6 useful useful JJ JJ _ _ s 6 _ _
+7 information information NN NN _ _ s 3 _ _
+8 on on IN IN _ _ s 6 _ _
+9 whether whether IN IN _ _ s 10 _ _
+10 users users NNS NNS _ _ s 10 _ _
+11 are are VBP VBP _ _ s 7 _ _
+12 at at IN IN _ _ s 10 _ _
+13 risk risk NN NN _ _ s 11 _ _
+14 , , , , _ _ s 15 _ _
+15 ” ” '' '' _ _ s 15 _ _
+16 said said VBD VBD _ _ s 0 _ _
+17 James James NNP NNP _ _ s 18 _ _
+18 A. A. NNP NNP _ _ s 18 _ _
+19 Talcott Talcott NNP NNP _ _ s 15 _ _
+20 of of IN IN _ _ s 18 _ _
+21 Boston Boston NNP NNP _ _ s 21 _ _
+22 ’s ’s POS POS _ _ s 24 _ _
+23 Dana-Farber Dana-Farber NNP NNP _ _ s 24 _ _
+24 Cancer Cancer NNP NNP _ _ s 24 _ _
+25 Institute Institute NNP NNP _ _ s 19 _ _
+26 . . . . _ _ s 24 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Dr. Dr. NNP NNP _ _ s 2 _ _
+3 Talcott Talcott NNP NNP _ _ s 3 _ _
+4 led led VBD VBD _ _ s 0 _ _
+5 a a DT DT _ _ s 5 _ _
+6 team team NN NN _ _ s 3 _ _
+7 of of IN IN _ _ s 5 _ _
+8 researchers researchers NNS NNS _ _ s 6 _ _
+9 from from IN IN _ _ s 7 _ _
+10 the the DT DT _ _ s 12 _ _
+11 National National NNP NNP _ _ s 12 _ _
+12 Cancer Cancer NNP NNP _ _ s 12 _ _
+13 Institute Institute NNP NNP _ _ s 13 _ _
+14 and and CC CC _ _ s 8 _ _
+15 the the DT DT _ _ s 16 _ _
+16 medical medical JJ JJ _ _ s 16 _ _
+17 schools schools NNS NNS _ _ s 13 _ _
+18 of of IN IN _ _ s 16 _ _
+19 Harvard Harvard NNP NNP _ _ s 19 _ _
+20 University University NNP NNP _ _ s 20 _ _
+21 and and CC CC _ _ s 17 _ _
+22 Boston Boston NNP NNP _ _ s 22 _ _
+23 University University NNP NNP _ _ s 20 _ _
+24 . . . . _ _ s 22 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 3 _ _ _
+3 Lorillard Lorillard NNP NNP _ _ s 3 _ _ _
+4 spokeswoman spokeswoman NN NN _ _ s 4 _ _ _
+5 said said VBD VBD _ _ s 0 _ _ _
+6 asbestos asbestos NN NN _ _ s 6 _ _ _
+7 was was VBD VBD _ _ s 7 _ _ _
+8 used used VBN VBN _ _ s 24 _ _ _
+9 in in IN IN _ _ s 7 _ _ _
+10 “ “ `` `` _ _ s 8 _ _ _
+11 very very RB RB _ _ s 11 _ _ _
+12 modest modest JJ JJ _ _ s 12 _ _ _
+13 amounts amounts NNS NNS _ _ s 8 _ _ _
+14 ” ” '' '' _ _ s 8 _ _ _
+15 in in IN IN _ _ s 7 _ _ _
+16 making making VBG VBG _ _ s 14 _ _ _
+17 paper paper NN NN _ _ s 15 _ _ _
+18 for for IN IN _ _ s 16 _ _ _
+19 the the DT DT _ _ s 19 _ _ verb_ARG1
+20 filters filters NNS NNS _ _ s 17 _ filters _
+21 in in IN IN _ _ s 15 _ _ _
+22 the the DT DT _ _ s 23 _ _ _
+23 early early JJ JJ _ _ s 23 _ _ _
+24 1950s 1950s CD CD _ _ s 20 _ _ _
+25 and and CC CC _ _ s 4 _ _ _
+26 replaced replaced VBN VBN _ _ s 24 _ _ _
+27 with with IN IN _ _ s 25 _ _ _
+28 a a DT DT _ _ s 29 _ _ _
+29 different different JJ JJ _ _ s 29 _ _ _
+30 type type NN NN _ _ s 26 _ _ _
+31 of of IN IN _ _ s 29 _ _ _
+32 filter filter NN NN _ _ s 30 _ _ _
+33 in in IN IN _ _ s 29 _ _ _
+34 1956 1956 CD CD _ _ s 32 _ _ _
+35 . . . . _ _ s 33 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 From From IN IN _ _ s 14 _ _
+3 1953 1953 CD CD _ _ s 1 _ _
+4 to to TO TO _ _ s 2 _ _
+5 1955 1955 CD CD _ _ s 3 _ _
+6 , , , , _ _ s 14 _ _
+7 9.8 9.8 CD CD _ _ s 7 _ _
+8 billion billion CD CD _ _ s 9 _ _
+9 Kent Kent NNP NNP _ _ s 9 _ _
+10 cigarettes cigarettes NNS NNS _ _ s 13 _ _
+11 with with IN IN _ _ s 9 _ _
+12 the the DT DT _ _ s 12 _ _
+13 filters filters NNS NNS _ _ s 10 _ _
+14 were were VBD VBD _ _ s 14 _ _
+15 sold sold VBN VBN _ _ s 18 _ _
+16 , , , , _ _ s 18 _ _
+17 the the DT DT _ _ s 17 _ _
+18 company company NN NN _ _ s 18 _ _
+19 said said VBD VBD _ _ s 0 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _
+2 Among Among IN IN _ _ s 13 _ _ verb_ARG3 _
+3 33 33 CD CD _ _ s 3 _ _ _ _
+4 men men NNS NNS _ _ s 1 _ _ _ _
+5 who who WP WP _ _ s 3 _ _ _ aux_ARG1
+6 worked worked VBD VBD _ _ s 3 _ worked _ _
+7 closely closely RB RB _ _ s 5 _ _ _ _
+8 with with IN IN _ _ s 5 _ _ _ _
+9 the the DT DT _ _ s 9 _ _ _ _
+10 substance substance NN NN _ _ s 7 _ _ _ _
+11 , , , , _ _ s 13 _ _ _ _
+12 28 28 CD CD _ _ s 12 _ _ _ _
+13 have have VBP VBP _ _ s 13 _ _ _ _
+14 died died VBN VBN _ _ s 0 _ _ _ _
+15 – – : : _ _ s 13 _ _ _ _
+16 more more JJ JJ _ _ s 21 _ _ _ _
+17 than than IN IN _ _ s 15 _ _ _ _
+18 three three CD CD _ _ s 18 _ _ _ _
+19 times times NNS NNS _ _ s 16 _ _ _ _
+20 the the DT DT _ _ s 21 _ _ _ _
+21 expected expected VBN VBN _ _ s 21 _ _ _ _
+22 number number NN NN _ _ s 13 _ _ _ _
+23 . . . . _ _ s 21 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Four Four CD CD _ _ s 7 _ Four _
+3 of of IN IN _ _ s 1 _ _ _
+4 the the DT DT _ _ s 6 _ _ _
+5 five five CD CD _ _ s 6 _ _ _
+6 surviving surviving VBG VBG _ _ s 6 _ _ _
+7 workers workers NNS NNS _ _ s 2 _ _ _
+8 have have VBP VBP _ _ s 0 _ _ _
+9 asbestos-related asbestos-related JJ JJ _ _ s 9 _ _ _
+10 diseases diseases NNS NNS _ _ s 7 _ _ _
+11 , , , , _ _ s 9 _ _ _
+12 including including VBG VBG _ _ s 9 _ _ _
+13 three three CD CD _ _ s 11 _ _ _
+14 with with IN IN _ _ s 12 _ _ _
+15 recently recently RB RB _ _ s 15 _ _ _
+16 diagnosed diagnosed VBN VBN _ _ s 16 _ _ _
+17 cancer cancer NN NN _ _ s 13 _ _ _
+18 . . . . _ _ s 16 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 total total NN NN _ _ s 14 _ _
+4 of of IN IN _ _ s 2 _ _
+5 18 18 CD CD _ _ s 5 _ _
+6 deaths deaths NNS NNS _ _ s 3 _ _
+7 from from IN IN _ _ s 5 _ _
+8 malignant malignant JJ JJ _ _ s 8 _ _
+9 mesothelioma mesothelioma NN NN _ _ s 9 _ _
+10 , , , , _ _ s 12 _ _
+11 lung lung NN NN _ _ s 11 _ _
+12 cancer cancer NN NN _ _ s 9 _ _
+13 and and CC CC _ _ s 6 _ _
+14 asbestosis asbestosis NN NN _ _ s 12 _ _
+15 was was VBD VBD _ _ s 22 _ _
+16 far far RB RB _ _ s 16 _ _
+17 higher higher JJR JJR _ _ s 14 _ _
+18 than than IN IN _ _ s 16 _ _
+19 expected expected VBN VBN _ _ s 17 _ _
+20 , , , , _ _ s 22 _ _
+21 the the DT DT _ _ s 21 _ _
+22 researchers researchers NNS NNS _ _ s 22 _ _
+23 said said VBD VBD _ _ s 0 _ _
+24 . . . . _ _ s 22 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 “ “ `` `` _ _ s 19 _ _ _
+3 The The DT DT _ _ s 4 _ _ _
+4 morbidity morbidity NN NN _ _ s 4 _ _ _
+5 rate rate NN NN _ _ s 5 _ _ _
+6 is is VBZ VBZ _ _ s 19 _ _ _
+7 a a DT DT _ _ s 8 _ _ _
+8 striking striking JJ JJ _ _ s 8 _ _ _
+9 finding finding NN NN _ _ s 5 _ _ _
+10 among among IN IN _ _ s 8 _ _ _
+11 those those DT DT _ _ s 9 _ _ _
+12 of of IN IN _ _ s 10 _ _ _
+13 us us PRP PRP _ _ s 11 _ _ _
+14 who who WP WP _ _ s 10 _ _ aux_ARG1
+15 study study VBP VBP _ _ s 10 _ study _
+16 asbestos-related asbestos-related JJ JJ _ _ s 16 _ _ _
+17 diseases diseases NNS NNS _ _ s 14 _ _ _
+18 , , , , _ _ s 19 _ _ _
+19 ” ” '' '' _ _ s 19 _ _ _
+20 said said VBD VBD _ _ s 0 _ _ _
+21 Dr. Dr. NNP NNP _ _ s 21 _ _ _
+22 Talcott Talcott NNP NNP _ _ s 19 _ _ _
+23 . . . . _ _ s 21 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _ _
+2 The The DT DT _ _ s 2 _ _ verb_ARG1 _ _
+3 percentage percentage NN NN _ _ s 19 _ percentage _ _ _
+4 of of IN IN _ _ s 2 _ _ _ _ _
+5 lung lung NN NN _ _ s 6 _ _ _ _ _
+6 cancer cancer NN NN _ _ s 6 _ _ _ _ _
+7 deaths deaths NNS NNS _ _ s 3 _ _ _ _ _
+8 among among IN IN _ _ s 6 _ _ _ verb_ARG1 _
+9 the the DT DT _ _ s 9 _ _ _ verb_ARG1 _
+10 workers workers NNS NNS _ _ s 7 _ workers _ _ _
+11 at at IN IN _ _ s 2 _ _ _ _ _
+12 the the DT DT _ _ s 18 _ _ _ _ _
+13 West West NNP NNP _ _ s 13 _ _ _ _ _
+14 Groton Groton NNP NNP _ _ s 14 _ _ _ _ _
+15 , , , , _ _ s 16 _ , _ _ _
+16 Mass. Mass. NNP NNP _ _ s 14 _ _ _ _ -ROOT-
+17 , , , , _ _ s 17 _ _ _ _ _
+18 paper paper NN NN _ _ s 18 _ _ _ _ _
+19 factory factory NN NN _ _ s 10 _ _ _ _ _
+20 appears appears VBZ VBZ _ _ s 35 _ _ _ _ _
+21 to to TO TO _ _ s 21 _ _ _ _ _
+22 be be VB VB _ _ s 19 _ _ _ _ _
+23 the the DT DT _ _ s 23 _ _ _ _ _
+24 highest highest JJS JJS _ _ s 21 _ _ _ _ _
+25 for for IN IN _ _ s 23 _ _ _ _ _
+26 any any DT DT _ _ s 27 _ _ _ _ _
+27 asbestos asbestos NN NN _ _ s 27 _ _ _ _ _
+28 workers workers NNS NNS _ _ s 24 _ _ _ _ _
+29 studied studied VBN VBN _ _ s 27 _ _ _ _ _
+30 in in IN IN _ _ s 28 _ _ _ _ _
+31 Western Western JJ JJ _ _ s 32 _ _ _ _ _
+32 industrialized industrialized VBN VBN _ _ s 32 _ _ _ _ _
+33 countries countries NNS NNS _ _ s 29 _ _ _ _ _
+34 , , , , _ _ s 35 _ _ _ _ _
+35 he he PRP PRP _ _ s 35 _ _ _ _ _
+36 said said VBD VBD _ _ s 0 _ _ _ _ _
+37 . . . . _ _ s 35 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 The The DT DT _ _ s 2 _ _ verb_ARG1
+3 plant plant NN NN _ _ s 13 _ plant _
+4 , , , , _ _ s 2 _ _ _
+5 which which WDT WDT _ _ s 2 _ _ _
+6 is is VBZ VBZ _ _ s 2 _ _ _
+7 owned owned VBN VBN _ _ s 5 _ _ _
+8 by by IN IN _ _ s 11 _ _ _
+9 Hollingsworth Hollingsworth NNP NNP _ _ s 11 _ _ _
+10 & & CC CC _ _ s 11 _ _ _
+11 Vose Vose NNP NNP _ _ s 11 _ _ _
+12 Co. Co. NNP NNP _ _ s 6 _ _ _
+13 , , , , _ _ s 13 _ _ _
+14 was was VBD VBD _ _ s 0 _ _ _
+15 under under IN IN _ _ s 13 _ _ _
+16 contract contract NN NN _ _ s 14 _ _ _
+17 with with IN IN _ _ s 15 _ _ _
+18 Lorillard Lorillard NN NN _ _ s 16 _ _ _
+19 to to TO TO _ _ s 15 _ _ _
+20 make make VB VB _ _ s 18 _ _ _
+21 the the DT DT _ _ s 22 _ _ _
+22 cigarette cigarette NN NN _ _ s 22 _ _ _
+23 filters filters NNS NNS _ _ s 19 _ _ _
+24 . . . . _ _ s 22 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 2 _ _ _
+3 finding finding NN NN _ _ s 5 _ _ _
+4 probably probably RB RB _ _ s 5 _ _ _
+5 will will MD MD _ _ s 5 _ _ _
+6 support support VB VB _ _ s 0 _ _ _
+7 those those DT DT _ _ s 5 _ _ _
+8 who who WP WP _ _ s 6 _ _ _
+9 argue argue VBP VBP _ _ s 6 _ _ _
+10 that that IN IN _ _ s 13 _ _ _
+11 the the DT DT _ _ s 11 _ _ _
+12 U.S. U.S. NNP NNP _ _ s 12 _ _ _
+13 should should MD MD _ _ s 13 _ _ _
+14 regulate regulate VB VB _ _ s 8 _ _ _
+15 the the DT DT _ _ s 15 _ _ _
+16 class class NN NN _ _ s 13 _ _ _
+17 of of IN IN _ _ s 15 _ _ _
+18 asbestos asbestos NN NN _ _ s 16 _ _ _
+19 including including VBG VBG _ _ s 15 _ _ _
+20 crocidolite crocidolite NN NN _ _ s 18 _ _ _
+21 more more RBR RBR _ _ s 21 _ _ _
+22 stringently stringently RB RB _ _ s 19 _ _ _
+23 than than IN IN _ _ s 21 _ _ _
+24 the the DT DT _ _ s 25 _ _ _
+25 common common JJ JJ _ _ s 25 _ _ _
+26 kind kind NN NN _ _ s 22 _ _ _
+27 of of IN IN _ _ s 25 _ _ _
+28 asbestos asbestos NN NN _ _ s 28 _ _ _
+29 , , , , _ _ s 26 _ , _
+30 chrysotile chrysotile NN NN _ _ s 28 _ _ -ROOT-
+31 , , , , _ _ s 28 _ _ _
+32 found found VBN VBN _ _ s 28 _ _ _
+33 in in IN IN _ _ s 31 _ _ _
+34 most most JJS JJS _ _ s 34 _ _ _
+35 schools schools NNS NNS _ _ s 35 _ _ _
+36 and and CC CC _ _ s 32 _ _ _
+37 other other JJ JJ _ _ s 37 _ _ _
+38 buildings buildings NNS NNS _ _ s 35 _ _ _
+39 , , , , _ _ s 41 _ _ _
+40 Dr. Dr. NNP NNP _ _ s 40 _ _ _
+41 Talcott Talcott NNP NNP _ _ s 41 _ _ _
+42 said said VBD VBD _ _ s 0 _ _ _
+43 . . . . _ _ s 41 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 2 _ _ _
+3 U.S. U.S. NNP NNP _ _ s 3 _ _ _
+4 is is VBZ VBZ _ _ s 0 _ _ _
+5 one one CD CD _ _ s 3 _ _ _
+6 of of IN IN _ _ s 4 _ _ _
+7 the the DT DT _ _ s 9 _ _ _
+8 few few JJ JJ _ _ s 9 _ _ _
+9 industrialized industrialized VBN VBN _ _ s 9 _ _ _
+10 nations nations NNS NNS _ _ s 5 _ _ _
+11 that that WDT WDT _ _ s 9 _ _ _
+12 does does VBZ VBZ _ _ s 9 _ _ _
+13 n’t n’t RB RB _ _ s 13 _ _ _
+14 have have VB VB _ _ s 11 _ _ _
+15 a a DT DT _ _ s 16 _ _ _
+16 higher higher JJR JJR _ _ s 16 _ _ _
+17 standard standard NN NN _ _ s 13 _ _ _
+18 of of IN IN _ _ s 16 _ _ verb_ARG1
+19 regulation regulation NN NN _ _ s 17 _ regulation _
+20 for for IN IN _ _ s 18 _ _ _
+21 the the DT DT _ _ s 24 _ _ _
+22 smooth smooth JJ JJ _ _ s 22 _ _ _
+23 , , , , _ _ s 23 _ _ _
+24 needle-like needle-like JJ JJ _ _ s 24 _ _ _
+25 fibers fibers NNS NNS _ _ s 19 _ _ _
+26 such such JJ JJ _ _ s 26 _ _ _
+27 as as IN IN _ _ s 24 _ _ _
+28 crocidolite crocidolite NN NN _ _ s 26 _ _ _
+29 that that WDT WDT _ _ s 24 _ _ _
+30 are are VBP VBP _ _ s 24 _ _ _
+31 classified classified VBN VBN _ _ s 29 _ _ _
+32 as as IN IN _ _ s 30 _ _ _
+33 amphobiles amphobiles NNS NNS _ _ s 31 _ _ _
+34 , , , , _ _ s 3 _ _ _
+35 according according VBG VBG _ _ s 3 _ _ _
+36 to to TO TO _ _ s 34 _ _ _
+37 Brooke Brooke NNP NNP _ _ s 38 _ _ _
+38 T. T. NNP NNP _ _ s 38 _ _ _
+39 Mossman Mossman NNP NNP _ _ s 35 _ _ _
+40 , , , , _ _ s 38 _ _ _
+41 a a DT DT _ _ s 41 _ _ _
+42 professor professor NN NN _ _ s 39 _ _ _
+43 of of IN IN _ _ s 41 _ _ _
+44 pathlogy pathlogy NN NN _ _ s 42 _ _ _
+45 at at IN IN _ _ s 41 _ _ _
+46 the the DT DT _ _ s 46 _ _ _
+47 University University NNP NNP _ _ s 44 _ _ _
+48 of of IN IN _ _ s 46 _ _ _
+49 Vermont Vermont NNP NNP _ _ s 49 _ _ _
+50 College College NNP NNP _ _ s 47 _ _ _
+51 of of IN IN _ _ s 49 _ _ _
+52 Medicine Medicine NNP NNP _ _ s 50 _ _ _
+53 . . . . _ _ s 51 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 More More RBR RBR _ _ s 2 _ _
+3 common common JJ JJ _ _ s 4 _ _
+4 chrysotile chrysotile NN NN _ _ s 4 _ _
+5 fibers fibers NNS NNS _ _ s 5 _ _
+6 are are VBP VBP _ _ s 7 _ _
+7 curly curly JJ JJ _ _ s 5 _ _
+8 and and CC CC _ _ s 18 _ _
+9 are are VBP VBP _ _ s 11 _ _
+10 more more RBR RBR _ _ s 10 _ _
+11 easily easily RB RB _ _ s 11 _ _
+12 rejected rejected VBN VBN _ _ s 7 _ _
+13 by by IN IN _ _ s 14 _ _
+14 the the DT DT _ _ s 14 _ _
+15 body body NN NN _ _ s 11 _ _
+16 , , , , _ _ s 18 _ _
+17 Dr. Dr. NNP NNP _ _ s 17 _ _
+18 Mossman Mossman NNP NNP _ _ s 18 _ _
+19 explained explained VBD VBD _ _ s 0 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 In In IN IN _ _ s 8 _ _
+3 July July NNP NNP _ _ s 1 _ _
+4 , , , , _ _ s 8 _ _
+5 the the DT DT _ _ s 7 _ _
+6 Environmental Environmental NNP NNP _ _ s 7 _ _
+7 Protection Protection NNP NNP _ _ s 7 _ _
+8 Agency Agency NNP NNP _ _ s 8 _ _
+9 imposed imposed VBD VBD _ _ s 0 _ _
+10 a a DT DT _ _ s 11 _ _
+11 gradual gradual JJ JJ _ _ s 11 _ _
+12 ban ban NN NN _ _ s 8 _ _
+13 on on IN IN _ _ s 8 _ _
+14 virtually virtually RB RB _ _ s 15 _ _
+15 all all DT DT _ _ s 15 _ _
+16 uses uses NNS NNS _ _ s 12 _ _
+17 of of IN IN _ _ s 15 _ _
+18 asbestos asbestos NN NN _ _ s 16 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 By By IN IN _ _ s 13 _ _ _
+3 1997 1997 CD CD _ _ s 1 _ _ _
+4 , , , , _ _ s 13 _ _ _
+5 almost almost RB RB _ _ s 7 _ _ verb_ARG1
+6 all all DT DT _ _ s 7 _ _ verb_ARG1
+7 remaining remaining VBG VBG _ _ s 7 _ _ verb_ARG1
+8 uses uses NNS NNS _ _ s 11 _ uses _
+9 of of IN IN _ _ s 7 _ _ _
+10 cancer-causing cancer-causing JJ JJ _ _ s 10 _ _ _
+11 asbestos asbestos NN NN _ _ s 8 _ _ _
+12 will will MD MD _ _ s 13 _ _ _
+13 be be VB VB _ _ s 13 _ _ _
+14 outlawed outlawed VBN VBN _ _ s 0 _ _ _
+15 . . . . _ _ s 13 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 About About IN IN _ _ s 2 _ _ _
+3 160 160 CD CD _ _ s 3 _ _ _
+4 workers workers NNS NNS _ _ s 14 _ _ _
+5 at at IN IN _ _ s 3 _ _ _
+6 a a DT DT _ _ s 6 _ _ _
+7 factory factory NN NN _ _ s 4 _ _ _
+8 that that WDT WDT _ _ s 6 _ _ aux_ARG1
+9 made made VBD VBD _ _ s 6 _ made _
+10 paper paper NN NN _ _ s 8 _ _ _
+11 for for IN IN _ _ s 8 _ _ _
+12 the the DT DT _ _ s 13 _ _ _
+13 Kent Kent NNP NNP _ _ s 13 _ _ _
+14 filters filters NNS NNS _ _ s 10 _ _ _
+15 were were VBD VBD _ _ s 15 _ _ _
+16 exposed exposed VBN VBN _ _ s 0 _ _ _
+17 to to TO TO _ _ s 15 _ _ _
+18 asbestos asbestos NN NN _ _ s 16 _ _ _
+19 in in IN IN _ _ s 15 _ _ _
+20 the the DT DT _ _ s 20 _ _ _
+21 1950s 1950s CD CD _ _ s 18 _ _ _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 Areas Areas NNS NNS _ _ s 5 _ Areas _ _
+3 of of IN IN _ _ s 1 _ _ _ _
+4 the the DT DT _ _ s 4 _ _ _ _
+5 factory factory NN NN _ _ s 2 _ _ _ _
+6 were were VBD VBD _ _ s 0 _ _ _ _
+7 particularly particularly RB RB _ _ s 7 _ _ _ _
+8 dusty dusty JJ JJ _ _ s 5 _ _ _ _
+9 where where WRB WRB _ _ s 7 _ _ _ _
+10 the the DT DT _ _ s 10 _ _ _ _
+11 crocidolite crocidolite NN NN _ _ s 11 _ _ _ _
+12 was was VBD VBD _ _ s 12 _ _ _ verb_ARG1
+13 used used VBN VBN _ _ s 8 _ used _ _
+14 . . . . _ _ s 12 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ verb_ARG1
+2 Workers Workers NNS NNS _ _ s 2 _ Workers _
+3 dumped dumped VBD VBD _ _ s 0 _ _ _
+4 large large JJ JJ _ _ s 5 _ _ _
+5 burlap burlap NN NN _ _ s 5 _ _ _
+6 sacks sacks NNS NNS _ _ s 15 _ _ _
+7 of of IN IN _ _ s 5 _ _ _
+8 the the DT DT _ _ s 9 _ _ _
+9 imported imported VBN VBN _ _ s 9 _ _ _
+10 material material NN NN _ _ s 6 _ _ _
+11 into into IN IN _ _ s 9 _ _ _
+12 a a DT DT _ _ s 13 _ _ _
+13 huge huge JJ JJ _ _ s 13 _ _ _
+14 bin bin NN NN _ _ s 10 _ _ _
+15 , , , , _ _ s 15 _ _ _
+16 poured poured VBD VBD _ _ s 21 _ _ _
+17 in in RP RP _ _ s 15 _ _ _
+18 cotton cotton NN NN _ _ s 18 _ _ _
+19 and and CC CC _ _ s 19 _ _ _
+20 acetate acetate NN NN _ _ s 20 _ _ _
+21 fibers fibers NNS NNS _ _ s 15 _ _ _
+22 and and CC CC _ _ s 2 _ _ _
+23 mechanically mechanically RB RB _ _ s 23 _ _ _
+24 mixed mixed VBD VBD _ _ s 21 _ _ _
+25 the the DT DT _ _ s 26 _ _ _
+26 dry dry JJ JJ _ _ s 26 _ _ _
+27 fibers fibers NNS NNS _ _ s 23 _ _ _
+28 in in IN IN _ _ s 26 _ _ _
+29 a a DT DT _ _ s 29 _ _ _
+30 process process NN NN _ _ s 27 _ _ _
+31 used used VBN VBN _ _ s 29 _ _ _
+32 to to TO TO _ _ s 32 _ _ _
+33 make make VB VB _ _ s 30 _ _ _
+34 filters filters NNS NNS _ _ s 32 _ _ _
+35 . . . . _ _ s 33 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 Workers Workers NNS NNS _ _ s 2 _ Workers _ _
+3 described described VBD VBD _ _ s 0 _ _ verb_ARG3 _
+4 “ “ `` `` _ _ s 2 _ _ _ _
+5 clouds clouds NNS NNS _ _ s 2 _ _ _ _
+6 of of IN IN _ _ s 4 _ _ _ _
+7 blue blue JJ JJ _ _ s 7 _ _ _ _
+8 dust dust NN NN _ _ s 5 _ _ _ _
+9 ” ” '' '' _ _ s 7 _ _ _ _
+10 that that WDT WDT _ _ s 7 _ _ _ aux_ARG1
+11 hung hung VBD VBD _ _ s 7 _ hung _ _
+12 over over IN IN _ _ s 10 _ _ _ _
+13 parts parts NNS NNS _ _ s 11 _ _ _ _
+14 of of IN IN _ _ s 12 _ _ _ _
+15 the the DT DT _ _ s 15 _ _ _ _
+16 factory factory NN NN _ _ s 13 _ _ _ _
+17 , , , , _ _ s 2 _ _ _ _
+18 even even RB RB _ _ s 18 _ _ _ _
+19 though though IN IN _ _ s 2 _ _ _ _
+20 exhaust exhaust NN NN _ _ s 20 _ _ _ _
+21 fans fans NNS NNS _ _ s 21 _ _ _ _
+22 ventilated ventilated VBD VBD _ _ s 18 _ _ _ _
+23 the the DT DT _ _ s 23 _ _ _ _
+24 area area NN NN _ _ s 21 _ _ _ _
+25 . . . . _ _ s 23 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 18 _ _
+3 There There EX EX _ _ s 3 _ _
+4 ’s ’s VBZ VBZ _ _ s 18 _ _
+5 no no DT DT _ _ s 5 _ _
+6 question question NN NN _ _ s 3 _ _
+7 that that IN IN _ _ s 13 _ _
+8 some some DT DT _ _ s 13 _ _
+9 of of IN IN _ _ s 7 _ _
+10 those those DT DT _ _ s 11 _ _
+11 workers workers NNS NNS _ _ s 11 _ _
+12 and and CC CC _ _ s 8 _ _
+13 managers managers NNS NNS _ _ s 11 _ _
+14 contracted contracted VBD VBD _ _ s 5 _ _
+15 asbestos-related asbestos-related JJ JJ _ _ s 15 _ _
+16 diseases diseases NNS NNS _ _ s 13 _ _
+17 , , , , _ _ s 18 _ _
+18 ” ” '' '' _ _ s 18 _ _
+19 said said VBD VBD _ _ s 0 _ _
+20 Darrell Darrell NNP NNP _ _ s 20 _ _
+21 Phillips Phillips NNP NNP _ _ s 18 _ _
+22 , , , , _ _ s 20 _ _
+23 vice vice NN NN _ _ s 23 _ _
+24 president president NN NN _ _ s 21 _ _
+25 of of IN IN _ _ s 23 _ _
+26 human human JJ JJ _ _ s 26 _ _
+27 resources resources NNS NNS _ _ s 24 _ _
+28 for for IN IN _ _ s 23 _ _
+29 Hollingsworth Hollingsworth NNP NNP _ _ s 30 _ _
+30 & & CC CC _ _ s 30 _ _
+31 Vose Vose NNP NNP _ _ s 27 _ _
+32 . . . . _ _ s 30 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 “ “ `` `` _ _ s 4 _ “ _
+3 But But CC CC _ _ s 4 _ _ verb_ARG3
+4 you you PRP PRP _ _ s 4 _ _ _
+5 have have VBP VBP _ _ s 0 _ _ _
+6 to to TO TO _ _ s 6 _ _ _
+7 recognize recognize VB VB _ _ s 4 _ _ _
+8 that that IN IN _ _ s 10 _ _ _
+9 these these DT DT _ _ s 9 _ _ _
+10 events events NNS NNS _ _ s 10 _ _ _
+11 took took VBD VBD _ _ s 6 _ _ _
+12 place place NN NN _ _ s 10 _ _ _
+13 35 35 CD CD _ _ s 13 _ _ _
+14 years years NNS NNS _ _ s 14 _ _ _
+15 ago ago IN IN _ _ s 10 _ _ _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 It It PRP PRP _ _ s 2 _ It _
+3 has has VBZ VBZ _ _ s 0 _ _ verb_ARG3
+4 no no DT DT _ _ s 4 _ _ _
+5 bearing bearing NN NN _ _ s 2 _ _ _
+6 on on IN IN _ _ s 4 _ _ _
+7 our our PRP$ PRP$ _ _ s 8 _ _ _
+8 work work NN NN _ _ s 8 _ _ _
+9 force force NN NN _ _ s 5 _ _ _
+10 today today NN NN _ _ s 4 _ _ _
+11 . . . . _ _ s 9 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Yields Yields NNS NNS _ _ s 6 _ Yields _
+3 on on IN IN _ _ s 1 _ _ _
+4 money-market money-market JJ JJ _ _ s 5 _ _ _
+5 mutual mutual JJ JJ _ _ s 5 _ _ _
+6 funds funds NNS NNS _ _ s 2 _ _ _
+7 continued continued VBD VBD _ _ s 0 _ _ _
+8 to to TO TO _ _ s 8 _ _ _
+9 slide slide VB VB _ _ s 6 _ _ _
+10 , , , , _ _ s 6 _ _ _
+11 amid amid IN IN _ _ s 6 _ _ _
+12 signs signs NNS NNS _ _ s 10 _ _ _
+13 that that IN IN _ _ s 15 _ _ _
+14 portfolio portfolio NN NN _ _ s 14 _ _ _
+15 managers managers NNS NNS _ _ s 15 _ _ _
+16 expect expect VBP VBP _ _ s 11 _ _ _
+17 further further JJ JJ _ _ s 17 _ _ _
+18 declines declines NNS NNS _ _ s 15 _ _ _
+19 in in IN IN _ _ s 17 _ _ _
+20 interest interest NN NN _ _ s 20 _ _ _
+21 rates rates NNS NNS _ _ s 18 _ _ _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 5 _ _ _
+3 average average JJ JJ _ _ s 5 _ _ _
+4 seven-day seven-day JJ JJ _ _ s 5 _ _ _
+5 compound compound NN NN _ _ s 5 _ _ _
+6 yield yield NN NN _ _ s 18 _ _ _
+7 of of IN IN _ _ s 5 _ _ _
+8 the the DT DT _ _ s 10 _ _ _
+9 400 400 CD CD _ _ s 10 _ _ _
+10 taxable taxable JJ JJ _ _ s 10 _ _ _
+11 funds funds NNS NNS _ _ s 6 _ _ _
+12 tracked tracked VBN VBN _ _ s 10 _ _ _
+13 by by IN IN _ _ s 17 _ _ _
+14 IBC IBC NNP NNP _ _ s 14 _ _ _
+15 ’s ’s POS POS _ _ s 17 _ _ _
+16 Money Money NNP NNP _ _ s 17 _ _ _
+17 Fund Fund NNP NNP _ _ s 17 _ _ _
+18 Report Report NNP NNP _ _ s 11 _ _ _
+19 eased eased VBD VBD _ _ s 0 _ _ verb_ARG1
+20 a a DT DT _ _ s 20 _ _ verb_ARG1
+21 fraction fraction NN NN _ _ s 18 _ fraction _
+22 of of IN IN _ _ s 20 _ _ _
+23 a a DT DT _ _ s 24 _ _ _
+24 percentage percentage NN NN _ _ s 24 _ _ _
+25 point point NN NN _ _ s 21 _ _ _
+26 to to TO TO _ _ s 18 _ _ _
+27 8.45 8.45 CD CD _ _ s 27 _ _ _
+28 % % NN NN _ _ s 25 _ _ _
+29 from from IN IN _ _ s 18 _ _ _
+30 8.47 8.47 CD CD _ _ s 30 _ _ _
+31 % % NN NN _ _ s 28 _ _ _
+32 for for IN IN _ _ s 18 _ _ _
+33 the the DT DT _ _ s 33 _ _ _
+34 week week NN NN _ _ s 31 _ _ _
+35 ended ended VBD VBD _ _ s 33 _ _ _
+36 Tuesday Tuesday NNP NNP _ _ s 34 _ _ _
+37 . . . . _ _ s 35 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _
+2 Compound Compound NN NN _ _ s 2 _ _ _ _
+3 yields yields NNS NNS _ _ s 3 _ _ _ _
+4 assume assume VBP VBP _ _ s 7 _ _ _ _
+5 reinvestment reinvestment NN NN _ _ s 3 _ _ _ _
+6 of of IN IN _ _ s 4 _ of _ _
+7 dividends dividends NNS NNS _ _ s 5 _ _ -ROOT- _
+8 and and CC CC _ _ s 0 _ _ _ _
+9 that that IN IN _ _ s 12 _ _ _ _
+10 the the DT DT _ _ s 11 _ _ _ _
+11 current current JJ JJ _ _ s 11 _ _ _ _
+12 yield yield NN NN _ _ s 12 _ _ _ _
+13 continues continues VBZ VBZ _ _ s 7 _ _ _ _
+14 for for IN IN _ _ s 12 _ _ _ verb_ARG1
+15 a a DT DT _ _ s 15 _ _ _ verb_ARG1
+16 year year NN NN _ _ s 13 _ year _ _
+17 . . . . _ _ s 15 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Average Average JJ JJ _ _ s 2 _ _
+3 maturity maturity NN NN _ _ s 8 _ _
+4 of of IN IN _ _ s 2 _ _
+5 the the DT DT _ _ s 5 _ _
+6 funds funds NNS NNS _ _ s 6 _ _
+7 ’ ’ POS POS _ _ s 7 _ _
+8 investments investments NNS NNS _ _ s 3 _ _
+9 lengthened lengthened VBD VBD _ _ s 0 _ _
+10 by by IN IN _ _ s 8 _ _
+11 a a DT DT _ _ s 11 _ _
+12 day day NN NN _ _ s 9 _ _
+13 to to TO TO _ _ s 8 _ _
+14 41 41 CD CD _ _ s 14 _ _
+15 days days NNS NNS _ _ s 12 _ _
+16 , , , , _ _ s 14 _ _
+17 the the DT DT _ _ s 17 _ _
+18 longest longest JJS JJS _ _ s 15 _ _
+19 since since IN IN _ _ s 17 _ _
+20 early early JJ JJ _ _ s 20 _ _
+21 August August NNP NNP _ _ s 18 _ _
+22 , , , , _ _ s 8 _ _
+23 according according VBG VBG _ _ s 8 _ _
+24 to to TO TO _ _ s 22 _ _
+25 Donoghue Donoghue NNP NNP _ _ s 25 _ _
+26 ’s ’s POS POS _ _ s 23 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Longer Longer JJR JJR _ _ s 2 _ _ _
+3 maturities maturities NNS NNS _ _ s 3 _ _ _
+4 are are VBP VBP _ _ s 4 _ _ _
+5 thought thought VBN VBN _ _ s 0 _ _ _
+6 to to TO TO _ _ s 6 _ _ aux_ARG1
+7 indicate indicate VB VB _ _ s 4 _ indicate _
+8 declining declining VBG VBG _ _ s 9 _ _ _
+9 interest interest NN NN _ _ s 9 _ _ _
+10 rates rates NNS NNS _ _ s 6 _ _ _
+11 because because IN IN _ _ s 4 _ _ _
+12 they they PRP PRP _ _ s 12 _ _ _
+13 permit permit VBP VBP _ _ s 10 _ _ _
+14 portfolio portfolio NN NN _ _ s 14 _ _ _
+15 managers managers NNS NNS _ _ s 12 _ _ _
+16 to to TO TO _ _ s 16 _ _ _
+17 retain retain VB VB _ _ s 12 _ _ _
+18 relatively relatively RB RB _ _ s 18 _ _ _
+19 higher higher JJR JJR _ _ s 19 _ _ _
+20 rates rates NNS NNS _ _ s 16 _ _ _
+21 for for IN IN _ _ s 19 _ _ _
+22 a a DT DT _ _ s 23 _ _ _
+23 longer longer JJR JJR _ _ s 23 _ _ _
+24 period period NN NN _ _ s 20 _ _ _
+25 . . . . _ _ s 23 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Shorter Shorter JJR JJR _ _ s 2 _ _ _
+3 maturities maturities NNS NNS _ _ s 3 _ _ _
+4 are are VBP VBP _ _ s 4 _ _ _
+5 considered considered VBN VBN _ _ s 0 _ _ _
+6 a a DT DT _ _ s 6 _ _ _
+7 sign sign NN NN _ _ s 4 _ _ _
+8 of of IN IN _ _ s 6 _ _ verb_ARG1
+9 rising rising VBG VBG _ _ s 9 _ _ verb_ARG1
+10 rates rates NNS NNS _ _ s 7 _ rates _
+11 because because IN IN _ _ s 4 _ _ _
+12 portfolio portfolio NN NN _ _ s 12 _ _ _
+13 managers managers NNS NNS _ _ s 13 _ _ _
+14 can can MD MD _ _ s 14 _ _ _
+15 capture capture VB VB _ _ s 10 _ _ _
+16 higher higher JJR JJR _ _ s 16 _ _ _
+17 rates rates NNS NNS _ _ s 14 _ _ _
+18 sooner sooner RB RB _ _ s 14 _ _ _
+19 . . . . _ _ s 17 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 The The DT DT _ _ s 3 _ _ verb_ARG1 _
+3 average average JJ JJ _ _ s 3 _ _ verb_ARG1 _
+4 maturity maturity NN NN _ _ s 27 _ maturity _ _
+5 for for IN IN _ _ s 3 _ _ _ _
+6 funds funds NNS NNS _ _ s 4 _ _ _ _
+7 open open JJ JJ _ _ s 5 _ _ _ _
+8 only only RB RB _ _ s 6 _ _ _ _
+9 to to TO TO _ _ s 6 _ _ _ verb_ARG1
+10 institutions institutions NNS NNS _ _ s 8 _ institutions _ _
+11 , , , , _ _ s 5 _ _ _ _
+12 considered considered VBN VBN _ _ s 5 _ _ _ _
+13 by by IN IN _ _ s 13 _ _ _ _
+14 some some DT DT _ _ s 11 _ _ _ _
+15 to to TO TO _ _ s 15 _ _ _ _
+16 be be VB VB _ _ s 11 _ _ _ _
+17 a a DT DT _ _ s 18 _ _ _ _
+18 stronger stronger JJR JJR _ _ s 18 _ _ _ _
+19 indicator indicator NN NN _ _ s 15 _ _ _ _
+20 because because IN IN _ _ s 15 _ _ _ _
+21 those those DT DT _ _ s 21 _ _ _ _
+22 managers managers NNS NNS _ _ s 22 _ _ _ _
+23 watch watch VBP VBP _ _ s 19 _ _ _ _
+24 the the DT DT _ _ s 24 _ _ _ _
+25 market market NN NN _ _ s 22 _ _ _ _
+26 closely closely RB RB _ _ s 22 _ _ _ _
+27 , , , , _ _ s 27 _ _ _ _
+28 reached reached VBD VBD _ _ s 0 _ _ _ _
+29 a a DT DT _ _ s 30 _ _ _ _
+30 high high JJ JJ _ _ s 30 _ _ _ _
+31 point point NN NN _ _ s 27 _ _ _ _
+32 for for IN IN _ _ s 30 _ _ _ _
+33 the the DT DT _ _ s 33 _ _ _ _
+34 year year NN NN _ _ s 31 _ _ _ _
+35 – – : : _ _ s 27 _ _ _ _
+36 33 33 CD CD _ _ s 36 _ _ _ _
+37 days days NNS NNS _ _ s 27 _ _ _ _
+38 . . . . _ _ s 36 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Nevertheless Nevertheless RB RB _ _ s 3 _ Nevertheless _
+3 , , , , _ _ s 3 _ _ _
+4 said said VBD VBD _ _ s 0 _ _ _
+5 Brenda Brenda NNP NNP _ _ s 6 _ _ _
+6 Malizia Malizia NNP NNP _ _ s 6 _ _ _
+7 Negus Negus NNP NNP _ _ s 17 _ _ _
+8 , , , , _ _ s 6 _ _ _
+9 editor editor NN NN _ _ s 7 _ _ _
+10 of of IN IN _ _ s 8 _ _ _
+11 Money Money NNP NNP _ _ s 12 _ _ _
+12 Fund Fund NNP NNP _ _ s 12 _ _ _
+13 Report Report NNP NNP _ _ s 9 _ _ _
+14 , , , , _ _ s 17 _ _ _
+15 yields yields NNS NNS _ _ s 16 _ _ _
+16 “ “ `` `` _ _ s 16 _ _ _
+17 may may MD MD _ _ s 17 _ _ _
+18 blip blip VB VB _ _ s 3 _ _ _
+19 up up RP RP _ _ s 17 _ _ _
+20 again again RB RB _ _ s 17 _ _ _
+21 before before IN IN _ _ s 17 _ _ _
+22 they they PRP PRP _ _ s 22 _ _ _
+23 blip blip VBP VBP _ _ s 20 _ _ _
+24 down down RP RP _ _ s 22 _ _ _
+25 ” ” '' '' _ _ s 22 _ _ _
+26 because because IN IN _ _ s 22 _ _ _
+27 of of IN IN _ _ s 25 _ _ _
+28 recent recent JJ JJ _ _ s 28 _ _ _
+29 rises rises NNS NNS _ _ s 25 _ _ _
+30 in in IN IN _ _ s 28 _ _ _
+31 short-term short-term JJ JJ _ _ s 32 _ _ _
+32 interest interest NN NN _ _ s 32 _ _ _
+33 rates rates NNS NNS _ _ s 29 _ _ _
+34 . . . . _ _ s 32 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 The The DT DT _ _ s 2 _ _ verb_ARG1
+3 yield yield NN NN _ _ s 16 _ yield _
+4 on on IN IN _ _ s 2 _ _ _
+5 six-month six-month JJ JJ _ _ s 6 _ _ _
+6 Treasury Treasury NNP NNP _ _ s 6 _ _ _
+7 bills bills NNS NNS _ _ s 3 _ _ _
+8 sold sold VBN VBN _ _ s 6 _ _ _
+9 at at IN IN _ _ s 7 _ _ _
+10 Monday Monday NNP NNP _ _ s 10 _ _ _
+11 ’s ’s POS POS _ _ s 11 _ _ _
+12 auction auction NN NN _ _ s 8 _ _ _
+13 , , , , _ _ s 11 _ _ _
+14 for for IN IN _ _ s 11 _ _ _
+15 example example NN NN _ _ s 13 _ _ _
+16 , , , , _ _ s 16 _ _ _
+17 rose rose VBD VBD _ _ s 0 _ _ _
+18 to to TO TO _ _ s 16 _ _ _
+19 8.04 8.04 CD CD _ _ s 19 _ _ _
+20 % % NN NN _ _ s 17 _ _ _
+21 from from IN IN _ _ s 16 _ _ _
+22 7.90 7.90 CD CD _ _ s 22 _ _ _
+23 % % NN NN _ _ s 20 _ _ _
+24 . . . . _ _ s 22 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _
+2 Despite Despite IN IN _ _ s 8 _ Despite verb_ARG3 _ _
+3 recent recent JJ JJ _ _ s 3 _ _ _ verb_ARG3 _
+4 declines declines NNS NNS _ _ s 1 _ _ _ _ _
+5 in in IN IN _ _ s 3 _ _ _ _ _
+6 yields yields NNS NNS _ _ s 4 _ _ _ _ _
+7 , , , , _ _ s 8 _ _ _ _ _
+8 investors investors NNS NNS _ _ s 8 _ _ _ _ _
+9 continue continue VBP VBP _ _ s 0 _ _ _ _ verb_ARG1
+10 to to TO TO _ _ s 10 _ _ _ _ verb_ARG1
+11 pour pour VB VB _ _ s 8 _ _ _ _ verb_ARG1
+12 cash cash NN NN _ _ s 10 _ _ _ _ verb_ARG1
+13 into into IN IN _ _ s 10 _ _ _ _ verb_ARG1
+14 money money NN NN _ _ s 14 _ _ _ _ verb_ARG1
+15 funds funds NNS NNS _ _ s 12 _ funds _ _ _
+16 . . . . _ _ s 14 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Assets Assets NNS NNS _ _ s 7 _ Assets _
+3 of of IN IN _ _ s 1 _ _ _
+4 the the DT DT _ _ s 6 _ _ _
+5 400 400 CD CD _ _ s 6 _ _ _
+6 taxable taxable JJ JJ _ _ s 6 _ _ _
+7 funds funds NNS NNS _ _ s 2 _ _ _
+8 grew grew VBD VBD _ _ s 0 _ _ _
+9 by by IN IN _ _ s 7 _ _ _
+10 $ $ $ $ _ _ s 11 _ _ _
+11 1.5 1.5 CD CD _ _ s 11 _ _ _
+12 billion billion CD CD _ _ s 8 _ _ _
+13 during during IN IN _ _ s 7 _ _ _
+14 the the DT DT _ _ s 15 _ _ _
+15 latest latest JJS JJS _ _ s 15 _ _ _
+16 week week NN NN _ _ s 12 _ _ _
+17 , , , , _ _ s 7 _ _ _
+18 to to TO TO _ _ s 7 _ _ _
+19 $ $ $ $ _ _ s 20 _ _ _
+20 352.7 352.7 CD CD _ _ s 20 _ _ _
+21 billion billion CD CD _ _ s 17 _ _ _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Typically Typically RB RB _ _ s 5 _ _
+3 , , , , _ _ s 5 _ _
+4 money-fund money-fund NN NN _ _ s 4 _ _
+5 yields yields NNS NNS _ _ s 5 _ _
+6 beat beat VBP VBP _ _ s 0 _ _
+7 comparable comparable JJ JJ _ _ s 8 _ _
+8 short-term short-term JJ JJ _ _ s 8 _ _
+9 investments investments NNS NNS _ _ s 5 _ _
+10 because because IN IN _ _ s 5 _ _
+11 portfolio portfolio NN NN _ _ s 11 _ _
+12 managers managers NNS NNS _ _ s 12 _ _
+13 can can MD MD _ _ s 13 _ _
+14 vary vary VB VB _ _ s 15 _ _
+15 maturities maturities NNS NNS _ _ s 13 _ _
+16 and and CC CC _ _ s 9 _ _
+17 go go VB VB _ _ s 15 _ _
+18 after after IN IN _ _ s 16 _ _
+19 the the DT DT _ _ s 20 _ _
+20 highest highest JJS JJS _ _ s 20 _ _
+21 rates rates NNS NNS _ _ s 17 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 4 _ _
+3 top top JJ JJ _ _ s 4 _ _
+4 money money NN NN _ _ s 4 _ _
+5 funds funds NNS NNS _ _ s 5 _ _
+6 are are VBP VBP _ _ s 7 _ _
+7 currently currently RB RB _ _ s 7 _ _
+8 yielding yielding VBG VBG _ _ s 0 _ _
+9 well well RB RB _ _ s 10 _ _
+10 over over IN IN _ _ s 10 _ _
+11 9 9 CD CD _ _ s 11 _ _
+12 % % NN NN _ _ s 7 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Dreyfus Dreyfus NNP NNP _ _ s 3 _ _
+3 World-Wide World-Wide NNP NNP _ _ s 3 _ _
+4 Dollar Dollar NNP NNP _ _ s 9 _ _
+5 , , , , _ _ s 3 _ _
+6 the the DT DT _ _ s 7 _ _
+7 top-yielding top-yielding JJ JJ _ _ s 7 _ _
+8 fund fund NN NN _ _ s 4 _ _
+9 , , , , _ _ s 9 _ _
+10 had had VBD VBD _ _ s 0 _ _
+11 a a DT DT _ _ s 13 _ _
+12 seven-day seven-day JJ JJ _ _ s 13 _ _
+13 compound compound NN NN _ _ s 13 _ _
+14 yield yield NN NN _ _ s 9 _ _
+15 of of IN IN _ _ s 13 _ _
+16 9.37 9.37 CD CD _ _ s 16 _ _
+17 % % NN NN _ _ s 14 _ _
+18 during during IN IN _ _ s 9 _ _
+19 the the DT DT _ _ s 20 _ _
+20 latest latest JJS JJS _ _ s 20 _ _
+21 week week NN NN _ _ s 17 _ _
+22 , , , , _ _ s 9 _ _
+23 down down RB RB _ _ s 9 _ _
+24 from from IN IN _ _ s 22 _ _
+25 9.45 9.45 CD CD _ _ s 25 _ _
+26 % % NN NN _ _ s 23 _ _
+27 a a DT DT _ _ s 27 _ _
+28 week week NN NN _ _ s 28 _ _
+29 earlier earlier JJR JJR _ _ s 25 _ _
+30 . . . . _ _ s 28 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 It It PRP PRP _ _ s 2 _ _ _
+3 invests invests VBZ VBZ _ _ s 8 _ _ _
+4 heavily heavily RB RB _ _ s 2 _ _ _
+5 in in IN IN _ _ s 2 _ _ _
+6 dollar-denominated dollar-denominated JJ JJ _ _ s 6 _ _ _
+7 securities securities NNS NNS _ _ s 4 _ _ _
+8 overseas overseas RB RB _ _ s 6 _ _ _
+9 and and CC CC _ _ s 0 _ _ _
+10 is is VBZ VBZ _ _ s 11 _ _ _
+11 currently currently RB RB _ _ s 11 _ _ _
+12 waiving waiving VBG VBG _ _ s 16 _ _ _
+13 management management NN NN _ _ s 13 _ _ _
+14 fees fees NNS NNS _ _ s 11 _ _ _
+15 , , , , _ _ s 11 _ _ _
+16 which which WDT WDT _ _ s 11 _ _ _
+17 boosts boosts VBZ VBZ _ _ s 8 _ _ noun_ARG1
+18 its its PRP$ PRP$ _ _ s 18 _ _ verb_ARG1
+19 yield yield NN NN _ _ s 16 _ yield _
+20 . . . . _ _ s 18 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 10 _ _ _
+2 The The DT DT _ _ s 5 _ _ _
+3 average average JJ JJ _ _ s 5 _ _ _
+4 seven-day seven-day JJ JJ _ _ s 5 _ _ _
+5 simple simple JJ JJ _ _ s 5 _ _ _
+6 yield yield NN NN _ _ s 10 _ _ _
+7 of of IN IN _ _ s 5 _ _ verb_ARG1
+8 the the DT DT _ _ s 9 _ _ verb_ARG1
+9 400 400 CD CD _ _ s 9 _ _ verb_ARG1
+10 funds funds NNS NNS _ _ s 6 _ funds _
+11 was was VBD VBD _ _ s 14 _ _ _
+12 8.12 8.12 CD CD _ _ s 12 _ _ _
+13 % % NN NN _ _ s 10 _ _ _
+14 , , , , _ _ s 10 _ _ _
+15 down down RB RB _ _ s 15 _ _ _
+16 from from IN IN _ _ s -1 _ _ _
+17 8.14 8.14 CD CD _ _ s 17 _ _ _
+18 % % NN NN _ _ s 15 _ _ _
+19 . . . . _ _ s 17 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 4 _ _
+3 30-day 30-day JJ JJ _ _ s 4 _ _
+4 simple simple JJ JJ _ _ s 4 _ _
+5 yield yield NN NN _ _ s 5 _ _
+6 fell fell VBD VBD _ _ s 0 _ _
+7 to to TO TO _ _ s 5 _ _
+8 an an DT DT _ _ s 10 _ _
+9 average average JJ JJ _ _ s 10 _ _
+10 8.19 8.19 CD CD _ _ s 10 _ _
+11 % % NN NN _ _ s 6 _ _
+12 from from IN IN _ _ s 5 _ _
+13 8.22 8.22 CD CD _ _ s 13 _ _
+14 % % NN NN _ _ s 11 _ _
+15 ; ; : : _ _ s 5 _ _
+16 the the DT DT _ _ s 18 _ _
+17 30-day 30-day JJ JJ _ _ s 18 _ _
+18 compound compound NN NN _ _ s 18 _ _
+19 yield yield NN NN _ _ s 19 _ _
+20 slid slid VBD VBD _ _ s 14 _ _
+21 to to TO TO _ _ s 19 _ _
+22 an an DT DT _ _ s 24 _ _
+23 average average JJ JJ _ _ s 24 _ _
+24 8.53 8.53 CD CD _ _ s 24 _ _
+25 % % NN NN _ _ s 20 _ _
+26 from from IN IN _ _ s 19 _ _
+27 8.56 8.56 CD CD _ _ s 27 _ _
+28 % % NN NN _ _ s 25 _ _
+29 . . . . _ _ s 27 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _
+2 J.P. J.P. NNP NNP _ _ s 2 _ _ _ _
+3 Bolduc Bolduc NNP NNP _ _ s 24 _ _ _ _
+4 , , , , _ _ s 2 _ _ _ _
+5 vice vice NN NN _ _ s 5 _ _ _ _
+6 chairman chairman NN NN _ _ s 3 _ _ _ _
+7 of of IN IN _ _ s 5 _ _ _ _
+8 W.R. W.R. NNP NNP _ _ s 10 _ _ _ _
+9 Grace Grace NNP NNP _ _ s 10 _ _ _ _
+10 & & CC CC _ _ s 10 _ _ _ _
+11 Co. Co. NNP NNP _ _ s 6 _ _ _ _
+12 , , , , _ _ s 10 _ _ aux_ARG1 _
+13 which which WDT WDT _ _ s 10 _ _ aux_ARG1 _
+14 holds holds VBZ VBZ _ _ s 10 _ holds _ _
+15 a a DT DT _ _ s 17 _ _ _ _
+16 83.4 83.4 CD CD _ _ s 17 _ _ _ _
+17 % % NN NN _ _ s 15 _ _ _ _
+18 interest interest NN NN _ _ s 13 _ _ _ _
+19 in in IN IN _ _ s 17 _ _ _ _
+20 this this DT DT _ _ s 21 _ _ _ _
+21 energy-services energy-services JJ JJ _ _ s 21 _ _ _ _
+22 company company NN NN _ _ s 18 _ _ _ _
+23 , , , , _ _ s 24 _ _ _ _
+24 was was VBD VBD _ _ s 24 _ _ _ _
+25 elected elected VBN VBN _ _ s 0 _ _ _ _
+26 a a DT DT _ _ s 26 _ _ _ verb_ARG1
+27 director director NN NN _ _ s 24 _ director _ _
+28 . . . . _ _ s 26 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 He He PRP PRP _ _ s 2 _ _ _
+3 succeeds succeeds VBZ VBZ _ _ s 0 _ _ _
+4 Terrence Terrence NNP NNP _ _ s 5 _ _ _
+5 D. D. NNP NNP _ _ s 5 _ _ _
+6 Daniels Daniels NNP NNP _ _ s 6 _ _ _
+7 , , , , _ _ s 2 _ _ _
+8 formerly formerly RB RB _ _ s 12 _ _ _
+9 a a DT DT _ _ s 12 _ _ _
+10 W.R. W.R. NNP NNP _ _ s 10 _ _ _
+11 Grace Grace NNP NNP _ _ s 12 _ _ _
+12 vice vice NN NN _ _ s 12 _ _ _
+13 chairman chairman NN NN _ _ s 6 _ _ _
+14 , , , , _ _ s 6 _ _ _
+15 who who WP WP _ _ s 6 _ _ aux_ARG1
+16 resigned resigned VBD VBD _ _ s 6 _ resigned _
+17 . . . . _ _ s 15 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 W.R. W.R. NNP NNP _ _ s 2 _ _
+3 Grace Grace NNP NNP _ _ s 3 _ _
+4 holds holds VBZ VBZ _ _ s 0 _ _
+5 three three CD CD _ _ s 3 _ _
+6 of of IN IN _ _ s 4 _ _
+7 Grace Grace NNP NNP _ _ s 7 _ _
+8 Energy Energy NNP NNP _ _ s 8 _ _
+9 ’s ’s POS POS _ _ s 11 _ _
+10 seven seven CD CD _ _ s 11 _ _
+11 board board NN NN _ _ s 11 _ _
+12 seats seats NNS NNS _ _ s 5 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Pacific Pacific NNP NNP _ _ s 4 _ _
+3 First First NNP NNP _ _ s 4 _ _
+4 Financial Financial NNP NNP _ _ s 4 _ _
+5 Corp. Corp. NNP NNP _ _ s 5 _ _
+6 said said VBD VBD _ _ s 0 _ _
+7 shareholders shareholders NNS NNS _ _ s 7 _ _
+8 approved approved VBD VBD _ _ s 5 _ _
+9 its its PRP$ PRP$ _ _ s 9 _ _
+10 acquisition acquisition NN NN _ _ s 7 _ _
+11 by by IN IN _ _ s 9 _ _
+12 Royal Royal NNP NNP _ _ s 13 _ _
+13 Trustco Trustco NNP NNP _ _ s 13 _ _
+14 Ltd. Ltd. NNP NNP _ _ s 10 _ _
+15 of of IN IN _ _ s 13 _ _
+16 Toronto Toronto NNP NNP _ _ s 14 _ _
+17 for for IN IN _ _ s 9 _ _
+18 $ $ $ $ _ _ s 18 _ _
+19 27 27 CD CD _ _ s 22 _ _
+20 a a DT DT _ _ s 20 _ _
+21 share share NN NN _ _ s 18 _ _
+22 , , , , _ _ s 22 _ _
+23 or or CC CC _ _ s 16 _ _
+24 $ $ $ $ _ _ s 25 _ _
+25 212 212 CD CD _ _ s 25 _ _
+26 million million CD CD _ _ s 22 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 4 _ _
+3 thrift thrift NN NN _ _ s 4 _ _
+4 holding holding VBG VBG _ _ s 4 _ _
+5 company company NN NN _ _ s 5 _ _
+6 said said VBD VBD _ _ s 0 _ _
+7 it it PRP PRP _ _ s 7 _ _
+8 expects expects VBZ VBZ _ _ s 5 _ _
+9 to to TO TO _ _ s 9 _ _
+10 obtain obtain VB VB _ _ s 12 _ _
+11 regulatory regulatory JJ JJ _ _ s 11 _ _
+12 approval approval NN NN _ _ s 9 _ _
+13 and and CC CC _ _ s 7 _ _
+14 complete complete VB VB _ _ s 12 _ _
+15 the the DT DT _ _ s 15 _ _
+16 transaction transaction NN NN _ _ s 13 _ _
+17 by by IN IN _ _ s 13 _ _
+18 year-end year-end NN NN _ _ s 16 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Finmeccanica Finmeccanica NNP NNP _ _ s 2 _ _
+3 is is VBZ VBZ _ _ s 0 _ _
+4 an an DT DT _ _ s 7 _ _
+5 Italian Italian JJ JJ _ _ s 7 _ _
+6 state-owned state-owned JJ JJ _ _ s 7 _ _
+7 holding holding VBG VBG _ _ s 7 _ _
+8 company company NN NN _ _ s 2 _ _
+9 with with IN IN _ _ s 7 _ _
+10 interests interests NNS NNS _ _ s 8 _ _
+11 in in IN IN _ _ s 9 _ _
+12 the the DT DT _ _ s 14 _ _
+13 mechanical mechanical JJ JJ _ _ s 14 _ _
+14 engineering engineering NN NN _ _ s 14 _ _
+15 industry industry NN NN _ _ s 10 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Bailey Bailey NNP NNP _ _ s 2 _ _
+3 Controls Controls NNP NNP _ _ s 10 _ _
+4 , , , , _ _ s 2 _ _
+5 based based VBN VBN _ _ s 2 _ _
+6 in in IN IN _ _ s 4 _ _
+7 Wickliffe Wickliffe NNP NNP _ _ s 5 _ _
+8 , , , , _ _ s 6 _ _
+9 Ohio Ohio NNP NNP _ _ s 7 _ _
+10 , , , , _ _ s 10 _ _
+11 makes makes VBZ VBZ _ _ s 0 _ _
+12 computerized computerized JJ JJ _ _ s 14 _ _
+13 industrial industrial JJ JJ _ _ s 14 _ _
+14 controls controls NNS NNS _ _ s 14 _ _
+15 systems systems NNS NNS _ _ s 10 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 It It PRP PRP _ _ s 2 _ _
+3 employs employs VBZ VBZ _ _ s 5 _ _
+4 2,700 2,700 CD CD _ _ s 4 _ _
+5 people people NNS NNS _ _ s 2 _ _
+6 and and CC CC _ _ s 0 _ _
+7 has has VBZ VBZ _ _ s 5 _ _
+8 annual annual JJ JJ _ _ s 8 _ _
+9 revenue revenue NN NN _ _ s 6 _ _
+10 of of IN IN _ _ s 8 _ _
+11 about about IN IN _ _ s 13 _ _
+12 $ $ $ $ _ _ s 13 _ _
+13 370 370 CD CD _ _ s 13 _ _
+14 million million CD CD _ _ s 9 _ _
+15 . . . . _ _ s 13 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 3 _ _
+3 federal federal JJ JJ _ _ s 3 _ _
+4 government government NN NN _ _ s 4 _ _
+5 suspended suspended VBD VBD _ _ s 0 _ _
+6 sales sales NNS NNS _ _ s 4 _ _
+7 of of IN IN _ _ s 5 _ _
+8 U.S. U.S. NNP NNP _ _ s 9 _ _
+9 savings savings NNS NNS _ _ s 9 _ _
+10 bonds bonds NNS NNS _ _ s 6 _ _
+11 because because IN IN _ _ s 4 _ _
+12 Congress Congress NNP NNP _ _ s 12 _ _
+13 has has VBZ VBZ _ _ s 14 _ _
+14 n’t n’t RB RB _ _ s 14 _ _
+15 lifted lifted VBN VBN _ _ s 10 _ _
+16 the the DT DT _ _ s 16 _ _
+17 ceiling ceiling NN NN _ _ s 14 _ _
+18 on on IN IN _ _ s 16 _ _
+19 government government NN NN _ _ s 19 _ _
+20 debt debt NN NN _ _ s 17 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 government government NN NN _ _ s 3 _ _
+4 ’s ’s POS POS _ _ s 5 _ _
+5 borrowing borrowing NN NN _ _ s 5 _ _
+6 authority authority NN NN _ _ s 6 _ _
+7 dropped dropped VBD VBD _ _ s 0 _ _
+8 at at IN IN _ _ s 6 _ _
+9 midnight midnight NN NN _ _ s 7 _ _
+10 Tuesday Tuesday NNP NNP _ _ s 6 _ _
+11 to to TO TO _ _ s 6 _ _
+12 $ $ $ $ _ _ s 13 _ _
+13 2.80 2.80 CD CD _ _ s 13 _ _
+14 trillion trillion CD CD _ _ s 10 _ _
+15 from from IN IN _ _ s 6 _ _
+16 $ $ $ $ _ _ s 17 _ _
+17 2.87 2.87 CD CD _ _ s 17 _ _
+18 trillion trillion CD CD _ _ s 14 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Legislation Legislation NN NN _ _ s 7 _ Legislation _
+3 to to TO TO _ _ s 1 _ _ _
+4 lift lift VB VB _ _ s 2 _ _ _
+5 the the DT DT _ _ s 6 _ _ _
+6 debt debt NN NN _ _ s 6 _ _ _
+7 ceiling ceiling NN NN _ _ s 3 _ _ _
+8 is is VBZ VBZ _ _ s 8 _ _ _
+9 ensnarled ensnarled VBN VBN _ _ s 0 _ _ _
+10 in in IN IN _ _ s 8 _ _ _
+11 the the DT DT _ _ s 11 _ _ _
+12 fight fight NN NN _ _ s 9 _ _ _
+13 over over IN IN _ _ s 8 _ _ _
+14 cutting cutting VBG VBG _ _ s 12 _ _ _
+15 capital-gains capital-gains JJ JJ _ _ s 15 _ _ _
+16 taxes taxes NNS NNS _ _ s 13 _ _ _
+17 . . . . _ _ s 15 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 House House NNP NNP _ _ s 3 _ _
+4 has has VBZ VBZ _ _ s 4 _ _
+5 voted voted VBN VBN _ _ s 14 _ _
+6 to to TO TO _ _ s 6 _ _
+7 raise raise VB VB _ _ s 4 _ _
+8 the the DT DT _ _ s 8 _ _
+9 ceiling ceiling NN NN _ _ s 6 _ _
+10 to to TO TO _ _ s 6 _ _
+11 $ $ $ $ _ _ s 12 _ _
+12 3.1 3.1 CD CD _ _ s 12 _ _
+13 trillion trillion CD CD _ _ s 9 _ _
+14 , , , , _ _ s 14 _ _
+15 but but CC CC _ _ s 0 _ _
+16 the the DT DT _ _ s 16 _ _
+17 Senate Senate NNP NNP _ _ s 17 _ _
+18 is is VBZ VBZ _ _ s 19 _ _
+19 n’t n’t RB RB _ _ s 19 _ _
+20 expected expected VBN VBN _ _ s 14 _ _
+21 to to TO TO _ _ s 21 _ _
+22 act act VB VB _ _ s 19 _ _
+23 until until IN IN _ _ s 21 _ _
+24 next next JJ JJ _ _ s 24 _ _
+25 week week NN NN _ _ s 22 _ _
+26 at at IN IN _ _ s 21 _ _
+27 the the DT DT _ _ s 27 _ _
+28 earliest earliest JJS JJS _ _ s 25 _ _
+29 . . . . _ _ s 27 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 Treasury Treasury NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 the the DT DT _ _ s 5 _ _
+6 U.S. U.S. NNP NNP _ _ s 6 _ _
+7 will will MD MD _ _ s 7 _ _
+8 default default VB VB _ _ s 3 _ _
+9 on on IN IN _ _ s 7 _ _
+10 Nov. Nov. NNP NNP _ _ s 8 _ _
+11 9 9 CD CD _ _ s 9 _ _
+12 if if IN IN _ _ s 7 _ _
+13 Congress Congress NNP NNP _ _ s 13 _ _
+14 does does VBZ VBZ _ _ s 15 _ _
+15 n’t n’t RB RB _ _ s 15 _ _
+16 act act VB VB _ _ s 11 _ _
+17 by by IN IN _ _ s 15 _ _
+18 then then RB RB _ _ s 16 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Clark Clark NNP NNP _ _ s 3 _ _
+3 J. J. NNP NNP _ _ s 3 _ _
+4 Vitulli Vitulli NNP NNP _ _ s 4 _ _
+5 was was VBD VBD _ _ s 5 _ _
+6 named named VBN VBN _ _ s 0 _ _
+7 senior senior JJ JJ _ _ s 8 _ _
+8 vice vice NN NN _ _ s 8 _ _
+9 president president NN NN _ _ s 9 _ _
+10 and and CC CC _ _ s 5 _ _
+11 general general JJ JJ _ _ s 11 _ _
+12 manager manager NN NN _ _ s 9 _ _
+13 of of IN IN _ _ s 9 _ _
+14 this this DT DT _ _ s 16 _ _
+15 U.S. U.S. NNP NNP _ _ s 15 _ _
+16 sales sales NNS NNS _ _ s 16 _ _
+17 and and CC CC _ _ s 12 _ _
+18 marketing marketing NN NN _ _ s 18 _ _
+19 arm arm NN NN _ _ s 16 _ _
+20 of of IN IN _ _ s 16 _ _
+21 Japanese Japanese JJ JJ _ _ s 25 _ _
+22 auto auto NN NN _ _ s 25 _ _
+23 maker maker NN NN _ _ s 25 _ _
+24 Mazda Mazda NNP NNP _ _ s 25 _ _
+25 Motor Motor NNP NNP _ _ s 25 _ _
+26 Corp Corp NNP NNP _ _ s 19 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _
+2 In In IN IN _ _ s 7 _ _ _ _
+3 the the DT DT _ _ s 4 _ _ _ _
+4 new new JJ JJ _ _ s 4 _ _ _ _
+5 position position NN NN _ _ s 1 _ _ _ _
+6 he he PRP PRP _ _ s 6 _ _ _ _
+7 will will MD MD _ _ s 7 _ _ _ _
+8 oversee oversee VB VB _ _ s 0 _ _ _ _
+9 Mazda Mazda NNP NNP _ _ s 9 _ _ _ _
+10 ’s ’s POS POS _ _ s 18 _ _ _ _
+11 U.S. U.S. NNP NNP _ _ s 11 _ _ _ _
+12 sales sales NNS NNS _ _ s 12 _ _ _ _
+13 , , , , _ _ s 14 _ , _ _
+14 service service NN NN _ _ s 12 _ _ -ROOT- _
+15 , , , , _ _ s 16 _ _ _ _
+16 parts parts NNS NNS _ _ s 14 _ _ _ relative_ARG1
+17 and and CC CC _ _ s 17 _ and _ _
+18 marketing marketing NN NN _ _ s 18 _ _ _ _
+19 operations operations NNS NNS _ _ s 7 _ _ _ _
+20 . . . . _ _ s 18 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Previously Previously RB RB _ _ s 10 _ Previously _
+3 , , , , _ _ s 10 _ _ _
+4 Mr. Mr. NNP NNP _ _ s 4 _ _ _
+5 Vitulli Vitulli NNP NNP _ _ s 10 _ _ _
+6 , , , , _ _ s 4 _ _ _
+7 43 43 CD CD _ _ s 7 _ _ _
+8 years years NNS NNS _ _ s 8 _ _ _
+9 old old JJ JJ _ _ s 4 _ _ _
+10 , , , , _ _ s 10 _ _ _
+11 was was VBD VBD _ _ s 0 _ _ _
+12 general general JJ JJ _ _ s 13 _ _ _
+13 marketing marketing NN NN _ _ s 13 _ _ _
+14 manager manager NN NN _ _ s 10 _ _ _
+15 of of IN IN _ _ s 13 _ _ _
+16 Chrysler Chrysler NNP NNP _ _ s 16 _ _ _
+17 Corp. Corp. NNP NNP _ _ s 17 _ _ _
+18 ’s ’s POS POS _ _ s 19 _ _ _
+19 Chrysler Chrysler NNP NNP _ _ s 19 _ _ _
+20 division division NN NN _ _ s 14 _ _ _
+21 . . . . _ _ s 19 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 He He PRP PRP _ _ s 2 _ _
+3 had had VBD VBD _ _ s 3 _ _
+4 been been VBN VBN _ _ s 0 _ _
+5 a a DT DT _ _ s 6 _ _
+6 sales sales NNS NNS _ _ s 6 _ _
+7 and and CC CC _ _ s 3 _ _
+8 marketing marketing NN NN _ _ s 8 _ _
+9 executive executive NN NN _ _ s 6 _ _
+10 with with IN IN _ _ s 6 _ _
+11 Chrysler Chrysler NNP NNP _ _ s 9 _ _
+12 for for IN IN _ _ s 3 _ _
+13 20 20 CD CD _ _ s 13 _ _
+14 years years NNS NNS _ _ s 11 _ _
+15 . . . . _ _ s 13 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _
+2 When When WRB WRB _ _ s 16 _ When verb_ARG3 _ _ _
+3 it it PRP PRP _ _ s 3 _ it _ verb_ARG3 _ _
+4 ’s ’s VBZ VBZ _ _ s 1 _ _ _ _ verb_ARG3 noun_ARG1
+5 time time NN NN _ _ s 3 _ time _ _ _ _
+6 for for IN IN _ _ s 4 _ _ _ _ _ _
+7 their their PRP$ PRP$ _ _ s 8 _ _ _ _ _ _
+8 biannual biannual JJ JJ _ _ s 8 _ _ _ _ _ _
+9 powwow powwow NN NN _ _ s 5 _ _ _ _ _ _
+10 , , , , _ _ s 16 _ _ _ _ _ _
+11 the the DT DT _ _ s 11 _ _ _ _ _ _
+12 nation nation NN NN _ _ s 12 _ _ _ _ _ _
+13 ’s ’s POS POS _ _ s 14 _ _ _ _ _ _
+14 manufacturing manufacturing VBG VBG _ _ s 14 _ _ _ _ _ _
+15 titans titans NNS NNS _ _ s 16 _ _ _ _ _ _
+16 typically typically RB RB _ _ s 16 _ _ _ _ _ _
+17 jet jet VBP VBP _ _ s 0 _ _ _ _ _ _
+18 off off RP RP _ _ s 16 _ _ _ _ _ _
+19 to to TO TO _ _ s 16 _ _ _ _ _ _
+20 the the DT DT _ _ s 21 _ _ _ _ _ _
+21 sunny sunny JJ JJ _ _ s 21 _ _ _ _ _ _
+22 confines confines NNS NNS _ _ s 18 _ _ _ _ _ _
+23 of of IN IN _ _ s 21 _ _ _ _ _ _
+24 resort resort NN NN _ _ s 24 _ _ _ _ _ _
+25 towns towns NNS NNS _ _ s 22 _ _ _ _ _ _
+26 like like IN IN _ _ s 24 _ _ _ _ _ _
+27 Boca Boca NNP NNP _ _ s 27 _ _ _ _ _ _
+28 Raton Raton NNP NNP _ _ s 28 _ _ _ _ _ _
+29 and and CC CC _ _ s 25 _ _ _ _ _ _
+30 Hot Hot NNP NNP _ _ s 30 _ _ _ _ _ _
+31 Springs Springs NNP NNP _ _ s 28 _ _ _ _ _ _
+32 . . . . _ _ s 30 _ _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Not Not RB RB _ _ s 3 _ _
+3 this this DT DT _ _ s 3 _ _
+4 year year NN NN _ _ s 0 _ _
+5 . . . . _ _ s 3 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 3 _ _
+3 National National NNP NNP _ _ s 3 _ _
+4 Association Association NNP NNP _ _ s 6 _ _
+5 of of IN IN _ _ s 3 _ _
+6 Manufacturers Manufacturers NNP NNP _ _ s 4 _ _
+7 settled settled VBD VBD _ _ s 0 _ _
+8 on on IN IN _ _ s 6 _ _
+9 the the DT DT _ _ s 10 _ _
+10 Hoosier Hoosier NNP NNP _ _ s 10 _ _
+11 capital capital NN NN _ _ s 7 _ _
+12 of of IN IN _ _ s 10 _ _
+13 Indianapolis Indianapolis NNP NNP _ _ s 11 _ _
+14 for for IN IN _ _ s 6 _ _
+15 its its PRP$ PRP$ _ _ s 17 _ _
+16 fall fall NN NN _ _ s 17 _ _
+17 board board NN NN _ _ s 17 _ _
+18 meeting meeting NN NN _ _ s 13 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 8 _ _
+2 On On IN IN _ _ s 8 _ _
+3 the the DT DT _ _ s 4 _ _
+4 receiving receiving VBG VBG _ _ s 4 _ _
+5 end end NN NN _ _ s 1 _ _
+6 of of IN IN _ _ s 4 _ _
+7 the the DT DT _ _ s 7 _ _
+8 message message NN NN _ _ s 5 _ _
+9 were were VBD VBD _ _ s 18 _ _
+10 officials officials NNS NNS _ _ s 8 _ _
+11 from from IN IN _ _ s 8 _ _
+12 giants giants NNS NNS _ _ s 10 _ _
+13 like like IN IN _ _ s 11 _ _
+14 Du Du NNP NNP _ _ s 14 _ _
+15 Pont Pont NNP NNP _ _ s 15 _ _
+16 and and CC CC _ _ s 12 _ _
+17 Maytag Maytag NNP NNP _ _ s 15 _ _
+18 , , , , _ _ s 8 _ _
+19 along along IN IN _ _ s 19 _ _
+20 with with IN IN _ _ s -1 _ _
+21 lesser lesser JJR JJR _ _ s 21 _ _
+22 knowns knowns NNS NNS _ _ s 19 _ _
+23 like like IN IN _ _ s 21 _ _
+24 Trojan Trojan NNP NNP _ _ s 24 _ _
+25 Steel Steel NNP NNP _ _ s 25 _ _
+26 and and CC CC _ _ s 22 _ _
+27 the the DT DT _ _ s 30 _ _
+28 Valley Valley NNP NNP _ _ s 30 _ _
+29 Queen Queen NNP NNP _ _ s 30 _ _
+30 Cheese Cheese NNP NNP _ _ s 30 _ _
+31 Factory Factory NNP NNP _ _ s 25 _ _
+32 . . . . _ _ s 30 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 For For IN IN _ _ s 6 _ _
+3 starters starters NNS NNS _ _ s 1 _ _
+4 , , , , _ _ s 6 _ _
+5 the the DT DT _ _ s 5 _ _
+6 executives executives NNS NNS _ _ s 6 _ _
+7 joined joined VBD VBD _ _ s 0 _ _
+8 Mayor Mayor NNP NNP _ _ s 11 _ _
+9 William William NNP NNP _ _ s 11 _ _
+10 H. H. NNP NNP _ _ s 11 _ _
+11 Hudnut Hudnut NNP NNP _ _ s 11 _ _
+12 III III NNP NNP _ _ s 6 _ _
+13 for for IN IN _ _ s 6 _ _
+14 an an DT DT _ _ s 14 _ _
+15 evening evening NN NN _ _ s 12 _ _
+16 of of IN IN _ _ s 14 _ _
+17 the the DT DT _ _ s 19 _ _
+18 Indianapolis Indianapolis NNP NNP _ _ s 19 _ _
+19 Symphony Symphony NNP NNP _ _ s 19 _ _
+20 Orchestra Orchestra NNP NNP _ _ s 20 _ _
+21 and and CC CC _ _ s 15 _ _
+22 a a DT DT _ _ s 25 _ _
+23 guest guest NN NN _ _ s 25 _ _
+24 pianist-comedian pianist-comedian NN NN _ _ s 25 _ _
+25 Victor Victor NNP NNP _ _ s 25 _ _
+26 Borge Borge NNP NNP _ _ s 20 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Champagne Champagne NN NN _ _ s 2 _ Champagne _
+3 and and CC CC _ _ s 4 _ _ _
+4 dessert dessert NN NN _ _ s 2 _ _ _
+5 followed followed VBD VBD _ _ s 0 _ _ _
+6 . . . . _ _ s 4 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 governor governor NN NN _ _ s 3 _ _
+4 could could MD MD _ _ s 5 _ _
+5 n’t n’t RB RB _ _ s 5 _ _
+6 make make VB VB _ _ s 8 _ _
+7 it it PRP PRP _ _ s 5 _ _
+8 , , , , _ _ s 8 _ _
+9 so so IN IN _ _ s 0 _ _
+10 the the DT DT _ _ s 11 _ _
+11 lieutenant lieutenant NN NN _ _ s 11 _ _
+12 governor governor NN NN _ _ s 12 _ _
+13 welcomed welcomed VBD VBD _ _ s 8 _ _
+14 the the DT DT _ _ s 15 _ _
+15 special special JJ JJ _ _ s 15 _ _
+16 guests guests NNS NNS _ _ s 12 _ _
+17 . . . . _ _ s 15 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 A A DT DT _ _ s 3 _ _ _
+3 buffet buffet NN NN _ _ s 3 _ _ _
+4 breakfast breakfast NN NN _ _ s 4 _ _ _
+5 was was VBD VBD _ _ s 5 _ _ verb_ARG1
+6 held held VBN VBN _ _ s 0 _ held _
+7 in in IN IN _ _ s 5 _ _ _
+8 the the DT DT _ _ s 8 _ _ _
+9 museum museum NN NN _ _ s 6 _ _ _
+10 , , , , _ _ s 8 _ _ _
+11 where where WRB WRB _ _ s 8 _ _ _
+12 food food NN NN _ _ s 12 _ _ _
+13 and and CC CC _ _ s 14 _ _ _
+14 drinks drinks NNS NNS _ _ s 12 _ _ _
+15 are are VBP VBP _ _ s 15 _ _ _
+16 banned banned VBN VBN _ _ s 10 _ _ _
+17 to to TO TO _ _ s 15 _ _ _
+18 everyday everyday JJ JJ _ _ s 18 _ _ _
+19 visitors visitors NNS NNS _ _ s 16 _ _ _
+20 . . . . _ _ s 18 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Then Then RB RB _ _ s 11 _ Then _
+3 , , , , _ _ s 11 _ _ _
+4 in in IN IN _ _ s 11 _ _ _
+5 the the DT DT _ _ s 5 _ _ _
+6 guests guests NNS NNS _ _ s 6 _ _ _
+7 ’ ’ POS POS _ _ s 7 _ _ _
+8 honor honor NN NN _ _ s 3 _ _ _
+9 , , , , _ _ s 11 _ _ _
+10 the the DT DT _ _ s 10 _ _ _
+11 speedway speedway NN NN _ _ s 11 _ _ _
+12 hauled hauled VBD VBD _ _ s 0 _ _ _
+13 out out RP RP _ _ s 11 _ _ _
+14 four four CD CD _ _ s 14 _ _ _
+15 drivers drivers NNS NNS _ _ s 15 _ _ _
+16 , , , , _ _ s 17 _ _ _
+17 crews crews NNS NNS _ _ s 15 _ _ _
+18 and and CC CC _ _ s 11 _ _ _
+19 even even RB RB _ _ s 23 _ _ _
+20 the the DT DT _ _ s 23 _ _ _
+21 official official JJ JJ _ _ s 23 _ _ _
+22 Indianapolis Indianapolis NNP NNP _ _ s 23 _ _ _
+23 500 500 CD CD _ _ s 21 _ _ _
+24 announcer announcer NN NN _ _ s 17 _ _ _
+25 for for IN IN _ _ s 23 _ _ _
+26 a a DT DT _ _ s 28 _ _ _
+27 10-lap 10-lap JJ JJ _ _ s 28 _ _ _
+28 exhibition exhibition NN NN _ _ s 28 _ _ _
+29 race race NN NN _ _ s 24 _ _ _
+30 . . . . _ _ s 28 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 After After IN IN _ _ s 8 _ _ _
+3 the the DT DT _ _ s 3 _ _ _
+4 race race NN NN _ _ s 1 _ _ _
+5 , , , , _ _ s 8 _ _ _
+6 Fortune Fortune NNP NNP _ _ s 7 _ _ _
+7 500 500 CD CD _ _ s 5 _ _ _
+8 executives executives NNS NNS _ _ s 8 _ _ _
+9 drooled drooled VBD VBD _ _ s 0 _ _ _
+10 like like IN IN _ _ s 8 _ like _
+11 schoolboys schoolboys NNS NNS _ _ s 9 _ _ -ROOT-
+12 over over IN IN _ _ s 10 _ _ _
+13 the the DT DT _ _ s 14 _ _ _
+14 cars cars NNS NNS _ _ s 14 _ _ _
+15 and and CC CC _ _ s 11 _ _ _
+16 drivers drivers NNS NNS _ _ s 14 _ _ _
+17 . . . . _ _ s 15 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Back Back RB RB _ _ s 2 _ _
+3 downtown downtown NN NN _ _ s 6 _ _
+4 , , , , _ _ s 6 _ _
+5 the the DT DT _ _ s 5 _ _
+6 execs execs NNS NNS _ _ s 6 _ _
+7 squeezed squeezed VBD VBD _ _ s 0 _ _
+8 in in RP RP _ _ s 6 _ _
+9 a a DT DT _ _ s 10 _ _
+10 few few JJ JJ _ _ s 10 _ _
+11 meetings meetings NNS NNS _ _ s 6 _ _
+12 at at IN IN _ _ s 10 _ _
+13 the the DT DT _ _ s 13 _ _
+14 hotel hotel NN NN _ _ s 11 _ _
+15 before before IN IN _ _ s 10 _ _
+16 boarding boarding VBG VBG _ _ s 14 _ _
+17 the the DT DT _ _ s 17 _ _
+18 buses buses NNS NNS _ _ s 15 _ _
+19 again again RB RB _ _ s 15 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Under Under IN IN _ _ s 20 _ _
+3 the the DT DT _ _ s 4 _ _
+4 stars stars NNS NNS _ _ s 4 _ _
+5 and and CC CC _ _ s 1 _ _
+6 moons moons NNS NNS _ _ s 4 _ _
+7 of of IN IN _ _ s 4 _ _
+8 the the DT DT _ _ s 11 _ _
+9 renovated renovated VBN VBN _ _ s 11 _ _
+10 Indiana Indiana NNP NNP _ _ s 10 _ _
+11 Roof Roof NNP NNP _ _ s 11 _ _
+12 ballroom ballroom NN NN _ _ s 6 _ _
+13 , , , , _ _ s 20 _ _
+14 nine nine CD CD _ _ s 20 _ _
+15 of of IN IN _ _ s 13 _ _
+16 the the DT DT _ _ s 17 _ _
+17 hottest hottest JJS JJS _ _ s 17 _ _
+18 chefs chefs NNS NNS _ _ s 14 _ _
+19 in in IN IN _ _ s 17 _ _
+20 town town NN NN _ _ s 18 _ _
+21 fed fed VBD VBD _ _ s 0 _ _
+22 them them PRP PRP _ _ s 20 _ _
+23 Indiana Indiana NNP NNP _ _ s 24 _ _
+24 duckling duckling NN NN _ _ s 24 _ _
+25 mousseline mousseline NN NN _ _ s 25 _ _
+26 , , , , _ _ s 28 _ _
+27 lobster lobster NN NN _ _ s 27 _ _
+28 consomme consomme NN NN _ _ s 25 _ _
+29 , , , , _ _ s 31 _ _
+30 veal veal NN NN _ _ s 30 _ _
+31 mignon mignon NN NN _ _ s 28 _ _
+32 and and CC CC _ _ s 20 _ _
+33 chocolate chocolate JJ JJ _ _ s 33 _ _
+34 terrine terrine NN NN _ _ s 31 _ _
+35 with with IN IN _ _ s 33 _ _
+36 a a DT DT _ _ s 37 _ _
+37 raspberry raspberry NN NN _ _ s 37 _ _
+38 sauce sauce NN NN _ _ s 34 _ _
+39 . . . . _ _ s 37 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Knowing Knowing VBG VBG _ _ s 16 _ _
+3 a a DT DT _ _ s 8 _ _
+4 tasty tasty JJ JJ _ _ s 8 _ _
+5 – – : : _ _ s 3 _ _
+6 and and CC CC _ _ s 6 _ _
+7 free free JJ JJ _ _ s 4 _ _
+8 – – : : _ _ s 4 _ _
+9 meal meal NN NN _ _ s 1 _ _
+10 when when WRB WRB _ _ s 1 _ _
+11 they they PRP PRP _ _ s 11 _ _
+12 eat eat VBP VBP _ _ s 9 _ _
+13 one one CD CD _ _ s 11 _ _
+14 , , , , _ _ s 16 _ _
+15 the the DT DT _ _ s 15 _ _
+16 executives executives NNS NNS _ _ s 16 _ _
+17 gave gave VBD VBD _ _ s 0 _ _
+18 the the DT DT _ _ s 18 _ _
+19 chefs chefs NNS NNS _ _ s 16 _ _
+20 a a DT DT _ _ s 21 _ _
+21 standing standing JJ JJ _ _ s 21 _ _
+22 ovation ovation NN NN _ _ s 16 _ _
+23 . . . . _ _ s 21 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 More More JJR JJR _ _ s 6 _ _
+3 than than IN IN _ _ s 1 _ _
+4 a a DT DT _ _ s 5 _ _
+5 few few JJ JJ _ _ s 5 _ _
+6 CEOs CEOs NNS NNS _ _ s 2 _ _
+7 say say VBP VBP _ _ s 0 _ _
+8 the the DT DT _ _ s 9 _ _
+9 red-carpet red-carpet JJ JJ _ _ s 9 _ _
+10 treatment treatment NN NN _ _ s 10 _ _
+11 tempts tempts VBZ VBZ _ _ s 6 _ _
+12 them them PRP PRP _ _ s 10 _ _
+13 to to TO TO _ _ s 13 _ _
+14 return return VB VB _ _ s 10 _ _
+15 to to TO TO _ _ s 13 _ _
+16 a a DT DT _ _ s 17 _ _
+17 heartland heartland NN NN _ _ s 17 _ _
+18 city city NN NN _ _ s 14 _ _
+19 for for IN IN _ _ s 13 _ _
+20 future future JJ JJ _ _ s 20 _ _
+21 meetings meetings NNS NNS _ _ s 18 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ verb_ARG1
+2 But But CC CC _ _ s 7 _ But _
+3 for for IN IN _ _ s 7 _ _ _
+4 now now RB RB _ _ s 2 _ _ _
+5 , , , , _ _ s 7 _ _ _
+6 they they PRP PRP _ _ s 6 _ _ _
+7 ’re ’re VBP VBP _ _ s 7 _ _ _
+8 looking looking VBG VBG _ _ s 0 _ _ _
+9 forward forward RB RB _ _ s 7 _ _ _
+10 to to TO TO _ _ s 7 _ _ _
+11 their their PRP$ PRP$ _ _ s 12 _ _ _
+12 winter winter NN NN _ _ s 12 _ _ _
+13 meeting meeting NN NN _ _ s 9 _ _ _
+14 – – : : _ _ s 12 _ _ _
+15 Boca Boca NNP NNP _ _ s 13 _ _ _
+16 in in IN IN _ _ s 14 _ _ _
+17 February February NNP NNP _ _ s 15 _ _ _
+18 . . . . _ _ s 16 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 South South NNP NNP _ _ s 2 _ _
+3 Korea Korea NNP NNP _ _ s 3 _ _
+4 registered registered VBD VBD _ _ s 0 _ _
+5 a a DT DT _ _ s 6 _ _
+6 trade trade NN NN _ _ s 6 _ _
+7 deficit deficit NN NN _ _ s 3 _ _
+8 of of IN IN _ _ s 6 _ _
+9 $ $ $ $ _ _ s 10 _ _
+10 101 101 CD CD _ _ s 10 _ _
+11 million million CD CD _ _ s 7 _ _
+12 in in IN IN _ _ s 3 _ _
+13 October October NNP NNP _ _ s 11 _ _
+14 , , , , _ _ s 3 _ _
+15 reflecting reflecting VBG VBG _ _ s 3 _ _
+16 the the DT DT _ _ s 16 _ _
+17 country country NN NN _ _ s 17 _ _
+18 ’s ’s POS POS _ _ s 19 _ _
+19 economic economic JJ JJ _ _ s 19 _ _
+20 sluggishness sluggishness NN NN _ _ s 14 _ _
+21 , , , , _ _ s 3 _ _
+22 according according VBG VBG _ _ s 3 _ _
+23 to to TO TO _ _ s 21 _ _
+24 government government NN NN _ _ s 24 _ _
+25 figures figures NNS NNS _ _ s 22 _ _
+26 released released VBD VBD _ _ s 24 _ _
+27 Wednesday Wednesday NNP NNP _ _ s 25 _ _
+28 . . . . _ _ s 26 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Preliminary Preliminary JJ JJ _ _ s 2 _ _
+3 tallies tallies NNS NNS _ _ s 9 _ _
+4 by by IN IN _ _ s 2 _ _
+5 the the DT DT _ _ s 6 _ _
+6 Trade Trade NNP NNP _ _ s 6 _ _
+7 and and CC CC _ _ s 3 _ _
+8 Industry Industry NNP NNP _ _ s 8 _ _
+9 Ministry Ministry NNP NNP _ _ s 6 _ _
+10 showed showed VBD VBD _ _ s 0 _ _
+11 another another DT DT _ _ s 12 _ _
+12 trade trade NN NN _ _ s 12 _ _
+13 deficit deficit NN NN _ _ s 9 _ _
+14 in in IN IN _ _ s 12 _ _
+15 October October NNP NNP _ _ s 13 _ _
+16 , , , , _ _ s 14 _ _
+17 the the DT DT _ _ s 19 _ _
+18 fifth fifth JJ JJ _ _ s 19 _ _
+19 monthly monthly JJ JJ _ _ s 19 _ _
+20 setback setback NN NN _ _ s 15 _ _
+21 this this DT DT _ _ s 21 _ _
+22 year year NN NN _ _ s 19 _ _
+23 , , , , _ _ s 9 _ _
+24 casting casting VBG VBG _ _ s 9 _ _
+25 a a DT DT _ _ s 25 _ _
+26 cloud cloud NN NN _ _ s 23 _ _
+27 on on IN IN _ _ s 25 _ _
+28 South South NNP NNP _ _ s 28 _ _
+29 Korea Korea NNP NNP _ _ s 29 _ _
+30 ’s ’s POS POS _ _ s 31 _ _
+31 export-oriented export-oriented JJ JJ _ _ s 31 _ _
+32 economy economy NN NN _ _ s 26 _ _
+33 . . . . _ _ s 31 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 South South NNP NNP _ _ s 2 _ _
+3 Korea Korea NNP NNP _ _ s 3 _ _
+4 ’s ’s POS POS _ _ s 5 _ _
+5 economic economic JJ JJ _ _ s 5 _ _
+6 boom boom NN NN _ _ s 12 _ _
+7 , , , , _ _ s 5 _ _
+8 which which WDT WDT _ _ s 5 _ _
+9 began began VBD VBD _ _ s 5 _ _
+10 in in IN IN _ _ s 8 _ _
+11 1986 1986 CD CD _ _ s 9 _ _
+12 , , , , _ _ s 12 _ _
+13 stopped stopped VBD VBD _ _ s 0 _ _
+14 this this DT DT _ _ s 14 _ _
+15 year year NN NN _ _ s 12 _ _
+16 because because IN IN _ _ s 12 _ _
+17 of of IN IN _ _ s 15 _ _
+18 prolonged prolonged VBN VBN _ _ s 19 _ _
+19 labor labor NN NN _ _ s 19 _ _
+20 disputes disputes NNS NNS _ _ s 20 _ _
+21 , , , , _ _ s 23 _ _
+22 trade trade NN NN _ _ s 22 _ _
+23 conflicts conflicts NNS NNS _ _ s 20 _ _
+24 and and CC CC _ _ s 15 _ _
+25 sluggish sluggish JJ JJ _ _ s 25 _ _
+26 exports exports NNS NNS _ _ s 23 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Government Government NN NN _ _ s 2 _ _ _
+3 officials officials NNS NNS _ _ s 3 _ _ _
+4 said said VBD VBD _ _ s 0 _ _ _
+5 exports exports NNS NNS _ _ s 11 _ _ _
+6 at at IN IN _ _ s 4 _ _ _
+7 the the DT DT _ _ s 7 _ _ _
+8 end end NN NN _ _ s 5 _ _ _
+9 of of IN IN _ _ s 7 _ _ _
+10 the the DT DT _ _ s 10 _ _ verb_ARG1
+11 year year NN NN _ _ s 8 _ year _
+12 would would MD MD _ _ s 12 _ _ _
+13 remain remain VB VB _ _ s 3 _ _ _
+14 under under IN IN _ _ s 12 _ _ _
+15 a a DT DT _ _ s 16 _ _ _
+16 government government NN NN _ _ s 16 _ _ _
+17 target target NN NN _ _ s 13 _ _ _
+18 of of IN IN _ _ s 16 _ _ _
+19 $ $ $ $ _ _ s 20 _ _ _
+20 68 68 CD CD _ _ s 20 _ _ _
+21 billion billion CD CD _ _ s 17 _ _ _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Despite Despite IN IN _ _ s 9 _ _ _
+3 the the DT DT _ _ s 4 _ _ _
+4 gloomy gloomy JJ JJ _ _ s 4 _ _ _
+5 forecast forecast NN NN _ _ s 1 _ _ _
+6 , , , , _ _ s 9 _ _ _
+7 South South NNP NNP _ _ s 7 _ _ _
+8 Korea Korea NNP NNP _ _ s 8 _ _ _
+9 has has VBZ VBZ _ _ s 9 _ _ _
+10 recorded recorded VBN VBN _ _ s 0 _ _ _
+11 a a DT DT _ _ s 12 _ _ _
+12 trade trade NN NN _ _ s 12 _ _ _
+13 surplus surplus NN NN _ _ s 9 _ _ _
+14 of of IN IN _ _ s 12 _ _ _
+15 $ $ $ $ _ _ s 16 _ _ _
+16 71 71 CD CD _ _ s 16 _ _ _
+17 million million CD CD _ _ s 13 _ _ _
+18 so so IN IN _ _ s 9 _ _ _
+19 far far IN IN _ _ s 17 _ _ verb_ARG1
+20 this this DT DT _ _ s 20 _ _ verb_ARG1
+21 year year NN NN _ _ s 18 _ year _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 From From IN IN _ _ s 11 _ _
+3 January January NNP NNP _ _ s 1 _ _
+4 to to TO TO _ _ s 11 _ _
+5 October October NNP NNP _ _ s 3 _ _
+6 , , , , _ _ s 11 _ _
+7 the the DT DT _ _ s 7 _ _
+8 nation nation NN NN _ _ s 8 _ _
+9 ’s ’s POS POS _ _ s 10 _ _
+10 accumulated accumulated VBN VBN _ _ s 10 _ _
+11 exports exports NNS NNS _ _ s 11 _ _
+12 increased increased VBD VBD _ _ s 0 _ _
+13 4 4 CD CD _ _ s 13 _ _
+14 % % NN NN _ _ s 11 _ _
+15 from from IN IN _ _ s 11 _ _
+16 the the DT DT _ _ s 17 _ _
+17 same same JJ JJ _ _ s 17 _ _
+18 period period NN NN _ _ s 14 _ _
+19 last last JJ JJ _ _ s 19 _ _
+20 year year NN NN _ _ s 17 _ _
+21 to to TO TO _ _ s 11 _ _
+22 $ $ $ $ _ _ s 23 _ _
+23 50.45 50.45 CD CD _ _ s 23 _ _
+24 billion billion CD CD _ _ s 20 _ _
+25 . . . . _ _ s 23 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 2 _ _ noun_ARG1
+2 Imports Imports NNS NNS _ _ s 2 _ Imports _
+3 were were VBD VBD _ _ s 8 _ _ verb_ARG3
+4 at at IN IN _ _ s 2 _ _ _
+5 $ $ $ $ _ _ s 6 _ _ _
+6 50.38 50.38 CD CD _ _ s 6 _ _ _
+7 billion billion CD CD _ _ s 3 _ _ _
+8 , , , , _ _ s 2 _ _ _
+9 up up RB RB _ _ s 10 _ _ _
+10 19 19 CD CD _ _ s 10 _ _ _
+11 % % NN NN _ _ s -1 _ _ _
+12 . . . . _ _ s 10 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 4 _ _
+3 new new JJ JJ _ _ s 4 _ _
+4 ad ad NN NN _ _ s 4 _ _
+5 plan plan NN NN _ _ s 16 _ _
+6 from from IN IN _ _ s 4 _ _
+7 Newsweek Newsweek NNP NNP _ _ s 5 _ _
+8 , , , , _ _ s 6 _ _
+9 a a DT DT _ _ s 9 _ _
+10 unit unit NN NN _ _ s 7 _ _
+11 of of IN IN _ _ s 9 _ _
+12 the the DT DT _ _ s 14 _ _
+13 Washington Washington NNP NNP _ _ s 14 _ _
+14 Post Post NNP NNP _ _ s 14 _ _
+15 Co. Co. NNP NNP _ _ s 10 _ _
+16 , , , , _ _ s 16 _ _
+17 is is VBZ VBZ _ _ s 0 _ _
+18 the the DT DT _ _ s 20 _ _
+19 second second JJ JJ _ _ s 20 _ _
+20 incentive incentive NN NN _ _ s 20 _ _
+21 plan plan NN NN _ _ s 16 _ _
+22 the the DT DT _ _ s 22 _ _
+23 magazine magazine NN NN _ _ s 23 _ _
+24 has has VBZ VBZ _ _ s 24 _ _
+25 offered offered VBN VBN _ _ s 20 _ _
+26 advertisers advertisers NNS NNS _ _ s 24 _ _
+27 in in IN IN _ _ s 24 _ _
+28 three three CD CD _ _ s 28 _ _
+29 years years NNS NNS _ _ s 26 _ _
+30 . . . . _ _ s 28 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Alan Alan NNP NNP _ _ s 2 _ _
+3 Spoon Spoon NNP NNP _ _ s 9 _ _
+4 , , , , _ _ s 2 _ _
+5 recently recently RB RB _ _ s 5 _ _
+6 named named VBN VBN _ _ s 2 _ _
+7 Newsweek Newsweek NNP NNP _ _ s 7 _ _
+8 president president NN NN _ _ s 5 _ _
+9 , , , , _ _ s 9 _ _
+10 said said VBD VBD _ _ s 0 _ _
+11 Newsweek Newsweek NNP NNP _ _ s 11 _ _
+12 ’s ’s POS POS _ _ s 13 _ _
+13 ad ad NN NN _ _ s 13 _ _
+14 rates rates NNS NNS _ _ s 14 _ _
+15 would would MD MD _ _ s 15 _ _
+16 increase increase VB VB _ _ s 9 _ _
+17 5 5 CD CD _ _ s 17 _ _
+18 % % NN NN _ _ s 15 _ _
+19 in in IN IN _ _ s 15 _ _
+20 January January NNP NNP _ _ s 18 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 A A DT DT _ _ s 5 _ _
+3 full full JJ JJ _ _ s 3 _ _
+4 , , , , _ _ s 4 _ _
+5 four-color four-color JJ JJ _ _ s 5 _ _
+6 page page NN NN _ _ s 8 _ _
+7 in in IN IN _ _ s 5 _ _
+8 Newsweek Newsweek NNP NNP _ _ s 6 _ _
+9 will will MD MD _ _ s 9 _ _
+10 cost cost VB VB _ _ s 0 _ _
+11 $ $ $ $ _ _ s 11 _ _
+12 100,980 100,980 CD CD _ _ s 9 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _
+2 In In IN IN _ _ s 6 _ _ _ _ _
+3 mid-October mid-October NNP NNP _ _ s 1 _ _ _ _ _
+4 , , , , _ _ s 6 _ _ _ _ _
+5 Time Time NNP NNP _ _ s 5 _ _ _ _ _
+6 magazine magazine NN NN _ _ s 6 _ _ _ _ _
+7 lowered lowered VBD VBD _ _ s 0 _ _ _ _ _
+8 its its PRP$ PRP$ _ _ s 11 _ _ _ _ _
+9 guaranteed guaranteed VBN VBN _ _ s 11 _ _ _ _ _
+10 circulation circulation NN NN _ _ s 11 _ _ _ _ _
+11 rate rate NN NN _ _ s 11 _ _ _ _ _
+12 base base NN NN _ _ s 6 _ _ _ _ _
+13 for for IN IN _ _ s 6 _ _ _ _ _
+14 1990 1990 CD CD _ _ s 12 _ _ _ _ _
+15 while while IN IN _ _ s 6 _ _ _ _ _
+16 not not RB RB _ _ s 16 _ _ _ _ _
+17 increasing increasing VBG VBG _ _ s 14 _ _ _ _ _
+18 ad ad NN NN _ _ s 19 _ _ _ _ _
+19 page page NN NN _ _ s 19 _ _ _ _ _
+20 rates rates NNS NNS _ _ s 16 _ _ _ _ _
+21 ; ; : : _ _ s 6 _ _ _ _ _
+22 with with IN IN _ _ s 32 _ _ _ _ _
+23 a a DT DT _ _ s 25 _ _ _ _ _
+24 lower lower JJR JJR _ _ s 25 _ _ _ _ _
+25 circulation circulation NN NN _ _ s 25 _ _ _ _ _
+26 base base NN NN _ _ s 21 _ _ _ _ _
+27 , , , , _ _ s 32 _ _ _ _ _
+28 Time Time NNP NNP _ _ s 28 _ _ _ _ _
+29 ’s ’s POS POS _ _ s 30 _ _ _ _ _
+30 ad ad NN NN _ _ s 30 _ _ _ _ _
+31 rate rate NN NN _ _ s 31 _ _ _ _ _
+32 will will MD MD _ _ s 32 _ _ _ _ _
+33 be be VB VB _ _ s 20 _ _ _ _ _
+34 effectively effectively RB RB _ _ s 34 _ _ _ _ _
+35 7.5 7.5 CD CD _ _ s 35 _ _ _ _ _
+36 % % NN NN _ _ s 36 _ _ _ _ _
+37 higher higher JJR JJR _ _ s 32 _ _ _ _ _
+38 per per IN IN _ _ s 36 _ _ _ _ _
+39 subscriber subscriber NN NN _ _ s 37 _ _ _ _ _
+40 ; ; : : _ _ s 6 _ _ _ _ _
+41 a a DT DT _ _ s 42 _ _ verb_ARG1 _ _
+42 full full JJ JJ _ _ s 42 _ _ verb_ARG1 _ _
+43 page page NN NN _ _ s 45 _ page _ _ _
+44 in in IN IN _ _ s 42 _ _ _ _ _
+45 Time Time NNP NNP _ _ s 43 _ _ _ _ _
+46 costs costs VBZ VBZ _ _ s 39 _ _ _ _ verb_ARG1
+47 about about IN IN _ _ s 48 _ about _ _ _
+48 $ $ $ $ _ _ s 48 _ _ _ _ verb_ARG1
+49 120,000 120,000 CD CD _ _ s 45 _ 120,000 _ -ROOT- _
+50 . . . . _ _ s 48 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 U.S. U.S. NNP NNP _ _ s 2 _ _
+3 News News NNP NNP _ _ s 3 _ _
+4 has has VBZ VBZ _ _ s 0 _ _
+5 yet yet RB RB _ _ s 3 _ _
+6 to to TO TO _ _ s 6 _ _
+7 announce announce VB VB _ _ s 3 _ _
+8 its its PRP$ PRP$ _ _ s 10 _ _
+9 1990 1990 CD CD _ _ s 10 _ _
+10 ad ad NN NN _ _ s 10 _ _
+11 rates rates NNS NNS _ _ s 6 _ _
+12 . . . . _ _ s 10 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 Newsweek Newsweek NNP NNP _ _ s 2 _ Newsweek _ _
+3 said said VBD VBD _ _ s 0 _ _ _ _
+4 it it PRP PRP _ _ s 4 _ _ _ _
+5 will will MD MD _ _ s 5 _ _ _ _
+6 introduce introduce VB VB _ _ s 2 _ _ _ _
+7 the the DT DT _ _ s 9 _ _ _ _
+8 Circulation Circulation NNP NNP _ _ s 9 _ _ _ _
+9 Credit Credit NNP NNP _ _ s 9 _ _ _ _
+10 Plan Plan NNP NNP _ _ s 5 _ _ _ _
+11 , , , , _ _ s 9 _ _ _ aux_ARG1
+12 which which WDT WDT _ _ s 9 _ _ _ aux_ARG1
+13 awards awards VBZ VBZ _ _ s 9 _ awards _ _
+14 space space NN NN _ _ s 14 _ _ _ _
+15 credits credits NNS NNS _ _ s 12 _ _ _ _
+16 to to TO TO _ _ s 12 _ _ _ _
+17 advertisers advertisers NNS NNS _ _ s 15 _ _ _ _
+18 on on IN IN _ _ s 12 _ _ _ _
+19 “ “ `` `` _ _ s 17 _ _ _ _
+20 renewal renewal NN NN _ _ s 20 _ _ _ _
+21 advertising advertising NN NN _ _ s 17 _ _ _ _
+22 . . . . _ _ s 22 _ _ _ _
+23 ” ” '' '' _ _ s 2 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _
+3 Spoon Spoon NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 the the DT DT _ _ s 5 _ _
+6 plan plan NN NN _ _ s 6 _ _
+7 is is VBZ VBZ _ _ s 3 _ _
+8 not not RB RB _ _ s 6 _ _
+9 an an DT DT _ _ s 9 _ _
+10 attempt attempt NN NN _ _ s 6 _ _
+11 to to TO TO _ _ s 9 _ _
+12 shore shore VB VB _ _ s 10 _ _
+13 up up RP RP _ _ s 11 _ _
+14 a a DT DT _ _ s 14 _ _
+15 decline decline NN NN _ _ s 11 _ _
+16 in in IN IN _ _ s 14 _ _
+17 ad ad NN NN _ _ s 17 _ _
+18 pages pages NNS NNS _ _ s 15 _ _
+19 in in IN IN _ _ s 14 _ _
+20 the the DT DT _ _ s 22 _ _
+21 first first JJ JJ _ _ s 22 _ _
+22 nine nine CD CD _ _ s 22 _ _
+23 months months NNS NNS _ _ s 18 _ _
+24 of of IN IN _ _ s 22 _ _
+25 1989 1989 CD CD _ _ s 23 _ _
+26 ; ; : : _ _ s 3 _ _
+27 Newsweek Newsweek NNP NNP _ _ s 27 _ _
+28 ’s ’s POS POS _ _ s 29 _ _
+29 ad ad NN NN _ _ s 29 _ _
+30 pages pages NNS NNS _ _ s 30 _ _
+31 totaled totaled VBD VBD _ _ s 25 _ _
+32 1,620 1,620 CD CD _ _ s 30 _ _
+33 , , , , _ _ s 31 _ _
+34 a a DT DT _ _ s 34 _ _
+35 drop drop NN NN _ _ s 32 _ _
+36 of of IN IN _ _ s 34 _ _
+37 3.2 3.2 CD CD _ _ s 37 _ _
+38 % % NN NN _ _ s 35 _ _
+39 from from IN IN _ _ s 34 _ _
+40 last last JJ JJ _ _ s 40 _ _
+41 year year NN NN _ _ s 38 _ _
+42 , , , , _ _ s 30 _ _
+43 according according VBG VBG _ _ s 30 _ _
+44 to to TO TO _ _ s 42 _ _
+45 Publishers Publishers NNP NNP _ _ s 46 _ _
+46 Information Information NNP NNP _ _ s 46 _ _
+47 Bureau Bureau NNP NNP _ _ s 43 _ _
+48 . . . . _ _ s 46 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Both Both DT DT _ _ s 3 _ _
+3 Newsweek Newsweek NNP NNP _ _ s 3 _ _
+4 and and CC CC _ _ s 6 _ _
+5 U.S. U.S. NNP NNP _ _ s 5 _ _
+6 News News NNP NNP _ _ s 3 _ _
+7 have have VBP VBP _ _ s 8 _ _
+8 been been VBN VBN _ _ s 8 _ _
+9 gaining gaining VBG VBG _ _ s 0 _ _
+10 circulation circulation NN NN _ _ s 8 _ _
+11 in in IN IN _ _ s 8 _ _
+12 recent recent JJ JJ _ _ s 12 _ _
+13 years years NNS NNS _ _ s 10 _ _
+14 without without IN IN _ _ s 8 _ _
+15 heavy heavy JJ JJ _ _ s 15 _ _
+16 use use NN NN _ _ s 13 _ _
+17 of of IN IN _ _ s 15 _ _
+18 electronic electronic JJ JJ _ _ s 18 _ _
+19 giveaways giveaways NNS NNS _ _ s 16 _ _
+20 to to TO TO _ _ s 15 _ _
+21 subscribers subscribers NNS NNS _ _ s 19 _ _
+22 , , , , _ _ s 20 _ _
+23 such such JJ JJ _ _ s 23 _ _
+24 as as IN IN _ _ s 20 _ _
+25 telephones telephones NNS NNS _ _ s 25 _ _
+26 or or CC CC _ _ s 23 _ _
+27 watches watches NNS NNS _ _ s 25 _ _
+28 . . . . _ _ s 26 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 However However RB RB _ _ s 9 _ _
+3 , , , , _ _ s 9 _ _
+4 none none NN NN _ _ s 9 _ _
+5 of of IN IN _ _ s 3 _ _
+6 the the DT DT _ _ s 8 _ _
+7 big big JJ JJ _ _ s 8 _ _
+8 three three CD CD _ _ s 8 _ _
+9 weeklies weeklies NNS NNS _ _ s 4 _ _
+10 recorded recorded VBD VBD _ _ s 0 _ _
+11 circulation circulation NN NN _ _ s 11 _ _
+12 gains gains NNS NNS _ _ s 9 _ _
+13 recently recently RB RB _ _ s 9 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 According According VBG VBG _ _ s 14 _ According _ _
+3 to to TO TO _ _ s 1 _ _ _ _
+4 Audit Audit NNP NNP _ _ s 4 _ _ _ _
+5 Bureau Bureau NNP NNP _ _ s 2 _ _ _ _
+6 of of IN IN _ _ s 4 _ _ _ _
+7 Circulations Circulations NNP NNP _ _ s 5 _ _ _ _
+8 , , , , _ _ s 6 _ _ _ _
+9 Time Time NNP NNP _ _ s 7 _ _ _ _
+10 , , , , _ _ s 4 _ _ _ _
+11 the the DT DT _ _ s 11 _ _ _ _
+12 largest largest JJS JJS _ _ s 9 _ _ _ _
+13 newsweekly newsweekly RB RB _ _ s 11 _ _ _ _
+14 , , , , _ _ s 14 _ _ _ _
+15 had had VBD VBD _ _ s 0 _ _ _ verb_ARG1
+16 average average JJ JJ _ _ s 16 _ _ _ verb_ARG1
+17 circulation circulation NN NN _ _ s 14 _ circulation _ _
+18 of of IN IN _ _ s 16 _ _ _ _
+19 4,393,237 4,393,237 CD CD _ _ s 17 _ _ _ _
+20 , , , , _ _ s 16 _ _ _ _
+21 a a DT DT _ _ s 21 _ _ _ _
+22 decrease decrease NN NN _ _ s 19 _ _ _ _
+23 of of IN IN _ _ s 21 _ _ _ _
+24 7.3 7.3 CD CD _ _ s 24 _ _ _ _
+25 % % NN NN _ _ s 22 _ _ _ _
+26 . . . . _ _ s 24 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 11 _ _
+2 Newsweek Newsweek NNP NNP _ _ s 2 _ _
+3 ’s ’s POS POS _ _ s 3 _ _
+4 circulation circulation NN NN _ _ s 11 _ _
+5 for for IN IN _ _ s 3 _ _
+6 the the DT DT _ _ s 8 _ _
+7 first first JJ JJ _ _ s 8 _ _
+8 six six CD CD _ _ s 8 _ _
+9 months months NNS NNS _ _ s 4 _ _
+10 of of IN IN _ _ s 8 _ _
+11 1989 1989 CD CD _ _ s 9 _ _
+12 was was VBD VBD _ _ s 14 _ _
+13 3,288,453 3,288,453 CD CD _ _ s 11 _ _
+14 , , , , _ _ s 11 _ _
+15 flat flat JJ JJ _ _ s 15 _ _
+16 from from IN IN _ _ s 20 _ _
+17 the the DT DT _ _ s 18 _ _
+18 same same JJ JJ _ _ s 18 _ _
+19 period period NN NN _ _ s 15 _ _
+20 last last JJ JJ _ _ s 20 _ _
+21 year year NN NN _ _ s -1 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 9 _ _
+2 U.S. U.S. NNP NNP _ _ s 2 _ _
+3 News News NNP NNP _ _ s 3 _ _
+4 ’ ’ POS POS _ _ s 4 _ _
+5 circulation circulation NN NN _ _ s 9 _ _
+6 in in IN IN _ _ s 4 _ _
+7 the the DT DT _ _ s 8 _ _
+8 same same JJ JJ _ _ s 8 _ _
+9 time time NN NN _ _ s 5 _ _
+10 was was VBD VBD _ _ s 12 _ _
+11 2,303,328 2,303,328 CD CD _ _ s 9 _ _
+12 , , , , _ _ s 9 _ _
+13 down down RB RB _ _ s 14 _ _
+14 2.6 2.6 CD CD _ _ s 14 _ _
+15 % % NN NN _ _ s -1 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 2 _ _ _
+3 move move NN NN _ _ s 3 _ _ _
+4 leaves leaves VBZ VBZ _ _ s 0 _ _ _
+5 United United NNP NNP _ _ s 6 _ _ _
+6 Illuminating Illuminating NNP NNP _ _ s 6 _ _ _
+7 Co. Co. NNP NNP _ _ s 7 _ _ _
+8 and and CC CC _ _ s 3 _ _ _
+9 Northeast Northeast NNP NNP _ _ s 9 _ _ _
+10 Utilities Utilities NNP NNP _ _ s 7 _ _ _
+11 as as IN IN _ _ s 3 _ _ _
+12 the the DT DT _ _ s 14 _ _ _
+13 remaining remaining VBG VBG _ _ s 14 _ _ _
+14 outside outside JJ JJ _ _ s 14 _ _ _
+15 bidders bidders NNS NNS _ _ s 10 _ _ _
+16 for for IN IN _ _ s 14 _ _ _
+17 PS PS NNP NNP _ _ s 15 _ _ _
+18 of of IN IN _ _ s 16 _ _ _
+19 New New NNP NNP _ _ s 19 _ _ _
+20 Hampshire Hampshire NNP NNP _ _ s 17 _ _ _
+21 , , , , _ _ s 16 _ _ _
+22 which which WDT WDT _ _ s 16 _ _ _
+23 also also RB RB _ _ s 24 _ _ _
+24 has has VBZ VBZ _ _ s 24 _ _ verb_ARG1
+25 proposed proposed VBN VBN _ _ s 16 _ proposed _
+26 an an DT DT _ _ s 28 _ _ _
+27 internal internal JJ JJ _ _ s 28 _ _ _
+28 reorganization reorganization NN NN _ _ s 28 _ _ _
+29 plan plan NN NN _ _ s 24 _ _ _
+30 in in IN IN _ _ s 28 _ _ _
+31 Chapter Chapter NN NN _ _ s 33 _ _ _
+32 11 11 CD CD _ _ s 33 _ _ _
+33 bankruptcy bankruptcy NN NN _ _ s 33 _ _ _
+34 proceedings proceedings NNS NNS _ _ s 29 _ _ _
+35 under under IN IN _ _ s 28 _ _ _
+36 which which WDT WDT _ _ s 28 _ _ _
+37 it it PRP PRP _ _ s 37 _ _ _
+38 would would MD MD _ _ s 38 _ _ _
+39 remain remain VB VB _ _ s 28 _ _ _
+40 an an DT DT _ _ s 41 _ _ _
+41 independent independent JJ JJ _ _ s 41 _ _ _
+42 company company NN NN _ _ s 38 _ _ _
+43 . . . . _ _ s 41 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 United United NNP NNP _ _ s 2 _ _
+3 Illuminating Illuminating NNP NNP _ _ s 3 _ _
+4 is is VBZ VBZ _ _ s 4 _ _
+5 based based VBN VBN _ _ s 11 _ _
+6 in in IN IN _ _ s 4 _ _
+7 New New NNP NNP _ _ s 7 _ _
+8 Haven Haven NNP NNP _ _ s 5 _ _
+9 , , , , _ _ s 7 _ _
+10 Conn. Conn. NNP NNP _ _ s 8 _ _
+11 , , , , _ _ s 11 _ _
+12 and and CC CC _ _ s 0 _ _
+13 Northeast Northeast NNP NNP _ _ s 13 _ _
+14 is is VBZ VBZ _ _ s 14 _ _
+15 based based VBN VBN _ _ s 11 _ _
+16 in in IN IN _ _ s 14 _ _
+17 Hartford Hartford NNP NNP _ _ s 15 _ _
+18 , , , , _ _ s 16 _ _
+19 Conn Conn NNP NNP _ _ s 17 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 That That WDT WDT _ _ s 2 _ That _
+3 got got VBD VBD _ _ s 9 _ _ _
+4 hard hard RB RB _ _ s 2 _ _ _
+5 to to TO TO _ _ s 5 _ _ _
+6 take take VB VB _ _ s 2 _ _ _
+7 , , , , _ _ s 9 _ _ _
+8 ” ” '' '' _ _ s 9 _ _ _
+9 he he PRP PRP _ _ s 9 _ _ _
+10 added added VBD VBD _ _ s 0 _ _ _
+11 . . . . _ _ s 9 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _
+3 Rowe Rowe NNP NNP _ _ s 4 _ _
+4 also also RB RB _ _ s 4 _ _
+5 noted noted VBD VBD _ _ s 0 _ _
+6 that that IN IN _ _ s 9 _ _
+7 political political JJ JJ _ _ s 7 _ _
+8 concerns concerns NNS NNS _ _ s 9 _ _
+9 also also RB RB _ _ s 9 _ _
+10 worried worried VBN VBN _ _ s 4 _ _
+11 New New NNP NNP _ _ s 12 _ _
+12 England England NNP NNP _ _ s 12 _ _
+13 Electric Electric NNP NNP _ _ s 9 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 No No DT DT _ _ s 2 _ _ verb_ARG1 _
+3 matter matter NN NN _ _ s 28 _ matter _ _
+4 who who WP WP _ _ s 2 _ _ _ _
+5 owns owns VBZ VBZ _ _ s 2 _ _ _ _
+6 PS PS NNP NNP _ _ s 4 _ _ _ _
+7 of of IN IN _ _ s 5 _ _ _ _
+8 New New NNP NNP _ _ s 8 _ _ _ _
+9 Hampshire Hampshire NNP NNP _ _ s 6 _ _ _ _
+10 , , , , _ _ s 4 _ _ _ _
+11 after after IN IN _ _ s 4 _ _ _ _
+12 it it PRP PRP _ _ s 12 _ _ _ _
+13 emerges emerges VBZ VBZ _ _ s 10 _ _ _ _
+14 from from IN IN _ _ s 12 _ _ _ _
+15 bankruptcy bankruptcy NN NN _ _ s 15 _ _ _ _
+16 proceedings proceedings NNS NNS _ _ s 13 _ _ _ _
+17 its its PRP$ PRP$ _ _ s 17 _ _ _ verb_ARG1
+18 rates rates NNS NNS _ _ s 18 _ rates _ _
+19 will will MD MD _ _ s 19 _ _ _ _
+20 be be VB VB _ _ s 12 _ _ _ _
+21 among among IN IN _ _ s 19 _ _ _ _
+22 the the DT DT _ _ s 22 _ _ _ _
+23 highest highest JJS JJS _ _ s 20 _ _ _ _
+24 in in IN IN _ _ s 22 _ _ _ _
+25 the the DT DT _ _ s 25 _ _ _ _
+26 nation nation NN NN _ _ s 23 _ _ _ _
+27 , , , , _ _ s 28 _ _ _ _
+28 he he PRP PRP _ _ s 28 _ _ _ _
+29 said said VBD VBD _ _ s 0 _ _ _ _
+30 . . . . _ _ s 28 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 it it PRP PRP _ _ s 2 _ _ _
+3 was was VBD VBD _ _ s 25 _ _ _
+4 just just RB RB _ _ s 5 _ _ _
+5 another another DT DT _ _ s 5 _ _ _
+6 one one CD CD _ _ s 2 _ _ _
+7 of of IN IN _ _ s 5 _ _ _
+8 the the DT DT _ _ s 9 _ _ _
+9 risk risk NN NN _ _ s 9 _ _ _
+10 factors factors NNS NNS _ _ s 6 _ _ _
+11 ” ” '' '' _ _ s 9 _ _ _
+12 that that WDT WDT _ _ s 9 _ _ aux_ARG1
+13 led led VBD VBD _ _ s 9 _ led _
+14 to to TO TO _ _ s 12 _ _ _
+15 the the DT DT _ _ s 15 _ _ _
+16 company company NN NN _ _ s 16 _ _ _
+17 ’s ’s POS POS _ _ s 17 _ _ _
+18 decision decision NN NN _ _ s 13 _ _ _
+19 to to TO TO _ _ s 17 _ _ _
+20 withdraw withdraw VB VB _ _ s 18 _ _ _
+21 from from IN IN _ _ s 19 _ _ _
+22 the the DT DT _ _ s 22 _ _ _
+23 bidding bidding NN NN _ _ s 20 _ _ _
+24 , , , , _ _ s 25 _ _ _
+25 he he PRP PRP _ _ s 25 _ _ _
+26 added added VBD VBD _ _ s 0 _ _ _
+27 . . . . _ _ s 25 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Wilbur Wilbur NNP NNP _ _ s 3 _ _
+3 Ross Ross NNP NNP _ _ s 3 _ _
+4 Jr. Jr. NNP NNP _ _ s 19 _ _
+5 of of IN IN _ _ s 3 _ _
+6 Rothschild Rothschild NNP NNP _ _ s 6 _ _
+7 Inc. Inc. NNP NNP _ _ s 4 _ _
+8 , , , , _ _ s 6 _ _
+9 the the DT DT _ _ s 10 _ _
+10 financial financial JJ JJ _ _ s 10 _ _
+11 adviser adviser NN NN _ _ s 7 _ _
+12 to to TO TO _ _ s 10 _ _
+13 the the DT DT _ _ s 14 _ _
+14 troubled troubled JJ JJ _ _ s 14 _ _
+15 company company NN NN _ _ s 15 _ _
+16 ’s ’s POS POS _ _ s 17 _ _
+17 equity equity NN NN _ _ s 17 _ _
+18 holders holders NNS NNS _ _ s 11 _ _
+19 , , , , _ _ s 19 _ _
+20 said said VBD VBD _ _ s 0 _ _
+21 the the DT DT _ _ s 21 _ _
+22 withdrawal withdrawal NN NN _ _ s 26 _ _
+23 of of IN IN _ _ s 21 _ _
+24 New New NNP NNP _ _ s 25 _ _
+25 England England NNP NNP _ _ s 25 _ _
+26 Electric Electric NNP NNP _ _ s 22 _ _
+27 might might MD MD _ _ s 27 _ _
+28 speed speed VB VB _ _ s 19 _ _
+29 up up RP RP _ _ s 27 _ _
+30 the the DT DT _ _ s 31 _ _
+31 reorganization reorganization NN NN _ _ s 31 _ _
+32 process process NN NN _ _ s 27 _ _
+33 . . . . _ _ s 31 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 11 _ _
+3 Now Now RB RB _ _ s 7 _ _
+4 the the DT DT _ _ s 4 _ _
+5 field field NN NN _ _ s 5 _ _
+6 is is VBZ VBZ _ _ s 7 _ _
+7 less less RBR RBR _ _ s 7 _ _
+8 cluttered cluttered VBN VBN _ _ s 11 _ _
+9 , , , , _ _ s 11 _ _
+10 ” ” '' '' _ _ s 11 _ _
+11 he he PRP PRP _ _ s 11 _ _
+12 added added VBD VBD _ _ s 0 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Separately Separately RB RB _ _ s 8 _ Separately _
+3 , , , , _ _ s 8 _ _ _
+4 the the DT DT _ _ s 7 _ _ _
+5 Federal Federal NNP NNP _ _ s 7 _ _ _
+6 Energy Energy NNP NNP _ _ s 7 _ _ _
+7 Regulatory Regulatory NNP NNP _ _ s 7 _ _ _
+8 Commission Commission NNP NNP _ _ s 8 _ _ _
+9 turned turned VBD VBD _ _ s 0 _ _ _
+10 down down RP RP _ _ s 8 _ _ _
+11 for for IN IN _ _ s 8 _ _ _
+12 now now RB RB _ _ s 13 _ _ _
+13 a a DT DT _ _ s 13 _ _ _
+14 request request NN NN _ _ s 10 _ _ _
+15 by by IN IN _ _ s 13 _ _ _
+16 Northeast Northeast NNP NNP _ _ s 14 _ _ _
+17 seeking seeking VBG VBG _ _ s 13 _ _ _
+18 approval approval NN NN _ _ s 16 _ _ _
+19 of of IN IN _ _ s 17 _ _ _
+20 its its PRP$ PRP$ _ _ s 21 _ _ _
+21 possible possible JJ JJ _ _ s 21 _ _ _
+22 purchase purchase NN NN _ _ s 18 _ _ _
+23 of of IN IN _ _ s 21 _ _ _
+24 PS PS NNP NNP _ _ s 22 _ _ _
+25 of of IN IN _ _ s 23 _ _ _
+26 New New NNP NNP _ _ s 26 _ _ _
+27 Hampshire Hampshire NNP NNP _ _ s 24 _ _ _
+28 . . . . _ _ s 26 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Northeast Northeast NNP NNP _ _ s 2 _ Northeast _
+3 said said VBD VBD _ _ s 0 _ _ _
+4 it it PRP PRP _ _ s 4 _ _ _
+5 would would MD MD _ _ s 5 _ _ _
+6 refile refile VB VB _ _ s 8 _ _ _
+7 its its PRP$ PRP$ _ _ s 7 _ _ _
+8 request request NN NN _ _ s 5 _ _ _
+9 and and CC CC _ _ s 2 _ _ _
+10 still still RB RB _ _ s 10 _ _ _
+11 hopes hopes VBZ VBZ _ _ s 8 _ _ _
+12 for for IN IN _ _ s 10 _ _ _
+13 an an DT DT _ _ s 14 _ _ _
+14 expedited expedited VBN VBN _ _ s 14 _ _ _
+15 review review NN NN _ _ s 11 _ _ _
+16 by by IN IN _ _ s 14 _ _ _
+17 the the DT DT _ _ s 17 _ _ _
+18 FERC FERC NNP NNP _ _ s 15 _ _ _
+19 so so IN IN _ _ s 10 _ _ _
+20 that that IN IN _ _ s 18 _ _ _
+21 it it PRP PRP _ _ s 21 _ _ _
+22 could could MD MD _ _ s 22 _ _ _
+23 complete complete VB VB _ _ s 18 _ _ _
+24 the the DT DT _ _ s 24 _ _ _
+25 purchase purchase NN NN _ _ s 22 _ _ _
+26 by by IN IN _ _ s 22 _ _ _
+27 next next JJ JJ _ _ s 27 _ _ _
+28 summer summer NN NN _ _ s 25 _ _ _
+29 if if IN IN _ _ s 22 _ _ _
+30 its its PRP$ PRP$ _ _ s 30 _ _ _
+31 bid bid NN NN _ _ s 31 _ _ _
+32 is is VBZ VBZ _ _ s 28 _ _ _
+33 the the DT DT _ _ s 33 _ _ _
+34 one one NN NN _ _ s 31 _ _ _
+35 approved approved VBD VBD _ _ s 33 _ _ _
+36 by by IN IN _ _ s 38 _ _ _
+37 the the DT DT _ _ s 38 _ _ _
+38 bankruptcy bankruptcy NN NN _ _ s 38 _ _ _
+39 court court NN NN _ _ s 34 _ _ _
+40 . . . . _ _ s 38 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Commonwealth Commonwealth NNP NNP _ _ s 3 _ _
+3 Edison Edison NNP NNP _ _ s 3 _ _
+4 Co. Co. NNP NNP _ _ s 4 _ _
+5 was was VBD VBD _ _ s 5 _ _
+6 ordered ordered VBN VBN _ _ s 0 _ _
+7 to to TO TO _ _ s 7 _ _
+8 refund refund VB VB _ _ s 5 _ _
+9 about about IN IN _ _ s 11 _ _
+10 $ $ $ $ _ _ s 11 _ _
+11 250 250 CD CD _ _ s 11 _ _
+12 million million CD CD _ _ s 7 _ _
+13 to to TO TO _ _ s 11 _ _
+14 its its PRP$ PRP$ _ _ s 17 _ _
+15 current current JJ JJ _ _ s 15 _ _
+16 and and CC CC _ _ s 16 _ _
+17 former former JJ JJ _ _ s 17 _ _
+18 ratepayers ratepayers NNS NNS _ _ s 12 _ _
+19 for for IN IN _ _ s 11 _ _
+20 illegal illegal JJ JJ _ _ s 20 _ _
+21 rates rates NNS NNS _ _ s 18 _ _
+22 collected collected VBN VBN _ _ s 20 _ _
+23 for for IN IN _ _ s 21 _ _
+24 cost cost NN NN _ _ s 24 _ _
+25 overruns overruns NNS NNS _ _ s 22 _ _
+26 on on IN IN _ _ s 21 _ _
+27 a a DT DT _ _ s 29 _ _
+28 nuclear nuclear JJ JJ _ _ s 29 _ _
+29 power power NN NN _ _ s 29 _ _
+30 plant plant NN NN _ _ s 25 _ _
+31 . . . . _ _ s 29 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 refund refund NN NN _ _ s 3 _ _
+4 was was VBD VBD _ _ s 0 _ _
+5 about about IN IN _ _ s 7 _ _
+6 $ $ $ $ _ _ s 7 _ _
+7 55 55 CD CD _ _ s 7 _ _
+8 million million CD CD _ _ s 8 _ _
+9 more more JJR JJR _ _ s 3 _ _
+10 than than IN IN _ _ s 8 _ _
+11 previously previously RB RB _ _ s 11 _ _
+12 ordered ordered VBN VBN _ _ s 9 _ _
+13 by by IN IN _ _ s 17 _ _
+14 the the DT DT _ _ s 16 _ _
+15 Illinois Illinois NNP NNP _ _ s 16 _ _
+16 Commerce Commerce NNP NNP _ _ s 16 _ _
+17 Commission Commission NNP NNP _ _ s 17 _ _
+18 and and CC CC _ _ s 11 _ _
+19 trade trade NN NN _ _ s 19 _ _
+20 groups groups NNS NNS _ _ s 20 _ _
+21 said said VBD VBD _ _ s 17 _ _
+22 it it PRP PRP _ _ s 22 _ _
+23 may may MD MD _ _ s 23 _ _
+24 be be VB VB _ _ s 20 _ _
+25 the the DT DT _ _ s 25 _ _
+26 largest largest JJS JJS _ _ s 23 _ _
+27 ever ever RB RB _ _ s 27 _ _
+28 required required VBN VBN _ _ s 25 _ _
+29 of of IN IN _ _ s 27 _ _
+30 a a DT DT _ _ s 33 _ _
+31 state state NN NN _ _ s 31 _ _
+32 or or CC CC _ _ s 32 _ _
+33 local local JJ JJ _ _ s 33 _ _
+34 utility utility NN NN _ _ s 28 _ _
+35 . . . . _ _ s 33 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Judge Judge NNP NNP _ _ s 2 _ _ _
+3 Curry Curry NNP NNP _ _ s 3 _ _ _
+4 ordered ordered VBD VBD _ _ s 10 _ _ _
+5 the the DT DT _ _ s 5 _ _ _
+6 refunds refunds NNS NNS _ _ s 7 _ _ _
+7 to to TO TO _ _ s 7 _ _ _
+8 begin begin VB VB _ _ s 3 _ _ _
+9 Feb. Feb. NNP NNP _ _ s 7 _ _ _
+10 1 1 CD CD _ _ s 8 _ _ _
+11 and and CC CC _ _ s 0 _ _ aux_ARG1
+12 said said VBD VBD _ _ s 10 _ said _
+13 that that IN IN _ _ s 16 _ _ _
+14 he he PRP PRP _ _ s 14 _ _ _
+15 would would MD MD _ _ s 16 _ _ _
+16 n’t n’t RB RB _ _ s 16 _ _ _
+17 entertain entertain VB VB _ _ s 11 _ _ _
+18 any any DT DT _ _ s 18 _ _ _
+19 appeals appeals NNS NNS _ _ s 19 _ _ _
+20 or or CC CC _ _ s 16 _ _ _
+21 other other JJ JJ _ _ s 21 _ _ _
+22 attempts attempts NNS NNS _ _ s 19 _ _ _
+23 to to TO TO _ _ s 21 _ _ _
+24 block block VB VB _ _ s 22 _ _ _
+25 his his PRP$ PRP$ _ _ s 25 _ _ _
+26 order order NN NN _ _ s 23 _ _ _
+27 by by IN IN _ _ s 23 _ _ _
+28 Commonwealth Commonwealth NNP NNP _ _ s 28 _ _ _
+29 Edison Edison NNP NNP _ _ s 26 _ _ _
+30 . . . . _ _ s 28 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Commonwealth Commonwealth NNP NNP _ _ s 2 _ _
+3 Edison Edison NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 it it PRP PRP _ _ s 5 _ _
+6 is is VBZ VBZ _ _ s 7 _ _
+7 already already RB RB _ _ s 7 _ _
+8 appealing appealing VBG VBG _ _ s 12 _ _
+9 the the DT DT _ _ s 11 _ _
+10 underlying underlying VBG VBG _ _ s 11 _ _
+11 commission commission NN NN _ _ s 11 _ _
+12 order order NN NN _ _ s 7 _ _
+13 and and CC CC _ _ s 3 _ _
+14 is is VBZ VBZ _ _ s 14 _ _
+15 considering considering VBG VBG _ _ s 12 _ _
+16 appealing appealing VBG VBG _ _ s 14 _ _
+17 Judge Judge NNP NNP _ _ s 17 _ _
+18 Curry Curry NNP NNP _ _ s 18 _ _
+19 ’s ’s POS POS _ _ s 19 _ _
+20 order order NN NN _ _ s 15 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _
+2 The The DT DT _ _ s 3 _ _ _ _
+3 exact exact JJ JJ _ _ s 3 _ _ _ _
+4 amount amount NN NN _ _ s 7 _ _ _ _
+5 of of IN IN _ _ s 3 _ _ noun_ARG1 _
+6 the the DT DT _ _ s 6 _ _ verb_ARG1 _
+7 refund refund NN NN _ _ s 4 _ refund _ _
+8 will will MD MD _ _ s 9 _ _ _ _
+9 be be VB VB _ _ s 9 _ _ _ _
+10 determined determined VBN VBN _ _ s 0 _ _ _ _
+11 next next JJ JJ _ _ s 11 _ _ _ _
+12 year year NN NN _ _ s 9 _ _ _ _
+13 based based VBN VBN _ _ s 9 _ _ _ _
+14 on on IN IN _ _ s 12 _ _ _ _
+15 actual actual JJ JJ _ _ s 15 _ _ _ _
+16 collections collections NNS NNS _ _ s 13 _ _ _ _
+17 made made VBN VBN _ _ s 15 _ _ _ _
+18 until until IN IN _ _ s 9 _ _ _ _
+19 Dec. Dec. NNP NNP _ _ s 17 _ _ _ _
+20 31 31 CD CD _ _ s 18 _ _ _ _
+21 of of IN IN _ _ s 18 _ _ _ verb_ARG1
+22 this this DT DT _ _ s 22 _ _ _ verb_ARG1
+23 year year NN NN _ _ s 20 _ year _ _
+24 . . . . _ _ s 22 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Commonwealth Commonwealth NNP NNP _ _ s 2 _ _
+3 Edison Edison NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 the the DT DT _ _ s 5 _ _
+6 ruling ruling NN NN _ _ s 6 _ _
+7 could could MD MD _ _ s 7 _ _
+8 force force VB VB _ _ s 3 _ _
+9 it it PRP PRP _ _ s 7 _ _
+10 to to TO TO _ _ s 10 _ _
+11 slash slash VB VB _ _ s 7 _ _
+12 its its PRP$ PRP$ _ _ s 13 _ _
+13 1989 1989 CD CD _ _ s 13 _ _
+14 earnings earnings NNS NNS _ _ s 10 _ _
+15 by by IN IN _ _ s 10 _ _
+16 $ $ $ $ _ _ s 16 _ _
+17 1.55 1.55 CD CD _ _ s 14 _ _
+18 a a DT DT _ _ s 18 _ _
+19 share share NN NN _ _ s 16 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 For For IN IN _ _ s 6 _ _ _
+3 1988 1988 CD CD _ _ s 1 _ _ _
+4 , , , , _ _ s 6 _ _ _
+5 Commonwealth Commonwealth NNP NNP _ _ s 5 _ _ _
+6 Edison Edison NNP NNP _ _ s 6 _ _ _
+7 reported reported VBD VBD _ _ s 0 _ _ _
+8 earnings earnings NNS NNS _ _ s 6 _ _ _
+9 of of IN IN _ _ s 7 _ _ _
+10 $ $ $ $ _ _ s 11 _ _ _
+11 737.5 737.5 CD CD _ _ s 11 _ _ _
+12 million million CD CD _ _ s 13 _ _ _
+13 , , , , _ _ s 13 _ _ relative_ARG1
+14 or or CC CC _ _ s 8 _ or _
+15 $ $ $ $ _ _ s 15 _ _ _
+16 3.01 3.01 CD CD _ _ s 13 _ _ _
+17 a a DT DT _ _ s 17 _ _ _
+18 share share NN NN _ _ s 15 _ _ _
+19 . . . . _ _ s 17 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 A A DT DT _ _ s 4 _ _ _
+3 Commonwealth Commonwealth NNP NNP _ _ s 3 _ _ _
+4 Edison Edison NNP NNP _ _ s 4 _ _ _
+5 spokesman spokesman NN NN _ _ s 5 _ _ _
+6 said said VBD VBD _ _ s 0 _ _ _
+7 that that IN IN _ _ s 30 _ _ _
+8 tracking tracking VBG VBG _ _ s 6 _ _ _
+9 down down RP RP _ _ s 7 _ _ _
+10 the the DT DT _ _ s 12 _ _ _
+11 two two CD CD _ _ s 11 _ _ _
+12 million million CD CD _ _ s 12 _ _ _
+13 customers customers NNS NNS _ _ s 7 _ _ _
+14 whose whose WP$ WP$ _ _ s 12 _ _ _
+15 addresses addresses NNS NNS _ _ s 13 _ _ _
+16 have have VBP VBP _ _ s 14 _ _ verb_ARG1
+17 changed changed VBN VBN _ _ s 15 _ changed _
+18 during during IN IN _ _ s 16 _ _ _
+19 the the DT DT _ _ s 22 _ _ _
+20 past past JJ JJ _ _ s 22 _ _ _
+21 3 3 CD CD _ _ s 21 _ _ _
+22 1/2 1/2 CD CD _ _ s 22 _ _ _
+23 years years NNS NNS _ _ s 17 _ _ _
+24 would would MD MD _ _ s 14 _ _ _
+25 be be VB VB _ _ s 23 _ _ _
+26 “ “ `` `` _ _ s 24 _ _ _
+27 an an DT DT _ _ s 28 _ _ _
+28 administrative administrative JJ JJ _ _ s 28 _ _ _
+29 nightmare nightmare NN NN _ _ s 24 _ _ _
+30 . . . . _ _ s 30 _ _ _
+31 ” ” '' '' _ _ s 5 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 12 _ _
+2 In In IN IN _ _ s 12 _ _
+3 New New NNP NNP _ _ s 5 _ _
+4 York York NNP NNP _ _ s 5 _ _
+5 Stock Stock NNP NNP _ _ s 5 _ _
+6 Exchange Exchange NNP NNP _ _ s 7 _ _
+7 composite composite JJ JJ _ _ s 7 _ _
+8 trading trading NN NN _ _ s 1 _ _
+9 yesterday yesterday NN NN _ _ s 12 _ _
+10 , , , , _ _ s 12 _ _
+11 Commonwealth Commonwealth NNP NNP _ _ s 11 _ _
+12 Edison Edison NNP NNP _ _ s 12 _ _
+13 closed closed VBD VBD _ _ s 17 _ _
+14 at at IN IN _ _ s 12 _ _
+15 $ $ $ $ _ _ s 15 _ _
+16 38.375 38.375 CD CD _ _ s 13 _ _
+17 , , , , _ _ s 12 _ _
+18 down down RB RB _ _ s 19 _ _
+19 12.5 12.5 CD CD _ _ s 19 _ _
+20 cents cents NNS NNS _ _ s -1 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 7 _ _ _
+3 $ $ $ $ _ _ s 4 _ _ _
+4 2.5 2.5 CD CD _ _ s 4 _ _ _
+5 billion billion CD CD _ _ s 7 _ _ _
+6 Byron Byron NNP NNP _ _ s 7 _ _ _
+7 1 1 CD CD _ _ s 7 _ _ _
+8 plant plant NN NN _ _ s 14 _ _ _
+9 near near IN IN _ _ s 7 _ _ verb_ARG1
+10 Rockford Rockford NNP NNP _ _ s 8 _ Rockford _
+11 , , , , _ _ s 9 _ _ _
+12 Ill. Ill. NNP NNP _ _ s 10 _ _ _
+13 , , , , _ _ s 14 _ _ _
+14 was was VBD VBD _ _ s 14 _ _ _
+15 completed completed VBN VBN _ _ s 0 _ _ _
+16 in in IN IN _ _ s 14 _ _ _
+17 1985 1985 CD CD _ _ s 15 _ _ _
+18 . . . . _ _ s 16 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 In In IN IN _ _ s 10 _ _ _
+3 a a DT DT _ _ s 5 _ _ _
+4 disputed disputed VBN VBN _ _ s 5 _ _ _
+5 1985 1985 CD CD _ _ s 5 _ _ _
+6 ruling ruling NN NN _ _ s 1 _ _ _
+7 , , , , _ _ s 10 _ _ _
+8 the the DT DT _ _ s 9 _ _ _
+9 Commerce Commerce NNP NNP _ _ s 9 _ _ _
+10 Commission Commission NNP NNP _ _ s 10 _ _ _
+11 said said VBD VBD _ _ s 0 _ _ _
+12 Commonwealth Commonwealth NNP NNP _ _ s 12 _ _ _
+13 Edison Edison NNP NNP _ _ s 13 _ _ _
+14 could could MD MD _ _ s 14 _ _ _
+15 raise raise VB VB _ _ s 10 _ _ _
+16 its its PRP$ PRP$ _ _ s 17 _ _ _
+17 electricity electricity NN NN _ _ s 17 _ _ _
+18 rates rates NNS NNS _ _ s 14 _ _ _
+19 by by IN IN _ _ s 14 _ _ _
+20 $ $ $ $ _ _ s 21 _ _ _
+21 49 49 CD CD _ _ s 21 _ _ _
+22 million million CD CD _ _ s 18 _ _ _
+23 to to TO TO _ _ s 14 _ _ _
+24 pay pay VB VB _ _ s 22 _ _ _
+25 for for IN IN _ _ s 23 _ _ _
+26 the the DT DT _ _ s 26 _ _ verb_ARG1
+27 plant plant NN NN _ _ s 24 _ plant _
+28 . . . . _ _ s 26 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 But But CC CC _ _ s 16 _ _
+3 state state NN NN _ _ s 3 _ _
+4 courts courts NNS NNS _ _ s 4 _ _
+5 upheld upheld VBD VBD _ _ s 16 _ _
+6 a a DT DT _ _ s 6 _ _
+7 challenge challenge NN NN _ _ s 4 _ _
+8 by by IN IN _ _ s 6 _ _
+9 consumer consumer NN NN _ _ s 9 _ _
+10 groups groups NNS NNS _ _ s 7 _ _
+11 to to TO TO _ _ s 6 _ _
+12 the the DT DT _ _ s 12 _ _
+13 commission commission NN NN _ _ s 13 _ _
+14 ’s ’s POS POS _ _ s 15 _ _
+15 rate rate NN NN _ _ s 15 _ _
+16 increase increase NN NN _ _ s 10 _ _
+17 and and CC CC _ _ s 0 _ _
+18 found found VBD VBD _ _ s 16 _ _
+19 the the DT DT _ _ s 19 _ _
+20 rates rates NNS NNS _ _ s 20 _ _
+21 illegal illegal JJ JJ _ _ s 17 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 4 _ _ _
+3 Illinois Illinois NNP NNP _ _ s 4 _ _ _
+4 Supreme Supreme NNP NNP _ _ s 4 _ _ _
+5 Court Court NNP NNP _ _ s 5 _ _ _
+6 ordered ordered VBD VBD _ _ s 0 _ _ _
+7 the the DT DT _ _ s 7 _ _ _
+8 commission commission NN NN _ _ s 5 _ _ _
+9 to to TO TO _ _ s 7 _ _ _
+10 audit audit VB VB _ _ s 15 _ _ _
+11 Commonwealth Commonwealth NNP NNP _ _ s 11 _ _ _
+12 Edison Edison NNP NNP _ _ s 12 _ _ _
+13 ’s ’s POS POS _ _ s 14 _ _ _
+14 construction construction NN NN _ _ s 14 _ _ _
+15 expenses expenses NNS NNS _ _ s 9 _ _ _
+16 and and CC CC _ _ s 8 _ _ aux_ARG1
+17 refund refund VB VB _ _ s 15 _ refund _
+18 any any DT DT _ _ s 19 _ _ _
+19 unreasonable unreasonable JJ JJ _ _ s 19 _ _ _
+20 expenses expenses NNS NNS _ _ s 16 _ _ _
+21 . . . . _ _ s 19 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _
+2 In In IN IN _ _ s 7 _ _ verb_ARG3
+3 his his PRP$ PRP$ _ _ s 3 _ _ _
+4 ruling ruling NN NN _ _ s 1 _ _ _
+5 , , , , _ _ s 7 _ _ _
+6 Judge Judge NNP NNP _ _ s 6 _ _ _
+7 Curry Curry NNP NNP _ _ s 7 _ _ _
+8 added added VBD VBD _ _ s 0 _ _ _
+9 an an DT DT _ _ s 12 _ _ _
+10 additional additional JJ JJ _ _ s 12 _ _ _
+11 $ $ $ $ _ _ s 12 _ _ _
+12 55 55 CD CD _ _ s 12 _ _ _
+13 million million CD CD _ _ s 7 _ _ _
+14 to to TO TO _ _ s 7 _ _ _
+15 the the DT DT _ _ s 15 _ _ _
+16 commission commission NN NN _ _ s 16 _ _ _
+17 ’s ’s POS POS _ _ s 17 _ _ _
+18 calculations calculations NNS NNS _ _ s 13 _ _ _
+19 . . . . _ _ s 17 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Last Last JJ JJ _ _ s 2 _ _
+3 month month NN NN _ _ s 6 _ _
+4 , , , , _ _ s 6 _ _
+5 Judge Judge NNP NNP _ _ s 5 _ _
+6 Curry Curry NNP NNP _ _ s 6 _ _
+7 set set VBD VBD _ _ s 0 _ _
+8 the the DT DT _ _ s 9 _ _
+9 interest interest NN NN _ _ s 9 _ _
+10 rate rate NN NN _ _ s 6 _ _
+11 on on IN IN _ _ s 9 _ _
+12 the the DT DT _ _ s 12 _ _
+13 refund refund NN NN _ _ s 10 _ _
+14 at at IN IN _ _ s 6 _ _
+15 9 9 CD CD _ _ s 15 _ _
+16 % % NN NN _ _ s 13 _ _
+17 . . . . _ _ s 15 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Commonwealth Commonwealth NNP NNP _ _ s 2 _ _
+3 Edison Edison NNP NNP _ _ s 4 _ _
+4 now now RB RB _ _ s 4 _ _
+5 faces faces VBZ VBZ _ _ s 0 _ _
+6 an an DT DT _ _ s 8 _ _
+7 additional additional JJ JJ _ _ s 8 _ _
+8 court-ordered court-ordered JJ JJ _ _ s 8 _ _
+9 refund refund NN NN _ _ s 4 _ _
+10 on on IN IN _ _ s 4 _ _
+11 its its PRP$ PRP$ _ _ s 14 _ _
+12 summer/winter summer/winter JJ JJ _ _ s 14 _ _
+13 rate rate NN NN _ _ s 14 _ _
+14 differential differential JJ JJ _ _ s 14 _ _
+15 collections collections NNS NNS _ _ s 9 _ _
+16 that that IN IN _ _ s 21 _ _
+17 the the DT DT _ _ s 19 _ _
+18 Illinois Illinois NNP NNP _ _ s 19 _ _
+19 Appellate Appellate NNP NNP _ _ s 19 _ _
+20 Court Court NNP NNP _ _ s 20 _ _
+21 has has VBZ VBZ _ _ s 21 _ _
+22 estimated estimated VBN VBN _ _ s 14 _ _
+23 at at IN IN _ _ s 21 _ _
+24 $ $ $ $ _ _ s 25 _ _
+25 140 140 CD CD _ _ s 25 _ _
+26 million million CD CD _ _ s 22 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 And And CC CC _ _ s 4 _ _ _
+3 consumer consumer NN NN _ _ s 3 _ _ _
+4 groups groups NNS NNS _ _ s 4 _ _ _
+5 hope hope VBP VBP _ _ s 0 _ _ _
+6 that that IN IN _ _ s 13 _ _ _
+7 Judge Judge NNP NNP _ _ s 7 _ _ _
+8 Curry Curry NNP NNP _ _ s 8 _ _ _
+9 ’s ’s POS POS _ _ s 11 _ _ _
+10 Byron Byron NNP NNP _ _ s 11 _ _ _
+11 1 1 CD CD _ _ s 9 _ _ _
+12 order order NN NN _ _ s 12 _ _ _
+13 may may MD MD _ _ s 13 _ _ _
+14 set set VB VB _ _ s 4 _ _ _
+15 a a DT DT _ _ s 15 _ _ verb_ARG1
+16 precedent precedent NN NN _ _ s 13 _ precedent _
+17 for for IN IN _ _ s 15 _ _ _
+18 a a DT DT _ _ s 21 _ _ _
+19 second second JJ JJ _ _ s 21 _ _ _
+20 nuclear nuclear JJ JJ _ _ s 21 _ _ _
+21 rate rate NN NN _ _ s 21 _ _ _
+22 case case NN NN _ _ s 16 _ _ _
+23 involving involving VBG VBG _ _ s 21 _ _ _
+24 Commonwealth Commonwealth NNP NNP _ _ s 24 _ _ _
+25 Edison Edison NNP NNP _ _ s 25 _ _ _
+26 ’s ’s POS POS _ _ s 28 _ _ _
+27 Braidwood Braidwood NNP NNP _ _ s 28 _ _ _
+28 2 2 CD CD _ _ s 26 _ _ _
+29 plant plant NN NN _ _ s 22 _ _ _
+30 . . . . _ _ s 28 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Commonwealth Commonwealth NNP NNP _ _ s 2 _ _
+3 Edison Edison NNP NNP _ _ s 3 _ _
+4 is is VBZ VBZ _ _ s 4 _ _
+5 seeking seeking VBG VBG _ _ s 0 _ _
+6 about about IN IN _ _ s 8 _ _
+7 $ $ $ $ _ _ s 8 _ _
+8 245 245 CD CD _ _ s 8 _ _
+9 million million CD CD _ _ s 4 _ _
+10 in in IN IN _ _ s 8 _ _
+11 rate rate NN NN _ _ s 11 _ _
+12 increases increases NNS NNS _ _ s 9 _ _
+13 to to TO TO _ _ s 4 _ _
+14 pay pay VB VB _ _ s 12 _ _
+15 for for IN IN _ _ s 13 _ _
+16 Braidwood Braidwood NNP NNP _ _ s 14 _ _
+17 2 2 CD CD _ _ s 15 _ _
+18 . . . . _ _ s 16 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 commission commission NN NN _ _ s 3 _ _
+4 is is VBZ VBZ _ _ s 4 _ _
+5 expected expected VBN VBN _ _ s 0 _ _
+6 to to TO TO _ _ s 6 _ _
+7 rule rule VB VB _ _ s 4 _ _
+8 on on IN IN _ _ s 6 _ _
+9 the the DT DT _ _ s 11 _ _
+10 Braidwood Braidwood NNP NNP _ _ s 11 _ _
+11 2 2 CD CD _ _ s 9 _ _
+12 case case NN NN _ _ s 7 _ _
+13 by by IN IN _ _ s 6 _ _
+14 year year NN NN _ _ s 14 _ _
+15 end end NN NN _ _ s 12 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Last Last JJ JJ _ _ s 2 _ _
+3 year year NN NN _ _ s 5 _ _
+4 Commonwealth Commonwealth NNP NNP _ _ s 4 _ _
+5 Edison Edison NNP NNP _ _ s 5 _ _
+6 had had VBD VBD _ _ s 0 _ _
+7 to to TO TO _ _ s 7 _ _
+8 refund refund VB VB _ _ s 5 _ _
+9 $ $ $ $ _ _ s 10 _ _
+10 72.7 72.7 CD CD _ _ s 10 _ _
+11 million million CD CD _ _ s 7 _ _
+12 for for IN IN _ _ s 7 _ _
+13 poor poor JJ JJ _ _ s 13 _ _
+14 performance performance NN NN _ _ s 11 _ _
+15 of of IN IN _ _ s 13 _ _
+16 its its PRP$ PRP$ _ _ s 19 _ _
+17 LaSalle LaSalle NNP NNP _ _ s 17 _ _
+18 I I NNP NNP _ _ s 19 _ _
+19 nuclear nuclear JJ JJ _ _ s 19 _ _
+20 plant plant NN NN _ _ s 14 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Japan Japan NNP NNP _ _ s 2 _ _ _
+3 ’s ’s POS POS _ _ s 4 _ _ _
+4 domestic domestic JJ JJ _ _ s 4 _ _ _
+5 sales sales NNS NNS _ _ s 13 _ _ _
+6 of of IN IN _ _ s 4 _ _ _
+7 cars cars NNS NNS _ _ s 7 _ _ _
+8 , , , , _ _ s 9 _ _ _
+9 trucks trucks NNS NNS _ _ s 7 _ _ _
+10 and and CC CC _ _ s 5 _ _ _
+11 buses buses NNS NNS _ _ s 9 _ _ _
+12 in in IN IN _ _ s 4 _ _ _
+13 October October NNP NNP _ _ s 11 _ _ _
+14 rose rose VBD VBD _ _ s 36 _ _ _
+15 18 18 CD CD _ _ s 15 _ _ _
+16 % % NN NN _ _ s 13 _ _ _
+17 from from IN IN _ _ s 13 _ _ _
+18 a a DT DT _ _ s 18 _ _ _
+19 year year NN NN _ _ s 19 _ _ _
+20 earlier earlier JJR JJR _ _ s 16 _ _ _
+21 to to TO TO _ _ s 13 _ _ _
+22 500,004 500,004 CD CD _ _ s 22 _ _ _
+23 units units NNS NNS _ _ s 20 _ _ _
+24 , , , , _ _ s 22 _ _ _
+25 a a DT DT _ _ s 25 _ _ _
+26 record record NN NN _ _ s 23 _ _ _
+27 for for IN IN _ _ s 25 _ _ _
+28 the the DT DT _ _ s 28 _ _ verb_ARG1
+29 month month NN NN _ _ s 26 _ month _
+30 , , , , _ _ s 36 _ _ _
+31 the the DT DT _ _ s 33 _ _ _
+32 Japan Japan NNP NNP _ _ s 33 _ _ _
+33 Automobile Automobile NNP NNP _ _ s 33 _ _ _
+34 Dealers Dealers NNPS NNPS _ _ s 34 _ _ _
+35 ’ ’ POS POS _ _ s 35 _ _ _
+36 Association Association NNP NNP _ _ s 36 _ _ _
+37 said said VBD VBD _ _ s 0 _ _ _
+38 . . . . _ _ s 36 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 3 _ _
+3 strong strong JJ JJ _ _ s 3 _ _
+4 growth growth NN NN _ _ s 4 _ _
+5 followed followed VBD VBD _ _ s 0 _ _
+6 year-to-year year-to-year JJ JJ _ _ s 6 _ _
+7 increases increases NNS NNS _ _ s 4 _ _
+8 of of IN IN _ _ s 6 _ _
+9 21 21 CD CD _ _ s 9 _ _
+10 % % NN NN _ _ s 12 _ _
+11 in in IN IN _ _ s 9 _ _
+12 August August NNP NNP _ _ s 10 _ _
+13 and and CC CC _ _ s 7 _ _
+14 12 12 CD CD _ _ s 14 _ _
+15 % % NN NN _ _ s 12 _ _
+16 in in IN IN _ _ s 6 _ _
+17 September September NNP NNP _ _ s 15 _ _
+18 . . . . _ _ s 16 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 3 _ _
+3 monthly monthly JJ JJ _ _ s 3 _ _
+4 sales sales NNS NNS _ _ s 4 _ _
+5 have have VBP VBP _ _ s 6 _ _
+6 been been VBN VBN _ _ s 6 _ _
+7 setting setting VBG VBG _ _ s 0 _ _
+8 records records NNS NNS _ _ s 6 _ _
+9 every every DT DT _ _ s 9 _ _
+10 month month NN NN _ _ s 6 _ _
+11 since since IN IN _ _ s 6 _ _
+12 March March NNP NNP _ _ s 10 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 October October NNP NNP _ _ s 2 _ _
+3 sales sales NNS NNS _ _ s 10 _ _
+4 , , , , _ _ s 2 _ _
+5 compared compared VBN VBN _ _ s 2 _ _
+6 with with IN IN _ _ s 4 _ _
+7 the the DT DT _ _ s 8 _ _
+8 previous previous JJ JJ _ _ s 8 _ _
+9 month month NN NN _ _ s 5 _ _
+10 , , , , _ _ s 10 _ _
+11 inched inched VBD VBD _ _ s 0 _ _
+12 down down RB RB _ _ s 10 _ _
+13 0.4 0.4 CD CD _ _ s 13 _ _
+14 % % NN NN _ _ s 10 _ _
+15 . . . . _ _ s 13 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Sales Sales NNS NNS _ _ s 5 _ Sales _
+3 of of IN IN _ _ s 1 _ _ _
+4 passenger passenger NN NN _ _ s 4 _ _ _
+5 cars cars NNS NNS _ _ s 2 _ _ _
+6 grew grew VBD VBD _ _ s 0 _ _ _
+7 22 22 CD CD _ _ s 7 _ _ _
+8 % % NN NN _ _ s 5 _ _ _
+9 from from IN IN _ _ s 5 _ _ _
+10 a a DT DT _ _ s 10 _ _ _
+11 year year NN NN _ _ s 11 _ _ _
+12 earlier earlier JJR JJR _ _ s 8 _ _ _
+13 to to TO TO _ _ s 5 _ _ _
+14 361,376 361,376 CD CD _ _ s 14 _ _ _
+15 units units NNS NNS _ _ s 12 _ _ _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s 21 _ _ noun_ARG1 _
+2 Sales Sales NNS NNS _ _ s 21 _ Sales _ _
+3 of of IN IN _ _ s 1 _ _ _ _
+4 medium-sized medium-sized JJ JJ _ _ s 4 _ _ _ _
+5 cars cars NNS NNS _ _ s 2 _ _ _ _
+6 , , , , _ _ s 4 _ _ _ _
+7 which which WDT WDT _ _ s 4 _ _ _ _
+8 benefited benefited VBD VBD _ _ s 4 _ _ _ _
+9 from from IN IN _ _ s 7 _ _ _ _
+10 price price NN NN _ _ s 10 _ _ _ _
+11 reductions reductions NNS NNS _ _ s 8 _ _ _ _
+12 arising arising VBG VBG _ _ s 10 _ _ _ _
+13 from from IN IN _ _ s 11 _ _ _ _
+14 introduction introduction NN NN _ _ s 12 _ _ _ _
+15 of of IN IN _ _ s 13 _ _ _ _
+16 the the DT DT _ _ s 17 _ _ _ _
+17 consumption consumption NN NN _ _ s 17 _ _ _ _
+18 tax tax NN NN _ _ s 14 _ _ _ _
+19 , , , , _ _ s 21 _ _ _ _
+20 more more RBR RBR _ _ s 21 _ _ _ _
+21 than than IN IN _ _ s 19 _ _ _ verb_ARG1
+22 doubled doubled VBD VBD _ _ s 25 _ doubled _ _
+23 to to TO TO _ _ s 21 _ _ _ _
+24 30,841 30,841 CD CD _ _ s 24 _ _ _ _
+25 units units NNS NNS _ _ s 22 _ _ _ _
+26 from from IN IN _ _ s 27 _ _ _ _
+27 13,056 13,056 CD CD _ _ s 25 _ _ _ _
+28 in in IN IN _ _ s -1 _ _ _ _
+29 October October NNP NNP _ _ s 27 _ _ _ _
+30 1988 1988 CD CD _ _ s 28 _ _ _ _
+31 . . . . _ _ s 29 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Texas Texas NNP NNP _ _ s 4 _ _ _
+3 Instruments Instruments NNPS NNPS _ _ s 4 _ _ _
+4 Japan Japan NNP NNP _ _ s 4 _ _ _
+5 Ltd. Ltd. NNP NNP _ _ s 13 _ _ _
+6 , , , , _ _ s 4 _ _ _
+7 a a DT DT _ _ s 7 _ _ _
+8 unit unit NN NN _ _ s 5 _ _ _
+9 of of IN IN _ _ s 7 _ _ _
+10 Texas Texas NNP NNP _ _ s 11 _ _ _
+11 Instruments Instruments NNPS NNPS _ _ s 11 _ _ _
+12 Inc. Inc. NNP NNP _ _ s 8 _ _ _
+13 , , , , _ _ s 13 _ _ _
+14 said said VBD VBD _ _ s 0 _ _ _
+15 it it PRP PRP _ _ s 15 _ _ _
+16 opened opened VBD VBD _ _ s 13 _ _ _
+17 a a DT DT _ _ s 17 _ _ verb_ARG1
+18 plant plant NN NN _ _ s 15 _ plant _
+19 in in IN IN _ _ s 17 _ _ _
+20 South South NNP NNP _ _ s 20 _ _ _
+21 Korea Korea NNP NNP _ _ s 18 _ _ _
+22 to to TO TO _ _ s 17 _ _ _
+23 manufacture manufacture VB VB _ _ s 21 _ _ _
+24 control control NN NN _ _ s 24 _ _ _
+25 devices devices NNS NNS _ _ s 22 _ _ _
+26 . . . . _ _ s 24 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 3 _ _ _
+3 new new JJ JJ _ _ s 3 _ _ _
+4 plant plant NN NN _ _ s 15 _ _ _
+5 , , , , _ _ s 3 _ _ verb_ARG1
+6 located located VBN VBN _ _ s 3 _ _ verb_ARG1
+7 in in IN IN _ _ s 5 _ _ verb_ARG1
+8 Chinchon Chinchon NNP NNP _ _ s 6 _ _ verb_ARG1
+9 about about IN IN _ _ s 9 _ _ verb_ARG1
+10 60 60 CD CD _ _ s 10 _ _ verb_ARG1
+11 miles miles NNS NNS _ _ s 11 _ miles _
+12 from from IN IN _ _ s 7 _ _ _
+13 Seoul Seoul NNP NNP _ _ s 11 _ _ _
+14 , , , , _ _ s 15 _ _ _
+15 will will MD MD _ _ s 15 _ _ _
+16 help help VB VB _ _ s 0 _ _ _
+17 meet meet VB VB _ _ s 15 _ _ _
+18 increasing increasing VBG VBG _ _ s 18 _ _ _
+19 and and CC CC _ _ s 30 _ _ _
+20 diversifying diversifying VBG VBG _ _ s 18 _ _ _
+21 demand demand NN NN _ _ s 19 _ _ _
+22 for for IN IN _ _ s 20 _ _ _
+23 control control NN NN _ _ s 23 _ _ _
+24 products products NNS NNS _ _ s 21 _ _ _
+25 in in IN IN _ _ s 23 _ _ _
+26 South South NNP NNP _ _ s 26 _ _ _
+27 Korea Korea NNP NNP _ _ s 24 _ _ _
+28 , , , , _ _ s 30 _ _ _
+29 the the DT DT _ _ s 29 _ _ _
+30 company company NN NN _ _ s 30 _ _ _
+31 said said VBD VBD _ _ s 16 _ _ _
+32 . . . . _ _ s 30 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 plant plant NN NN _ _ s 3 _ _
+4 will will MD MD _ _ s 4 _ _
+5 produce produce VB VB _ _ s 0 _ _
+6 control control NN NN _ _ s 6 _ _
+7 devices devices NNS NNS _ _ s 4 _ _
+8 used used VBN VBN _ _ s 6 _ _
+9 in in IN IN _ _ s 7 _ _
+10 motor motor NN NN _ _ s 10 _ _
+11 vehicles vehicles NNS NNS _ _ s 11 _ _
+12 and and CC CC _ _ s 8 _ _
+13 household household NN NN _ _ s 13 _ _
+14 appliances appliances NNS NNS _ _ s 11 _ _
+15 . . . . _ _ s 13 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 documents documents NNS NNS _ _ s 4 _ _
+4 also also RB RB _ _ s 4 _ _
+5 said said VBD VBD _ _ s 0 _ _
+6 that that IN IN _ _ s 26 _ _
+7 although although IN IN _ _ s 26 _ _
+8 the the DT DT _ _ s 10 _ _
+9 64-year-old 64-year-old JJ JJ _ _ s 10 _ _
+10 Mr. Mr. NNP NNP _ _ s 10 _ _
+11 Cray Cray NNP NNP _ _ s 11 _ _
+12 has has VBZ VBZ _ _ s 13 _ _
+13 been been VBN VBN _ _ s 13 _ _
+14 working working VBG VBG _ _ s 6 _ _
+15 on on IN IN _ _ s 13 _ _
+16 the the DT DT _ _ s 16 _ _
+17 project project NN NN _ _ s 14 _ _
+18 for for IN IN _ _ s 13 _ _
+19 more more RBR RBR _ _ s 21 _ _
+20 than than IN IN _ _ s 18 _ _
+21 six six CD CD _ _ s 19 _ _
+22 years years NNS NNS _ _ s 17 _ _
+23 , , , , _ _ s 26 _ _
+24 the the DT DT _ _ s 25 _ _
+25 Cray-3 Cray-3 NNP NNP _ _ s 25 _ _
+26 machine machine NN NN _ _ s 26 _ _
+27 is is VBZ VBZ _ _ s 4 _ _
+28 at at IN IN _ _ s 28 _ _
+29 least least JJS JJS _ _ s 30 _ _
+30 another another DT DT _ _ s 30 _ _
+31 year year NN NN _ _ s 26 _ _
+32 away away RB RB _ _ s 30 _ _
+33 from from IN IN _ _ s 31 _ _
+34 a a DT DT _ _ s 36 _ _
+35 fully fully RB RB _ _ s 35 _ _
+36 operational operational JJ JJ _ _ s 36 _ _
+37 prototype prototype NN NN _ _ s 32 _ _
+38 . . . . _ _ s 36 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 Moreover Moreover JJR JJR _ _ s 5 _ Moreover _ _
+3 , , , , _ _ s 5 _ _ _ _
+4 there there EX EX _ _ s 4 _ _ _ _
+5 have have VBP VBP _ _ s 5 _ _ _ _
+6 been been VBN VBN _ _ s 0 _ _ _ _
+7 no no DT DT _ _ s 7 _ _ _ _
+8 orders orders NNS NNS _ _ s 5 _ _ _ _
+9 for for IN IN _ _ s 7 _ _ _ _
+10 the the DT DT _ _ s 10 _ _ _ _
+11 Cray-3 Cray-3 NNP NNP _ _ s 8 _ _ _ _
+12 so so RB RB _ _ s 12 _ _ _ _
+13 far far RB RB _ _ s 7 _ _ _ _
+14 , , , , _ _ s 5 _ _ _ _
+15 though though IN IN _ _ s 5 _ _ _ _
+16 the the DT DT _ _ s 16 _ _ _ _
+17 company company NN NN _ _ s 17 _ _ _ _
+18 says says VBZ VBZ _ _ s 14 _ _ _ _
+19 it it PRP PRP _ _ s 19 _ _ _ _
+20 is is VBZ VBZ _ _ s 20 _ _ _ aux_ARG1
+21 talking talking VBG VBG _ _ s 17 _ talking _ _
+22 with with IN IN _ _ s 20 _ _ _ _
+23 several several JJ JJ _ _ s 23 _ _ _ _
+24 prospects prospects NNS NNS _ _ s 21 _ _ _ _
+25 . . . . _ _ s 23 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 22 _ _
+3 We We PRP PRP _ _ s 3 _ _
+4 did did VBD VBD _ _ s 5 _ _
+5 n’t n’t RB RB _ _ s 5 _ _
+6 have have VB VB _ _ s 22 _ _
+7 much much RB RB _ _ s 5 _ _
+8 of of IN IN _ _ s 6 _ _
+9 a a DT DT _ _ s 9 _ _
+10 choice choice NN NN _ _ s 7 _ _
+11 , , , , _ _ s 22 _ _
+12 ” ” '' '' _ _ s 22 _ _
+13 Cray Cray NNP NNP _ _ s 13 _ _
+14 Computer Computer NNP NNP _ _ s 14 _ _
+15 ’s ’s POS POS _ _ s 17 _ _
+16 chief chief NN NN _ _ s 17 _ _
+17 financial financial JJ JJ _ _ s 17 _ _
+18 officer officer NN NN _ _ s 22 _ _
+19 , , , , _ _ s 17 _ _
+20 Gregory Gregory NNP NNP _ _ s 20 _ _
+21 Barnum Barnum NNP NNP _ _ s 18 _ _
+22 , , , , _ _ s 22 _ _
+23 said said VBD VBD _ _ s 0 _ _
+24 in in IN IN _ _ s 22 _ _
+25 an an DT DT _ _ s 25 _ _
+26 interview interview NN NN _ _ s 23 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 4 _ _
+3 The The DT DT _ _ s 3 _ _
+4 theory theory NN NN _ _ s 4 _ _
+5 is is VBZ VBZ _ _ s 0 _ _
+6 that that IN IN _ _ s 7 _ _
+7 Seymour Seymour NNP NNP _ _ s 7 _ _
+8 is is VBZ VBZ _ _ s 15 _ _
+9 the the DT DT _ _ s 10 _ _
+10 chief chief JJ JJ _ _ s 10 _ _
+11 designer designer NN NN _ _ s 7 _ _
+12 of of IN IN _ _ s 10 _ _
+13 the the DT DT _ _ s 13 _ _
+14 Cray-3 Cray-3 NNP NNP _ _ s 11 _ _
+15 , , , , _ _ s 15 _ _
+16 and and CC CC _ _ s 4 _ _
+17 without without IN IN _ _ s 22 _ _
+18 him him PRP PRP _ _ s 16 _ _
+19 it it PRP PRP _ _ s 19 _ _
+20 could could MD MD _ _ s 22 _ _
+21 not not RB RB _ _ s 22 _ _
+22 be be VB VB _ _ s 22 _ _
+23 completed completed VBN VBN _ _ s 15 _ _
+24 . . . . _ _ s 22 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Cray Cray NNP NNP _ _ s 2 _ _
+3 Research Research NNP NNP _ _ s 3 _ _
+4 did did VBD VBD _ _ s 5 _ _
+5 not not RB RB _ _ s 5 _ _
+6 want want VB VB _ _ s 0 _ _
+7 to to TO TO _ _ s 7 _ _
+8 fund fund VB VB _ _ s 5 _ _
+9 a a DT DT _ _ s 9 _ _
+10 project project NN NN _ _ s 7 _ _
+11 that that WDT WDT _ _ s 9 _ _
+12 did did VBD VBD _ _ s 9 _ _
+13 not not RB RB _ _ s 13 _ _
+14 include include VB VB _ _ s 11 _ _
+15 Seymour Seymour NNP NNP _ _ s 13 _ _
+16 . . . . _ _ s 16 _ _
+17 ” ” '' '' _ _ s 5 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 documents documents NNS NNS _ _ s 4 _ _
+4 also also RB RB _ _ s 4 _ _
+5 said said VBD VBD _ _ s 0 _ _
+6 that that IN IN _ _ s 9 _ _
+7 Cray Cray NNP NNP _ _ s 7 _ _
+8 Computer Computer NNP NNP _ _ s 8 _ _
+9 anticipates anticipates VBZ VBZ _ _ s 9 _ _
+10 needing needing VBG VBG _ _ s 4 _ _
+11 perhaps perhaps RB RB _ _ s 9 _ _
+12 another another DT DT _ _ s 14 _ _
+13 $ $ $ $ _ _ s 14 _ _
+14 120 120 CD CD _ _ s 14 _ _
+15 million million CD CD _ _ s 9 _ _
+16 in in IN IN _ _ s 14 _ _
+17 financing financing NN NN _ _ s 15 _ _
+18 beginning beginning VBG VBG _ _ s 9 _ _
+19 next next JJ JJ _ _ s 19 _ _
+20 September September NNP NNP _ _ s 17 _ _
+21 . . . . _ _ s 19 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 But But CC CC _ _ s 4 _ _
+3 Mr. Mr. NNP NNP _ _ s 3 _ _
+4 Barnum Barnum NNP NNP _ _ s 4 _ _
+5 called called VBD VBD _ _ s 0 _ _
+6 that that IN IN _ _ s 10 _ _
+7 “ “ `` `` _ _ s 10 _ _
+8 a a DT DT _ _ s 10 _ _
+9 worst-case worst-case JJ JJ _ _ s 10 _ _
+10 ” ” '' '' _ _ s 10 _ _
+11 scenario scenario NN NN _ _ s 4 _ _
+12 . . . . _ _ s 10 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 2 _ _ _
+3 filing filing NN NN _ _ s 9 _ _ _
+4 on on IN IN _ _ s 2 _ _ _
+5 the the DT DT _ _ s 5 _ _ _
+6 details details NNS NNS _ _ s 3 _ _ _
+7 of of IN IN _ _ s 5 _ _ _
+8 the the DT DT _ _ s 8 _ _ _
+9 spinoff spinoff NN NN _ _ s 6 _ _ _
+10 caused caused VBD VBD _ _ s 0 _ _ _
+11 Cray Cray NNP NNP _ _ s 11 _ _ _
+12 Research Research NNP NNP _ _ s 12 _ _ _
+13 stock stock NN NN _ _ s 9 _ _ _
+14 to to TO TO _ _ s 12 _ _ _
+15 jump jump VB VB _ _ s 13 _ _ _
+16 $ $ $ $ _ _ s 16 _ _ _
+17 2.875 2.875 CD CD _ _ s 14 _ _ _
+18 yesterday yesterday NN NN _ _ s 9 _ _ _
+19 to to TO TO _ _ s 19 _ _ aux_ARG1
+20 close close VB VB _ _ s 9 _ close _
+21 at at IN IN _ _ s 19 _ _ _
+22 $ $ $ $ _ _ s 22 _ _ _
+23 38 38 CD CD _ _ s 20 _ _ _
+24 in in IN IN _ _ s 19 _ _ _
+25 New New NNP NNP _ _ s 27 _ _ _
+26 York York NNP NNP _ _ s 27 _ _ _
+27 Stock Stock NNP NNP _ _ s 27 _ _ _
+28 Exchange Exchange NNP NNP _ _ s 29 _ _ _
+29 composite composite JJ JJ _ _ s 29 _ _ _
+30 trading trading NN NN _ _ s 23 _ _ _
+31 . . . . _ _ s 29 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Analysts Analysts NNS NNS _ _ s 2 _ _ _
+3 noted noted VBD VBD _ _ s 0 _ _ _
+4 yesterday yesterday NN NN _ _ s 2 _ _ _
+5 that that IN IN _ _ s 23 _ _ _
+6 Cray Cray NNP NNP _ _ s 6 _ _ _
+7 Research Research NNP NNP _ _ s 7 _ _ _
+8 ’s ’s POS POS _ _ s 8 _ _ verb_ARG1
+9 decision decision NN NN _ _ s 22 _ decision _
+10 to to TO TO _ _ s 8 _ _ _
+11 link link VB VB _ _ s 9 _ _ _
+12 its its PRP$ PRP$ _ _ s 16 _ _ _
+13 $ $ $ $ _ _ s 14 _ _ _
+14 98.3 98.3 CD CD _ _ s 14 _ _ _
+15 million million CD CD _ _ s 16 _ _ _
+16 promissory promissory JJ JJ _ _ s 16 _ _ _
+17 note note NN NN _ _ s 10 _ _ _
+18 to to TO TO _ _ s 10 _ _ _
+19 Mr. Mr. NNP NNP _ _ s 19 _ _ _
+20 Cray Cray NNP NNP _ _ s 20 _ _ _
+21 ’s ’s POS POS _ _ s 21 _ _ _
+22 presence presence NN NN _ _ s 17 _ _ _
+23 will will MD MD _ _ s 23 _ _ _
+24 complicate complicate VB VB _ _ s 2 _ _ _
+25 a a DT DT _ _ s 25 _ _ _
+26 valuation valuation NN NN _ _ s 23 _ _ _
+27 of of IN IN _ _ s 25 _ _ _
+28 the the DT DT _ _ s 29 _ _ _
+29 new new JJ JJ _ _ s 29 _ _ _
+30 company company NN NN _ _ s 26 _ _ _
+31 . . . . _ _ s 29 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 16 _ _
+3 It It PRP PRP _ _ s 3 _ _
+4 has has VBZ VBZ _ _ s 16 _ _
+5 to to TO TO _ _ s 6 _ _
+6 be be VB VB _ _ s 6 _ _
+7 considered considered VBN VBN _ _ s 3 _ _
+8 as as IN IN _ _ s 6 _ _
+9 an an DT DT _ _ s 10 _ _
+10 additional additional JJ JJ _ _ s 10 _ _
+11 risk risk NN NN _ _ s 7 _ _
+12 for for IN IN _ _ s 10 _ _
+13 the the DT DT _ _ s 13 _ _
+14 investor investor NN NN _ _ s 11 _ _
+15 , , , , _ _ s 16 _ _
+16 ” ” '' '' _ _ s 16 _ _
+17 said said VBD VBD _ _ s 0 _ _
+18 Gary Gary NNP NNP _ _ s 19 _ _
+19 P. P. NNP NNP _ _ s 19 _ _
+20 Smaby Smaby NNP NNP _ _ s 16 _ _
+21 of of IN IN _ _ s 19 _ _
+22 Smaby Smaby NNP NNP _ _ s 23 _ _
+23 Group Group NNP NNP _ _ s 23 _ _
+24 Inc. Inc. NNP NNP _ _ s 20 _ _
+25 , , , , _ _ s 23 _ _
+26 Minneapolis Minneapolis NNP NNP _ _ s 24 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 12 _ _
+3 Cray Cray NNP NNP _ _ s 3 _ _
+4 Computer Computer NNP NNP _ _ s 4 _ _
+5 will will MD MD _ _ s 5 _ _
+6 be be VB VB _ _ s 12 _ _
+7 a a DT DT _ _ s 8 _ _
+8 concept concept NN NN _ _ s 8 _ _
+9 stock stock NN NN _ _ s 5 _ _
+10 , , , , _ _ s 12 _ _
+11 ” ” '' '' _ _ s 12 _ _
+12 he he PRP PRP _ _ s 12 _ _
+13 said said VBD VBD _ _ s 0 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 “ “ `` `` _ _ s 10 _ _
+3 You You PRP PRP _ _ s 4 _ _
+4 either either RB RB _ _ s 4 _ _
+5 believe believe VBP VBP _ _ s 10 _ _
+6 Seymour Seymour NNP NNP _ _ s 6 _ _
+7 can can MD MD _ _ s 7 _ _
+8 do do VB VB _ _ s 4 _ _
+9 it it PRP PRP _ _ s 7 _ _
+10 again again RB RB _ _ s 7 _ _
+11 or or CC CC _ _ s 0 _ _
+12 you you PRP PRP _ _ s 12 _ _
+13 do do VBP VBP _ _ s 10 _ _
+14 n’t n’t RB RB _ _ s 12 _ _
+15 . . . . _ _ s 15 _ _
+16 ” ” '' '' _ _ s 10 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 In In IN IN _ _ s 7 _ _
+3 addition addition NN NN _ _ s 1 _ _
+4 , , , , _ _ s 7 _ _
+5 the the DT DT _ _ s 5 _ _
+6 Cray-3 Cray-3 NNP NNP _ _ s 6 _ _
+7 will will MD MD _ _ s 7 _ _
+8 contain contain VB VB _ _ s 0 _ _
+9 16 16 CD CD _ _ s 9 _ _
+10 processors processors NNS NNS _ _ s 7 _ _
+11 – – : : _ _ s 7 _ _
+12 twice twice RB RB _ _ s 13 _ _
+13 as as RB RB _ _ s 13 _ _
+14 many many JJ JJ _ _ s 7 _ _
+15 as as IN IN _ _ s 13 _ _
+16 the the DT DT _ _ s 18 _ _
+17 largest largest JJS JJS _ _ s 18 _ _
+18 current current JJ JJ _ _ s 18 _ _
+19 supercomputer supercomputer NN NN _ _ s 14 _ _
+20 . . . . _ _ s 18 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 2 _ _
+3 spinoff spinoff NN NN _ _ s 5 _ _
+4 also also RB RB _ _ s 5 _ _
+5 will will MD MD _ _ s 5 _ _
+6 compete compete VB VB _ _ s 0 _ _
+7 with with IN IN _ _ s 5 _ _
+8 International International NNP NNP _ _ s 10 _ _
+9 Business Business NNP NNP _ _ s 10 _ _
+10 Machines Machines NNPS NNPS _ _ s 10 _ _
+11 Corp. Corp. NNP NNP _ _ s 11 _ _
+12 and and CC CC _ _ s 6 _ _
+13 Japan Japan NNP NNP _ _ s 13 _ _
+14 ’s ’s POS POS _ _ s 15 _ _
+15 Big Big JJ JJ _ _ s 15 _ _
+16 Three Three CD CD _ _ s 11 _ _
+17 – – : : _ _ s 11 _ _
+18 Hitachi Hitachi NNP NNP _ _ s 18 _ _
+19 Ltd. Ltd. NNP NNP _ _ s 19 _ _
+20 , , , , _ _ s 22 _ _
+21 NEC NEC NNP NNP _ _ s 21 _ _
+22 Corp. Corp. NNP NNP _ _ s 19 _ _
+23 and and CC CC _ _ s 16 _ _
+24 Fujitsu Fujitsu NNP NNP _ _ s 24 _ _
+25 Ltd Ltd NNP NNP _ _ s 22 _ _
+26 . . . . _ _ s 24 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 3 _ _
+3 new new JJ JJ _ _ s 3 _ _
+4 company company NN NN _ _ s 4 _ _
+5 said said VBD VBD _ _ s 0 _ _
+6 it it PRP PRP _ _ s 6 _ _
+7 believes believes VBZ VBZ _ _ s 4 _ _
+8 there there EX EX _ _ s 8 _ _
+9 are are VBP VBP _ _ s 6 _ _
+10 fewer fewer JJR JJR _ _ s 13 _ _
+11 than than IN IN _ _ s 9 _ _
+12 100 100 CD CD _ _ s 10 _ _
+13 potential potential JJ JJ _ _ s 13 _ _
+14 customers customers NNS NNS _ _ s 8 _ _
+15 for for IN IN _ _ s 8 _ _
+16 supercomputers supercomputers NNS NNS _ _ s 14 _ _
+17 priced priced VBN VBN _ _ s 15 _ _
+18 between between IN IN _ _ s 24 _ _
+19 $ $ $ $ _ _ s 24 _ _
+20 15 15 CD CD _ _ s 24 _ _
+21 million million CD CD _ _ s 21 _ _
+22 and and CC CC _ _ s 23 _ _
+23 $ $ $ $ _ _ s 23 _ _
+24 30 30 CD CD _ _ s 24 _ _
+25 million million CD CD _ _ s 16 _ _
+26 – – : : _ _ s 24 _ _
+27 presumably presumably RB RB _ _ s 30 _ _
+28 the the DT DT _ _ s 30 _ _
+29 Cray-3 Cray-3 NNP NNP _ _ s 30 _ _
+30 price price NN NN _ _ s 30 _ _
+31 range range NN NN _ _ s 24 _ _
+32 . . . . _ _ s 30 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 No No DT DT _ _ s 2 _ _
+3 price price NN NN _ _ s 7 _ _
+4 for for IN IN _ _ s 2 _ _
+5 the the DT DT _ _ s 6 _ _
+6 new new JJ JJ _ _ s 6 _ _
+7 shares shares NNS NNS _ _ s 3 _ _
+8 has has VBZ VBZ _ _ s 9 _ _
+9 been been VBN VBN _ _ s 9 _ _
+10 set set VBN VBN _ _ s 0 _ _
+11 . . . . _ _ s 9 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Cray Cray NNP NNP _ _ s 2 _ _
+3 Computer Computer NNP NNP _ _ s 3 _ _
+4 has has VBZ VBZ _ _ s 4 _ _
+5 applied applied VBN VBN _ _ s 0 _ _
+6 to to TO TO _ _ s 6 _ _
+7 trade trade VB VB _ _ s 4 _ _
+8 on on IN IN _ _ s 6 _ _
+9 Nasdaq Nasdaq NNP NNP _ _ s 7 _ _
+10 . . . . _ _ s 8 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Analysts Analysts NNS NNS _ _ s 2 _ _ _
+3 calculate calculate VBP VBP _ _ s 0 _ _ _
+4 Cray Cray NNP NNP _ _ s 4 _ _ _
+5 Computer Computer NNP NNP _ _ s 5 _ _ _
+6 ’s ’s POS POS _ _ s 8 _ _ _
+7 initial initial JJ JJ _ _ s 8 _ _ _
+8 book book NN NN _ _ s 8 _ _ _
+9 value value NN NN _ _ s 2 _ _ _
+10 at at IN IN _ _ s 2 _ _ _
+11 about about IN IN _ _ s 12 _ _ _
+12 $ $ $ $ _ _ s 12 _ _ verb_ARG1
+13 4.75 4.75 CD CD _ _ s 9 _ 4.75 _
+14 a a DT DT _ _ s 14 _ _ _
+15 share share NN NN _ _ s 12 _ _ _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _ _
+2 Along Along IN IN _ _ s 2 _ _ _ _ _ _
+3 with with IN IN _ _ s 9 _ _ verb_ARG1 _ _ _
+4 the the DT DT _ _ s 4 _ _ verb_ARG1 _ _ _
+5 note note NN NN _ _ s 2 _ note _ _ _ _
+6 , , , , _ _ s 9 _ _ _ _ _ _
+7 Cray Cray NNP NNP _ _ s 7 _ _ _ _ _ _
+8 Research Research NNP NNP _ _ s 8 _ _ _ _ _ _
+9 is is VBZ VBZ _ _ s 9 _ _ _ _ _ _
+10 transferring transferring VBG VBG _ _ s 0 _ _ _ _ _ _
+11 about about IN IN _ _ s 13 _ _ _ _ _ _
+12 $ $ $ $ _ _ s 13 _ _ _ _ _ _
+13 53 53 CD CD _ _ s 13 _ _ _ _ _ _
+14 million million CD CD _ _ s 9 _ _ _ _ _ _
+15 in in IN IN _ _ s 13 _ _ _ _ _ _
+16 assets assets NNS NNS _ _ s 14 _ _ _ _ _ _
+17 , , , , _ _ s 15 _ _ _ _ _ _
+18 primarily primarily RB RB _ _ s 18 _ _ _ _ _ _
+19 those those DT DT _ _ s 16 _ _ _ _ _ _
+20 related related VBN VBN _ _ s 18 _ _ _ _ _ _
+21 to to TO TO _ _ s 19 _ _ _ _ _ _
+22 the the DT DT _ _ s 23 _ _ _ _ _ _
+23 Cray-3 Cray-3 CD CD _ _ s 23 _ _ _ _ _ _
+24 development development NN NN _ _ s 20 _ _ _ _ _ _
+25 , , , , _ _ s 23 _ _ _ _ _ _
+26 which which WDT WDT _ _ s 23 _ _ _ _ _ _
+27 has has VBZ VBZ _ _ s 23 _ _ _ aux_ARG1 _ _
+28 been been VBN VBN _ _ s 26 _ been _ _ _ _
+29 a a DT DT _ _ s 29 _ _ _ _ verb_ARG1 _
+30 drain drain NN NN _ _ s 27 _ drain _ _ _ _
+31 on on IN IN _ _ s 29 _ _ _ _ _ _
+32 Cray Cray NNP NNP _ _ s 32 _ _ _ _ _ _
+33 Research Research NNP NNP _ _ s 33 _ _ _ _ _ _
+34 ’s ’s POS POS _ _ s 34 _ _ _ _ _ verb_ARG1
+35 earnings earnings NNS NNS _ _ s 30 _ earnings _ _ _ _
+36 . . . . _ _ s 34 _ _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Pro-forma Pro-forma JJ JJ _ _ s 3 _ _
+3 balance balance NN NN _ _ s 3 _ _
+4 sheets sheets NNS NNS _ _ s 5 _ _
+5 clearly clearly RB RB _ _ s 5 _ _
+6 show show VBP VBP _ _ s 0 _ _
+7 why why WRB WRB _ _ s 5 _ _
+8 Cray Cray NNP NNP _ _ s 8 _ _
+9 Research Research NNP NNP _ _ s 9 _ _
+10 favored favored VBD VBD _ _ s 6 _ _
+11 the the DT DT _ _ s 11 _ _
+12 spinoff spinoff NN NN _ _ s 9 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _
+2 Without Without IN IN _ _ s 13 _ _ verb_ARG3 _
+3 the the DT DT _ _ s 7 _ _ _ _
+4 Cray-3 Cray-3 NNP NNP _ _ s 7 _ _ _ _
+5 research research NN NN _ _ s 5 _ _ _ _
+6 and and CC CC _ _ s 6 _ _ _ _
+7 development development NN NN _ _ s 7 _ _ _ _
+8 expenses expenses NNS NNS _ _ s 1 _ _ _ _
+9 , , , , _ _ s 13 _ _ _ _
+10 the the DT DT _ _ s 10 _ _ _ _
+11 company company NN NN _ _ s 11 _ _ _ _
+12 would would MD MD _ _ s 13 _ _ _ _
+13 have have VB VB _ _ s 13 _ _ _ _
+14 been been VBN VBN _ _ s 0 _ _ _ _
+15 able able JJ JJ _ _ s 13 _ _ _ _
+16 to to TO TO _ _ s 16 _ _ _ _
+17 report report VB VB _ _ s 14 _ _ _ _
+18 a a DT DT _ _ s 18 _ _ _ verb_ARG1
+19 profit profit NN NN _ _ s 16 _ profit _ _
+20 of of IN IN _ _ s 18 _ _ _ _
+21 $ $ $ $ _ _ s 22 _ _ _ _
+22 19.3 19.3 CD CD _ _ s 22 _ _ _ _
+23 million million CD CD _ _ s 19 _ _ _ _
+24 for for IN IN _ _ s 18 _ _ _ _
+25 the the DT DT _ _ s 26 _ _ _ _
+26 first first JJ JJ _ _ s 26 _ _ _ _
+27 half half DT DT _ _ s 23 _ _ _ _
+28 of of IN IN _ _ s 26 _ _ _ _
+29 1989 1989 CD CD _ _ s 27 _ _ _ _
+30 rather rather RB RB _ _ s 16 _ _ _ _
+31 than than IN IN _ _ s 29 _ _ _ _
+32 the the DT DT _ _ s 34 _ _ _ _
+33 $ $ $ $ _ _ s 34 _ _ _ _
+34 5.9 5.9 CD CD _ _ s 34 _ _ _ _
+35 million million CD CD _ _ s 30 _ _ _ _
+36 it it PRP PRP _ _ s 36 _ _ _ _
+37 posted posted VBD VBD _ _ s 34 _ _ _ _
+38 . . . . _ _ s 36 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 On On IN IN _ _ s 6 _ _
+3 the the DT DT _ _ s 4 _ _
+4 other other JJ JJ _ _ s 4 _ _
+5 hand hand NN NN _ _ s 1 _ _
+6 , , , , _ _ s 6 _ _
+7 had had VBD VBD _ _ s 15 _ _
+8 it it PRP PRP _ _ s 8 _ _
+9 existed existed VBN VBN _ _ s 6 _ _
+10 then then RB RB _ _ s 8 _ _
+11 , , , , _ _ s 15 _ _
+12 Cray Cray NNP NNP _ _ s 12 _ _
+13 Computer Computer NNP NNP _ _ s 13 _ _
+14 would would MD MD _ _ s 15 _ _
+15 have have VB VB _ _ s 15 _ _
+16 incurred incurred VBN VBN _ _ s 0 _ _
+17 a a DT DT _ _ s 20 _ _
+18 $ $ $ $ _ _ s 19 _ _
+19 20.5 20.5 CD CD _ _ s 19 _ _
+20 million million CD CD _ _ s 20 _ _
+21 loss loss NN NN _ _ s 15 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ aux_ARG1 _ _
+2 Regarded Regarded VBN VBN _ _ s 12 _ Regarded _ punct_ARG1 _
+3 as as IN IN _ _ s 1 _ as _ _ _
+4 the the DT DT _ _ s 4 _ _ _ _ _
+5 father father NN NN _ _ s 2 _ _ _ _ _
+6 of of IN IN _ _ s 4 _ _ _ _ verb_ARG1
+7 the the DT DT _ _ s 7 _ _ _ _ verb_ARG1
+8 supercomputer supercomputer NN NN _ _ s 5 _ supercomputer _ _ _
+9 , , , , _ _ s 12 _ _ _ _ _
+10 Mr. Mr. NNP NNP _ _ s 10 _ _ _ _ _
+11 Cray Cray NNP NNP _ _ s 11 _ _ _ _ _
+12 was was VBD VBD _ _ s 12 _ _ _ _ _
+13 paid paid VBN VBN _ _ s 0 _ _ _ _ _
+14 $ $ $ $ _ _ s 14 _ _ _ _ _
+15 600,000 600,000 CD CD _ _ s 12 _ _ _ _ _
+16 at at IN IN _ _ s 12 _ _ _ _ _
+17 Cray Cray NNP NNP _ _ s 17 _ _ _ _ _
+18 Research Research NNP NNP _ _ s 15 _ _ _ _ _
+19 last last JJ JJ _ _ s 19 _ _ _ _ _
+20 year year NN NN _ _ s 12 _ _ _ _ _
+21 . . . . _ _ s 19 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 At At IN IN _ _ s 8 _ _
+3 Cray Cray NNP NNP _ _ s 3 _ _
+4 Computer Computer NNP NNP _ _ s 1 _ _
+5 , , , , _ _ s 8 _ _
+6 he he PRP PRP _ _ s 6 _ _
+7 will will MD MD _ _ s 8 _ _
+8 be be VB VB _ _ s 8 _ _
+9 paid paid VBN VBN _ _ s 0 _ _
+10 $ $ $ $ _ _ s 10 _ _
+11 240,000 240,000 CD CD _ _ s 8 _ _
+12 . . . . _ _ s 10 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 All All DT DT _ _ s 2 _ _
+3 came came VBD VBD _ _ s 0 _ _
+4 from from IN IN _ _ s 2 _ _
+5 Cray Cray NNP NNP _ _ s 5 _ _
+6 Research Research NNP NNP _ _ s 3 _ _
+7 . . . . _ _ s 5 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Cray Cray NNP NNP _ _ s 2 _ _ _
+3 Computer Computer NNP NNP _ _ s 10 _ _ _
+4 , , , , _ _ s 2 _ _ _
+5 which which WDT WDT _ _ s 2 _ _ _
+6 currently currently RB RB _ _ s 6 _ _ _
+7 employs employs VBZ VBZ _ _ s 2 _ _ _
+8 241 241 CD CD _ _ s 8 _ _ _
+9 people people NNS NNS _ _ s 6 _ _ _
+10 , , , , _ _ s 10 _ _ aux_ARG1
+11 said said VBD VBD _ _ s 0 _ said _
+12 it it PRP PRP _ _ s 12 _ _ _
+13 expects expects VBZ VBZ _ _ s 10 _ _ _
+14 a a DT DT _ _ s 15 _ _ _
+15 work work NN NN _ _ s 15 _ _ _
+16 force force NN NN _ _ s 12 _ _ _
+17 of of IN IN _ _ s 15 _ _ _
+18 450 450 CD CD _ _ s 16 _ _ _
+19 by by IN IN _ _ s 15 _ _ _
+20 the the DT DT _ _ s 20 _ _ _
+21 end end NN NN _ _ s 18 _ _ _
+22 of of IN IN _ _ s 20 _ _ _
+23 1990 1990 CD CD _ _ s 21 _ _ _
+24 . . . . _ _ s 22 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 John John NNP NNP _ _ s 3 _ _
+3 R. R. NNP NNP _ _ s 3 _ _
+4 Stevens Stevens NNP NNP _ _ s 10 _ _
+5 , , , , _ _ s 3 _ _
+6 49 49 CD CD _ _ s 6 _ _
+7 years years NNS NNS _ _ s 7 _ _
+8 old old JJ JJ _ _ s 3 _ _
+9 , , , , _ _ s 10 _ _
+10 was was VBD VBD _ _ s 10 _ _
+11 named named VBN VBN _ _ s 0 _ _
+12 senior senior JJ JJ _ _ s 14 _ _
+13 executive executive NN NN _ _ s 14 _ _
+14 vice vice NN NN _ _ s 14 _ _
+15 president president NN NN _ _ s 15 _ _
+16 and and CC CC _ _ s 10 _ _
+17 chief chief NN NN _ _ s 18 _ _
+18 operating operating VBG VBG _ _ s 18 _ _
+19 officer officer NN NN _ _ s 15 _ _
+20 , , , , _ _ s 15 _ _
+21 both both DT DT _ _ s 22 _ _
+22 new new JJ JJ _ _ s 22 _ _
+23 positions positions NNS NNS _ _ s 19 _ _
+24 . . . . _ _ s 22 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 He He PRP PRP _ _ s 2 _ _ _
+3 will will MD MD _ _ s 3 _ _ _
+4 continue continue VB VB _ _ s 0 _ _ _
+5 to to TO TO _ _ s 5 _ _ _
+6 report report VB VB _ _ s 3 _ _ _
+7 to to TO TO _ _ s 5 _ _ _
+8 Donald Donald NNP NNP _ _ s 8 _ _ _
+9 Pardus Pardus NNP NNP _ _ s 6 _ _ _
+10 , , , , _ _ s 8 _ , _
+11 president president NN NN _ _ s 11 _ _ -ROOT-
+12 and and CC CC _ _ s 9 _ _ _
+13 chief chief NN NN _ _ s 14 _ _ _
+14 executive executive NN NN _ _ s 14 _ _ _
+15 officer officer NN NN _ _ s 11 _ _ _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _
+3 Stevens Stevens NNP NNP _ _ s 3 _ _
+4 was was VBD VBD _ _ s 0 _ _
+5 executive executive NN NN _ _ s 6 _ _
+6 vice vice NN NN _ _ s 6 _ _
+7 president president NN NN _ _ s 3 _ _
+8 of of IN IN _ _ s 6 _ _
+9 this this DT DT _ _ s 11 _ _
+10 electric-utility electric-utility NN NN _ _ s 11 _ _
+11 holding holding NN NN _ _ s 11 _ _
+12 company company NN NN _ _ s 7 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Arthur Arthur NNP NNP _ _ s 3 _ _ _
+3 A. A. NNP NNP _ _ s 3 _ _ _
+4 Hatch Hatch NNP NNP _ _ s 8 _ _ _
+5 , , , , _ _ s 3 _ _ _
+6 59 59 CD CD _ _ s 4 _ _ _
+7 , , , , _ _ s 8 _ _ _
+8 was was VBD VBD _ _ s 8 _ _ _
+9 named named VBN VBN _ _ s 0 _ _ _
+10 executive executive NN NN _ _ s 11 _ _ _
+11 vice vice NN NN _ _ s 11 _ _ _
+12 president president NN NN _ _ s 8 _ _ _
+13 of of IN IN _ _ s 11 _ _ _
+14 the the DT DT _ _ s 14 _ _ verb_ARG1
+15 company company NN NN _ _ s 12 _ company _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 He He PRP PRP _ _ s 2 _ _
+3 was was VBD VBD _ _ s 0 _ _
+4 previously previously RB RB _ _ s 4 _ _
+5 president president NN NN _ _ s 2 _ _
+6 of of IN IN _ _ s 4 _ _
+7 the the DT DT _ _ s 7 _ _
+8 company company NN NN _ _ s 8 _ _
+9 ’s ’s POS POS _ _ s 12 _ _
+10 Eastern Eastern NNP NNP _ _ s 11 _ _
+11 Edison Edison NNP NNP _ _ s 11 _ _
+12 Co. Co. NNP NNP _ _ s 12 _ _
+13 unit unit NN NN _ _ s 5 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 John John NNP NNP _ _ s 3 _ _
+3 D. D. NNP NNP _ _ s 3 _ _
+4 Carney Carney NNP NNP _ _ s 8 _ _
+5 , , , , _ _ s 3 _ _
+6 45 45 CD CD _ _ s 4 _ _
+7 , , , , _ _ s 8 _ _
+8 was was VBD VBD _ _ s 8 _ _
+9 named named VBN VBN _ _ s 0 _ _
+10 to to TO TO _ _ s 10 _ _
+11 succeed succeed VB VB _ _ s 8 _ _
+12 Mr. Mr. NNP NNP _ _ s 12 _ _
+13 Hatch Hatch NNP NNP _ _ s 10 _ _
+14 as as IN IN _ _ s 10 _ _
+15 president president NN NN _ _ s 13 _ _
+16 of of IN IN _ _ s 14 _ _
+17 Eastern Eastern NNP NNP _ _ s 17 _ _
+18 Edison Edison NNP NNP _ _ s 15 _ _
+19 . . . . _ _ s 17 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Previously Previously RB RB _ _ s 3 _ _
+3 he he PRP PRP _ _ s 3 _ _
+4 was was VBD VBD _ _ s 0 _ _
+5 vice vice RB RB _ _ s 5 _ _
+6 president president NN NN _ _ s 3 _ _
+7 of of IN IN _ _ s 5 _ _
+8 Eastern Eastern NNP NNP _ _ s 8 _ _
+9 Edison Edison NNP NNP _ _ s 6 _ _
+10 . . . . _ _ s 8 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Robert Robert NNP NNP _ _ s 3 _ _
+3 P. P. NNP NNP _ _ s 3 _ _
+4 Tassinari Tassinari NNP NNP _ _ s 8 _ _
+5 , , , , _ _ s 3 _ _
+6 63 63 CD CD _ _ s 4 _ _
+7 , , , , _ _ s 8 _ _
+8 was was VBD VBD _ _ s 8 _ _
+9 named named VBN VBN _ _ s 0 _ _
+10 senior senior JJ JJ _ _ s 11 _ _
+11 vice vice NN NN _ _ s 11 _ _
+12 president president NN NN _ _ s 8 _ _
+13 of of IN IN _ _ s 11 _ _
+14 Eastern Eastern NNP NNP _ _ s 14 _ _
+15 Utilities Utilities NNPS NNPS _ _ s 12 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 He He PRP PRP _ _ s 2 _ _
+3 was was VBD VBD _ _ s 0 _ _
+4 previously previously RB RB _ _ s 5 _ _
+5 vice vice NN NN _ _ s 5 _ _
+6 president president NN NN _ _ s 2 _ _
+7 . . . . _ _ s 5 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Under Under IN IN _ _ s 11 _ _
+3 the the DT DT _ _ s 6 _ _
+4 new new JJ JJ _ _ s 6 _ _
+5 U.S. U.S. NNP NNP _ _ s 6 _ _
+6 trade trade NN NN _ _ s 6 _ _
+7 law law NN NN _ _ s 1 _ _
+8 , , , , _ _ s 11 _ _
+9 those those DT DT _ _ s 9 _ _
+10 countries countries NNS NNS _ _ s 10 _ _
+11 could could MD MD _ _ s 11 _ _
+12 face face VB VB _ _ s 0 _ _
+13 accelerated accelerated JJ JJ _ _ s 14 _ _
+14 unfair-trade unfair-trade JJ JJ _ _ s 14 _ _
+15 investigations investigations NNS NNS _ _ s 15 _ _
+16 and and CC CC _ _ s 11 _ _
+17 stiff stiff JJ JJ _ _ s 18 _ _
+18 trade trade NN NN _ _ s 18 _ _
+19 sanctions sanctions NNS NNS _ _ s 15 _ _
+20 if if IN IN _ _ s 11 _ _
+21 they they PRP PRP _ _ s 21 _ _
+22 do do VBP VBP _ _ s 23 _ _
+23 n’t n’t RB RB _ _ s 23 _ _
+24 improve improve VB VB _ _ s 19 _ _
+25 their their PRP$ PRP$ _ _ s 25 _ _
+26 protection protection NN NN _ _ s 23 _ _
+27 of of IN IN _ _ s 25 _ _
+28 intellectual intellectual JJ JJ _ _ s 28 _ _
+29 property property NN NN _ _ s 26 _ _
+30 by by IN IN _ _ s 23 _ _
+31 next next JJ JJ _ _ s 31 _ _
+32 spring spring NN NN _ _ s 29 _ _
+33 . . . . _ _ s 31 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mrs. Mrs. NNP NNP _ _ s 2 _ _
+3 Hills Hills NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 many many JJ JJ _ _ s 17 _ _
+6 of of IN IN _ _ s 4 _ _
+7 the the DT DT _ _ s 8 _ _
+8 25 25 CD CD _ _ s 8 _ _
+9 countries countries NNS NNS _ _ s 5 _ _
+10 that that IN IN _ _ s 8 _ _
+11 she she PRP PRP _ _ s 11 _ _
+12 placed placed VBD VBD _ _ s 8 _ _
+13 under under IN IN _ _ s 11 _ _
+14 varying varying VBG VBG _ _ s 12 _ _
+15 degrees degrees NNS NNS _ _ s 13 _ _
+16 of of IN IN _ _ s 14 _ _
+17 scrutiny scrutiny NN NN _ _ s 15 _ _
+18 have have VBP VBP _ _ s 18 _ _
+19 made made VBN VBN _ _ s 3 _ _
+20 “ “ `` `` _ _ s 21 _ _
+21 genuine genuine JJ JJ _ _ s 21 _ _
+22 progress progress NN NN _ _ s 18 _ _
+23 ” ” '' '' _ _ s 21 _ _
+24 on on IN IN _ _ s 21 _ _
+25 this this DT DT _ _ s 26 _ _
+26 touchy touchy JJ JJ _ _ s 26 _ _
+27 issue issue NN NN _ _ s 23 _ _
+28 . . . . _ _ s 26 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 U.S. U.S. NNP NNP _ _ s 3 _ _
+3 trade trade NN NN _ _ s 3 _ _
+4 negotiators negotiators NNS NNS _ _ s 4 _ _
+5 argue argue VBP VBP _ _ s 0 _ _
+6 that that IN IN _ _ s 15 _ _
+7 countries countries NNS NNS _ _ s 13 _ _
+8 with with IN IN _ _ s 6 _ _
+9 inadequate inadequate JJ JJ _ _ s 9 _ _
+10 protections protections NNS NNS _ _ s 7 _ _
+11 for for IN IN _ _ s 9 _ _
+12 intellectual-property intellectual-property JJ JJ _ _ s 12 _ _
+13 rights rights NNS NNS _ _ s 10 _ _
+14 could could MD MD _ _ s 15 _ _
+15 be be VB VB _ _ s 15 _ _
+16 hurting hurting VBG VBG _ _ s 4 _ _
+17 themselves themselves PRP PRP _ _ s 15 _ _
+18 by by IN IN _ _ s 15 _ _
+19 discouraging discouraging VBG VBG _ _ s 17 _ _
+20 their their PRP$ PRP$ _ _ s 22 _ _
+21 own own JJ JJ _ _ s 22 _ _
+22 scientists scientists NNS NNS _ _ s 22 _ _
+23 and and CC CC _ _ s 18 _ _
+24 authors authors NNS NNS _ _ s 22 _ _
+25 and and CC CC _ _ s 17 _ _
+26 by by IN IN _ _ s 24 _ _
+27 deterring deterring VBG VBG _ _ s 25 _ _
+28 U.S. U.S. NNP NNP _ _ s 29 _ _
+29 high-technology high-technology NN NN _ _ s 29 _ _
+30 firms firms NNS NNS _ _ s 26 _ _
+31 from from IN IN _ _ s 26 _ _
+32 investing investing VBG VBG _ _ s 32 _ _
+33 or or CC CC _ _ s 30 _ _
+34 marketing marketing VBG VBG _ _ s 32 _ _
+35 their their PRP$ PRP$ _ _ s 36 _ _
+36 best best JJS JJS _ _ s 36 _ _
+37 products products NNS NNS _ _ s 33 _ _
+38 there there RB RB _ _ s 33 _ _
+39 . . . . _ _ s 37 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mrs. Mrs. NNP NNP _ _ s 2 _ _
+3 Hills Hills NNP NNP _ _ s 3 _ _
+4 lauded lauded VBD VBD _ _ s 0 _ _
+5 South South NNP NNP _ _ s 5 _ _
+6 Korea Korea NNP NNP _ _ s 3 _ _
+7 for for IN IN _ _ s 3 _ _
+8 creating creating VBG VBG _ _ s 6 _ _
+9 an an DT DT _ _ s 11 _ _
+10 intellectual-property intellectual-property JJ JJ _ _ s 11 _ _
+11 task task NN NN _ _ s 11 _ _
+12 force force NN NN _ _ s 12 _ _
+13 and and CC CC _ _ s 7 _ _
+14 special special JJ JJ _ _ s 15 _ _
+15 enforcement enforcement NN NN _ _ s 15 _ _
+16 teams teams NNS NNS _ _ s 12 _ _
+17 of of IN IN _ _ s 15 _ _
+18 police police NN NN _ _ s 18 _ _
+19 officers officers NNS NNS _ _ s 19 _ _
+20 and and CC CC _ _ s 16 _ _
+21 prosecutors prosecutors NNS NNS _ _ s 19 _ _
+22 trained trained VBN VBN _ _ s 15 _ _
+23 to to TO TO _ _ s 21 _ _
+24 pursue pursue VB VB _ _ s 22 _ _
+25 movie movie NN NN _ _ s 25 _ _
+26 and and CC CC _ _ s 26 _ _
+27 book book NN NN _ _ s 27 _ _
+28 pirates pirates NNS NNS _ _ s 23 _ _
+29 . . . . _ _ s 27 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1
+2 Seoul Seoul NNP NNP _ _ s 4 _ Seoul _
+3 also also RB RB _ _ s 4 _ _ _
+4 has has VBZ VBZ _ _ s 4 _ _ _
+5 instituted instituted VBN VBN _ _ s 14 _ _ _
+6 effective effective JJ JJ _ _ s 7 _ _ _
+7 search-and-seizure search-and-seizure JJ JJ _ _ s 7 _ _ _
+8 procedures procedures NNS NNS _ _ s 4 _ _ _
+9 to to TO TO _ _ s 7 _ _ _
+10 aid aid VB VB _ _ s 8 _ _ _
+11 these these DT DT _ _ s 11 _ _ _
+12 teams teams NNS NNS _ _ s 9 _ _ _
+13 , , , , _ _ s 14 _ _ _
+14 she she PRP PRP _ _ s 14 _ _ _
+15 said said VBD VBD _ _ s 0 _ _ _
+16 . . . . _ _ s 14 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _
+2 Taiwan Taiwan NNP NNP _ _ s 2 _ Taiwan _ _
+3 has has VBZ VBZ _ _ s 3 _ has verb_ARG3 _
+4 improved improved VBN VBN _ _ s 0 _ _ _ verb_ARG3
+5 its its PRP$ PRP$ _ _ s 5 _ _ _ _
+6 standing standing NN NN _ _ s 3 _ _ _ _
+7 with with IN IN _ _ s 5 _ _ _ _
+8 the the DT DT _ _ s 8 _ _ _ _
+9 U.S. U.S. NNP NNP _ _ s 6 _ _ _ _
+10 by by IN IN _ _ s 3 _ _ _ _
+11 initialing initialing VBG VBG _ _ s 15 _ _ _ _
+12 a a DT DT _ _ s 14 _ _ _ _
+13 bilateral bilateral JJ JJ _ _ s 14 _ _ _ _
+14 copyright copyright NN NN _ _ s 14 _ _ _ _
+15 agreement agreement NN NN _ _ s 10 _ _ _ _
+16 , , , , _ _ s 20 _ _ _ _
+17 amending amending VBG VBG _ _ s 15 _ _ _ _
+18 its its PRP$ PRP$ _ _ s 19 _ _ _ _
+19 trademark trademark NN NN _ _ s 19 _ _ _ _
+20 law law NN NN _ _ s 16 _ _ _ _
+21 and and CC CC _ _ s 9 _ _ _ _
+22 introducing introducing VBG VBG _ _ s 20 _ _ _ _
+23 legislation legislation NN NN _ _ s 21 _ _ _ _
+24 to to TO TO _ _ s 22 _ _ _ _
+25 protect protect VB VB _ _ s 23 _ _ _ _
+26 foreign foreign JJ JJ _ _ s 27 _ _ _ _
+27 movie movie NN NN _ _ s 27 _ _ _ _
+28 producers producers NNS NNS _ _ s 24 _ _ _ _
+29 from from IN IN _ _ s 24 _ _ _ _
+30 unauthorized unauthorized JJ JJ _ _ s 30 _ _ _ _
+31 showings showings NNS NNS _ _ s 28 _ _ _ _
+32 of of IN IN _ _ s 30 _ _ _ _
+33 their their PRP$ PRP$ _ _ s 33 _ _ _ _
+34 films films NNS NNS _ _ s 31 _ _ _ _
+35 . . . . _ _ s 33 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 That That DT DT _ _ s 2 _ _
+3 measure measure NN NN _ _ s 3 _ _
+4 could could MD MD _ _ s 4 _ _
+5 compel compel VB VB _ _ s 0 _ _
+6 Taipei Taipei NNP NNP _ _ s 6 _ _
+7 ’s ’s POS POS _ _ s 8 _ _
+8 growing growing VBG VBG _ _ s 8 _ _
+9 number number NN NN _ _ s 4 _ _
+10 of of IN IN _ _ s 8 _ _
+11 small small JJ JJ _ _ s 12 _ _
+12 video-viewing video-viewing JJ JJ _ _ s 12 _ _
+13 parlors parlors NNS NNS _ _ s 9 _ _
+14 to to TO TO _ _ s 12 _ _
+15 pay pay VB VB _ _ s 13 _ _
+16 movie movie NN NN _ _ s 16 _ _
+17 producers producers NNS NNS _ _ s 14 _ _
+18 for for IN IN _ _ s 14 _ _
+19 showing showing VBG VBG _ _ s 17 _ _
+20 their their PRP$ PRP$ _ _ s 20 _ _
+21 films films NNS NNS _ _ s 18 _ _
+22 . . . . _ _ s 20 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _ _
+2 Saudi Saudi NNP NNP _ _ s 2 _ _ _ _ _ _
+3 Arabia Arabia NNP NNP _ _ s 9 _ _ _ _ _ _
+4 , , , , _ _ s 9 _ _ _ _ _ _
+5 for for IN IN _ _ s 9 _ _ _ _ _ _
+6 its its PRP$ PRP$ _ _ s 6 _ _ _ _ _ _
+7 part part NN NN _ _ s 4 _ _ _ _ _ _
+8 , , , , _ _ s 9 _ _ _ _ _ _
+9 has has VBZ VBZ _ _ s 9 _ _ _ _ _ _
+10 vowed vowed VBN VBN _ _ s 36 _ _ _ _ _ _
+11 to to TO TO _ _ s 11 _ _ _ _ _ _
+12 enact enact VB VB _ _ s 9 _ _ _ _ _ _
+13 a a DT DT _ _ s 14 _ _ _ _ _ _
+14 copyright copyright NN NN _ _ s 14 _ _ _ _ _ _
+15 law law NN NN _ _ s 11 _ _ _ _ _ _
+16 compatible compatible JJ JJ _ _ s 14 _ _ _ _ _ _
+17 with with IN IN _ _ s 15 _ _ _ _ _ _
+18 international international JJ JJ _ _ s 18 _ _ _ _ _ _
+19 standards standards NNS NNS _ _ s 16 _ _ _ _ _ _
+20 and and CC CC _ _ s 15 _ _ _ _ _ _
+21 to to TO TO _ _ s 21 _ to _ _ _ _
+22 apply apply VB VB _ _ s 19 _ apply _ _ _ _
+23 the the DT DT _ _ s 23 _ _ _ _ verb_ARG1 _
+24 law law NN NN _ _ s 21 _ law -ROOT- -ROOT- _ _
+25 to to TO TO _ _ s 21 _ _ _ _ _ _
+26 computer computer NN NN _ _ s 26 _ _ _ _ _ _
+27 software software NN NN _ _ s 24 _ _ _ _ _ _
+28 as as RB RB _ _ s 29 _ _ _ _ _ _
+29 well well RB RB _ _ s 29 _ _ _ _ _ verb_ARG1
+30 as as IN IN _ _ s 24 _ as _ _ _ _
+31 to to TO TO _ _ s 29 _ _ _ _ _ _
+32 literary literary JJ JJ _ _ s 32 _ _ _ _ _ _
+33 works works NNS NNS _ _ s 30 _ _ _ _ _ _
+34 , , , , _ _ s 36 _ _ _ _ _ _
+35 Mrs. Mrs. NNP NNP _ _ s 35 _ _ _ _ _ _
+36 Hills Hills NNP NNP _ _ s 36 _ _ _ _ _ _
+37 said said VBD VBD _ _ s 0 _ _ _ _ _ _
+38 . . . . _ _ s 36 _ _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 These These DT DT _ _ s 3 _ _
+3 three three CD CD _ _ s 3 _ _
+4 countries countries NNS NNS _ _ s 4 _ _
+5 are are VBP VBP _ _ s 0 _ _
+6 n’t n’t RB RB _ _ s 4 _ _
+7 completely completely RB RB _ _ s 7 _ _
+8 off off IN IN _ _ s 4 _ _
+9 the the DT DT _ _ s 9 _ _
+10 hook hook NN NN _ _ s 7 _ _
+11 , , , , _ _ s 4 _ _
+12 though though RB RB _ _ s 4 _ _
+13 . . . . _ _ s 11 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 They They PRP PRP _ _ s 2 _ _ _
+3 will will MD MD _ _ s 3 _ _ _
+4 remain remain VB VB _ _ s 0 _ _ _
+5 on on IN IN _ _ s 3 _ _ _
+6 a a DT DT _ _ s 7 _ _ _
+7 lower-priority lower-priority JJ JJ _ _ s 7 _ _ _
+8 list list NN NN _ _ s 4 _ _ _
+9 that that WDT WDT _ _ s 7 _ _ aux_ARG1
+10 includes includes VBZ VBZ _ _ s 7 _ includes _
+11 17 17 CD CD _ _ s 12 _ _ _
+12 other other JJ JJ _ _ s 12 _ _ _
+13 countries countries NNS NNS _ _ s 9 _ _ _
+14 . . . . _ _ s 12 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 Those Those DT DT _ _ s 2 _ _ _
+3 countries countries NNS NNS _ _ s 15 _ _ _
+4 – – : : _ _ s 2 _ _ _
+5 including including IN IN _ _ s 3 _ _ _
+6 Japan Japan NNP NNP _ _ s 6 _ _ _
+7 , , , , _ _ s 8 _ _ _
+8 Italy Italy NNP NNP _ _ s 6 _ _ _
+9 , , , , _ _ s 10 _ _ _
+10 Canada Canada NNP NNP _ _ s 8 _ _ _
+11 , , , , _ _ s 12 _ _ _
+12 Greece Greece NNP NNP _ _ s 10 _ _ _
+13 and and CC CC _ _ s 4 _ _ _
+14 Spain Spain NNP NNP _ _ s 12 _ _ _
+15 – – : : _ _ s 3 _ _ _
+16 are are VBP VBP _ _ s 23 _ _ _
+17 still still RB RB _ _ s 15 _ _ _
+18 of of IN IN _ _ s 15 _ _ _
+19 some some DT DT _ _ s 19 _ _ _
+20 concern concern NN NN _ _ s 17 _ _ _
+21 to to TO TO _ _ s 19 _ _ _
+22 the the DT DT _ _ s 22 _ _ _
+23 U.S. U.S. NNP NNP _ _ s 20 _ _ _
+24 but but CC CC _ _ s 0 _ _ _
+25 are are VBP VBP _ _ s 25 _ _ verb_ARG1
+26 deemed deemed VBN VBN _ _ s 23 _ deemed _
+27 to to TO TO _ _ s 27 _ _ _
+28 pose pose VB VB _ _ s 25 _ _ _
+29 less-serious less-serious JJ JJ _ _ s 29 _ _ _
+30 problems problems NNS NNS _ _ s 27 _ _ _
+31 for for IN IN _ _ s 29 _ _ _
+32 American American JJ JJ _ _ s 35 _ _ _
+33 patent patent NN NN _ _ s 33 _ _ _
+34 and and CC CC _ _ s 34 _ _ _
+35 copyright copyright NN NN _ _ s 35 _ _ _
+36 owners owners NNS NNS _ _ s 30 _ _ _
+37 than than IN IN _ _ s 27 _ _ _
+38 those those DT DT _ _ s 36 _ _ _
+39 on on IN IN _ _ s 37 _ _ _
+40 the the DT DT _ _ s 43 _ _ _
+41 “ “ `` `` _ _ s 43 _ _ _
+42 priority priority NN NN _ _ s 43 _ _ _
+43 ” ” '' '' _ _ s 43 _ _ _
+44 list list NN NN _ _ s 38 _ _ _
+45 . . . . _ _ s 43 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 “ “ `` `` _ _ s 16 _ _ _
+3 What What WP WP _ _ s 16 _ _ _
+4 this this DT DT _ _ s 4 _ _ _
+5 tells tells VBZ VBZ _ _ s 2 _ _ _
+6 us us PRP PRP _ _ s 4 _ _ _
+7 is is VBZ VBZ _ _ s 4 _ _ _
+8 that that DT DT _ _ s 12 _ _ _
+9 U.S. U.S. NNP NNP _ _ s 10 _ _ _
+10 trade trade NN NN _ _ s 10 _ _ _
+11 law law NN NN _ _ s 11 _ _ _
+12 is is VBZ VBZ _ _ s 12 _ _ verb_ARG1
+13 working working VBG VBG _ _ s 6 _ working _
+14 , , , , _ _ s 16 _ _ _
+15 ” ” '' '' _ _ s 16 _ _ _
+16 he he PRP PRP _ _ s 16 _ _ _
+17 said said VBD VBD _ _ s 0 _ _ _
+18 . . . . _ _ s 16 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 He He PRP PRP _ _ s 2 _ _
+3 said said VBD VBD _ _ s 0 _ _
+4 Mexico Mexico NNP NNP _ _ s 4 _ _
+5 could could MD MD _ _ s 5 _ _
+6 be be VB VB _ _ s 2 _ _
+7 one one CD CD _ _ s 5 _ _
+8 of of IN IN _ _ s 6 _ _
+9 the the DT DT _ _ s 10 _ _
+10 next next JJ JJ _ _ s 10 _ _
+11 countries countries NNS NNS _ _ s 7 _ _
+12 to to TO TO _ _ s 10 _ _
+13 be be VB VB _ _ s 13 _ _
+14 removed removed VBN VBN _ _ s 11 _ _
+15 from from IN IN _ _ s 13 _ _
+16 the the DT DT _ _ s 17 _ _
+17 priority priority NN NN _ _ s 17 _ _
+18 list list NN NN _ _ s 14 _ _
+19 because because IN IN _ _ s 13 _ _
+20 of of IN IN _ _ s 18 _ _
+21 its its PRP$ PRP$ _ _ s 21 _ _
+22 efforts efforts NNS NNS _ _ s 18 _ _
+23 to to TO TO _ _ s 21 _ _
+24 craft craft VB VB _ _ s 22 _ _
+25 a a DT DT _ _ s 27 _ _
+26 new new JJ JJ _ _ s 27 _ _
+27 patent patent NN NN _ _ s 27 _ _
+28 law law NN NN _ _ s 23 _ _
+29 . . . . _ _ s 27 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mrs. Mrs. NNP NNP _ _ s 2 _ _
+3 Hills Hills NNP NNP _ _ s 3 _ _
+4 said said VBD VBD _ _ s 0 _ _
+5 that that IN IN _ _ s 9 _ _
+6 the the DT DT _ _ s 6 _ _
+7 U.S. U.S. NNP NNP _ _ s 7 _ _
+8 is is VBZ VBZ _ _ s 9 _ _
+9 still still RB RB _ _ s 9 _ _
+10 concerned concerned VBN VBN _ _ s 3 _ _
+11 about about IN IN _ _ s 9 _ _
+12 “ “ `` `` _ _ s 10 _ _
+13 disturbing disturbing JJ JJ _ _ s 13 _ _
+14 developments developments NNS NNS _ _ s 10 _ _
+15 in in IN IN _ _ s 13 _ _
+16 Turkey Turkey NNP NNP _ _ s 16 _ _
+17 and and CC CC _ _ s 14 _ _
+18 continuing continuing VBG VBG _ _ s 16 _ _
+19 slow slow JJ JJ _ _ s 19 _ _
+20 progress progress NN NN _ _ s 17 _ _
+21 in in IN IN _ _ s 19 _ _
+22 Malaysia Malaysia NNP NNP _ _ s 20 _ _
+23 . . . . _ _ s 23 _ _
+24 ” ” '' '' _ _ s 3 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 She She PRP PRP _ _ s 2 _ _
+3 did did VBD VBD _ _ s 4 _ _
+4 n’t n’t RB RB _ _ s 4 _ _
+5 elaborate elaborate JJ JJ _ _ s 0 _ _
+6 , , , , _ _ s 4 _ _
+7 although although IN IN _ _ s 4 _ _
+8 earlier earlier JJR JJR _ _ s 10 _ _
+9 U.S. U.S. NNP NNP _ _ s 10 _ _
+10 trade trade NN NN _ _ s 10 _ _
+11 reports reports NNS NNS _ _ s 11 _ _
+12 have have VBP VBP _ _ s 12 _ _
+13 complained complained VBN VBN _ _ s 6 _ _
+14 of of IN IN _ _ s 12 _ _
+15 videocassette videocassette NN NN _ _ s 15 _ _
+16 piracy piracy NN NN _ _ s 18 _ _
+17 in in IN IN _ _ s 15 _ _
+18 Malaysia Malaysia NNP NNP _ _ s 16 _ _
+19 and and CC CC _ _ s 13 _ _
+20 disregard disregard NN NN _ _ s 18 _ _
+21 for for IN IN _ _ s 12 _ _
+22 U.S. U.S. NNP NNP _ _ s 23 _ _
+23 pharmaceutical pharmaceutical JJ JJ _ _ s 23 _ _
+24 patents patents NNS NNS _ _ s 20 _ _
+25 in in IN IN _ _ s 23 _ _
+26 Turkey Turkey NNP NNP _ _ s 24 _ _
+27 . . . . _ _ s 25 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 4 _ _ _
+3 1988 1988 CD CD _ _ s 4 _ _ _
+4 trade trade NN NN _ _ s 4 _ _ _
+5 act act NN NN _ _ s 5 _ _ _
+6 requires requires VBZ VBZ _ _ s 0 _ _ _
+7 Mrs. Mrs. NNP NNP _ _ s 7 _ _ _
+8 Hills Hills NNP NNP _ _ s 9 _ _ _
+9 to to TO TO _ _ s 9 _ _ _
+10 issue issue VB VB _ _ s 5 _ _ _
+11 another another DT DT _ _ s 11 _ _ _
+12 review review NN NN _ _ s 9 _ _ _
+13 of of IN IN _ _ s 11 _ _ _
+14 the the DT DT _ _ s 14 _ _ verb_ARG1
+15 performance performance NN NN _ _ s 12 _ performance _
+16 of of IN IN _ _ s 14 _ _ _
+17 these these DT DT _ _ s 17 _ _ _
+18 countries countries NNS NNS _ _ s 15 _ _ _
+19 by by IN IN _ _ s 9 _ _ _
+20 April April NNP NNP _ _ s 18 _ _ _
+21 30 30 CD CD _ _ s 19 _ _ _
+22 . . . . _ _ s 20 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _
+2 So So IN IN _ _ s 2 _ _ _ _ _
+3 far far RB RB _ _ s 8 _ _ _ _ _
+4 , , , , _ _ s 8 _ _ _ _ _
+5 Mrs. Mrs. NNP NNP _ _ s 5 _ _ _ _ _
+6 Hills Hills NNP NNP _ _ s 6 _ _ _ _ _
+7 has has VBZ VBZ _ _ s 8 _ _ verb_ARG1 _ _
+8 n’t n’t RB RB _ _ s 8 _ _ verb_ARG1 _ _
+9 deemed deemed VBD VBD _ _ s 0 _ deemed _ _ _
+10 any any DT DT _ _ s 10 _ _ _ _ _
+11 cases cases NNS NNS _ _ s 8 _ _ _ _ _
+12 bad bad JJ JJ _ _ s 10 _ _ _ _ _
+13 enough enough RB RB _ _ s 11 _ _ _ _ _
+14 to to TO TO _ _ s 14 _ _ _ _ _
+15 merit merit VB VB _ _ s 11 _ _ _ _ _
+16 an an DT DT _ _ s 17 _ _ _ _ _
+17 accelerated accelerated VBN VBN _ _ s 17 _ _ _ _ _
+18 investigation investigation NN NN _ _ s 14 _ _ _ _ _
+19 under under IN IN _ _ s 17 _ _ _ _ _
+20 the the DT DT _ _ s 23 _ _ _ _ _
+21 so-called so-called JJ JJ _ _ s 23 _ _ _ _ _
+22 special special JJ JJ _ _ s 23 _ _ _ _ _
+23 301 301 CD CD _ _ s 23 _ _ _ _ _
+24 provision provision NN NN _ _ s 18 _ _ _ _ _
+25 of of IN IN _ _ s 23 _ of _ _ _
+26 the the DT DT _ _ s 26 _ _ _ _ verb_ARG1
+27 act act NN NN _ _ s 24 _ act _ -ROOT- _
+28 . . . . _ _ s 26 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ noun_ARG1 _ _ _
+2 Argentina Argentina NNP NNP _ _ s 2 _ Argentina _ _ _ _
+3 said said VBD VBD _ _ s 0 _ said verb_ARG3 _ _ _
+4 it it PRP PRP _ _ s 4 _ _ _ _ aux_ARG1 _
+5 will will MD MD _ _ s 5 _ _ _ _ aux_ARG1 _
+6 ask ask VB VB _ _ s 2 _ ask _ verb_ARG3 _ punct_ARG1
+7 creditor creditor NN NN _ _ s 7 _ creditor _ _ _ _
+8 banks banks NNS NNS _ _ s 5 _ _ _ _ _ _
+9 to to TO TO _ _ s 9 _ _ _ _ _ _
+10 halve halve VB VB _ _ s 5 _ _ _ _ _ _
+11 its its PRP$ PRP$ _ _ s 12 _ _ _ _ _ _
+12 foreign foreign JJ JJ _ _ s 12 _ _ _ _ _ _
+13 debt debt NN NN _ _ s 9 _ _ _ _ _ _
+14 of of IN IN _ _ s 12 _ _ _ _ _ _
+15 $ $ $ $ _ _ s 16 _ _ _ _ _ _
+16 64 64 CD CD _ _ s 16 _ _ _ _ _ _
+17 billion billion CD CD _ _ s 13 _ _ _ _ _ _
+18 – – : : _ _ s 12 _ _ _ _ _ _
+19 the the DT DT _ _ s 19 _ _ _ _ _ _
+20 third-highest third-highest JJS JJS _ _ s 17 _ _ _ _ _ _
+21 in in IN IN _ _ s 19 _ _ _ _ _ _
+22 the the DT DT _ _ s 23 _ _ _ _ _ _
+23 developing developing VBG VBG _ _ s 23 _ _ _ _ _ _
+24 world world NN NN _ _ s 20 _ _ _ _ _ _
+25 . . . . _ _ s 23 _ _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 The The DT DT _ _ s 2 _ _ _
+3 declaration declaration NN NN _ _ s 8 _ _ _
+4 by by IN IN _ _ s 2 _ _ _
+5 Economy Economy NNP NNP _ _ s 7 _ _ _
+6 Minister Minister NNP NNP _ _ s 7 _ _ _
+7 Nestor Nestor NNP NNP _ _ s 7 _ _ _
+8 Rapanelli Rapanelli NNP NNP _ _ s 3 _ _ _
+9 is is VBZ VBZ _ _ s 9 _ _ _
+10 believed believed VBN VBN _ _ s 0 _ _ _
+11 to to TO TO _ _ s 11 _ _ _
+12 be be VB VB _ _ s 9 _ _ _
+13 the the DT DT _ _ s 14 _ _ _
+14 first first JJ JJ _ _ s 14 _ _ _
+15 time time NN NN _ _ s 11 _ _ _
+16 such such JJ JJ _ _ s 17 _ _ _
+17 an an DT DT _ _ s 17 _ _ verb_ARG1
+18 action action NN NN _ _ s 18 _ action _
+19 has has VBZ VBZ _ _ s 20 _ _ _
+20 been been VBN VBN _ _ s 20 _ _ _
+21 called called VBN VBN _ _ s 14 _ _ _
+22 for for IN IN _ _ s 20 _ _ _
+23 by by IN IN _ _ s 25 _ _ _
+24 an an DT DT _ _ s 25 _ _ _
+25 Argentine Argentine JJ JJ _ _ s 25 _ _ _
+26 official official NN NN _ _ s 21 _ _ _
+27 of of IN IN _ _ s 25 _ _ _
+28 such such JJ JJ _ _ s 28 _ _ _
+29 stature stature NN NN _ _ s 26 _ _ _
+30 . . . . _ _ s 28 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 The The DT DT _ _ s 4 _ _
+3 Latin Latin NNP NNP _ _ s 3 _ _
+4 American American NNP NNP _ _ s 4 _ _
+5 nation nation NN NN _ _ s 5 _ _
+6 has has VBZ VBZ _ _ s 6 _ _
+7 paid paid VBN VBN _ _ s 0 _ _
+8 very very RB RB _ _ s 8 _ _
+9 little little RB RB _ _ s 6 _ _
+10 on on IN IN _ _ s 6 _ _
+11 its its PRP$ PRP$ _ _ s 11 _ _
+12 debt debt NN NN _ _ s 9 _ _
+13 since since IN IN _ _ s 6 _ _
+14 early early JJ JJ _ _ s 15 _ _
+15 last last JJ JJ _ _ s 15 _ _
+16 year year NN NN _ _ s 12 _ _
+17 . . . . _ _ s 15 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 “ “ `` `` _ _ s 22 _ _ _
+3 Argentina Argentina NNP NNP _ _ s 3 _ _ _
+4 aspires aspires VBZ VBZ _ _ s 22 _ _ _
+5 to to TO TO _ _ s 5 _ _ _
+6 reach reach VB VB _ _ s 3 _ _ _
+7 a a DT DT _ _ s 7 _ _ _
+8 reduction reduction NN NN _ _ s 5 _ _ _
+9 of of IN IN _ _ s 7 _ _ _
+10 50 50 CD CD _ _ s 10 _ _ _
+11 % % NN NN _ _ s 8 _ _ _
+12 in in IN IN _ _ s 7 _ _ verb_ARG1
+13 the the DT DT _ _ s 13 _ _ verb_ARG1
+14 value value NN NN _ _ s 11 _ value _
+15 of of IN IN _ _ s 13 _ _ _
+16 its its PRP$ PRP$ _ _ s 17 _ _ _
+17 external external JJ JJ _ _ s 17 _ _ _
+18 debt debt NN NN _ _ s 14 _ _ _
+19 , , , , _ _ s 22 _ _ _
+20 ” ” '' '' _ _ s 22 _ _ _
+21 Mr. Mr. NNP NNP _ _ s 21 _ _ _
+22 Rapanelli Rapanelli NNP NNP _ _ s 22 _ _ _
+23 said said VBD VBD _ _ s 0 _ _ _
+24 through through IN IN _ _ s 22 _ _ _
+25 his his PRP$ PRP$ _ _ s 25 _ _ _
+26 spokesman spokesman NN NN _ _ s 23 _ _ _
+27 , , , , _ _ s 25 _ _ _
+28 Miguel Miguel NNP NNP _ _ s 28 _ _ _
+29 Alurralde Alurralde NNP NNP _ _ s 26 _ _ _
+30 . . . . _ _ s 28 _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _
+3 Rapanelli Rapanelli NNP NNP _ _ s 3 _ _
+4 met met VBD VBD _ _ s 0 _ _
+5 in in IN IN _ _ s 3 _ _
+6 August August NNP NNP _ _ s 4 _ _
+7 with with IN IN _ _ s 3 _ _
+8 U.S. U.S. NNP NNP _ _ s 12 _ _
+9 Assistant Assistant NNP NNP _ _ s 12 _ _
+10 Treasury Treasury NNP NNP _ _ s 12 _ _
+11 Secretary Secretary NNP NNP _ _ s 12 _ _
+12 David David NNP NNP _ _ s 12 _ _
+13 Mulford Mulford NNP NNP _ _ s 6 _ _
+14 . . . . _ _ s 12 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 Argentine Argentine JJ JJ _ _ s 4 _ _
+3 negotiator negotiator NN NN _ _ s 4 _ _
+4 Carlos Carlos NNP NNP _ _ s 4 _ _
+5 Carballo Carballo NNP NNP _ _ s 5 _ _
+6 was was VBD VBD _ _ s 0 _ _
+7 in in IN IN _ _ s 5 _ _
+8 Washington Washington NNP NNP _ _ s 8 _ _
+9 and and CC CC _ _ s 6 _ _
+10 New New NNP NNP _ _ s 10 _ _
+11 York York NNP NNP _ _ s 8 _ _
+12 this this DT DT _ _ s 12 _ _
+13 week week NN NN _ _ s 5 _ _
+14 to to TO TO _ _ s 5 _ _
+15 meet meet VB VB _ _ s 13 _ _
+16 with with IN IN _ _ s 14 _ _
+17 banks banks NNS NNS _ _ s 15 _ _
+18 . . . . _ _ s 16 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _
+2 Mr. Mr. NNP NNP _ _ s 2 _ _ _ _ _
+3 Rapanelli Rapanelli NNP NNP _ _ s 5 _ _ _ _ _
+4 recently recently RB RB _ _ s 5 _ _ _ _ _
+5 has has VBZ VBZ _ _ s 5 _ _ aux_ARG1 _ _
+6 said said VBD VBD _ _ s 0 _ said _ _ _
+7 the the DT DT _ _ s 7 _ _ _ verb_ARG1 _
+8 government government NN NN _ _ s 19 _ government _ _ _
+9 of of IN IN _ _ s 7 _ _ _ _ _
+10 President President NNP NNP _ _ s 11 _ _ _ _ _
+11 Carlos Carlos NNP NNP _ _ s 11 _ _ _ _ _
+12 Menem Menem NNP NNP _ _ s 8 _ _ _ _ _
+13 , , , , _ _ s 11 _ _ _ _ aux_ARG1
+14 who who WP WP _ _ s 11 _ _ _ _ aux_ARG1
+15 took took VBD VBD _ _ s 11 _ took _ _ _
+16 office office NN NN _ _ s 14 _ _ _ _ _
+17 July July NNP NNP _ _ s 14 _ _ _ _ _
+18 8 8 CD CD _ _ s 16 _ _ _ _ _
+19 , , , , _ _ s 19 _ _ _ _ _
+20 feels feels VBZ VBZ _ _ s 5 _ _ _ _ _
+21 a a DT DT _ _ s 22 _ _ _ _ _
+22 significant significant JJ JJ _ _ s 22 _ _ _ _ _
+23 reduction reduction NN NN _ _ s 27 _ _ _ _ _
+24 of of IN IN _ _ s 22 _ _ _ _ _
+25 principal principal NN NN _ _ s 25 _ _ _ _ _
+26 and and CC CC _ _ s 23 _ _ _ _ _
+27 interest interest NN NN _ _ s 25 _ _ _ _ _
+28 is is VBZ VBZ _ _ s 19 _ _ _ _ _
+29 the the DT DT _ _ s 30 _ _ _ _ _
+30 only only JJ JJ _ _ s 30 _ _ _ _ _
+31 way way NN NN _ _ s 27 _ _ _ _ _
+32 the the DT DT _ _ s 33 _ _ _ _ _
+33 debt debt NN NN _ _ s 33 _ _ _ _ _
+34 problem problem NN NN _ _ s 34 _ _ _ _ _
+35 may may MD MD _ _ s 36 _ _ _ _ _
+36 be be VB VB _ _ s 36 _ _ _ _ _
+37 solved solved VBN VBN _ _ s 30 _ _ _ _ _
+38 . . . . _ _ s 36 _ _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 But But CC CC _ _ s 5 _ _
+3 he he PRP PRP _ _ s 3 _ _
+4 has has VBZ VBZ _ _ s 5 _ _
+5 not not RB RB _ _ s 5 _ _
+6 said said VBD VBD _ _ s 0 _ _
+7 before before IN IN _ _ s 5 _ _
+8 that that IN IN _ _ s 10 _ _
+9 the the DT DT _ _ s 9 _ _
+10 country country NN NN _ _ s 10 _ _
+11 wants wants VBZ VBZ _ _ s 6 _ _
+12 half half PDT PDT _ _ s 13 _ _
+13 the the DT DT _ _ s 13 _ _
+14 debt debt NN NN _ _ s 10 _ _
+15 forgiven forgiven VBN VBN _ _ s 13 _ _
+16 . . . . _ _ s 14 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ verb_ARG1 _
+2 ( ( ( ( _ _ s 12 _ ( _ _
+3 During During IN IN _ _ s 12 _ _ verb_ARG3 _
+4 its its PRP$ PRP$ _ _ s 5 _ _ _ _
+5 centennial centennial NN NN _ _ s 5 _ _ _ _
+6 year year NN NN _ _ s 2 _ _ _ _
+7 , , , , _ _ s 12 _ _ _ _
+8 The The NNP NNP _ _ s 10 _ _ _ _
+9 Wall Wall NNP NNP _ _ s 10 _ _ _ _
+10 Street Street NNP NNP _ _ s 10 _ _ _ _
+11 Journal Journal NNP NNP _ _ s 11 _ _ _ _
+12 will will MD MD _ _ s 12 _ _ _ _
+13 report report VB VB _ _ s 0 _ _ _ _
+14 events events NNS NNS _ _ s 12 _ _ _ _
+15 of of IN IN _ _ s 13 _ _ _ _
+16 the the DT DT _ _ s 17 _ _ _ verb_ARG1
+17 past past JJ JJ _ _ s 17 _ _ _ verb_ARG1
+18 century century NN NN _ _ s 14 _ century _ _
+19 that that WDT WDT _ _ s 13 _ _ _ _
+20 stand stand VBP VBP _ _ s 13 _ _ _ _
+21 as as IN IN _ _ s 19 _ _ _ _
+22 milestones milestones NNS NNS _ _ s 20 _ _ _ _
+23 of of IN IN _ _ s 21 _ _ _ _
+24 American American JJ JJ _ _ s 25 _ _ _ _
+25 business business NN NN _ _ s 25 _ _ _ _
+26 history history NN NN _ _ s 22 _ _ _ _
+27 . . . . _ _ s 27 _ _ _ _
+28 ) ) ) ) _ _ s 12 _ _ _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _
+2 THREE THREE CD CD _ _ s 2 _ _
+3 COMPUTERS COMPUTERS NNS NNS _ _ s 10 _ _
+4 THAT THAT WDT WDT _ _ s 2 _ _
+5 CHANGED CHANGED VBD VBD _ _ s 2 _ _
+6 the the DT DT _ _ s 6 _ _
+7 face face NN NN _ _ s 4 _ _
+8 of of IN IN _ _ s 6 _ _
+9 personal personal JJ JJ _ _ s 9 _ _
+10 computing computing NN NN _ _ s 7 _ _
+11 were were VBD VBD _ _ s 11 _ _
+12 launched launched VBN VBN _ _ s 0 _ _
+13 in in IN IN _ _ s 11 _ _
+14 1977 1977 CD CD _ _ s 12 _ _
+15 . . . . _ _ s 13 _ _
+
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _
+2 That That DT DT _ _ s 2 _ _ _
+3 year year NN NN _ _ s 12 _ _ _
+4 the the DT DT _ _ s 9 _ _ _
+5 Apple Apple NNP NNP _ _ s 5 _ _ _
+6 II II NNP NNP _ _ s 6 _ _ _
+7 , , , , _ _ s 9 _ _ _
+8 Commodore Commodore NNP NNP _ _ s 8 _ _ _
+9 Pet Pet NNP NNP _ _ s 6 _ _ relative_ARG1
+10 and and CC CC _ _ s 12 _ and _
+11 Tandy Tandy NNP NNP _ _ s 11 _ _ _
+12 TRS-80 TRS-80 NNP NNP _ _ s 9 _ _ _
+13 came came VBD VBD _ _ s 0 _ _ _
+14 to to TO TO _ _ s 12 _ _ _
+15 market market NN NN _ _ s 13 _ _ _
+16 . . . . _ _ s 14 _ _ _
+

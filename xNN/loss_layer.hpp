@@ -16,18 +16,20 @@ using std::vector;
 
 template<typename DType, template <typename> class Loss, template <typename> class PartialLoss>
 class LossLayer {
+	typedef HiddenNeuron<DType>		HiddenBlob;
+
 	Loss<DType> m_foLoss;
 	PartialLoss<DType> m_foPartialLoss;
 public:
 	LossLayer();
 	~LossLayer();
 
-	inline void foreward(HiddenNeuron<DType> * down) {
+	inline void foreward(HiddenBlob * down) {
 		// down.active = Loss(down.output)
 		m_foLoss(down->getMutableActive(), down->getOutput(), down->getVecLen());
 	}
 	
-	inline void backward(HiddenNeuron<DType> * down, int correctLabel) {
+	inline void backward(HiddenBlob * down, int correctLabel) {
 		// down.output_diff = partialLoss(down.output, up.correct)
 		m_foPartialLoss(down->getMutableOutputDiff(), down->getOutput(), correctLabel, down->getVecLen());
 	}

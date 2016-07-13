@@ -18,13 +18,15 @@ using std::vector;
 
 template<typename DType, template<typename> class Neuron>
 class SGDUpdator {
+	typedef Neuron<DType>	Blob;
+
 protected:
 	int m_nDownNum;
 	DType * m_pBiasVec;
 	DType * m_pWeightVec;
-	Neuron<DType> * m_pNeuron;
+	Blob * m_pNeuron;
 public:
-	SGDUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr);
+	SGDUpdator(int downNum = 0, Blob * neuron = nullptr);
 	SGDUpdator(const SGDUpdator<DType, Neuron> & updator);
 	~SGDUpdator();
 
@@ -33,7 +35,7 @@ public:
 };
 
 template<typename DType, template<typename> class Neuron>
-SGDUpdator<DType, Neuron>::SGDUpdator(int downNum = 0, Neuron<DType> * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
+SGDUpdator<DType, Neuron>::SGDUpdator(int downNum = 0, Blob * neuron = nullptr) : m_nDownNum(downNum), m_pNeuron(neuron) {
 	if (neuron != nullptr) {
 		m_pBiasVec = new DType[neuron->getVecLen()];
 		m_pWeightVec = new DType[neuron->getDownWeightOffset(downNum)];
@@ -59,9 +61,10 @@ SGDUpdator<DType, Neuron>::~SGDUpdator() {
 template<typename DType, template<typename> class Neuron>
 void SGDUpdator<DType, Neuron>::update(int batch) {
 	const DType miu = -static_cast<DType>(SGD_ALPHA) / static_cast<DType>(batch);
-	const DType momentum = static_cast<DType>(SGD_MOMENTUM);
-	const DType alpha = static_cast<DType>(1);
-	const DType beta = static_cast<DType>(1 - REGULAR_LAMDA);
+
+	static const DType momentum = static_cast<DType>(SGD_MOMENTUM);
+	static const DType alpha = static_cast<DType>(1);
+	static const DType beta = static_cast<DType>(1 - REGULAR_LAMDA);
 
 	// bias
 	alpha_vector_add_beta_vector(m_pBiasVec, m_pNeuron->getBiasDiff(), miu, momentum, m_pNeuron->getVecLen());
@@ -70,6 +73,7 @@ void SGDUpdator<DType, Neuron>::update(int batch) {
 	alpha_vector_add_beta_vector(m_pWeightVec, m_pNeuron->getWeightDiff(0), miu, momentum, m_pNeuron->getDownWeightOffset(m_nDownNum));
 	alpha_vector_add_beta_vector(m_pNeuron->getMutableWeight(0), m_pWeightVec, alpha, beta, m_pNeuron->getDownWeightOffset(m_nDownNum));
 }
+
 template<typename DType, template<typename> class Neuron>
 void SGDUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, int size, int batch) {
 	alpha_vector_add_beta_vector(m_pBiasVec, args_diff, -static_cast<DType>(SGD_ALPHA) / static_cast<DType>(batch), static_cast<DType>(SGD_MOMENTUM), size);

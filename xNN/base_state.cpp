@@ -62,9 +62,7 @@ void BaseState::generateGraph(const DepGraph & sent, DepGraph & graph, const Tok
 	for (int i = 0, n = sent.size(); i < n; ++i) {
 		graph.add(sent[i]);
 		graph.back().m_vecRightArcs.clear();
-		std::cout << i << std::endl;
 		for (const auto & arc : m_vecRightNodes[i]) {
-			std::cout << arc.head << ' ' << labels[arc.label] << std::endl;
 			graph.back().m_vecRightArcs.push_back(std::pair<int, string>(arc.head, labels[arc.label]));
 		}
 	}

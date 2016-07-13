@@ -32,29 +32,16 @@ int main(int argc, char * argv[]) {
 
 	ParserNet<float, Cubic, PartialCubic, Softmax, PartialSoftmax, AdaGradUpdator> parser(
 		EMBEDDING_LEN,
-		{ {26 * EMBEDDING_LEN, 26 * EMBEDDING_LEN, 20 * EMBEDDING_LEN }, {300}, {188} },
-		dir + "pas.embeddings",
+		{ {26 * EMBEDDING_LEN, 26 * EMBEDDING_LEN, 20 * EMBEDDING_LEN }, {400}, {188} },
+		dir + "pas.new_embeddings",
 		generator
 	);
 
-	parser.train({ dir + "pas.batch" }, dir + "pas.model", dir + "pas.new_embeddings", 200, static_cast<float>(ADAGRAD_THRESHOLD));
+	//parser.generateTrainDate("pas.conll08.small", "pas.batch");
+
+	parser.train({ dir + "pas.batch" }, dir + "pas.model", dir + "pas.new_embeddings", 400, static_cast<float>(ADAGRAD_THRESHOLD));
 
 	//parser.test(dir + "pas.batch", dir + "pas.model");
 	//parser.parse(dir + "pas.conll08.small", dir + "pas.batch.out", dir + "pas.model");
 
-	//TwoStackAction action;
-	//action.loadActions("c:\\users\\zhangxun\\desktop\\xnn\\xnn\\pas.conll08.small");
-	//std::cout << action.Words << std::endl;
-	//std::cout << action.POSes << std::endl;
-	//std::cout << action.RawLabels << std::endl;
-	//std::cout << "max action is " << action.MAX_ACTION << std::endl;
-	//std::ifstream ifs("c:\\users\\zhangxun\\desktop\\xnn\\xnn\\pas.conll08.small");
-	//DepGraph graph;
-	//TwoStackState state;
-	//int id = 0;
-	//while (ifs >> graph) {
-	//	graph.setLabels(action.Labels, action.VecLabelMap);
-	//	if (!action.extractOracle(state, graph)) std::cout << "error" << std::endl;
-	//	state.clear();
-	//}
 }

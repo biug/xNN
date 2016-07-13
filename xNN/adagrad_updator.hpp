@@ -78,6 +78,7 @@ void AdaGradUpdator<DType, Neuron>::update(int batch) {
 		weight[i] = alpha * weight[i] - yita / sqrt(m_pWeightVec[i]) * weightDiff[i];
 	}
 }
+
 template<typename DType, template<typename> class Neuron>
 void AdaGradUpdator<DType, Neuron>::update(DType * args, const DType * args_diff, int size, int batch) {
 	const DType yita = static_cast<DType>(ADAGRAD_ALPHA);

@@ -19,13 +19,15 @@ using std::size_t;
 
 template<typename DType>
 class InputLayer {
+	typedef InputNeuron<DType>		InputBlob;
+	typedef HiddenNeuron<DType>		HiddenBlob;
 public:
 	InputLayer();
 	~InputLayer();
 
-	void foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
+	void foreward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs);
 	
-	void backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs);
+	void backward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs);
 };
 
 // definitions
@@ -45,14 +47,14 @@ InputLayer<DType>::~InputLayer() {
  *		ups
 */
 template<typename DType>
-void InputLayer<DType>::foreward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
+void InputLayer<DType>::foreward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs) {
 	int downNum = downs.size();
-	for (HiddenNeuron<DType> * up : ups) {
+	for (HiddenBlob * up : ups) {
 		int upLen = up->getVecLen();
 		// ups[j].output = ups[j].bias
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
 		for (int downId = 0; downId < downNum; ++downId) {
-			InputNeuron<DType> * down = downs.at(downId);
+			InputBlob * down = downs.at(downId);
 			// ups[j].output += downs[i].input * ups[j].weight[i]
 			vector_mul_matrix_add_output(up->getMutableOutput(), down->getInput(), up->getWeight(downId), down->getVecLen(), upLen);
 		}
@@ -65,18 +67,18 @@ void InputLayer<DType>::foreward(const vector<HiddenNeuron<DType> *> & ups, cons
  *		dLoss / dWeight	of	ups		( for downs )
 */
 template<typename DType>
-void InputLayer<DType>::backward(const vector<HiddenNeuron<DType> *> & ups, const vector<InputNeuron<DType> *> & downs) {
+void InputLayer<DType>::backward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs) {
 	int downNum = downs.size();
 	for (int downId = 0; downId < downNum; ++downId) {
-		InputNeuron<DType> * down = downs[downId];
+		InputBlob * down = downs[downId];
 		int downLen = down->getVecLen();
 		// downs[i].input_diff = 0
 		memset(down->getMutableInputDiff(), 0, sizeof(DType) * downLen);
-		for (HiddenNeuron<DType> * up : ups) {
+		for (HiddenBlob * up : ups) {
 			// downs[i].input_diff += transpose(ups[j].output_diff) * ups[j].weight[i];
 			transpose_vector_mul_matrix_add_output(down->getMutableInputDiff(), up->getOutputDiff(), up->getWeight(downId), downLen, up->getVecLen());
 		}
-		for (HiddenNeuron<DType> * up : ups) {
+		for (HiddenBlob * up : ups) {
 			// ups[j].weight_diff[i] += trans(downs[i].input) * ups[j].output_diff
 			vector_mul_vector_add_matrix(up->getMutableWeightDiff(downId), down->getInput(), up->getOutputDiff(), downLen, up->getVecLen());
 		}

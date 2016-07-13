@@ -10,6 +10,8 @@ void TwoStackAction::loadActions(const std::string & file) {
 	A_MM_FIRST = A_RE_END;		A_MM_END = A_MM_FIRST + LabelCount;
 	A_RC_FIRST = A_MM_END;		A_RC_END = A_RC_FIRST + LabelCount;
 	MAX_ACTION = A_RC_END;
+
+	std::cout << "MAX_ACTION is " << MAX_ACTION << std::endl;
 }
 
 TwoStackAction::TwoStackAction(const TwoStackAction & actions) : TwoStackAction() {}
@@ -20,14 +22,6 @@ bool TwoStackAction::extractOracle(TwoStackState & item, const DepGraph & graph)
 	int rightNodeSeeks[MAX_SENTENCE_SIZE];
 	memset(rightNodeSeeks, 0, sizeof(rightNodeSeeks));
 	while (followOneAction(item, rightNodeSeeks, graph)) {
-		auto features = item.features(this, graph);
-		for (const auto & feature : features) {
-			for (const auto & f : feature) {
-				std::cout << f << ' ';
-			}
-			std::cout << ' ';
-		}
-		std::cout << item.lastAction() << std::endl;
 	}
 		;
 	return item == graph;
@@ -61,11 +55,11 @@ bool TwoStackAction::followOneAction(TwoStackState & item, int(&seeks)[MAX_SENTE
 		}
 		if (seek >= size) {
 			switch (labels.first) {
-			case 0:
+			case -1:
 				item.reduce(REDUCE);
 				return true;
 			default:
-				item.arcReduce(labels.first, labels.second.first, labels.second.second, A_RE_FIRST + labels.first - 1);
+				item.arcReduce(labels.first, labels.second.first, labels.second.second, A_RE_FIRST + labels.first);
 				return true;
 			}
 		}
@@ -81,33 +75,33 @@ bool TwoStackAction::followOneAction(TwoStackState & item, int(&seeks)[MAX_SENTE
 		const int & seek = seeks[item.stack(i)];
 		if (seek < node.m_vecRightArcs.size() && node.m_vecRightArcs[seek].first == item.size()) {
 			switch (labels.first) {
-			case 0:
+			case -1:
 				item.mem(MEM);
 				return true;
 			default:
-				item.arcMem(labels.first, labels.second.first, labels.second.second, A_MM_FIRST + labels.first - 1);
+				item.arcMem(labels.first, labels.second.first, labels.second.second, A_MM_FIRST + labels.first);
 				return true;
 			}
 		}
 	}
 	for (int i = item.secondStackBack(); i >= 0; --i) {
 		switch (labels.first) {
-		case 0:
+		case -1:
 			item.recall(RECALL);
 			return true;
 		default:
-			item.arcRecall(labels.first, labels.second.first, labels.second.second, A_RC_FIRST + labels.first - 1);
+			item.arcRecall(labels.first, labels.second.first, labels.second.second, A_RC_FIRST + labels.first);
 			return true;
 		}
 	}
 	// shfit after swap
 	if (item.size() < graph.size()) {
 		switch (labels.first) {
-		case 0:
+		case -1:
 			item.shift(SHIFT);
 			return true;
 		default:
-			item.arcShift(labels.first, labels.second.first, labels.second.second, A_SH_FIRST + labels.first - 1);
+			item.arcShift(labels.first, labels.second.first, labels.second.second, A_SH_FIRST + labels.first);
 			return true;
 		}
 	}
@@ -134,24 +128,56 @@ void TwoStackAction::doAction(TwoStackState & item, const int & action) const {
 		}
 	}
 	else if (action < A_SH_END) {
-		int label = action - A_SH_FIRST + 1;
+		int label = action - A_SH_FIRST;
 		int labelId = VecLabelMap[label];
 		item.arcShift(label, LEFT_LABEL_ID(labelId), RIGHT_LABEL_ID(labelId), action);
 	}
 	else if (action < A_RE_END) {
-		int label = action - A_RE_FIRST + 1;
+		int label = action - A_RE_FIRST;
 		int labelId = VecLabelMap[label];
 		item.arcReduce(label, LEFT_LABEL_ID(labelId), RIGHT_LABEL_ID(labelId), action);
 	}
 	else if (action < A_MM_END) {
-		int label = action - A_MM_FIRST + 1;
+		int label = action - A_MM_FIRST;
 		int labelId = VecLabelMap[label];
 		item.arcMem(label, LEFT_LABEL_ID(labelId), RIGHT_LABEL_ID(labelId), action);
 	}
 	else if (action < A_RC_END) {
-		int label = action - A_RC_FIRST + 1;
+		int label = action - A_RC_FIRST;
 		int labelId = VecLabelMap[label];
 		item.arcRecall(label, LEFT_LABEL_ID(labelId), RIGHT_LABEL_ID(labelId), action);
+	}
+}
+
+string TwoStackAction::printAction(const int & action) const {
+	if (action < ACTION_END) {
+		switch (action) {
+		case SHIFT:
+			return "SHIFT";
+		case REDUCE:
+			return "REDUCE";
+		case MEM:
+			return "MEM";
+		case RECALL:
+			return "RECALL";
+		default:
+			return "BAD ACTION";
+		}
+	}
+	else if (action < A_SH_END) {
+		return "ARC SHIFT";
+	}
+	else if (action < A_RE_END) {
+		return "ARC REDUCE";
+	}
+	else if (action < A_MM_END) {
+		return "ARC MEM";
+	}
+	else if (action < A_RC_END) {
+		return "ARC RECALL";
+	}
+	else {
+		return "BAD ACTION";
 	}
 }
 
@@ -174,13 +200,13 @@ bool TwoStackAction::testAction(const TwoStackState & item, const DepGraph & gra
 		return item.canArc() && item.size() < graph.size() && item.canShift();
 	}
 	else if (action < A_RE_END) {
-		return item.canArc() && !item.stackEmpty();
+		return item.canArc() && item.size() < graph.size() && !item.stackEmpty();
 	}
 	else if (action < A_MM_END) {
-		return item.canArc() && item.canMem();
+		return item.canArc() && item.size() < graph.size() && item.canMem();
 	}
 	else if (action < A_RC_END) {
-		return item.canArc() && item.canRecall();
+		return item.canArc() && item.size() < graph.size() && item.canRecall();
 	}
 	else {
 		return false;

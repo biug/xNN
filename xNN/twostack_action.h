@@ -7,6 +7,7 @@
 #include <vector>
 
 using std::vector;
+using std::string;
 
 struct TwoStackAction : public BaseAction {
 
@@ -30,9 +31,10 @@ struct TwoStackAction : public BaseAction {
 
 	void loadActions(const std::string & file);
 	void doAction(TwoStackState & item, const int & action) const;
+	std::string printAction(const int & action) const;
 	bool extractOracle(TwoStackState & item, const DepGraph & graph) const;
 	bool followOneAction(TwoStackState & item, int(&seeks)[MAX_SENTENCE_SIZE], const DepGraph & graph,
-		const pair<int, pair<int, int>> & labels = { 0,{ 0, 0 } }) const;
+		const pair<int, pair<int, int>> & labels = { -1,{ 0, 0 } }) const;
 	bool testAction(const TwoStackState & item, const DepGraph & graph, const int & action) const;
 };
 

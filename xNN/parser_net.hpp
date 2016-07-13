@@ -75,6 +75,7 @@ public:
 	void train(const vector<string> & batchFiles, const string & model_file, const string & embedding_file, int max_iter, DType threshold);
 	void parse(const string & input, const string & output, const string & model_file);
 	void test(const string & file, const string & model_file);
+	void generateTrainDate(const string & input, const string & output);
 };
 
 // definitions
@@ -285,6 +286,33 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::generateTrainDate(const string & input, const string & output) {
+	TwoStackAction action;
+	TwoStackState state, cstate;
+	action.loadActions(input);
+	ifstream ifs(input);
+	ofstream ofs(output);
+	DepGraph graph;
+	while (ifs >> graph) {
+		state.clear();
+		cstate.clear();
+		graph.setLabels(action.Labels, action.VecLabelMap);
+		action.extractOracle(state, graph);
+		for (int i = 0, n = state.actionBack(); i <= n; ++i) {
+			auto features = cstate.features(&action, graph);
+			m_vecBatchWords = features[0];
+			m_vecBatchPOSes = features[1];
+			m_vecBatchLabels = features[2];
+			for (const auto & word : m_vecBatchWords) ofs << word << ' '; ofs << std::endl;
+			for (const auto & pos : m_vecBatchPOSes) ofs << pos << ' '; ofs << std::endl;
+			for (const auto & label : m_vecBatchLabels) ofs << label << ' '; ofs << std::endl;
+			ofs << state.action(i) << std::endl;
+			action.doAction(cstate, state.action(i));
+		}
+	}
+}
+
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
 void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::loadModel(const string & model_file) {
 	// load models
 	ifstream ifs(model_file);
@@ -311,26 +339,17 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	ofs << m_nWordNum << std::endl;
 	for (int i = 0, offset = 0; i < m_nWordNum; ++i) {
 		ofs << m_tWords[i] << std::endl;
-		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ofs << m_pWordMatrix[offset++] << ' ';
-		}
-		ofs << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) ofs << m_pWordMatrix[offset++] << ' '; ofs << std::endl;
 	}
 	ofs << m_nPOSNum << std::endl;
 	for (int i = 0, offset = 0; i < m_nPOSNum; ++i) {
 		ofs << m_tPOSes[i] << std::endl;
-		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ofs << m_pPOSMatrix[offset++] << ' ';
-		}
-		ofs << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) ofs << m_pPOSMatrix[offset++] << ' '; ofs << std::endl;
 	}
 	ofs << m_nLabelNum << std::endl;
 	for (int i = 0, offset = 0; i < m_nLabelNum; ++i) {
 		ofs << m_tLabels[i] << std::endl;
-		for (int j = 0; j < m_nEmbeddingLen; ++j) {
-			ofs << m_pLabelMatrix[offset++] << ' ';
-		}
-		ofs << std::endl;
+		for (int j = 0; j < m_nEmbeddingLen; ++j) ofs << m_pLabelMatrix[offset++] << ' '; ofs << std::endl;
 	}
 }
 
@@ -340,25 +359,18 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	for (const auto & batchFile : batch_files) {
 		// zero norm
 		m_dLastValue = DType();
-		for (int iter = 0; iter < max_iter; ++iter) {
-			double timeFore = 0, timeBack = 0;
+		for (int iter = 1; iter <= max_iter; ++iter) {
 			initBatch();
 			ifstream ifs(batchFile);
 			DType value = DType();
 			while (readOneAction(ifs)) {
-				clock_t s = clock();
 				foreward();
-				timeFore += clock() - s;
-				s = clock();
 				backward();
-				timeBack += clock() - s;
 				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
 			}
 			update();
 			if (iter % 10 == 0) {
 				std::cout << "value = " << value << std::endl;
-				std::cout << "foreward use time : " << timeFore / (double)CLOCKS_PER_SEC << std::endl;
-				std::cout << "backward use time : " << timeBack / (double)CLOCKS_PER_SEC << std::endl;
 			}
 			if (isnan(value) || abs(m_dLastValue - value) < threshold) {
 				break;
@@ -396,13 +408,12 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 			for (int i = 0, n = m_vecsHiddenNeurons.back().back()->getVecLen(); i < n; ++i) {
 				scores.push_back({ m_vecsHiddenNeurons.back().back()->getActive()[i], i });
 			}
-			std::sort(scores.begin(), scores.end(), [](const pair<DType, int> & p1, const pair<DType, int> & p2) {
-				if (p1.first != p2.first) return p1.first > p2.first;
-				return p1.second < p2.second;
-			});
+			std::sort(scores.begin(), scores.end());
 			for (const auto & score : scores) {
 				if (action.testAction(state, graph, score.second)) {
+					//std::cout << "action is " << action.printAction(score.second) << std::endl;
 					action.doAction(state, score.second);
+					break;
 				}
 			}
 		}

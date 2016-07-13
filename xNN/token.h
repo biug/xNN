@@ -44,7 +44,9 @@ public:
 		return m_mapTokens[key];
 	}
 
-	const int code(const string & key) const			{ return m_mapTokens.at(key); }
+	const int code(const string & key) const		{ return m_mapTokens.at(key); }
+
+	string & operator[](const int code)				{ return m_vecKeys[code]; }
 
 	const string & operator[](const int code) const	{ return m_vecKeys[code]; }
 	
