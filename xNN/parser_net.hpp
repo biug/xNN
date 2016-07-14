@@ -351,6 +351,7 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 		ofs << m_tLabels[i] << std::endl;
 		for (int j = 0; j < m_nEmbeddingLen; ++j) ofs << m_pLabelMatrix[offset++] << ' '; ofs << std::endl;
 	}
+	ofs.close();
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
@@ -369,8 +370,24 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
 			}
 			update();
+			ifs.close();
 			if (iter % 10 == 0) {
 				std::cout << "value = " << value << std::endl;
+				ifs.open(batchFile);
+				int total = 0, correct = 0;
+				while (readOneAction(ifs)) {
+					foreward();
+					const DType * const output = m_vecsHiddenNeurons.back().back()->getActive();
+					int maxLabel = 0, len = m_vecsHiddenNeurons.back().back()->getVecLen();
+					for (int i = 0; i < len; ++i) {
+						if (output[maxLabel] > output[i]) maxLabel = i;
+					}
+					++total;
+					if (m_nCorrectLabel == maxLabel) ++correct;
+				}
+				ifs.close();
+				std::cout << "rate is " << (double)correct / (double)total;
+				saveModel(model_file, embedding_file);
 			}
 			if (isnan(value) || abs(m_dLastValue - value) < threshold) {
 				break;

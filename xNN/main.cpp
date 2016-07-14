@@ -39,9 +39,10 @@ int main(int argc, char * argv[]) {
 
 	//parser.generateTrainDate("pas.conll08.small", "pas.batch");
 
-	parser.train({ dir + "pas.batch" }, dir + "pas.model", dir + "pas.new_embeddings", 400, static_cast<float>(ADAGRAD_THRESHOLD));
 
+	//parser.train({ dir + "pas.batch" }, dir + "pas.model", dir + "pas.new_embeddings", 400, static_cast<float>(ADAGRAD_THRESHOLD));
 	//parser.test(dir + "pas.batch", dir + "pas.model");
-	//parser.parse(dir + "pas.conll08.small", dir + "pas.batch.out", dir + "pas.model");
+
+	parser.parse(dir + "pas.conll08.small", dir + "pas.batch.out", dir + "pas.model");
 
 }
