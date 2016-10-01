@@ -26,7 +26,6 @@ public:
 	~InputLayer();
 
 	void foreward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs);
-	
 	void backward(const vector<HiddenBlob *> & ups, const vector<InputBlob *> & downs);
 };
 
@@ -55,6 +54,8 @@ void InputLayer<DType>::foreward(const vector<HiddenBlob *> & ups, const vector<
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
 		for (int downId = 0; downId < downNum; ++downId) {
 			InputBlob * down = downs.at(downId);
+			// skip dropout
+			if (down->getDropout()) continue;
 			// ups[j].output += downs[i].input * ups[j].weight[i]
 			vector_mul_matrix_add_output(up->getMutableOutput(), down->getInput(), up->getWeight(downId), down->getVecLen(), upLen);
 		}
@@ -71,6 +72,8 @@ void InputLayer<DType>::backward(const vector<HiddenBlob *> & ups, const vector<
 	int downNum = downs.size();
 	for (int downId = 0; downId < downNum; ++downId) {
 		InputBlob * down = downs[downId];
+		// skip dropout
+		if (down->getDropout()) continue;
 		int downLen = down->getVecLen();
 		// downs[i].input_diff = 0
 		memset(down->getMutableInputDiff(), 0, sizeof(DType) * downLen);

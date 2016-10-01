@@ -22,7 +22,6 @@
 #include "input_layer.hpp"
 #include "hidden_layer.hpp"
 #include "loss_layer.hpp"
-#include "drop_layer.hpp"
 
 #include "random_generator.hpp"
 
@@ -48,17 +47,19 @@ class ParserNet {
 	InputLayer<DType> m_lyrInputLayer;
 	HiddenLayer<DType, Activation, PartialActivation> m_lyrHiddenLayers;
 	LossLayer<DType, Loss, PartialLoss> m_lyrLossLayer;
-	DropLayer<DType, HiddenNeuron> m_lyrDropLayer;
 
 	int m_nEmbeddingLen, m_nWordNum, m_nPOSNum, m_nLabelNum;
 	DType *m_pWordMatrix, *m_pPOSMatrix, *m_pLabelMatrix;
 	DType *m_pWordMatrixDiff, *m_pPOSMatrixDiff, *m_pLabelMatrixDiff;
 	Token m_tWords, m_tPOSes, m_tLabels;
+	DType m_dLossVal;
 
 	int m_nCorrectLabel;
 	vector<int> m_vecBatchWords, m_vecBatchPOSes, m_vecBatchLabels;
 
-	bool readOneAction(ifstream & ifs);
+	int m_nTotalAction;
+	int m_nCorrectAction;
+
 	void updateEmbeddingDiffs();
 
 	void initBatch();
@@ -66,23 +67,25 @@ class ParserNet {
 	void backward();
 	void update();
 
+	void readOneAction(const vector<vector<int>> & feat);
+	void trainOneBatch(const vector<vector<vector<int>>> & feature);
+
 	void loadModel(const string & model_file);
 	void saveModel(const string & model_file, const string & embedding_file);
 public:
 	ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator);
 	~ParserNet();
 
-	void train(const vector<string> & batchFiles, const string & model_file, const string & embedding_file, int max_iter, DType threshold);
-	void parse(const string & input, const string & output, const string & model_file);
+	void train(const string & input_file, const string & test_file, const string & model_file, const string & embedding_file, int max_iter, DType threshold);
+	void parse(const string & train, const string & input, const string & output, const string & model_file);
 	void test(const string & file, const string & model_file);
-	void generateTrainDate(const string & input, const string & output);
+	void generateNNData(DepGraph & graph, TwoStackAction & action, vector<vector<vector<int>>> & feature);
 };
 
 // definitions
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator) :
-m_lyrDropLayer(DROP_OUT_RATE)
+ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::ParserNet(int embedding_num, const vector<vector<int>> & neuron_lens, const string & embedding_file, RandomGenerator<DType> * generator)
 {
 	m_nHiddenSize = neuron_lens.size() - 1;
 	// init input neurons
@@ -175,46 +178,30 @@ ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::~Pa
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-bool ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::readOneAction(ifstream & ifs) {
-	int id;
-	string line;
-	stringstream ss;
-	getline(ifs, line);
-	if (line.empty()) return false;
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::readOneAction(const vector<vector<int>> & feat) {
 	// increase batch size
 	++m_nBatchSize;
-	// read words
-	ss << line;
+	// read word
 	m_vecBatchWords.clear();
-	while (ss >> id) {
-		m_vecBatchWords.push_back(id);
+	for (const auto & word : feat[0]) {
+		m_vecBatchWords.push_back(word);
 	}
-	ss.clear();
-	getline(ifs, line);
 	// read poses
-	ss << line;
 	m_vecBatchPOSes.clear();
-	while (ss >> id) {
-		m_vecBatchPOSes.push_back(id);
+	for (const auto & pos : feat[1]) {
+		m_vecBatchPOSes.push_back(pos);
 	}
-	ss.clear();
-	getline(ifs, line);
 	// read labels
-	ss << line;
 	m_vecBatchLabels.clear();
-	while (ss >> id) {
-		m_vecBatchLabels.push_back(id);
+	for (const auto & label : feat[2]) {
+		m_vecBatchLabels.push_back(label);
 	}
 	// load embeddings
 	m_vecInputNeurons[0]->loadEmbedding((const DType*)m_pWordMatrix, m_vecBatchWords);
 	m_vecInputNeurons[1]->loadEmbedding((const DType*)m_pPOSMatrix, m_vecBatchPOSes);
 	m_vecInputNeurons[2]->loadEmbedding((const DType*)m_pLabelMatrix, m_vecBatchLabels);
-	ss.clear();
-	getline(ifs, line);
-	// read tags
-	ss << line;
-	ss >> m_nCorrectLabel;
-	return true;
+	// read action
+	m_nCorrectLabel = feat[3].front();
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
@@ -249,7 +236,6 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 	m_lyrInputLayer.foreward(m_vecsHiddenNeurons[0], m_vecInputNeurons);
 	for (int i = 1; i < m_nHiddenSize; ++i) {
 		m_lyrHiddenLayers.active(m_vecsHiddenNeurons[i - 1]);
-		//m_lyrDropLayer.drop(m_vecsHiddenNeurons[i - 1]);
 		m_lyrHiddenLayers.foreward(m_vecsHiddenNeurons[i], m_vecsHiddenNeurons[i - 1]);
 	}
 	m_lyrLossLayer.foreward(m_vecsHiddenNeurons.back().back());
@@ -286,29 +272,16 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::generateTrainDate(const string & input, const string & output) {
-	TwoStackAction action;
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::generateNNData(DepGraph & graph, TwoStackAction & action, vector<vector<vector<int>>> & feature) {
 	TwoStackState state, cstate;
-	action.loadActions(input);
-	ifstream ifs(input);
-	ofstream ofs(output);
-	DepGraph graph;
-	while (ifs >> graph) {
-		state.clear();
-		cstate.clear();
-		graph.setLabels(action.Labels, action.VecLabelMap);
-		action.extractOracle(state, graph);
-		for (int i = 0, n = state.actionBack(); i <= n; ++i) {
-			auto features = cstate.features(&action, graph);
-			m_vecBatchWords = features[0];
-			m_vecBatchPOSes = features[1];
-			m_vecBatchLabels = features[2];
-			for (const auto & word : m_vecBatchWords) ofs << word << ' '; ofs << std::endl;
-			for (const auto & pos : m_vecBatchPOSes) ofs << pos << ' '; ofs << std::endl;
-			for (const auto & label : m_vecBatchLabels) ofs << label << ' '; ofs << std::endl;
-			ofs << state.action(i) << std::endl;
-			action.doAction(cstate, state.action(i));
-		}
+	state.clear();
+	cstate.clear();
+	graph.setLabels(action.Labels, action.VecLabelMap);
+	action.extractOracle(state, graph);
+	for (int i = 0, n = state.actionBack(); i <= n; ++i) {
+		feature.push_back(cstate.features(&action, graph));
+		feature.back().push_back({ state.action(i) });
+		action.doAction(cstate, state.action(i));
 	}
 }
 
@@ -355,59 +328,89 @@ void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::train(const vector<string> & batch_files, const string & model_file, const string & embedding_file, int max_iter, DType threshold) {
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::train(const string & input_file, const string & test_file, const string & model_file, const string & embedding_file, int max_iter, DType threshold) {
 	// read one batch
-	for (const auto & batchFile : batch_files) {
-		// zero norm
-		m_dLastValue = DType();
-		for (int iter = 1; iter <= max_iter; ++iter) {
-			initBatch();
-			ifstream ifs(batchFile);
-			DType value = DType();
-			while (readOneAction(ifs)) {
-				foreward();
-				backward();
-				value += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
+	TwoStackAction action;
+	action.loadActions(input_file);
+	DepGraph graph;
+	int batch_size = 0;
+	m_nTotalAction = 0;
+	m_nCorrectAction = 0;
+	vector<vector<vector<int>>> feature;
+	m_dLossVal = DType();
+	while (max_iter--) {
+		ifstream graphfs(input_file);
+		while (graphfs >> graph) {
+			++batch_size;
+			generateNNData(graph, action, feature);
+			if (batch_size % ONE_BATCH == 0) {
+				trainOneBatch(feature);
+				feature.clear();
 			}
-			update();
-			ifs.close();
-			if (iter % 10 == 0) {
-				std::cout << "value = " << value << std::endl;
-				ifs.open(batchFile);
-				int total = 0, correct = 0;
-				while (readOneAction(ifs)) {
-					foreward();
-					const DType * const output = m_vecsHiddenNeurons.back().back()->getActive();
-					int maxLabel = 0, len = m_vecsHiddenNeurons.back().back()->getVecLen();
-					for (int i = 0; i < len; ++i) {
-						if (output[maxLabel] > output[i]) maxLabel = i;
-					}
-					++total;
-					if (m_nCorrectLabel == maxLabel) ++correct;
-				}
-				ifs.close();
-				std::cout << "rate is " << (double)correct / (double)total;
+			if (batch_size % OUTPUT_BATCH == 0) {
+				std::cout << "Loss Val = " << m_dLossVal << std::endl;
+				std::cout << "Correct Rate = " << (double)m_nCorrectAction / (double)m_nTotalAction << std::endl;
+				m_dLossVal = DType();
+				m_nTotalAction = 0;
+				m_nCorrectAction = 0;
 				saveModel(model_file, embedding_file);
 			}
-			if (isnan(value) || abs(m_dLastValue - value) < threshold) {
-				break;
-			}
-			m_dLastValue = value;
 		}
+		trainOneBatch(feature);
+		saveModel(model_file, embedding_file);
+		std::cout << "round " << max_iter << std::endl;
 	}
-	saveModel(model_file, embedding_file);
 }
 
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
-void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::parse(const string & input, const string & output, const string & model_file) {
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::trainOneBatch(const vector<vector<vector<int>>> & feature) {
+	while (true) {
+		int dropcount = 0;
+		srand(time(NULL));
+		for (InputNeuron<DType> * blob : m_vecInputNeurons) {
+			blob->setDropout((double)(rand() % 100) / (double)100 < DROP_OUT_RATE);
+			if (blob->getDropout()) ++dropcount;
+		}
+		if (dropcount < m_vecInputNeurons.size()) {
+			break;
+		}
+	}
+
+	initBatch();
+	for (const auto & feat : feature) {
+		readOneAction(feat);
+		foreward();
+		backward();
+		m_dLossVal += m_vecsHiddenNeurons.back().back()->getActive()[m_nCorrectLabel];
+
+		++m_nTotalAction;
+		int maxLabel = 0;
+		for (int i = 0; i < LOSS_WIDTH; ++i) {
+			if (m_vecsHiddenNeurons.back().back()->getActive()[maxLabel] > m_vecsHiddenNeurons.back().back()->getActive()[i]) {
+				maxLabel = i;
+			}
+		}
+		if (maxLabel == m_nCorrectLabel) {
+			++m_nCorrectAction;
+		}
+	}
+	update();
+}
+
+template<typename DType, template <typename> class Activation, template <typename> class PartialActivation, template <typename> class Loss, template <typename> class PartialLoss, template <typename Type, template <typename> class Neuron> class Updator>
+void ParserNet<DType, Activation, PartialActivation, Loss, PartialLoss, Updator>::parse(const string & train, const string & input, const string & output, const string & model_file) {
 	loadModel(model_file);
 	TwoStackAction action;
 	TwoStackState state;
-	action.loadActions(input);
+	action.loadActions(train);
 	ifstream ifs(input);
 	ofstream ofs(output);
 	DepGraph graph;
 	DepGraph out;
+	m_vecInputNeurons[0]->setDropout(false);
+	m_vecInputNeurons[1]->setDropout(false);
+	m_vecInputNeurons[2]->setDropout(false);
+
 	while (ifs >> graph) {
 		state.clear();
 		graph.setLabels(action.Labels, action.VecLabelMap);

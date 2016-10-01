@@ -23,6 +23,8 @@ class InputNeuron {
 	// dLoss / dz
 	DType * m_pInputDiff;
 
+	bool m_bDropout;
+
 public:
 	InputNeuron(int embeddingLen, int vecLen);
 	~InputNeuron();
@@ -47,6 +49,13 @@ public:
 	inline const DType * const getInputDiff() const {
 		return m_pInputDiff;
 	}
+	inline const bool getDropout() const {
+		return m_bDropout;
+	}
+
+	inline void setDropout(bool bDrop) {
+		m_bDropout = bDrop;
+	}
 };
 
 // definitions
@@ -57,7 +66,7 @@ public:
 *	so weight wi is matrix which size is m * ni
 */
 template<typename DType>
-InputNeuron<DType>::InputNeuron(int embeddingLen, int vecLen) : m_nEmbeddingLen(embeddingLen), m_nVecLen(vecLen) {
+InputNeuron<DType>::InputNeuron(int embeddingLen, int vecLen) : m_nEmbeddingLen(embeddingLen), m_nVecLen(vecLen), m_bDropout(false) {
 	m_pInput = new DType[m_nVecLen];
 	m_pInputDiff = new DType[m_nVecLen];
 }
@@ -70,6 +79,8 @@ InputNeuron<DType>::~InputNeuron() {
 
 template<typename DType>
 void InputNeuron<DType>::loadEmbedding(const DType * embeddingMatrix, const vector<int> & ids) {
+	// skip dropout
+	if (m_bDropout) return;
 	int offset = 0;
 	for (const auto & id : ids) {
 		vector_copy_vector(&m_pInput[offset], &embeddingMatrix[id * m_nEmbeddingLen], m_nEmbeddingLen);
@@ -79,6 +90,8 @@ void InputNeuron<DType>::loadEmbedding(const DType * embeddingMatrix, const vect
 
 template<typename DType>
 void InputNeuron<DType>::updateEmbedding(DType * embeddingMatrixDiff, const vector<int> & ids) {
+	// skip dropout
+	if (m_bDropout) return;
 	int offset = 0;
 	for (const auto & id : ids) {
 		vector_add_vector(&embeddingMatrixDiff[id * m_nEmbeddingLen], &m_pInputDiff[offset], m_nEmbeddingLen);

@@ -51,6 +51,8 @@ HiddenLayer<DType, Activation, PartialActivation>::~HiddenLayer() {
 template<typename DType, template <typename> class Activation, template <typename> class PartialActivation>
 void HiddenLayer<DType, Activation, PartialActivation>::active(const vector<HiddenBlob *> & downs) {
 	for (HiddenBlob * down : downs) {
+		// skip dropout
+		if (down->getDropout()) continue;
 		// downs[i].active = sigma(downs[i].output)
 		m_foActivation(down->getMutableActive(), down->getOutput(), down->getVecLen());
 	}
@@ -69,6 +71,8 @@ void HiddenLayer<DType, Activation, PartialActivation>::foreward(const vector<Hi
 		vector_copy_vector(up->getMutableOutput(), up->getBias(), upLen);
 		for (int downId = 0; downId < downNum; ++downId) {
 			HiddenBlob * down = downs[downId];
+			// skip dropout
+			if (down->getDropout()) continue;
 			// ups[j].output += downs[i].active * ups[j].weight[i]
 			vector_mul_matrix_add_output(up->getMutableOutput(), down->getActive(), up->getWeight(downId), down->getVecLen(), upLen);
 		}
@@ -86,6 +90,8 @@ void HiddenLayer<DType, Activation, PartialActivation>::backward(const vector<Hi
 	int downNum = downs.size();
 	for (int downId = 0; downId < downNum; ++downId) {
 		HiddenBlob * down = downs[downId];
+		// skip dropout
+		if (down->getDropout()) continue;
 		int downLen = down->getVecLen();
 		// downs[i].output_diff = 0
 		memset(down->getMutableOutputDiff(), 0, sizeof(DType) * downLen);

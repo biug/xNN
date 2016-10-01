@@ -46,6 +46,8 @@ class HiddenNeuron {
 	// dLoss / dw
 	DType * m_pWeightDiffs;
 
+	bool m_bDropout;
+
 public:
 	HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator);
 	~HiddenNeuron();
@@ -125,6 +127,13 @@ public:
 	inline const DType * const getWeightDiff(int down_id) const {
 		return &m_pWeightDiffs[m_pWeightOffsets[down_id]];
 	}
+	inline const bool getDropout() const {
+		return m_bDropout;
+	}
+
+	inline void setDropout(bool bDrop) {
+		m_bDropout = bDrop;
+	}
 
 	DType norm1(int down_num) const;
 	DType norm2(int down_num) const;
@@ -171,7 +180,7 @@ public:
 *	so weight wi is matrix which size is m * ni
 */
 template<typename DType>
-HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen), m_nDownNum(downLens.size()) {
+HiddenNeuron<DType>::HiddenNeuron(int vecLen, const vector<int> & downLens, RandomGenerator<DType> * generator) : m_nVecLen(vecLen), m_nDownNum(downLens.size()), m_bDropout(false) {
 	int downNum = downLens.size();
 	m_pOutput = new DType[m_nVecLen];
 	m_pOutputDiff = new DType[m_nVecLen];

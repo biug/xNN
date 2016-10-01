@@ -93,7 +93,7 @@
 20 exposures exposures NNS NNS _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 adj_ARG1 prep_ARG1 verb_ARG1 _ _ _ _ _ _ _
 21 to to TO TO _ _ s 19 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 22 it it PRP PRP _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _
-23 causing causing VBG VBG _ _ s 23 _ causing _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG3 _ _ _ _ _ _ _ _ _ _ _
+23 causing causing VBG VBG _ _ s 23 _ causing _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 24 symptoms symptoms NNS NNS _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 relative_ARG1 verb_ARG1 _ _ _ _ _
 25 that that WDT WDT _ _ s 23 _ that _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 26 show show VBP VBP _ _ s 23 _ show _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 _ adj_ARG1 _ _
@@ -234,41 +234,41 @@
 23 University University NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 noun_ARG1
 24 . . . . _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 The The DT DT _ _ s 3 _ The _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 Lorillard Lorillard NNP NNP _ _ s 3 _ Lorillard _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 spokeswoman spokeswoman NN NN _ _ s 4 _ _ _ det_ARG1 noun_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 asbestos asbestos NN NN _ _ s 6 _ _ _ _ _ _ aux_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _
-7 was was VBD VBD _ _ s 7 _ was _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 used used VBN VBN _ _ s 24 _ _ _ _ _ _ _ prep_ARG1 _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _
-9 in in IN IN _ _ s 7 _ in _ _ _ _ _ _ punct_ARG1 _ _ punct_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 “ “ `` `` _ _ s 8 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 very very RB RB _ _ s 11 _ very _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 modest modest JJ JJ _ _ s 12 _ modest _ _ _ _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 amounts amounts NNS NNS _ _ s 8 _ _ _ _ _ _ _ prep_ARG2 _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 ” ” '' '' _ _ s 8 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 in in IN IN _ _ s 7 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 making making VBG VBG _ _ s 14 _ making _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
-17 paper paper NN NN _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _
-18 for for IN IN _ _ s 16 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 the the DT DT _ _ s 19 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 filters filters NNS NNS _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _
-21 in in IN IN _ _ s 15 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _
-22 the the DT DT _ _ s 23 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-23 early early JJ JJ _ _ s 23 _ early _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 1950s 1950s CD CD _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _ _ _
-25 and and CC CC _ _ s 4 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 replaced replaced VBN VBN _ _ s 24 _ replaced _ _ _ verb_ARG2 aux_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ prep_ARG1 _ _ prep_ARG1 _
-27 with with IN IN _ _ s 25 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-28 a a DT DT _ _ s 29 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-29 different different JJ JJ _ _ s 29 _ different _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-30 type type NN NN _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 prep_ARG1 _
-31 of of IN IN _ _ s 29 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-32 filter filter NN NN _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1
-33 in in IN IN _ _ s 29 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-34 1956 1956 CD CD _ _ s 32 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2
-35 . . . . _ _ s 33 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 The The DT DT _ _ s 3 _ The _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 Lorillard Lorillard NNP NNP _ _ s 3 _ Lorillard _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 spokeswoman spokeswoman NN NN _ _ s 4 _ _ _ det_ARG1 noun_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 asbestos asbestos NN NN _ _ s 6 _ _ _ _ _ _ aux_ARG1 verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 was was VBD VBD _ _ s 7 _ was _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 used used VBN VBN _ _ s 24 _ used _ _ _ verb_ARG2 aux_ARG2 _ prep_ARG1 _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+9 in in IN IN _ _ s 7 _ in _ _ _ _ _ _ _ punct_ARG1 _ _ punct_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 “ “ `` `` _ _ s 8 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 very very RB RB _ _ s 11 _ very _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 modest modest JJ JJ _ _ s 12 _ modest _ _ _ _ _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 amounts amounts NNS NNS _ _ s 8 _ _ _ _ _ _ _ _ prep_ARG2 _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 ” ” '' '' _ _ s 8 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 in in IN IN _ _ s 7 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 making making VBG VBG _ _ s 14 _ making _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
+17 paper paper NN NN _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _
+18 for for IN IN _ _ s 16 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 the the DT DT _ _ s 19 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 filters filters NNS NNS _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 prep_ARG1 _ _ punct_ARG1 verb_ARG2 _ _ _ _ _
+21 in in IN IN _ _ s 15 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+22 the the DT DT _ _ s 23 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 early early JJ JJ _ _ s 23 _ early _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 1950s 1950s CD CD _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _ _ _
+25 and and CC CC _ _ s 4 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+26 replaced replaced VBN VBN _ _ s 24 _ replaced _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ prep_ARG1
+27 with with IN IN _ _ s 25 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+28 a a DT DT _ _ s 29 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+29 different different JJ JJ _ _ s 29 _ different _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+30 type type NN NN _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 prep_ARG1 _
+31 of of IN IN _ _ s 29 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+32 filter filter NN NN _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _
+33 in in IN IN _ _ s 29 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+34 1956 1956 CD CD _ _ s 32 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2
+35 . . . . _ _ s 33 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 From From IN IN _ _ s 14 _ From _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -632,11 +632,11 @@
 6 were were VBD VBD _ _ s 0 _ were -ROOT- _ _ _ _ _ _ _ _ _
 7 particularly particularly RB RB _ _ s 7 _ particularly _ _ _ _ _ _ _ _ _ _
 8 dusty dusty JJ JJ _ _ s 5 _ dusty _ _ _ verb_ARG2 adj_ARG1 _ _ _ _ _
-9 where where WRB WRB _ _ s 7 _ where _ _ _ verb_ARG3 _ _ _ _ _ _
+9 where where WRB WRB _ _ s 7 _ where _ _ _ _ _ _ _ _ _ _
 10 the the DT DT _ _ s 10 _ the _ _ _ _ _ _ _ _ _ _
 11 crocidolite crocidolite NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ det_ARG1 aux_ARG1 verb_ARG2
 12 was was VBD VBD _ _ s 12 _ was _ _ _ _ _ _ _ _ _ _
-13 used used VBN VBN _ _ s 8 _ used _ _ _ _ _ _ verb_ARG2 _ aux_ARG2 _
+13 used used VBN VBN _ _ s 8 _ used _ _ _ verb_ARG3 _ _ punct_ARG1 _ aux_ARG2 _
 14 . . . . _ _ s 12 _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -916,43 +916,43 @@
 18 sooner sooner RB RB _ _ s 14 _ sooner _ _ _ _ _ _ _ _ _ _ _ _ _
 19 . . . . _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 The The DT DT _ _ s 3 _ The _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 3 average average JJ JJ _ _ s 3 _ average _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 maturity maturity NN NN _ _ s 27 _ _ _ det_ARG1 adj_ARG1 prep_ARG1 _ _ _ punct_ARG1 verb_ARG2 _ _ verb_ARG1 _ _ _ _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _
+4 maturity maturity NN NN _ _ s 27 _ _ det_ARG1 adj_ARG1 prep_ARG1 _ _ _ punct_ARG1 verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 5 for for IN IN _ _ s 3 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 funds funds NNS NNS _ _ s 4 _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 open open JJ JJ _ _ s 5 _ open _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 funds funds NNS NNS _ _ s 4 _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 open open JJ JJ _ _ s 5 _ open _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 8 only only RB RB _ _ s 6 _ only _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 to to TO TO _ _ s 6 _ to _ _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 institutions institutions NNS NNS _ _ s 8 _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 to to TO TO _ _ s 6 _ to _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 institutions institutions NNS NNS _ _ s 8 _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 11 , , , , _ _ s 5 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 12 considered considered VBN VBN _ _ s 5 _ considered _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 13 by by IN IN _ _ s 13 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 some some DT DT _ _ s 11 _ _ _ _ _ _ _ _ _ _ verb_ARG1 lgs_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 some some DT DT _ _ s 11 _ some _ _ _ _ _ _ _ _ lgs_ARG2 _ _ app_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 15 to to TO TO _ _ s 15 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 be be VB VB _ _ s 11 _ be _ _ _ _ _ _ _ _ verb_ARG3 _ comp_ARG1 _ _ _ conj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+16 be be VB VB _ _ s 11 _ be _ _ _ _ _ _ _ _ _ _ comp_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 17 a a DT DT _ _ s 18 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 18 stronger stronger JJR JJR _ _ s 18 _ stronger _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 19 indicator indicator NN NN _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
 20 because because IN IN _ _ s 15 _ because _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 21 those those DT DT _ _ s 21 _ those _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 22 managers managers NNS NNS _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _
-23 watch watch VBP VBP _ _ s 19 _ watch _ _ _ _ _ _ _ _ _ _ _ _ _ _ conj_ARG2 _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _
+23 watch watch VBP VBP _ _ s 19 _ watch _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ noun_ARG1
 24 the the DT DT _ _ s 24 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 25 market market NN NN _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _
 26 closely closely RB RB _ _ s 22 _ closely _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 27 , , , , _ _ s 27 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-28 reached reached VBD VBD _ _ s 0 _ reached -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _ _ _ _ _ _ _
+28 reached reached VBD VBD _ _ s 0 _ reached _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _ _ _ _ _ _ _
 29 a a DT DT _ _ s 30 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 30 high high JJ JJ _ _ s 30 _ high _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-31 point point NN NN _ _ s 27 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 prep_ARG1 _ _ _ noun_ARG1
-32 for for IN IN _ _ s 30 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+31 point point NN NN _ _ s 27 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _
+32 for for IN IN _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 33 the the DT DT _ _ s 33 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-34 year year NN NN _ _ s 31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _
+34 year year NN NN _ _ s 31 _ year _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 _ _ _ _
 35 – – : : _ _ s 27 _ – _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 36 33 33 CD CD _ _ s 36 _ 33 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-37 days days NNS NNS _ _ s 27 _ days _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 adj_ARG1 _
+37 days days NNS NNS _ _ s 27 _ days _ _ _ _ _ _ _ verb_ARG1 _ det_ARG1 _ _ _ _ adj_ARG1 _ _ _ _ _ _ _ _ _ noun_ARG1 punct_ARG1 adj_ARG1 _
 38 . . . . _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -1115,9 +1115,9 @@
 21 week week NN NN _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _ _ _
 22 , , , , _ _ s 9 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 23 down down RB RB _ _ s 9 _ down _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ _
-24 from from IN IN _ _ s 22 _ from _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1
+24 from from IN IN _ _ s 22 _ from _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 25 9.45 9.45 CD CD _ _ s 25 _ 9.45 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 % % NN NN _ _ s 23 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _
+26 % % NN NN _ _ s 23 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ adj_ARG1
 27 a a DT DT _ _ s 27 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 28 week week NN NN _ _ s 28 _ week _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 _ _
 29 earlier earlier JJR JJR _ _ s 25 _ earlier _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 _
@@ -1292,10 +1292,10 @@
 7 it it PRP PRP _ _ s 7 _ _ _ _ _ _ _ verb_ARG1 _ verb_ARG1 _ _ verb_ARG1 _ _
 8 expects expects VBZ VBZ _ _ s 5 _ expects _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _
 9 to to TO TO _ _ s 9 _ to _ _ _ _ _ _ _ _ _ _ _ _ _
-10 obtain obtain VB VB _ _ s 12 _ obtain _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _
+10 obtain obtain VB VB _ _ s 12 _ obtain _ _ _ _ _ _ comp_ARG1 _ _ coord_ARG1 _ _ _
 11 regulatory regulatory JJ JJ _ _ s 11 _ regulatory _ _ _ _ _ _ _ _ _ _ _ _ _
 12 approval approval NN NN _ _ s 9 _ _ _ _ _ _ _ _ _ verb_ARG2 adj_ARG1 _ _ _ _
-13 and and CC CC _ _ s 7 _ and _ _ _ _ _ verb_ARG2 comp_ARG1 _ _ _ _ _ prep_ARG1
+13 and and CC CC _ _ s 7 _ and _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ prep_ARG1
 14 complete complete VB VB _ _ s 12 _ complete _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _
 15 the the DT DT _ _ s 15 _ the _ _ _ _ _ _ _ _ _ _ _ _ _
 16 transaction transaction NN NN _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _
@@ -1553,7 +1553,7 @@
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 When When WRB WRB _ _ s 16 _ When _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 3 it it PRP PRP _ _ s 3 _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 ’s ’s VBZ VBZ _ _ s 1 _ ’s _ conj_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 ’s ’s VBZ VBZ _ _ s 1 _ ’s _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 5 time time NN NN _ _ s 3 _ _ _ _ verb_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 6 for for IN IN _ _ s 4 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 7 their their PRP$ PRP$ _ _ s 8 _ their _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -1617,7 +1617,7 @@
 6 of of IN IN _ _ s 4 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 7 the the DT DT _ _ s 7 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 8 message message NN NN _ _ s 5 _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 were were VBD VBD _ _ s 18 _ _ -ROOT- prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _
+9 were were VBD VBD _ _ s 18 _ _ -ROOT- prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 10 officials officials NNS NNS _ _ s 8 _ officials _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 11 from from IN IN _ _ s 8 _ from _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 12 giants giants NNS NNS _ _ s 10 _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _
@@ -1627,10 +1627,10 @@
 16 and and CC CC _ _ s 12 _ and _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
 17 Maytag Maytag NNP NNP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _
 18 , , , , _ _ s 8 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 along along IN IN _ _ s 19 _ along _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ adj_ARG1 _ _ _ _ _ _ _ _
+19 along along IN IN _ _ s 19 _ along _ _ _ _ _ _ _ prep_ARG2 _ _ _ punct_ARG1 _ adj_ARG1 _ _ _ _ _ _ _ _
 20 with with IN IN _ _ s -1 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 21 lesser lesser JJR JJR _ _ s 21 _ lesser _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 knowns knowns NNS NNS _ _ s 19 _ _ _ _ _ _ _ _ noun_ARG1 noun_ARG1 _ _ _ _ coord_ARG2 _ adj_ARG1 prep_ARG1 _ _ _ _ _ _
+22 knowns knowns NNS NNS _ _ s 19 _ _ _ _ _ _ _ _ _ adj_ARG1 _ _ _ _ coord_ARG2 _ adj_ARG1 prep_ARG1 _ _ _ _ _ _
 23 like like IN IN _ _ s 21 _ like _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 24 Trojan Trojan NNP NNP _ _ s 24 _ Trojan _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 25 Steel Steel NNP NNP _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 coord_ARG1 _ _ _ _
@@ -1639,7 +1639,7 @@
 28 Valley Valley NNP NNP _ _ s 30 _ Valley _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 29 Queen Queen NNP NNP _ _ s 30 _ Queen _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 30 Cheese Cheese NNP NNP _ _ s 30 _ Cheese _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-31 Factory Factory NNP NNP _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 det_ARG1 noun_ARG1 noun_ARG1 noun_ARG1
+31 Factory Factory NNP NNP _ _ s 25 _ _ _ _ _ _ _ _ noun_ARG1 _ _ _ _ _ _ _ _ _ _ coord_ARG2 det_ARG1 noun_ARG1 noun_ARG1 noun_ARG1
 32 . . . . _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -2074,17 +2074,17 @@
 4 ad ad NN NN _ _ s 4 _ ad _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 5 plan plan NN NN _ _ s 16 _ _ _ det_ARG1 adj_ARG1 noun_ARG1 prep_ARG1 _ _ _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _
 6 from from IN IN _ _ s 4 _ from _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 Newsweek Newsweek NNP NNP _ _ s 5 _ _ _ _ _ _ prep_ARG2 app_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 Newsweek Newsweek NNP NNP _ _ s 5 _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 8 , , , , _ _ s 6 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 9 a a DT DT _ _ s 9 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 unit unit NN NN _ _ s 7 _ _ _ _ _ _ _ app_ARG2 det_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+10 unit unit NN NN _ _ s 7 _ _ _ _ _ _ _ _ det_ARG1 prep_ARG1 _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _
 11 of of IN IN _ _ s 9 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 12 the the DT DT _ _ s 14 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 13 Washington Washington NNP NNP _ _ s 14 _ Washington _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 14 Post Post NNP NNP _ _ s 14 _ Post _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 15 Co. Co. NNP NNP _ _ s 10 _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 noun_ARG1 noun_ARG1 _ _ _ _ _ _ _ _ _ _
 16 , , , , _ _ s 16 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 is is VBZ VBZ _ _ s 0 _ is -ROOT- _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _ _ _ _ _ _ _ _
+17 is is VBZ VBZ _ _ s 0 _ is -ROOT- _ _ _ _ punct_ARG1 _ _ _ _ _ punct_ARG1 _ _ _ _ _ _ _ _ _
 18 the the DT DT _ _ s 20 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 19 second second JJ JJ _ _ s 20 _ second _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 20 incentive incentive NN NN _ _ s 20 _ incentive _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -2383,49 +2383,49 @@
 15 % % NN NN _ _ s -1 _ % _ _ _ _ _ _ _ _ _ adj_ARG1 _
 16 . . . . _ _ s 14 _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 The The DT DT _ _ s 2 _ The _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 move move NN NN _ _ s 3 _ _ _ det_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 leaves leaves VBZ VBZ _ _ s 0 _ leaves -ROOT- _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 United United NNP NNP _ _ s 6 _ United _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 Illuminating Illuminating NNP NNP _ _ s 6 _ Illuminating _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 Co. Co. NNP NNP _ _ s 7 _ _ _ _ _ noun_ARG1 noun_ARG1 coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 and and CC CC _ _ s 3 _ and _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 Northeast Northeast NNP NNP _ _ s 9 _ Northeast _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 Utilities Utilities NNP NNP _ _ s 7 _ _ _ _ _ _ _ coord_ARG2 noun_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 as as IN IN _ _ s 3 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 the the DT DT _ _ s 14 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 remaining remaining VBG VBG _ _ s 14 _ remaining _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 outside outside JJ JJ _ _ s 14 _ outside _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 bidders bidders NNS NNS _ _ s 10 _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 verb_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 for for IN IN _ _ s 14 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 PS PS NNP NNP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1 _ punct_ARG1 relative_ARG1 _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
-18 of of IN IN _ _ s 16 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 New New NNP NNP _ _ s 19 _ New _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 Hampshire Hampshire NNP NNP _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-21 , , , , _ _ s 16 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 which which WDT WDT _ _ s 16 _ which _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-23 also also RB RB _ _ s 24 _ also _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 has has VBZ VBZ _ _ s 24 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-25 proposed proposed VBN VBN _ _ s 16 _ proposed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 aux_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 an an DT DT _ _ s 28 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-27 internal internal JJ JJ _ _ s 28 _ internal _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-28 reorganization reorganization NN NN _ _ s 28 _ reorganization _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-29 plan plan NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 noun_ARG1 prep_ARG1 _ _ _ prep_ARG2 relative_ARG1 _ _ _ _
-30 in in IN IN _ _ s 28 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-31 Chapter Chapter NN NN _ _ s 33 _ Chapter _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-32 11 11 CD CD _ _ s 33 _ 11 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-33 bankruptcy bankruptcy NN NN _ _ s 33 _ bankruptcy _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-34 proceedings proceedings NNS NNS _ _ s 29 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 adj_ARG1 noun_ARG1 _ _ _ _ _ _
-35 under under IN IN _ _ s 28 _ under _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-36 which which WDT WDT _ _ s 28 _ which _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-37 it it PRP PRP _ _ s 37 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG1 verb_ARG1 _ _
-38 would would MD MD _ _ s 38 _ would _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-39 remain remain VB VB _ _ s 28 _ remain _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ aux_ARG2 _ _ _
-40 an an DT DT _ _ s 41 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-41 independent independent JJ JJ _ _ s 41 _ independent _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-42 company company NN NN _ _ s 38 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1
-43 . . . . _ _ s 41 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 The The DT DT _ _ s 2 _ The _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 move move NN NN _ _ s 3 _ _ _ det_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 leaves leaves VBZ VBZ _ _ s 0 _ leaves -ROOT- _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 United United NNP NNP _ _ s 6 _ United _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 Illuminating Illuminating NNP NNP _ _ s 6 _ Illuminating _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 Co. Co. NNP NNP _ _ s 7 _ _ _ _ _ noun_ARG1 noun_ARG1 coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 and and CC CC _ _ s 3 _ and _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 Northeast Northeast NNP NNP _ _ s 9 _ Northeast _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 Utilities Utilities NNP NNP _ _ s 7 _ _ _ _ _ _ _ coord_ARG2 noun_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 as as IN IN _ _ s 3 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 the the DT DT _ _ s 14 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 remaining remaining VBG VBG _ _ s 14 _ remaining _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 outside outside JJ JJ _ _ s 14 _ outside _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 bidders bidders NNS NNS _ _ s 10 _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 verb_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 for for IN IN _ _ s 14 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 PS PS NNP NNP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1 _ punct_ARG1 relative_ARG1 _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _
+18 of of IN IN _ _ s 16 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 New New NNP NNP _ _ s 19 _ New _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 Hampshire Hampshire NNP NNP _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+21 , , , , _ _ s 16 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+22 which which WDT WDT _ _ s 16 _ which _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 also also RB RB _ _ s 24 _ also _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 has has VBZ VBZ _ _ s 24 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+25 proposed proposed VBN VBN _ _ s 16 _ proposed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 aux_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
+26 an an DT DT _ _ s 28 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+27 internal internal JJ JJ _ _ s 28 _ internal _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+28 reorganization reorganization NN NN _ _ s 28 _ reorganization _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+29 plan plan NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 noun_ARG1 prep_ARG1 _ _ _ prep_ARG1 _ _ _ _
+30 in in IN IN _ _ s 28 _ in _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+31 Chapter Chapter NN NN _ _ s 33 _ Chapter _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+32 11 11 CD CD _ _ s 33 _ 11 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+33 bankruptcy bankruptcy NN NN _ _ s 33 _ bankruptcy _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+34 proceedings proceedings NNS NNS _ _ s 29 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 adj_ARG1 noun_ARG1 _ _ _ _ _
+35 under under IN IN _ _ s 28 _ under _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+36 which which WDT WDT _ _ s 28 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 _ _
+37 it it PRP PRP _ _ s 37 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG1 verb_ARG1 _ _
+38 would would MD MD _ _ s 38 _ would _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+39 remain remain VB VB _ _ s 28 _ remain _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 aux_ARG2 _ _ _
+40 an an DT DT _ _ s 41 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+41 independent independent JJ JJ _ _ s 41 _ independent _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+42 company company NN NN _ _ s 38 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1
+43 . . . . _ _ s 41 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _
 2 United United NNP NNP _ _ s 2 _ United _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -2611,46 +2611,46 @@
 27 Hampshire Hampshire NNP NNP _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1
 28 . . . . _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 Northeast Northeast NNP NNP _ _ s 2 _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 it it PRP PRP _ _ s 4 _ _ _ _ aux_ARG1 verb_ARG1 _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 would would MD MD _ _ s 5 _ would _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 refile refile VB VB _ _ s 8 _ refile _ _ aux_ARG2 _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 its its PRP$ PRP$ _ _ s 7 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 request request NN NN _ _ s 5 _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 and and CC CC _ _ s 2 _ and _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 still still RB RB _ _ s 10 _ still _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 hopes hopes VBZ VBZ _ _ s 8 _ hopes _ _ _ _ _ coord_ARG2 adj_ARG1 _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 for for IN IN _ _ s 10 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 an an DT DT _ _ s 14 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 expedited expedited VBN VBN _ _ s 14 _ expedited _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 review review NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 verb_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 by by IN IN _ _ s 14 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 the the DT DT _ _ s 17 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-18 FERC FERC NNP NNP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 so so IN IN _ _ s 10 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 that that IN IN _ _ s 18 _ that _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-21 it it PRP PRP _ _ s 21 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _
-22 could could MD MD _ _ s 22 _ could _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-23 complete complete VB VB _ _ s 18 _ complete _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG2 _ _ prep_ARG1 _ coord_ARG1 _ _ _ _ _ _ _
-24 the the DT DT _ _ s 24 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-25 purchase purchase NN NN _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _
-26 by by IN IN _ _ s 22 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-27 next next JJ JJ _ _ s 27 _ next _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-28 summer summer NN NN _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _
-29 if if IN IN _ _ s 22 _ if _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-30 its its PRP$ PRP$ _ _ s 30 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-31 bid bid NN NN _ _ s 31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 verb_ARG1 _ _ _ _ _
-32 is is VBZ VBZ _ _ s 28 _ is _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ conj_ARG2 _ _ _ _ _ _ _
-33 the the DT DT _ _ s 33 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-34 one one NN NN _ _ s 31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 verb_ARG2 _ _ _
-35 approved approved VBD VBD _ _ s 33 _ approved _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
-36 by by IN IN _ _ s 38 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-37 the the DT DT _ _ s 38 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-38 bankruptcy bankruptcy NN NN _ _ s 38 _ bankruptcy _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-39 court court NN NN _ _ s 34 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 noun_ARG1
-40 . . . . _ _ s 38 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 Northeast Northeast NNP NNP _ _ s 2 _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 it it PRP PRP _ _ s 4 _ _ _ _ aux_ARG1 verb_ARG1 _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 would would MD MD _ _ s 5 _ would _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 refile refile VB VB _ _ s 8 _ refile _ _ aux_ARG2 _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 its its PRP$ PRP$ _ _ s 7 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 request request NN NN _ _ s 5 _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 and and CC CC _ _ s 2 _ and _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 still still RB RB _ _ s 10 _ still _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 hopes hopes VBZ VBZ _ _ s 8 _ hopes _ _ _ _ _ coord_ARG2 adj_ARG1 _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 for for IN IN _ _ s 10 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 an an DT DT _ _ s 14 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 expedited expedited VBN VBN _ _ s 14 _ expedited _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 review review NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 verb_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 by by IN IN _ _ s 14 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 the the DT DT _ _ s 17 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+18 FERC FERC NNP NNP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 so so IN IN _ _ s 10 _ so _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 that that IN IN _ _ s 18 _ that _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+21 it it PRP PRP _ _ s 21 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _
+22 could could MD MD _ _ s 22 _ could _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 complete complete VB VB _ _ s 18 _ complete _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 comp_ARG1 aux_ARG2 _ _ prep_ARG1 _ conj_ARG1 _ _ _ _ _ _ _
+24 the the DT DT _ _ s 24 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+25 purchase purchase NN NN _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _
+26 by by IN IN _ _ s 22 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+27 next next JJ JJ _ _ s 27 _ next _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+28 summer summer NN NN _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _
+29 if if IN IN _ _ s 22 _ if _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+30 its its PRP$ PRP$ _ _ s 30 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+31 bid bid NN NN _ _ s 31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 verb_ARG1 _ _ _ _ _
+32 is is VBZ VBZ _ _ s 28 _ is _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ conj_ARG2 _ _ _ _ _ _ _
+33 the the DT DT _ _ s 33 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+34 one one NN NN _ _ s 31 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _
+35 approved approved VBD VBD _ _ s 33 _ approved _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+36 by by IN IN _ _ s 38 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+37 the the DT DT _ _ s 38 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+38 bankruptcy bankruptcy NN NN _ _ s 38 _ bankruptcy _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+39 court court NN NN _ _ s 34 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 lgs_ARG2 det_ARG1 noun_ARG1
+40 . . . . _ _ s 38 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 Commonwealth Commonwealth NNP NNP _ _ s 3 _ Commonwealth _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -2912,34 +2912,34 @@
 17 1985 1985 CD CD _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2
 18 . . . . _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 In In IN IN _ _ s 10 _ In _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 a a DT DT _ _ s 5 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 disputed disputed VBN VBN _ _ s 5 _ disputed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 1985 1985 CD CD _ _ s 5 _ 1985 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 ruling ruling NN NN _ _ s 1 _ _ _ prep_ARG2 det_ARG1 verb_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 , , , , _ _ s 10 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 the the DT DT _ _ s 9 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 Commerce Commerce NNP NNP _ _ s 9 _ Commerce _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 Commission Commission NNP NNP _ _ s 10 _ _ _ _ _ _ _ _ det_ARG1 noun_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _
-11 said said VBD VBD _ _ s 0 _ said -ROOT- prep_ARG1 _ _ _ punct_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 Commonwealth Commonwealth NNP NNP _ _ s 12 _ Commonwealth _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 Edison Edison NNP NNP _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 aux_ARG1 verb_ARG1 _ _ _ _ _ _ verb_ARG1 _ _
-14 could could MD MD _ _ s 14 _ could _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 raise raise VB VB _ _ s 10 _ raise _ _ _ _ _ _ _ _ verb_ARG2 _ aux_ARG2 _ _ _ prep_ARG1 _ _ comp_MOD _ _ _
-16 its its PRP$ PRP$ _ _ s 17 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 electricity electricity NN NN _ _ s 17 _ electricity _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-18 rates rates NNS NNS _ _ s 14 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 _ _ _ _ _ _ _
-19 by by IN IN _ _ s 14 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 $ $ $ $ _ _ s 21 _ $ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-21 49 49 CD CD _ _ s 21 _ 49 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 million million CD CD _ _ s 18 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 adj_ARG1 _ _ _ _
-23 to to TO TO _ _ s 14 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 pay pay VB VB _ _ s 22 _ pay _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 _ prep_ARG1 _
-25 for for IN IN _ _ s 23 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 the the DT DT _ _ s 26 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-27 plant plant NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1
-28 . . . . _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 In In IN IN _ _ s 10 _ In _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 a a DT DT _ _ s 5 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 disputed disputed VBN VBN _ _ s 5 _ disputed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 1985 1985 CD CD _ _ s 5 _ 1985 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 ruling ruling NN NN _ _ s 1 _ _ _ prep_ARG2 det_ARG1 verb_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 , , , , _ _ s 10 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 the the DT DT _ _ s 9 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 Commerce Commerce NNP NNP _ _ s 9 _ Commerce _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 Commission Commission NNP NNP _ _ s 10 _ _ _ _ _ _ _ _ det_ARG1 noun_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _
+11 said said VBD VBD _ _ s 0 _ said -ROOT- prep_ARG1 _ _ _ punct_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 Commonwealth Commonwealth NNP NNP _ _ s 12 _ Commonwealth _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 Edison Edison NNP NNP _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _
+14 could could MD MD _ _ s 14 _ could _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 raise raise VB VB _ _ s 10 _ raise _ _ _ _ _ _ _ _ verb_ARG2 _ aux_ARG2 _ _ _ prep_ARG1 _ _ _ prep_ARG1 _
+16 its its PRP$ PRP$ _ _ s 17 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 electricity electricity NN NN _ _ s 17 _ electricity _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+18 rates rates NNS NNS _ _ s 14 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 _ _ _ _ _ _
+19 by by IN IN _ _ s 14 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 $ $ $ $ _ _ s 21 _ $ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+21 49 49 CD CD _ _ s 21 _ 49 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+22 million million CD CD _ _ s 18 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 adj_ARG1 _ _ _
+23 to to TO TO _ _ s 14 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 pay pay VB VB _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 _ _
+25 for for IN IN _ _ s 23 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+26 the the DT DT _ _ s 26 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+27 plant plant NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1
+28 . . . . _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 But But CC CC _ _ s 16 _ But _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -3012,13 +3012,13 @@
 4 , , , , _ _ s 6 _ , _ _ _ _ _ _ _ _ _ _ _ _
 5 Judge Judge NNP NNP _ _ s 5 _ Judge _ _ _ _ _ _ _ _ _ _ _ _
 6 Curry Curry NNP NNP _ _ s 6 _ _ _ _ _ _ noun_ARG1 verb_ARG1 _ _ _ _ _ _
-7 set set VBD VBD _ _ s 0 _ set -ROOT- _ noun_ARG1 punct_ARG1 _ _ _ _ _ _ _ _
+7 set set VBD VBD _ _ s 0 _ set -ROOT- _ noun_ARG1 punct_ARG1 _ _ _ _ prep_ARG1 _ _ _
 8 the the DT DT _ _ s 9 _ the _ _ _ _ _ _ _ _ _ _ _ _
 9 interest interest NN NN _ _ s 9 _ interest _ _ _ _ _ _ _ _ _ _ _ _
 10 rate rate NN NN _ _ s 6 _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 prep_ARG1 _ _ _
 11 on on IN IN _ _ s 9 _ on _ _ _ _ _ _ _ _ _ _ _ _
 12 the the DT DT _ _ s 12 _ the _ _ _ _ _ _ _ _ _ _ _ _
-13 refund refund NN NN _ _ s 10 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _
+13 refund refund NN NN _ _ s 10 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 prep_ARG1 _
 14 at at IN IN _ _ s 6 _ at _ _ _ _ _ _ _ _ _ _ _ _
 15 9 9 CD CD _ _ s 15 _ 9 _ _ _ _ _ _ _ _ _ _ _ _
 16 % % NN NN _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1
@@ -3032,7 +3032,7 @@
 6 an an DT DT _ _ s 8 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 7 additional additional JJ JJ _ _ s 8 _ additional _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 8 court-ordered court-ordered JJ JJ _ _ s 8 _ court-ordered _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 refund refund NN NN _ _ s 4 _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ relative_ARG1 _ _ _ _ verb_ARG2 _ _ _
+9 refund refund NN NN _ _ s 4 _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ verb_ARG2 _ _ _
 10 on on IN IN _ _ s 4 _ on _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 11 its its PRP$ PRP$ _ _ s 14 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 12 summer/winter summer/winter JJ JJ _ _ s 14 _ summer/winter _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -3045,7 +3045,7 @@
 19 Appellate Appellate NNP NNP _ _ s 19 _ Appellate _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 20 Court Court NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 noun_ARG1 noun_ARG1 aux_ARG1 verb_ARG1 _ _ _
 21 has has VBZ VBZ _ _ s 21 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 estimated estimated VBN VBN _ _ s 14 _ estimated _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG2 _ prep_ARG1 _ _
+22 estimated estimated VBN VBN _ _ s 14 _ estimated _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _ _ aux_ARG2 _ prep_ARG1 _ _
 23 at at IN IN _ _ s 21 _ at _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 24 $ $ $ $ _ _ s 25 _ $ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 25 140 140 CD CD _ _ s 25 _ 140 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -3468,8 +3468,8 @@
 19 it it PRP PRP _ _ s 19 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ aux_ARG1 _ aux_ARG1 verb_ARG2
 20 could could MD MD _ _ s 22 _ could _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 21 not not RB RB _ _ s 22 _ not _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 be be VB VB _ _ s 22 _ be _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 _ _
-23 completed completed VBN VBN _ _ s 15 _ completed _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 prep_ARG1 aux_ARG2 _ aux_ARG2 _
+22 be be VB VB _ _ s 22 _ be _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 completed completed VBN VBN _ _ s 15 _ completed _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 prep_ARG1 aux_ARG2 adj_ARG1 aux_ARG2 _
 24 . . . . _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -3589,33 +3589,33 @@
 30 company company NN NN _ _ s 26 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1
 31 . . . . _ _ s 29 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 “ “ `` `` _ _ s 16 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 It It PRP PRP _ _ s 3 _ _ _ _ verb_ARG1 _ aux_ARG1 verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-4 has has VBZ VBZ _ _ s 16 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _
-5 to to TO TO _ _ s 6 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 be be VB VB _ _ s 6 _ be _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 considered considered VBN VBN _ _ s 3 _ considered _ _ verb_ARG2 comp_ARG1 aux_ARG2 _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
-8 as as IN IN _ _ s 6 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 an an DT DT _ _ s 10 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 additional additional JJ JJ _ _ s 10 _ additional _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 risk risk NN NN _ _ s 7 _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _
-12 for for IN IN _ _ s 10 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 the the DT DT _ _ s 13 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 investor investor NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _
-15 , , , , _ _ s 16 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 ” ” '' '' _ _ s 16 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 said said VBD VBD _ _ s 0 _ said -ROOT- punct_ARG1 _ _ _ _ _ _ _ _ _ punct_ARG1 punct_ARG1 _ _ _ _ _ _ _
-18 Gary Gary NNP NNP _ _ s 19 _ Gary _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 P. P. NNP NNP _ _ s 19 _ P. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 Smaby Smaby NNP NNP _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 noun_ARG1 noun_ARG1 prep_ARG1 _ _ _
-21 of of IN IN _ _ s 19 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 Smaby Smaby NNP NNP _ _ s 23 _ Smaby _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-23 Group Group NNP NNP _ _ s 23 _ Group _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 Inc. Inc. NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 noun_ARG1 app_ARG1
-25 , , , , _ _ s 23 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 Minneapolis Minneapolis NNP NNP _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ app_ARG2
-27 . . . . _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 “ “ `` `` _ _ s 16 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 It It PRP PRP _ _ s 3 _ _ _ _ verb_ARG1 _ aux_ARG1 _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _
+4 has has VBZ VBZ _ _ s 16 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 to to TO TO _ _ s 6 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 be be VB VB _ _ s 6 _ be _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 considered considered VBN VBN _ _ s 3 _ _ _ _ verb_ARG2 comp_ARG1 aux_ARG2 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+8 as as IN IN _ _ s 6 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 an an DT DT _ _ s 10 _ an _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 additional additional JJ JJ _ _ s 10 _ additional _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 risk risk NN NN _ _ s 7 _ _ _ _ _ _ _ prep_ARG2 det_ARG1 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _
+12 for for IN IN _ _ s 10 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 the the DT DT _ _ s 13 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 investor investor NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _
+15 , , , , _ _ s 16 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 ” ” '' '' _ _ s 16 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 said said VBD VBD _ _ s 0 _ said -ROOT- punct_ARG1 punct_ARG1 _ _ _ _ _ _ _ punct_ARG1 punct_ARG1 _ _ _ _ _ _ _
+18 Gary Gary NNP NNP _ _ s 19 _ Gary _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 P. P. NNP NNP _ _ s 19 _ P. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 Smaby Smaby NNP NNP _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 noun_ARG1 noun_ARG1 prep_ARG1 _ _ _
+21 of of IN IN _ _ s 19 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+22 Smaby Smaby NNP NNP _ _ s 23 _ Smaby _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 Group Group NNP NNP _ _ s 23 _ Group _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 Inc. Inc. NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 noun_ARG1 app_ARG1
+25 , , , , _ _ s 23 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+26 Minneapolis Minneapolis NNP NNP _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ app_ARG2
+27 . . . . _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _
 2 “ “ `` `` _ _ s 12 _ “ _ _ _ _ _ _ _ _ _ _
@@ -4164,7 +4164,7 @@
 4 negotiators negotiators NNS NNS _ _ s 4 _ _ _ noun_ARG1 noun_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 5 argue argue VBP VBP _ _ s 0 _ argue -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 6 that that IN IN _ _ s 15 _ that _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 countries countries NNS NNS _ _ s 13 _ _ _ _ _ _ _ prep_ARG1 _ _ _ aux_ARG1 aux_ARG1 verb_ARG1 _ verb_ARG1 _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _
+7 countries countries NNS NNS _ _ s 13 _ _ _ _ _ _ _ prep_ARG1 _ _ _ aux_ARG1 aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 8 with with IN IN _ _ s 6 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 9 inadequate inadequate JJ JJ _ _ s 9 _ inadequate _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 10 protections protections NNS NNS _ _ s 7 _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -4175,15 +4175,15 @@
 15 be be VB VB _ _ s 15 _ be _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 16 hurting hurting VBG VBG _ _ s 4 _ hurting _ _ _ verb_ARG2 comp_ARG1 _ _ _ _ aux_ARG2 aux_ARG2 _ prep_ARG1 _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _
 17 themselves themselves PRP PRP _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-18 by by IN IN _ _ s 15 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _
-19 discouraging discouraging VBG VBG _ _ s 17 _ discouraging _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+18 by by IN IN _ _ s 15 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 discouraging discouraging VBG VBG _ _ s 17 _ discouraging _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 20 their their PRP$ PRP$ _ _ s 22 _ their _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 21 own own JJ JJ _ _ s 22 _ own _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 22 scientists scientists NNS NNS _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _
-23 and and CC CC _ _ s 18 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _
+23 and and CC CC _ _ s 18 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 _ coord_ARG1 _ _ _ _ _ _ _ _ _ _
 24 authors authors NNS NNS _ _ s 22 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _
-25 and and CC CC _ _ s 17 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 by by IN IN _ _ s 24 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _
+25 and and CC CC _ _ s 17 _ and _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+26 by by IN IN _ _ s 24 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 27 deterring deterring VBG VBG _ _ s 25 _ deterring _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ prep_ARG1 _ _ _ _ _
 28 U.S. U.S. NNP NNP _ _ s 29 _ U.S. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 29 high-technology high-technology NN NN _ _ s 29 _ high-technology _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -4246,7 +4246,7 @@
 16 . . . . _ _ s 14 _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 Taiwan Taiwan NNP NNP _ _ s 2 _ _ _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _
+2 Taiwan Taiwan NNP NNP _ _ s 2 _ _ _ aux_ARG1 verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 3 has has VBZ VBZ _ _ s 3 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 4 improved improved VBN VBN _ _ s 0 _ improved -ROOT- aux_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _
 5 its its PRP$ PRP$ _ _ s 5 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -4255,17 +4255,17 @@
 8 the the DT DT _ _ s 8 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 9 U.S. U.S. NNP NNP _ _ s 6 _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 10 by by IN IN _ _ s 3 _ by _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 initialing initialing VBG VBG _ _ s 15 _ initialing _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+11 initialing initialing VBG VBG _ _ s 15 _ initialing _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _
 12 a a DT DT _ _ s 14 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 13 bilateral bilateral JJ JJ _ _ s 14 _ bilateral _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 14 copyright copyright NN NN _ _ s 14 _ copyright _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 15 agreement agreement NN NN _ _ s 10 _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 adj_ARG1 noun_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 , , , , _ _ s 20 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _
-17 amending amending VBG VBG _ _ s 15 _ amending _ _ _ _ _ _ comp_ARG1 _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _
+16 , , , , _ _ s 20 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 amending amending VBG VBG _ _ s 15 _ amending _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
 18 its its PRP$ PRP$ _ _ s 19 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 19 trademark trademark NN NN _ _ s 19 _ trademark _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 law law NN NN _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 _ _ _ _ _ _ _ _ _ _
-21 and and CC CC _ _ s 9 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 law law NN NN _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 noun_ARG1 coord_ARG1 _ _ _ _ _ _ _ _ _
+21 and and CC CC _ _ s 9 _ and _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _
 22 introducing introducing VBG VBG _ _ s 20 _ introducing _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _
 23 legislation legislation NN NN _ _ s 21 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 comp_MOD _ _ _ _ _ _ _
 24 to to TO TO _ _ s 22 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
@@ -4304,44 +4304,44 @@
 21 films films NNS NNS _ _ s 18 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1
 22 . . . . _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 Saudi Saudi NNP NNP _ _ s 2 _ Saudi _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 Arabia Arabia NNP NNP _ _ s 9 _ _ _ noun_ARG1 _ _ _ _ _ verb_ARG1 _ verb_ARG1 _ _ _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _
-4 , , , , _ _ s 9 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 for for IN IN _ _ s 9 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 its its PRP$ PRP$ _ _ s 6 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 part part NN NN _ _ s 4 _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 , , , , _ _ s 9 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 has has VBZ VBZ _ _ s 9 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 vowed vowed VBN VBN _ _ s 36 _ vowed _ _ punct_ARG1 prep_ARG1 _ punct_ARG1 conj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2
-11 to to TO TO _ _ s 11 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 enact enact VB VB _ _ s 9 _ enact _ _ _ _ _ _ _ _ comp_ARG1 _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
-13 a a DT DT _ _ s 14 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 copyright copyright NN NN _ _ s 14 _ copyright _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 law law NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 compatible compatible JJ JJ _ _ s 14 _ compatible _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 with with IN IN _ _ s 15 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-18 international international JJ JJ _ _ s 18 _ international _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 standards standards NNS NNS _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 and and CC CC _ _ s 15 _ and _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-21 to to TO TO _ _ s 21 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 apply apply VB VB _ _ s 19 _ apply _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 comp_ARG1 _ _ prep_ARG1 _ _ _ _ prep_ARG1 _ _ _ _
-23 the the DT DT _ _ s 23 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 law law NN NN _ _ s 21 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _
-25 to to TO TO _ _ s 21 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _
-26 computer computer NN NN _ _ s 26 _ computer _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-27 software software NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 _ _ _ _ _ _ _ _
-28 as as RB RB _ _ s 29 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-29 well well RB RB _ _ s 29 _ well _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-30 as as IN IN _ _ s 24 _ as _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 adj_ARG1 _ _ _ _ _ _
-31 to to TO TO _ _ s 29 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _
-32 literary literary JJ JJ _ _ s 32 _ literary _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-33 works works NNS NNS _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _
-34 , , , , _ _ s 36 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-35 Mrs. Mrs. NNP NNP _ _ s 35 _ Mrs. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-36 Hills Hills NNP NNP _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 verb_ARG1
-37 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _
-38 . . . . _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 Saudi Saudi NNP NNP _ _ s 2 _ Saudi _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 Arabia Arabia NNP NNP _ _ s 9 _ _ _ noun_ARG1 _ _ _ _ _ verb_ARG1 _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1
+4 , , , , _ _ s 9 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 for for IN IN _ _ s 9 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 its its PRP$ PRP$ _ _ s 6 _ its _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 part part NN NN _ _ s 4 _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 , , , , _ _ s 9 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 has has VBZ VBZ _ _ s 9 _ has _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 vowed vowed VBN VBN _ _ s 36 _ vowed _ _ punct_ARG1 prep_ARG1 _ punct_ARG1 aux_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 to to TO TO _ _ s 11 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 enact enact VB VB _ _ s 9 _ enact _ _ _ _ _ _ _ _ comp_ARG1 _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _
+13 a a DT DT _ _ s 14 _ a _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 copyright copyright NN NN _ _ s 14 _ copyright _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 law law NN NN _ _ s 11 _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 noun_ARG1 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 compatible compatible JJ JJ _ _ s 14 _ compatible _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+17 with with IN IN _ _ s 15 _ with _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+18 international international JJ JJ _ _ s 18 _ international _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 standards standards NNS NNS _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 _ _ _ _ _ _ _ _ _ _ _ _
+20 and and CC CC _ _ s 15 _ and _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+21 to to TO TO _ _ s 21 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _
+22 apply apply VB VB _ _ s 19 _ apply _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 _ _ prep_ARG1 _ _ _ _ _ _ adj_ARG1
+23 the the DT DT _ _ s 23 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 law law NN NN _ _ s 21 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 det_ARG1 _ _ _ _ _ _ _ _
+25 to to TO TO _ _ s 21 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+26 computer computer NN NN _ _ s 26 _ computer _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+27 software software NN NN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 _ _ _ _ _ _
+28 as as RB RB _ _ s 29 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+29 well well RB RB _ _ s 29 _ well _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+30 as as IN IN _ _ s 24 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ adj_ARG1 prep_ARG1 _ _ _ _
+31 to to TO TO _ _ s 29 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+32 literary literary JJ JJ _ _ s 32 _ literary _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+33 works works NNS NNS _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 app_ARG1 _ _
+34 , , , , _ _ s 36 _ , _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+35 Mrs. Mrs. NNP NNP _ _ s 35 _ Mrs. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+36 Hills Hills NNP NNP _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ noun_ARG1 verb_ARG1
+37 said said VBD VBD _ _ s 0 _ said -ROOT- _ _ _ _ _ _ verb_ARG3 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ punct_ARG1 _ _
+38 . . . . _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _
 2 These These DT DT _ _ s 3 _ These _ _ _ _ _ _ _ _ _ _
@@ -4372,51 +4372,51 @@
 13 countries countries NNS NNS _ _ s 9 _ _ _ _ _ _ _ _ _ verb_ARG2 adj_ARG1 adj_ARG1
 14 . . . . _ _ s 12 _ _ _ _ _ _ _ _ _ _ _ _
 
-1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-2 Those Those DT DT _ _ s 2 _ Those _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-3 countries countries NNS NNS _ _ s 15 _ _ _ det_ARG1 lparen_ARG1 _ _ _ _ _ verb_ARG1 _ prep_ARG1 _ _ _ _ _ verb_ARG2 _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ _ _
-4 – – : : _ _ s 2 _ – _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-5 including including IN IN _ _ s 3 _ including _ _ lparen_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-6 Japan Japan NNP NNP _ _ s 6 _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-7 , , , , _ _ s 8 _ , _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-8 Italy Italy NNP NNP _ _ s 6 _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-9 , , , , _ _ s 10 _ , _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-10 Canada Canada NNP NNP _ _ s 8 _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-11 , , , , _ _ s 12 _ , _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-12 Greece Greece NNP NNP _ _ s 10 _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-13 and and CC CC _ _ s 4 _ and _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-14 Spain Spain NNP NNP _ _ s 12 _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-15 – – : : _ _ s 3 _ _ _ _ lparen_ARG3 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-16 are are VBP VBP _ _ s 23 _ are _ _ _ _ _ _ _ _ _ adj_ARG1 _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-17 still still RB RB _ _ s 15 _ still _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-18 of of IN IN _ _ s 15 _ of _ _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-19 some some DT DT _ _ s 19 _ some _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-20 concern concern NN NN _ _ s 17 _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-21 to to TO TO _ _ s 19 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-22 the the DT DT _ _ s 22 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-23 U.S. U.S. NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-24 but but CC CC _ _ s 0 _ but -ROOT- _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-25 are are VBP VBP _ _ s 25 _ are _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-26 deemed deemed VBN VBN _ _ s 23 _ deemed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-27 to to TO TO _ _ s 27 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-28 pose pose VB VB _ _ s 25 _ pose _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG3 comp_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
-29 less-serious less-serious JJ JJ _ _ s 29 _ less-serious _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-30 problems problems NNS NNS _ _ s 27 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 adj_ARG1 prep_ARG1 _ _ _ _ prep_ARG1 _ _ _ _ _
-31 for for IN IN _ _ s 29 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-32 American American JJ JJ _ _ s 35 _ American _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-33 patent patent NN NN _ _ s 33 _ patent _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _
-34 and and CC CC _ _ s 34 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-35 copyright copyright NN NN _ _ s 35 _ copyright _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _
-36 owners owners NNS NNS _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 noun_ARG1 _ noun_ARG1 _ _ _ _ _ _
-37 than than IN IN _ _ s 27 _ than _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-38 those those DT DT _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1 _ _ _ _
-39 on on IN IN _ _ s 37 _ on _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-40 the the DT DT _ _ s 43 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-41 “ “ `` `` _ _ s 43 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-42 priority priority NN NN _ _ s 43 _ priority _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-43 ” ” '' '' _ _ s 43 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
-44 list list NN NN _ _ s 38 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 punct_ARG1 noun_ARG1 punct_ARG1
-45 . . . . _ _ s 43 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+2 Those Those DT DT _ _ s 2 _ Those _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+3 countries countries NNS NNS _ _ s 15 _ _ det_ARG1 lparen_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+4 – – : : _ _ s 2 _ – _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+5 including including IN IN _ _ s 3 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+6 Japan Japan NNP NNP _ _ s 6 _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+7 , , , , _ _ s 8 _ , _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+8 Italy Italy NNP NNP _ _ s 6 _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+9 , , , , _ _ s 10 _ , _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+10 Canada Canada NNP NNP _ _ s 8 _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+11 , , , , _ _ s 12 _ , _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+12 Greece Greece NNP NNP _ _ s 10 _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+13 and and CC CC _ _ s 4 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+14 Spain Spain NNP NNP _ _ s 12 _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+15 – – : : _ _ s 3 _ – _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+16 are are VBP VBP _ _ s 23 _ _ _ _ _ _ _ _ conj_ARG1 adj_ARG1 prep_ARG1 _ prep_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+17 still still RB RB _ _ s 15 _ still _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+18 of of IN IN _ _ s 15 _ of _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+19 some some DT DT _ _ s 19 _ some _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+20 concern concern NN NN _ _ s 17 _ _ _ _ _ _ _ _ _ _ prep_ARG2 det_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+21 to to TO TO _ _ s 19 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+22 the the DT DT _ _ s 22 _ the _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+23 U.S. U.S. NNP NNP _ _ s 20 _ _ _ _ _ _ _ _ _ _ _ _ _ det_ARG1 coord_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+24 but but CC CC _ _ s 0 _ but _ _ _ _ _ _ _ _ _ _ prep_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+25 are are VBP VBP _ _ s 25 _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 verb_ARG2 _ _ _ _ _ _ _ _ _ _ _ _ _ _
+26 deemed deemed VBN VBN _ _ s 23 _ deemed _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+27 to to TO TO _ _ s 27 _ to _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+28 pose pose VB VB _ _ s 25 _ pose _ _ _ _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 _ _ _ _ _ _ _ _ _ _ _ _ _
+29 less-serious less-serious JJ JJ _ _ s 29 _ less-serious _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+30 problems problems NNS NNS _ _ s 27 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG2 adj_ARG1 prep_ARG1 _ _ _ _ prep_ARG1 prep_ARG1 _ _ _ verb_ARG1
+31 for for IN IN _ _ s 29 _ for _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+32 American American JJ JJ _ _ s 35 _ American _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+33 patent patent NN NN _ _ s 33 _ patent _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _ _ _
+34 and and CC CC _ _ s 34 _ and _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+35 copyright copyright NN NN _ _ s 35 _ copyright _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ coord_ARG2 _ _ _ _ _ _ _
+36 owners owners NNS NNS _ _ s 30 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 adj_ARG1 noun_ARG1 _ noun_ARG1 _ _ _ _ _ _
+37 than than IN IN _ _ s 27 _ than _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+38 those those DT DT _ _ s 36 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1 _ _ _ _
+39 on on IN IN _ _ s 37 _ on _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+40 the the DT DT _ _ s 43 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 prep_ARG1 _ _ _
+41 “ “ `` `` _ _ s 43 _ “ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+42 priority priority NN NN _ _ s 43 _ priority _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+43 ” ” '' '' _ _ s 43 _ ” _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+44 list list NN NN _ _ s 38 _ list _ _ _ _ _ _ _ _ _ _ _ _ _ verb_ARG1 _ _ _ _ _ _ _ _ _ _ prep_ARG2 noun_ARG1 punct_ARG1 _
+45 . . . . _ _ s 43 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _
 2 “ “ `` `` _ _ s 16 _ “ _ _ _ _ _ _ _ _ _ _ _ _
@@ -4698,19 +4698,19 @@
 3 negotiator negotiator NN NN _ _ s 4 _ negotiator _ _ _ _ _ _ _ _ _ _ _ _
 4 Carlos Carlos NNP NNP _ _ s 4 _ Carlos _ _ _ _ _ _ _ _ _ _ _ _
 5 Carballo Carballo NNP NNP _ _ s 5 _ _ _ adj_ARG1 noun_ARG1 noun_ARG1 verb_ARG1 prep_ARG1 _ _ _ _ _ _
-6 was was VBD VBD _ _ s 0 _ was -ROOT- _ _ _ _ _ _ _ _ _ _ punct_ARG1
+6 was was VBD VBD _ _ s 0 _ was -ROOT- _ _ _ _ _ _ _ _ noun_ARG1 _ _
 7 in in IN IN _ _ s 5 _ in _ _ _ _ verb_ARG2 _ _ _ _ _ _ _
 8 Washington Washington NNP NNP _ _ s 8 _ _ _ _ _ _ _ _ coord_ARG1 _ _ _ _ _
 9 and and CC CC _ _ s 6 _ and _ _ _ _ _ prep_ARG2 _ _ _ _ _ _
 10 New New NNP NNP _ _ s 10 _ New _ _ _ _ _ _ _ _ _ _ _ _
 11 York York NNP NNP _ _ s 8 _ _ _ _ _ _ _ _ coord_ARG2 noun_ARG1 _ _ _ _
 12 this this DT DT _ _ s 12 _ this _ _ _ _ _ _ _ _ _ _ _ _
-13 week week NN NN _ _ s 5 _ _ _ _ _ _ _ _ _ _ det_ARG1 _ _ _
+13 week week NN NN _ _ s 5 _ week _ _ _ _ _ _ _ _ det_ARG1 _ _ _
 14 to to TO TO _ _ s 5 _ to _ _ _ _ _ _ _ _ _ _ _ _
-15 meet meet VB VB _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 prep_ARG1 _
+15 meet meet VB VB _ _ s 13 _ _ _ _ _ _ _ _ _ _ _ _ comp_ARG1 prep_ARG1
 16 with with IN IN _ _ s 14 _ with _ _ _ _ _ _ _ _ _ _ _ _
-17 banks banks NNS NNS _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2 _
-18 . . . . _ _ s 16 _ . _ _ _ _ _ _ _ _ _ _ _ _
+17 banks banks NNS NNS _ _ s 15 _ _ _ _ _ _ _ _ _ _ _ _ _ prep_ARG2
+18 . . . . _ _ s 16 _ _ _ _ _ _ _ _ _ _ _ _ _ _
 
 1 #root# #root# #ROOT# #ROOT# _ _ s -1 _ #root# _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 2 Mr. Mr. NNP NNP _ _ s 2 _ Mr. _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _

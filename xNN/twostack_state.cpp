@@ -110,7 +110,7 @@ vector<vector<int>> TwoStackState::features(const BaseAction * action, const Dep
 			rcl2[0] = m_lSubPredLabelR[st[0]];
 		}
 	}
-	if (st[0] >= 0) {
+	if (st[1] >= 0) {
 		if (m_lHeadL[st[1]] >= 0) {
 			lh[1] = m_lHeadL[st[1]];
 			lhl[1] = m_lHeadLabelL[st[1]];

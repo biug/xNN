@@ -1,10 +1,6 @@
 #ifndef MACROS_H
 #define MACROS_H
 
-#define TOKEN_BEGIN			"-BEGIN-"
-#define TOKEN_TAIL			"-TAIL"
-#define TOKEN_START_CODE	2
-
 #define	MAX_SENTENCE_SIZE	256
 #define	MAX_SENTENCE_BITS	8
 
@@ -28,6 +24,11 @@
 #define DECODE_TWOWAY_RIGHT_LABEL(L)	(L.substr(L.find("||") + strlen("||")))
 
 #define	EMBEDDING_LEN		50
+#define ONE_BATCH			1
+#define OUTPUT_BATCH		1000
+
+#define HIDDEN_WIDTH		400
+#define LOSS_WIDTH			260
 
 #define	GLOBAL_EPSILON		1e-10
 
@@ -42,6 +43,6 @@
 #define	ADAGRAD_ALPHA		1e-3
 #define ADAGRAD_EPSILON		1e-8
 
-#define	DROP_OUT_RATE		0.2
+#define	DROP_OUT_RATE		0.0
 
 #endif

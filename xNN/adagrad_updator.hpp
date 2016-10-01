@@ -69,13 +69,15 @@ void AdaGradUpdator<DType, Neuron>::update(int batch) {
 	DType * weight = m_pNeuron->getMutableWeight(0);
 
 	for (int i = 0, n = m_pNeuron->getVecLen(); i < n; ++i) {
-		m_pBiasVec[i] += biasDiff[i] * biasDiff[i];
-		bias[i] = alpha * bias[i] - yita / sqrt(m_pBiasVec[i]) * biasDiff[i];
+		DType diff = biasDiff[i] / batch;
+		m_pBiasVec[i] += diff * diff;
+		bias[i] = alpha * bias[i] - yita / sqrt(m_pBiasVec[i]) * diff;
 	}
 
 	for (int i = 0, n = m_pNeuron->getDownWeightOffset(m_nDownNum); i < n; ++i) {
-		m_pWeightVec[i] += weightDiff[i] * weightDiff[i];
-		weight[i] = alpha * weight[i] - yita / sqrt(m_pWeightVec[i]) * weightDiff[i];
+		DType diff = weightDiff[i] / batch;
+		m_pWeightVec[i] += diff * diff;
+		weight[i] = alpha * weight[i] - yita / sqrt(m_pWeightVec[i]) * diff;
 	}
 }
 
@@ -85,8 +87,9 @@ void AdaGradUpdator<DType, Neuron>::update(DType * args, const DType * args_diff
 	const DType alpha = static_cast<DType>(1 - REGULAR_LAMDA);
 
 	for (int i = 0; i < size; ++i) {
-		m_pBiasVec[i] += args_diff[i] * args_diff[i];
-		args[i] = alpha * args[i] - yita / sqrt(m_pBiasVec[i]) * args_diff[i];
+		DType diff = args_diff[i] / batch;
+		m_pBiasVec[i] += diff * diff;
+		args[i] = alpha * args[i] - yita / sqrt(m_pBiasVec[i]) * diff;
 	}
 }
 

@@ -44,7 +44,7 @@ public:
 		return m_mapTokens[key];
 	}
 
-	const int code(const string & key) const		{ return m_mapTokens.at(key); }
+	const int code(const string & key) const		{ return m_mapTokens.find(key) == m_mapTokens.end() ? 0 : m_mapTokens.at(key); }
 
 	string & operator[](const int code)				{ return m_vecKeys[code]; }
 
